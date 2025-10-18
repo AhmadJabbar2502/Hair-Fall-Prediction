@@ -35,7 +35,7 @@ st.markdown(f"""
 st.markdown(
     f"""
     <div style='background-color:{BASE_BG}; padding:12px; border-radius:40px;'>
-        <h1 style='text-align:center; font-size:30px; color:#5e928a; margin:6px 0;'>Missingness Analysis</h1>
+        <h1 style='text-align:center; font-size:25px; color:#5e928a; margin:6px 0;'>Missingness Analysis</h1>
         <p style='text-align:center; font-size:22px; color: #2a5a55; margin:0px 0 15px 0;'>
             Visualize and investigate patterns of missing data across datasets.
         </p>
