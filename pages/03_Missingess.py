@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import scipy.stats as stats
 import seaborn as sns
 import numpy as np
 
@@ -200,7 +201,67 @@ else:
                         plt.close(fig)
                     else:
                         st.markdown("<p style='font-size:16px; color:#666;'>Age_Range not available in raw data.</p>", unsafe_allow_html=True)
+            # --------------------------
+            # CHI-SQUARED TESTS
+            # --------------------------
+            st.markdown(f"<h2 style='color:{HEADER_COLOR}; font-size:28px;'>Chi-Squared Tests for Missingness</h2>", unsafe_allow_html=True)
 
+            st.markdown(
+                """
+                The missingness in **Medical Conditions** was tested against both **Stress Level** and **Age Range**.
+                The analysis confirms that missingness is **not random**.
+                - Probability that the difference in Stress Level is due to chance: **7.756e-17**
+                - Probability that the difference in Age Range is due to chance: **2.335e-23**
+                
+                These extremely low probabilities indicate a strong relationship between missingness and these variables.
+                """
+            )
+
+            # ---- Prepare contingency tables ----
+            # Stress Level
+            contingency_stress_levels = pd.crosstab(hair_data_raw['Medical_Conditions_missing'], hair_data_raw['Stress_Level'])
+            chi2_stress, p_stress, dof_stress, ex_sl = stats.chi2_contingency(contingency_stress_levels)
+
+            # Age Range
+            contingency_age = pd.crosstab(hair_data_raw['Medical_Conditions_missing'], hair_data_raw['Age_Range'])
+            chi2_age, p_age, dof_age, ex_age = stats.chi2_contingency(contingency_age)
+
+            # ---- Stress Level Bar Plot ----
+            observed_stress = contingency_stress_levels.loc[1]
+            expected_stress = pd.Series(ex_sl[1], index=contingency_stress_levels.columns)
+
+            x = np.arange(len(observed_stress))
+            width = 0.35
+
+            fig, ax = plt.subplots(figsize=(8, 5))
+            ax.bar(x - width/2, observed_stress, width, label='Observed', color='#86aca9')
+            ax.bar(x + width/2, expected_stress, width, label='Expected', color='#5d9189')
+            ax.set_xticks(x)
+            ax.set_xticklabels(observed_stress.index)
+            ax.set_xlabel('Stress Level')
+            ax.set_ylabel('Count')
+            ax.set_title('Observed vs Expected Missingness by Stress Level')
+            ax.legend()
+            st.pyplot(fig)
+            plt.close(fig)
+
+            # ---- Age Range Bar Plot ----
+            observed_age = contingency_age.loc[1]
+            expected_age = pd.Series(ex_age[1], index=contingency_age.columns)
+
+            x = np.arange(len(observed_age))
+
+            fig, ax = plt.subplots(figsize=(8, 5))
+            ax.bar(x - width/2, observed_age, width, label='Observed', color='#A8D5BA')
+            ax.bar(x + width/2, expected_age, width, label='Expected', color='#5d9189')
+            ax.set_xticks(x)
+            ax.set_xticklabels(observed_age.index)
+            ax.set_xlabel('Age Range')
+            ax.set_ylabel('Count')
+            ax.set_title('Observed vs Expected Missingness by Age Range')
+            ax.legend()
+            st.pyplot(fig)
+            plt.close(fig)
     # ----------------------------
     # Luke Hair Dataset view
     # ----------------------------
