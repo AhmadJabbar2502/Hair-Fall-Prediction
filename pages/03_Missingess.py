@@ -21,7 +21,7 @@ st.markdown(f"""
     <style>
     .stApp {{ background-color:#EFEFEF; }}
     section[data-testid="stSidebar"] {{ background-color: {SECTION_BG}; padding: 16px 12px; }}
-    section[data-testid="stSidebar"] * {{ color: {SIDBAR_TEXT} !important; font-size: 22px !important; font-family: 'Helvetica Neue', sans-serif; }}
+    section[data-testid="stSidebar"] * {{ color: {SIDBAR_TEXT} !important; font-size: 16px !important; font-family: 'Helvetica Neue', sans-serif; }}
     html, body, [class*="css"] {{ font-size: 22px !important; color: {TEXT} !important; }}
     div[data-testid="stMetricLabel"] {{ font-size: 22px !important; color: #333 !important; }}
     div[data-testid="stDataFrame"] {{ background-color: white !important; border: 3px solid {SECTION_BG} !important; border-radius: 12px !important; box-shadow: none !important; }}
@@ -35,7 +35,7 @@ st.markdown(f"""
 st.markdown(
     f"""
     <div style='background-color:{BASE_BG}; padding:12px; border-radius:40px;'>
-        <h1 style='text-align:center; font-size:30px; color:#5e928a; margin:6px 0;'>Missingness Analysis</h1>
+        <h1 style='text-align:center; font-size:33px; color:#5e928a; margin:6px 0;'>Missingness Analysis</h1>
         <p style='text-align:center; font-size:20px; color: #2a5a55; margin:0px 0 15px 0;'>
             Visualize and investigate patterns of missing data across datasets.
         </p>
@@ -71,7 +71,7 @@ else:
     # ===== Dataset banner =====
     st.markdown(
         f"<div style='background-color:{SECTION_BG}; padding:10px; text-align:center; border-radius:10px;'>"
-        f"<h2 style='color:{ACCENT}; font-size:20px; margin:6px 0 6px 0;'>{dataset_option}</h2></div>",
+        f"<h2 style='color:{ACCENT}; font-size:30px; margin:6px 0 6px 0;'>{dataset_option}</h2></div>",
         unsafe_allow_html=True
     )
     st.markdown("<br>", unsafe_allow_html=True)
