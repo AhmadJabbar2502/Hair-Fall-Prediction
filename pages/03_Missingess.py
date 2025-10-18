@@ -108,28 +108,25 @@ else:
                 nan_array = df_hair_data_subset.isna().astype(int).to_numpy()
 
                 # Layout: heatmap (wide) + missing counts table (narrow)
-                col1, col2 = st.columns([3, 1], gap="large")
+                fig, ax = plt.subplots(figsize=(11, 5))
+                # greenish palette (YlGn) for the missingness visualization
+                im = ax.imshow(nan_array.T, interpolation="nearest", aspect="auto", cmap="YlGn")
+                ax.set_xlabel("Index", fontsize=13, color=TEXT)
+                ax.set_ylabel("Features", fontsize=13, color=TEXT)
+                ax.set_title("Missing Values Heatmap", fontsize=16, fontweight="600", color=HEADER_COLOR)
+                ax.set_yticks(range(len(df_hair_data_subset.columns)))
+                ax.set_yticklabels(df_hair_data_subset.columns, fontsize=12, color=TEXT)
+                ax.grid(True, axis="y", linestyle="--", alpha=0.6)
+                # colorbar to the right
+                cbar = fig.colorbar(im, ax=ax, orientation='vertical', fraction=0.02, pad=0.02)
+                cbar.ax.tick_params(labelsize=10)
+                st.pyplot(fig)
+                plt.close(fig)
 
-                with col1:
-                    fig, ax = plt.subplots(figsize=(11, 5))
-                    # greenish palette (YlGn) for the missingness visualization
-                    im = ax.imshow(nan_array.T, interpolation="nearest", aspect="auto", cmap="YlGn")
-                    ax.set_xlabel("Index", fontsize=13, color=TEXT)
-                    ax.set_ylabel("Features", fontsize=13, color=TEXT)
-                    ax.set_title("Missing Values Heatmap", fontsize=16, fontweight="600", color=HEADER_COLOR)
-                    ax.set_yticks(range(len(df_hair_data_subset.columns)))
-                    ax.set_yticklabels(df_hair_data_subset.columns, fontsize=12, color=TEXT)
-                    ax.grid(True, axis="y", linestyle="--", alpha=0.6)
-                    # colorbar to the right
-                    cbar = fig.colorbar(im, ax=ax, orientation='vertical', fraction=0.02, pad=0.02)
-                    cbar.ax.tick_params(labelsize=10)
-                    st.pyplot(fig)
-                    plt.close(fig)
 
-                with col2:
-                    st.markdown(f"<p style='font-size:18px; color:{TEXT};'><b>Missing Value Count (raw)</b></p>", unsafe_allow_html=True)
-                    missing_counts = hair_data_raw.isna().sum().reset_index().rename(columns={"index":"Feature", 0:"Missing Count"})
-                    st.dataframe(missing_counts, use_container_width=True)
+                st.markdown(f"<p style='font-size:18px; color:{TEXT};'><b>Missing Value Count (raw)</b></p>", unsafe_allow_html=True)
+                missing_counts = hair_data_raw.isna().sum().reset_index().rename(columns={"index":"Feature", 0:"Missing Count"})
+                st.dataframe(missing_counts, use_container_width=True)
 
                 st.markdown("<br>", unsafe_allow_html=True)
 
@@ -139,7 +136,7 @@ else:
                 st.markdown(
                     f"""
                     <div style='background-color:#E6F4EA; padding:14px; border-radius:10px;'>
-                        <p style='font-size:16px; color:{TEXT}; margin:0;'>
+                        <p style='font-size:20px; color:{TEXT}; margin:0;'>
                         <b>Observation:</b> At first glance the missingness appears similar to MCAR.
                         From the heatmap we see possible subtle patterns — we will run statistical tests
                         (e.g. Chi-squared) to check whether missingness relates to <b>Stress Level</b> or <b>Age Range</b>.
