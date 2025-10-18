@@ -71,7 +71,7 @@ else:
     # ===== Dataset banner =====
     st.markdown(
         f"<div style='background-color:{SECTION_BG}; padding:10px; text-align:center; border-radius:10px;'>"
-        f"<h2 style='color:{ACCENT}; font-size:30px; margin:6px 0 6px 0;'>{dataset_option}</h2></div>",
+        f"<h2 style='color:{ACCENT}; font-size:25px; margin:6px 0 6px 0;'>{dataset_option}</h2></div>",
         unsafe_allow_html=True
     )
     st.markdown("<br>", unsafe_allow_html=True)
