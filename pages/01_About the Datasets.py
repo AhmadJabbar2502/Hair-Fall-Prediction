@@ -284,7 +284,7 @@ def show_dataset_about(df_head, df_analysis, title, description="", source_text=
     # ===== LUKE DATASET =====
     if title=="Luke Hair Loss Dataset":
         st.markdown("<div style='display:flex; gap:8px;'>", unsafe_allow_html=True)
-        c1, c2 = st.columns(2)
+        c1, c2, c3 = st.columns(3)
 
         card_html = lambda title, value: f"""
             <div style='background:{BOXCOLOR}; border-radius:12px; padding:16px; 
@@ -297,35 +297,49 @@ def show_dataset_about(df_head, df_analysis, title, description="", source_text=
         with c1:
             st.markdown(card_html("Total Days Tracked", f"{len(df_analysis):,}"), unsafe_allow_html=True)
 
-        # --- Additional useful metric ---
-        # Example: average hair fall count (if column exists)
-        if "hair_fall_count" in df_analysis.columns:
-            avg_hair_loss = df_analysis["hair_fall_count"].mean()
+        if "Coffee_Consumed" in df_analysis.columns:
+            avg_coffee = df_analysis["Coffee_Consumed"].mean()
             with c2:
-                st.markdown(card_html("Average Hair Fall per Day", f"{avg_hair_loss:.1f}"), unsafe_allow_html=True)
-        else:
-            # Fallback example: average coffee consumption (if that fits your data)
-            if "coffee_consumed" in df_analysis.columns:
-                avg_coffee = df_analysis["coffee_consumed"].mean()
-                with c2:
-                    st.markdown(card_html("Average Coffee Consumed per Day", f"{avg_coffee:.1f}"), unsafe_allow_html=True)
+                st.markdown(card_html("Average Coffee Consumed per Day", f"{avg_coffee:.1f}"), unsafe_allow_html=True)
+       
+        if "Brain_Working_Duration" in df_analysis.columns:
+            avg_coffee = df_analysis["Brain_Working_Duration"].mean()
+            with c2:
+                st.markdown(card_html("Average Coffee Consumed per Day", f"{avg_coffee:.1f}"), unsafe_allow_html=True)
 
         st.markdown("</div>", unsafe_allow_html=True)
-
-        numerical_cols = ['stay_up_late', 'coffee_consumed', 'libido', 'hair_grease', 'brain_working_duration']
+        
+        st.markdown("<hr style='border:1px solid #AAA; margin:16px 0;'>", unsafe_allow_html=True)
+        st.markdown("</div>", unsafe_allow_html=True)
+        
+        numerical_cols = ['Stay_Up_Late', 'Coffee_Consumed', 'Libido', 'Hair_Grease', 'Brain_Working_Duration']
         fig, ax = plt.subplots(figsize=(12,5))
         sns.boxplot(data=df_analysis[numerical_cols], ax=ax, palette=[ACCENT, "#4C9F70", "#A8D5BA", SECONDARY, "#FFB347"])
         ax.set_xticklabels(numerical_cols, fontsize=12)
         ax.set_title("Boxplot of Daily Habits", fontsize=16, color=TEXT)
         st.pyplot(fig)
 
-    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown("<hr style='border:1px solid #AAA; margin:16px 0;'>", unsafe_allow_html=True)
+    st.markdown("</div>", unsafe_allow_html=True)
+
+    if "Hair_Loss" in df_analysis.columns:
+        st.markdown("<h3 style='color:{0}; text-align:center; font-size:24px;'>Hair Loss Distribution</h3>".format(TEXT), unsafe_allow_html=True)
+        fig, ax = plt.subplots(figsize=(8,4))
+        sns.countplot(x='Hair_Loss', data=df_analysis, palette=["#c1dab8", "#94b89e", "#2E8B57"], ax=ax)
+        ax.set_xlabel("Hair Loss", fontsize=12, color=TEXT)
+        ax.set_ylabel("Count", fontsize=12, color=TEXT)
+        ax.tick_params(axis='x', labelsize=11)
+        ax.tick_params(axis='y', labelsize=11)
+        st.pyplot(fig)
+        plt.close(fig)
+
     st.write("Next, we'll explore how missing data and inconsistencies were handled before analysis.")
 
 # ======== USAGE: dataset selection at start (single-select) ============
 df_raw = load_csv("Data/Predict Hair Fall Raw.csv")
 df_cleaned = load_csv("Data/Predict Hair Fall Cleaned.csv")
-df2 = load_csv("Data/Luke_hair_loss_documentation Raw.csv")
+df2_raw = load_csv("Data/Luke_hair_loss_documentation Raw.csv")
+df2_cleaned = load_csv("Data/luke_hair_loss_documentation Cleaned.csv")
 
 st.markdown("<hr style='border:0px solid #AAA; margin:16px 0;'>", unsafe_allow_html=True)
 
@@ -347,8 +361,8 @@ if dataset_choice == "Hair Health Prediction Dataset":
     )
 elif dataset_choice == "Luke Hair Loss Dataset":
     show_dataset_about(
-        df2,
-        df2,
+        df2_raw,
+        df2_cleaned,
         title="Luke Hair Loss Dataset",
         description="This dataset is about a postgraduate student who has been personally tracking hair loss issues since the age of 20. It records the student’s daily habits and various factors that could affect hair health over time. Hair loss was measured by placing one hand on the forehead, running the fingers through the hair toward the back of the head, and counting the number of hairs that fell on the hand. The data was collected over a period of 400 days.",
         source_text="Kaggle",
