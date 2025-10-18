@@ -28,18 +28,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# ======== SIDEBAR ==========
-st.sidebar.markdown(
-    f"""
-    <div style='padding:14px; border-radius:8px; background-color: {BASE_BG};'>
-        <h3 style='margin:0; font-size:22px; color:{ACCENT};'>Hairfall Dashboard</h3>
-        <p style='margin:6px 0 0 0; font-size:22px; color:{TEXT};'>
-            Explore dataset cleaning and preprocessing.
-        </p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
 
 # ======== HEADER ==========
 st.markdown(
@@ -66,7 +54,7 @@ def load_csv(path):
 df_predict_raw = load_csv("Data/Predict Hair Fall Raw.csv")
 df_predict_cleaned = load_csv("Data/Predict Hair Fall Cleaned.csv")
 df_luke_raw = load_csv("Data/Luke_hair_loss_documentation Raw.csv")
-df_luke_cleaned = load_csv("Data/luke_hair_loss_documentation Cleaned.csv")
+df_luke_cleaned = load_csv("Data/Luke_hair_loss_documentation Cleaned.csv")
 
 # ======== DATASET SELECTOR ==========
 dataset_choice = st.selectbox(
@@ -90,59 +78,257 @@ else:
         df_cleaned = df_predict_cleaned
         df = df_cleaned
 
+        # ===== Data Cleaning Summary =====
+        st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown(f"<p style='font-size:26px; color:{TEXT};'><b>Data Cleaning Summary — Hair Health Prediction Dataset</b></p>", unsafe_allow_html=True)
+
+        # 1️⃣ ID Column Handling
+        st.markdown(f"""
+        <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #5d9189; border-radius:10px;'>
+            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+                <b>ID Column Standardization</b><br>
+                The original <code>ID</code> column was removed and replaced with a new identifier, 
+                as the original only contained sequential assignment without analytical value.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # 2️⃣ Standardized Column Names
+        st.markdown(f"""
+        <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #E67E22; border-radius:10px;'>
+            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+                <b>Standardized Column Names</b><br>
+                All variable names were standardized by capitalizing words and replacing spaces with underscores.<br>
+                For example, <code>hormonal_changes</code> → <code>Hormonal_Changes</code>, 
+                <code>medications_and_treatments</code> → <code>Medications_and_Treatments</code>.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+                
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # 3️⃣ Binary Variable Encoding
+        st.markdown(f"""
+        <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #5e928a; border-radius:10px;'>
+            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+                <b>Binary Variable Encoding</b><br>
+                Converted categorical (Yes/No) variables into numerical format for analysis:<br>
+                <code>Genetics, Hormonal_Changes, Poor_Hair_Care_Habits, Environmental_Factors, Smoking, Weight_Loss</code>
+                were encoded as <b>No = 0</b> and <b>Yes = 1</b>.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+                
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # 4️⃣ Ordinal Variable Encoding
+        st.markdown(f"""
+        <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #2a5a55; border-radius:10px;'>
+            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+                <b>Ordinal Variable Encoding</b><br>
+                Assigned numerical values to represent increasing intensity levels in ordinal features:<br>
+                - <code>Stress</code>: Low=0, Moderate=1, High=2
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+                
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # 5️⃣ Age Range Creation
+        st.markdown(f"""
+        <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #5d9189; border-radius:10px;'>
+            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+                <b>Derived Age Ranges</b><br>
+                Created binned age ranges for better analysis:<br>
+                - Bins: [18-30, 30-40, 40-51]<br>
+                - Implementation: <code>pd.cut(Age, bins=[18,30,40,51], labels=['18-30','30-40','40-51'], right=False)</code>
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # 6️⃣ Trailing Spaces Removal
+        st.markdown(f"""
+        <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #E67E22; border-radius:10px;'>
+            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+                <b>Cleaned Trailing Spaces</b><br>
+                Removed trailing spaces from categorical variables to ensure consistency. Examples:<br>
+                - <code>Medical_Conditions</code>: "Eczema " → "Eczema"<br>
+                - <code>Medications_and_Treatments</code>: cleaned similarly<br>
+                - <code>Nutritional_Deficiencies</code>: cleaned similarly
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+                
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # ===== Heading Before Table =====
+        st.markdown(f"""
+        <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'>
+            <h3 style='color:{ACCENT}; font-size:32px; margin:6px 0;'>Unique Values After Cleaning</h3>
+            <p style='color:{BASE_BG}; font-size:20px; margin:0;'>
+                The table below summarizes all unique entries in each column after applying the cleaning and encoding steps.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("<br>", unsafe_allow_html=True)
+
         # ---- Unique values table ----
-        st.markdown(f"<p style='font-size:22px; color:{TEXT};'>Unique values in each column:</p>", unsafe_allow_html=True)
-        unique_values_dict = {col: df_raw[col].dropna().unique() for col in df_raw.columns}
-        unique_values_list = [(col, ', '.join(map(str, vals))) for col, vals in unique_values_dict.items()]
+        unique_values_list = []
+
+        for col in df_cleaned.columns:
+            vals = df_cleaned[col].dropna().unique()
+            
+            # Sort numeric values, keep categorical as-is
+            if pd.api.types.is_numeric_dtype(df_cleaned[col]):
+                vals = sorted(vals)
+            else:
+                vals = list(vals)
+            
+            unique_values_list.append((col, ', '.join(map(str, vals))))
+
         unique_df = pd.DataFrame(unique_values_list, columns=["Column", "Values"])
         st.dataframe(unique_df.style.set_properties(**{'font-size':'20px'}))
 
-        # ---- Encoded variables ----
-        st.markdown(f"<p style='font-size:22px; color:{TEXT};'><b>Encoded Variables:</b></p>", unsafe_allow_html=True)
-        encoded_vars_names = ['Genetics', 'Hormonal_Changes', 'Poor_Hair_Care_Habits', 
-                              'Environmental_Factors', 'Smoking', 'Weight_Loss']
-        for var in encoded_vars_names:
-            st.markdown(f"- <b>{var}</b>", unsafe_allow_html=True)
-
-        # ---- Derived variables ----
-        st.markdown(f"<p style='font-size:22px; color:{TEXT};'><b>Derived Variables:</b></p>", unsafe_allow_html=True)
-        st.markdown("- Stress_Level: Encoded ordinal variable (Low=0, Moderate=1, High=2)", unsafe_allow_html=True)
-        st.markdown("- Age_Range: Binned age ranges (18-30, 30-40, 40-51)", unsafe_allow_html=True)
 
         # ---- Visualizations ----
-        st.markdown(f"<p style='font-size:22px; color:{TEXT};'><b>Age Range Distribution</b></p>", unsafe_allow_html=True)
-        df['Age_Range'] = pd.cut(df['Age'], bins=[18,30,40,51], labels=['18-30','30-40','40-51'], right=False)
-        st.bar_chart(df['Age_Range'].value_counts().sort_index(), use_container_width=True)
+        st.markdown(f"""
+        <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'>
+            <h3 style='color:{ACCENT}; font-size:32px; margin:6px 0;'>Visualizations After Cleaning</h3>
+            <p style='color:{BASE_BG}; font-size:20px; margin:0;'>
+                The following plots highlight the distribution of key variables — including Age Ranges and Stress Levels — 
+                after performing data cleaning and encoding.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
 
-        st.markdown(f"<p style='font-size:22px; color:{TEXT};'><b>Stress Level Distribution</b></p>", unsafe_allow_html=True)
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # ---- Encode and Prepare Columns for Plotting ----
+        df['Age_Range'] = pd.cut(df['Age'], bins=[18,30,40,51], labels=['18-30','30-40','40-51'], right=False)
         df['Stress_Level'] = df['Stress'].map({'Low':0,'Moderate':1,'High':2})
-        st.bar_chart(df['Stress_Level'].value_counts().sort_index(), use_container_width=True)
+
+        # ---- Plots ----
+        fig, axes = plt.subplots(1,2, figsize=(14,4))  # Two plots: Age Range & Stress Level
+        sns.countplot(x='Age_Range', data=df, palette=['#86aca9','#5d9189','#A8D5BA'], ax=axes[0])
+        axes[0].set_title("Age Range Distribution", fontsize=16)
+        sns.countplot(x='Stress_Level', data=df, palette=['#86aca9','#5d9189','#A8D5BA'], ax=axes[1])
+        axes[1].set_title("Stress Level Distribution", fontsize=16)
+
+        for ax in axes:
+            ax.tick_params(axis='x', labelsize=12)
+            ax.tick_params(axis='y', labelsize=12)
+
+        st.pyplot(fig)
+
 
     else:
         df = df_luke_cleaned
+        
+        # ===== Data Cleaning Summary =====
+        st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown(f"<p style='font-size:26px; color:{TEXT};'><b>Data Cleaning Summary — Luke Hair Loss Dataset</b></p>", unsafe_allow_html=True)
 
+        # 1️⃣ Variable Renaming
+        st.markdown(f"""
+        <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #5d9189; border-radius:10px;'>
+            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+                <b>Standardized Column Names</b><br>
+                All variable names were standardized by capitalizing words and replacing spaces with underscores. 
+                <br>For instance, <code>hair loss</code> → <code>Hair_Loss</code> and <code>pressure level</code> → <code>Pressure_Level</code>.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # 2️⃣ Value Standardization
+        st.markdown(f"""
+        <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #E67E22; border-radius:10px;'>
+            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+                <b>Standardized Categorical Values</b><br>
+                Modified categorical entries to ensure consistency across the dataset.<br>
+                - <code>Hair_Washing</code>: replaced <b>Y</b> and <b>N</b> with <b>Yes</b> and <b>No</b>.<br>
+                - <code>School_Assessment</code>: standardized to <b>Individual Assessment</b> and <b>Team Assessment</b> instead of abbreviations.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        st.markdown("<br>", unsafe_allow_html=True)
+        
+        # 3️⃣ Binary Encoding
+        st.markdown(f"""
+        <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #5e928a; border-radius:10px;'>
+            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+                <b>Binary Variable Encoding</b><br>
+                Converted categorical (Yes/No) variables into numerical format for analysis:<br>
+                - <code>Swimming</code> and <code>Hair_Washing</code> were encoded as <b>No = 0</b> and <b>Yes = 1</b>.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # 4️⃣ Ordinal Encoding
+        st.markdown(f"""
+        <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #2a5a55; border-radius:10px;'>
+            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+                <b>Ordinal Variable Encoding</b><br>
+                Assigned numerical values to represent increasing intensity levels in ordinal features:<br>
+                - <code>Hair_Loss</code>: No=0, Low=1, Moderate=2, High=3<br>
+                - <code>Stress_Level</code>: Low=0, Moderate=1, High=2<br>
+                - <code>Pressure_Level</code>: Low=0, Moderate=1, High=2<br>
+                - <code>Dandruff</code>: None=0, Few=1, Many=2
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # Continue to show the unique values table
+        st.markdown(f"""
+        <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'>
+            <h3 style='color:{ACCENT}; font-size:32px; margin:6px 0;'>Unique Values After Cleaning</h3>
+            <p style='color:{BASE_BG}; font-size:20px; margin:0;'>
+                The table below summarizes all unique entries in each column after applying the cleaning and encoding steps.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("<br>", unsafe_allow_html=True)
+        
         # ---- Unique values table ----
-        st.markdown(f"<p style='font-size:22px; color:{TEXT};'>Unique values in each column:</p>", unsafe_allow_html=True)
-        unique_values_dict = {col: df_luke_raw[col].dropna().unique() for col in df_luke_raw.columns}
-        unique_values_list = [(col, ', '.join(map(str, vals))) for col, vals in unique_values_dict.items()]
+        unique_values_list = []
+
+        for col in df_luke_cleaned.columns:
+            vals = df_luke_cleaned[col].dropna().unique()
+            
+            # Check if the column is numeric
+            if pd.api.types.is_numeric_dtype(df_luke_cleaned[col]):
+                vals = sorted(vals)  # Sort numeric values
+            else:
+                vals = list(vals)  # Keep categorical values as-is
+            
+            unique_values_list.append((col, ', '.join(map(str, vals))))
+
         unique_df = pd.DataFrame(unique_values_list, columns=["Column", "Values"])
         st.dataframe(unique_df.style.set_properties(**{'font-size':'20px'}))
 
-        # ---- Encoded variables 0/1 ----
-        st.markdown(f"<p style='font-size:22px; color:{TEXT};'><b>Encoded Variables (0/1):</b></p>", unsafe_allow_html=True)
-        binary_vars = ['Swimming', 'Hair_Washing', 'Dandruff']
-        for var in binary_vars:
-            st.markdown(f"- <b>{var}</b>", unsafe_allow_html=True)
-            df[var+"_Encoding"] = df[var].map({'No':0,'Yes':1})
 
-        # ---- Encoded ordinal variables ----
-        st.markdown(f"<p style='font-size:22px; color:{TEXT};'><b>Encoded Variables (Ordinal):</b></p>", unsafe_allow_html=True)
-        st.markdown("- Hair_Loss: No=0, Low=1, Moderate=2, High=3", unsafe_allow_html=True)
-        st.markdown("- Stress_Level: Low=0, Moderate=1, High=2", unsafe_allow_html=True)
-        st.markdown("- Pressure_Level: Low=0, Moderate=1, High=2", unsafe_allow_html=True)
+        st.markdown(f"""
+            <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'>
+                <h3 style='color:{ACCENT}; font-size:32px; margin:6px 0;'>Visualizations After Cleaning</h3>
+                <p style='color:{BASE_BG}; font-size:20px; margin:0;'>
+                    The following plots highlight the distribution of key variables — including Hair Loss, Stress Level, and Pressure Level
+                </p>
+            </div>
+        """, unsafe_allow_html=True)
 
-        st.markdown(f"<p style='font-size:22px; color:{TEXT};'><b>Distribution of Hair Loss, Stress, and Pressure Levels</b></p>", unsafe_allow_html=True)
-
+        st.markdown("<br>", unsafe_allow_html=True)
+    
         # ---- Plots ----
         fig, axes = plt.subplots(1,3, figsize=(18,4))
         sns.countplot(x='Hair_Loss', data=df, palette=['#86aca9','#5d9189','#A8D5BA','#E67E22'], ax=axes[0])

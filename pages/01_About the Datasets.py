@@ -336,10 +336,10 @@ def show_dataset_about(df_head, df_analysis, title, description="", source_text=
     st.write("Next, we'll explore how missing data and inconsistencies were handled before analysis.")
 
 # ======== USAGE: dataset selection at start (single-select) ============
-df_raw = load_csv("Data/Predict Hair Fall Raw.csv")
+df_raw = load_csv("Data/Predict Hair Fall.csv")
 df_cleaned = load_csv("Data/Predict Hair Fall Cleaned.csv")
-df2_raw = load_csv("Data/Luke_hair_loss_documentation Raw.csv")
-df2_cleaned = load_csv("Data/luke_hair_loss_documentation Cleaned.csv")
+df2_raw = load_csv("Data/Luke_hair_loss_documentation.csv")
+df2_cleaned = load_csv("Data/Luke_hair_loss_documentation Cleaned.csv")
 
 st.markdown("<hr style='border:0px solid #AAA; margin:16px 0;'>", unsafe_allow_html=True)
 
