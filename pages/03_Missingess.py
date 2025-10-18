@@ -30,24 +30,12 @@ st.markdown(f"""
     </style>
 """, unsafe_allow_html=True)
 
-# ======== SIDEBAR (same style as other pages) ==========
-st.sidebar.markdown(
-    f"""
-    <div style='padding:14px; border-radius:8px; background-color: {BASE_BG};'>
-        <h3 style='margin:0; font-size:22px; color:{ACCENT};'>Hairfall Dashboard</h3>
-        <p style='margin:6px 0 0 0; font-size:22px; color:{TEXT};'>
-            Missingness analysis and patterns.
-        </p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
 
 # ======== HEADER (same style) ==========
 st.markdown(
     f"""
     <div style='background-color:{BASE_BG}; padding:12px; border-radius:40px;'>
-        <h1 style='text-align:center; font-size:40px; color:#5e928a; margin:6px 0;'>Missingness Analysis</h1>
+        <h1 style='text-align:center; font-size:30px; color:#5e928a; margin:6px 0;'>Missingness Analysis</h1>
         <p style='text-align:center; font-size:22px; color: #2a5a55; margin:0px 0 15px 0;'>
             Visualize and investigate patterns of missing data across datasets.
         </p>
