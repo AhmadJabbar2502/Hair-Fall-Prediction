@@ -125,11 +125,7 @@ else:
                     f"""
                     <div style='background-color:#E6F4EA; padding:14px; border-radius:10px;'>
                         <p style='font-size:20px; color:{TEXT}; margin:0;'>
-                        <b>Observation:</b> At first glance the missingness appears similar to MCAR.
-                        From the heatmap we see possible subtle patterns — we will run statistical tests
-                        (e.g. Chi-squared) to check whether missingness relates to <b>Stress Level</b> or <b>Age Range</b>.
-                        Early checks suggest that people with higher stress levels and higher age ranges
-                        may be less likely to report Medical Conditions.
+                        <b>Observation:</b> The missingness pattern initially appeared to be random, but further analysis confirmed it is not MCAR. Statistical tests (including Chi-squared) showed a significant relationship between missingness and both Stress Level and Age Range. Individuals with higher stress levels and those in older age ranges were less likely to report their medical conditions, indicating a clear pattern of missingness dependent on these factors.
                         </p>
                     </div>
                     """,
@@ -149,32 +145,41 @@ else:
 
                 hair_data_raw["Medical_Conditions_missing"] = hair_data_raw["Medical_Conditions"].isna().astype(int)
 
-                st.markdown(f"<p style='font-size:20px; color:{TEXT};'><b>Missingness vs Stress Level & Age Range</b></p>", unsafe_allow_html=True)
+                st.markdown(f"<p style='font-size:22px; color:{TEXT}; text-align: center'><b>Missingness vs Stress Level & Age Range</b></p>", unsafe_allow_html=True)
 
                 col3, col4 = st.columns(2, gap="large")
 
                 # Heatmap by Stress Level (green palette)
                 with col3:
-                    # sort by Stress_Level if exists, else use original
+    # sort by Stress_Level if exists, else use original
                     if "Stress_Level" in hair_data_raw.columns:
-                        stress_sorted = hair_data_raw.sort_values("Stress_Level", na_position='last')
+                        # define correct order for logical sorting
+                        stress_order = ["Low", "Moderate", "High"]
+                        hair_data_raw["Stress_Level"] = pd.Categorical(hair_data_raw["Stress_Level"], 
+                                                                    categories=stress_order, 
+                                                                    ordered=True)
+                        stress_sorted = hair_data_raw.sort_values("Stress_Level")
                     else:
                         stress_sorted = hair_data_raw.copy()
+
                     missing_stress_matrix = stress_sorted["Medical_Conditions_missing"].to_numpy().reshape(1, -1)
 
                     fig, ax = plt.subplots(figsize=(10, 2))
                     sns.heatmap(missing_stress_matrix, cmap="YlGn", cbar=True, ax=ax)
-                    # xticks: compute centers for each unique stress label
-                    unique_stress = list(stress_sorted["Stress_Level"].dropna().unique())
+
+                    # xticks: compute centers for each stress level in correct order
+                    unique_stress = [lvl for lvl in stress_order if lvl in stress_sorted["Stress_Level"].unique()]
                     if len(unique_stress) > 0:
-                        xticks = [np.mean(np.where(stress_sorted["Stress_Level"] == lvl)) for lvl in sorted(unique_stress)]
+                        xticks = [np.mean(np.where(stress_sorted["Stress_Level"] == lvl)) for lvl in unique_stress]
                         ax.set_xticks(xticks)
-                        ax.set_xticklabels(sorted(unique_stress), fontsize=11, rotation=0)
+                        ax.set_xticklabels(unique_stress, fontsize=11, rotation=0)
+
                     ax.set_yticks([0])
                     ax.set_yticklabels(["Medical_Conditions Missing"], fontsize=11)
                     ax.set_title("Missingness in Medical Conditions (by Stress Level)", fontsize=14, color=HEADER_COLOR)
                     st.pyplot(fig)
                     plt.close(fig)
+
 
                 # Heatmap by Age Range (green palette)
                 with col4:
