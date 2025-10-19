@@ -6,3 +6,4 @@ seaborn
 scipy
 altair
 Pillow
+plotly.express
