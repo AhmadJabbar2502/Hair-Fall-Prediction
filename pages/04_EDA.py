@@ -3,6 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
+from sklearn.preprocessing import LabelEncoder
+from matplotlib.colors import LinearSegmentedColormap
 import seaborn as sns
 import scipy.stats as stats
 import numpy as np
@@ -91,7 +93,7 @@ if dataset_option == "Hair Health Prediction Dataset":
 
     st.markdown("<br>", unsafe_allow_html=True)
     
-    st.markdown(f""" <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'> <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Feature Distributions</h3> </div> """, unsafe_allow_html=True) 
+    st.markdown(f""" <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'> <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Feature Distributions</h3> </div> """, unsafe_allow_html=True) 
     st.markdown("<br>", unsafe_allow_html=True)
     
     st.markdown(f"""
@@ -182,7 +184,7 @@ if dataset_option == "Hair Health Prediction Dataset":
                 print(f"Error creating interactive distribution plot for {col_choice}: {e}")
 
         
-        st.markdown(f""" <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'> <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Relationships Between Variables</h3> </div> """, unsafe_allow_html=True) 
+        st.markdown(f""" <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'> <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Relationships Between Variables</h3> </div> """, unsafe_allow_html=True) 
         st.markdown("<br>", unsafe_allow_html=True)
         
         
@@ -267,7 +269,7 @@ if dataset_option == "Hair Health Prediction Dataset":
                 st.error("Graph cannot be created.")
                 print(f"Error creating plot for {x_var} vs {y_var}: {e}")
 
-        st.markdown(f""" <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'> <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Correlations and Insights</h3> </div> """, unsafe_allow_html=True) 
+        st.markdown(f""" <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'> <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Correlations and Insights</h3> </div> """, unsafe_allow_html=True) 
         st.markdown("<br>", unsafe_allow_html=True)
         
         st.markdown(f"""
@@ -280,38 +282,53 @@ if dataset_option == "Hair Health Prediction Dataset":
             """, unsafe_allow_html=True)
 
         st.markdown("<br>", unsafe_allow_html=True)
-        df_predict_raw = load_csv("Data/Predict Hair Fall Raw.csv")
-        
-        df_corr = df_predict_raw.copy()
-        for col in df_corr.select_dtypes(include='object').columns:
-            df_corr[col] = pd.factorize(df_corr[col])[0]
+        requested_cols = ['Hair_Loss', 'Genetic_Encoding', 'Hormonal_Changes', 'Stress_Level', 'Age', 'Smoking', 'Weight_Loss']
 
-        # Compute correlation matrix
-        corr_matrix = df_corr.corr()
+# load raw df (you already have df_predict_raw from load_csv)
+        df_corr_src = df_predict_cleaned.copy()
 
-        # Plot heatmap
-        fig = px.imshow(
-            corr_matrix,
-            text_auto=True,
-            color_continuous_scale='YlGnBu',
-            labels=dict(x="Features", y="Features", color="Correlation"),
-            title="Correlation Matrix Heatmap"
-        )
-        fig.update_layout(
-            width=1600,   # set width in pixels
-            height=1200,   # set height in pixels
-            margin=dict(t=60, b=60, l=40, r=40)
-        )
-        st.plotly_chart(fig, use_container_width=True)
-        
-        # ===== Genetics Insight Section =====
-        st.markdown(f"""
-        <div style='background-color:#2a5a55; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'>
-            <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Useful Findings</h3>
-        </div>
-        """, unsafe_allow_html=True)
+        # pick only columns that actually exist in the dataframe
+        cols = [c for c in requested_cols if c in df_corr_src.columns]
+        if not cols:
+            st.error("None of the requested columns were found in the dataset: " + ", ".join(requested_cols))
+        else:
+            # Make a working copy and encode non-numeric columns
+            df_work = df_corr_src[cols].copy()
+            for col in df_work.columns:
+                if df_work[col].dtype == 'object' or df_work[col].dtype.name == 'category':
+                    # factorize (preserves ordering of appearance)
+                    df_work[col] = pd.factorize(df_work[col].astype(str))[0]
 
-        st.markdown("<br>", unsafe_allow_html=True)
+            # compute correlation matrix
+            corr_matrix = df_work.corr()
+
+            # green palette (your chosen greens)
+            colors_palette = ["#c1dab8", "#77a48f", "#4e8f73", "#407059", "#255B42", "#0E3A26"]
+            cmap = LinearSegmentedColormap.from_list("green_palette", colors_palette, N=256)
+
+            # plot
+            plt.figure(figsize=(10, 8))
+            sns.set(font_scale=1.0)
+            ax = sns.heatmap(
+                corr_matrix,
+                annot=True,
+                fmt=".2f",
+                cmap=cmap,
+                vmin=-1,
+                vmax=1,
+                square=False,
+                linewidths=0.8,
+                linecolor='white',
+                cbar_kws={'shrink': 0.7, 'pad': 0.02}
+            )
+
+            ax.set_title("Correlation Matrix — Selected Features (Predict Dataset)", fontsize=16, color=HEADER_COLOR, pad=12)
+            plt.xticks(rotation=45, ha='right')
+            plt.yticks(rotation=0)
+            plt.tight_layout()
+
+            st.pyplot(plt.gcf())
+            plt.close()
 
         # Prepare data for stacked bar
         changeWithTarget = df.groupby(['Genetic_Encoding', 'Hair_Loss']).size().unstack(fill_value=0)
@@ -508,11 +525,595 @@ elif dataset_option == "Luke Hair Loss Dataset":
     if 'df_luke_cleaned' not in globals() or df_luke_cleaned is None:
         st.error("Luke Hair Dataset not loaded.")
     else:
-        df = df_luke_cleaned.copy()         
+        df = df_luke_cleaned.copy()   
+        default_col = 'Hair_Loss'     
+        col_choice = st.selectbox("Feature:", 
+                          options=['Date', 'Hair_Loss', 'Stay_Up_Late', 'Pressure_Level', 
+                                   'Coffee_Consumed', 'Brain_Working_Duration', 'School_Assesssment', 
+                                   'Stress_Level', 'Shampoo_Brand', 'Swimming', 'Hair_Washing', 
+                                   'Hair_Grease', 'Dandruff', 'Libido'], 
+                          index=1 if default_col=='Hair_Loss' else 0)
+
+# Define custom order for categorical features
+        custom_orders = {
+            'Hair_Loss': ['Few', 'Medium', 'Many', 'A lot'],
+            'Pressure_Level': ['Low', 'Medium', 'High', 'Very High'],
+            'Stress_Level': ['Low', 'Medium', 'High', 'Very High'],
+            'Dandruff': ['None', 'Few', 'Many'],
+            'Hair_Washing': ['No', 'Yes'],
+            'Swimming': ['No', 'Yes'],
+            'School_Assesssment': ['No assessment', 'Individual Assessment', 'Team Assessment', 'Final exam', 'Final exam revision' ]
+            
+        }
+
+        try:
+            # prepare counts
+            col_data = df[col_choice].fillna('Missing').astype(str)
+            if col_choice in custom_orders:
+                categories = custom_orders[col_choice]
+                counts = col_data.astype(str).value_counts().reindex(categories, fill_value=0)
+            elif col_choice in ['Coffee_Consumed', 'Brain_Working_Duration', 'Stay_Up_Late']:
+                col_numeric = pd.to_numeric(col_data, errors='coerce')
+                counts = col_numeric.value_counts().sort_index()
+                categories = counts.index.tolist()
+            else:
+                # for other categorical columns
+                counts = col_data.astype(str).value_counts().sort_index()
+                categories = counts.index.tolist()
+            
+            values = counts.values
+
+            # Colors palette
+            colors_palette = ["#c1dab8", "#77a48f", "#4e8f73", "#407059", "#255B42", "#0E3A26"]
+            colors = [colors_palette[i % len(colors_palette)] for i in range(len(categories))]
+
+            # Plotly bar chart
+            fig = go.Figure(
+                data=go.Bar(
+                    x=categories,
+                    y=values,
+                    marker_color=colors,
+                    hovertemplate="<b>%{x}</b><br>Count: %{y}<extra></extra>"
+                )
+            )
+
+            fig.update_layout(
+                title=dict(text=f"Count Distribution — {col_choice}", x=0.35, font=dict(size=23)),
+                xaxis_title=col_choice,
+                yaxis_title="Count",
+                template="simple_white",
+                margin=dict(l=40, r=20, t=60, b=120),
+                xaxis_tickangle=-45,
+                hovermode="closest",
+                height=850,
+                width=250,
+                plot_bgcolor="white",
+                paper_bgcolor="white",
+                xaxis=dict(showgrid=True, gridcolor='rgba(0,0,0,0.1)', zeroline=False),
+                yaxis=dict(showgrid=True, gridcolor='rgba(0,0,0,0.15)', zeroline=False)
+            )
+
+            config = {
+                "displayModeBar": True,
+                "modeBarButtonsToAdd": ["drawrect", "drawopenpath", "eraseshape"],
+                "displaylogo": False,
+            }
+
+            st.plotly_chart(fig, use_container_width=True, config=config)
+
+        except Exception as e:
+            st.error("Graph cannot be created.")
+            print(f"Error creating interactive distribution plot for {col_choice}: {e}")
+        
+        st.markdown("<br>", unsafe_allow_html=True)
+        
+        st.markdown(f""" <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'> <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Relationship Between Variables</h3> </div> """, unsafe_allow_html=True) 
+        st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown(f"""
+        <p style='font-size:18px; color:{TEXT}; margin:0;'>
+            This section explores how different features interact with each other and with <b>Hair_Loss</b>. 
+            Interactive visualizations allow you to examine trends and patterns — for instance, whether higher <b>Coffee Consumption</b> or certain <b>Brain Working Duration</b> are associated with increased hair loss. 
+            Use the selectors below to choose any pair of variables and investigate their relationships.
+        </p>
+            """, unsafe_allow_html=True)
+
+        st.markdown("<br>", unsafe_allow_html=True) 
+        
+        
+        custom_orders = {
+        'Hair_Loss': ['Few', 'Medium', 'Many', 'A lot'],
+        'Pressure_Level': ['Low', 'Medium', 'High', 'Very High'],
+        'Stress_Level': ['Low', 'Medium', 'High', 'Very High'],
+        'Dandruff': ['None', 'Few', 'Many'],
+        'Hair_Washing': ['No', 'Yes'],
+        'Swimming': ['No', 'Yes'],
+        'School_Assesssment': ['No assessment', 'Individual Assessment', 'Team Assessment', 'Final exam', 'Final exam revision' ]
+    }
+
+# ===== Select Variables =====
+        default_x = 'Stay_Up_Late'
+        default_y = 'Hair_Loss'
+
+        x_choice = st.selectbox("X-axis:", options=df.columns.tolist(), index=df.columns.get_loc(default_x))
+        y_choice = st.selectbox("Y-axis:", options=df.columns.tolist(), index=df.columns.get_loc(default_y))
+
+        try:
+            # Prepare data
+            df_plot = df[[x_choice, y_choice]].copy()
+            df_plot[y_choice] = df_plot[y_choice].fillna('Missing')
+            df_plot[x_choice] = df_plot[x_choice].fillna('Missing')
+
+            # ===== Determine categories for X =====
+            col_data = df_plot[x_choice]
+            if x_choice in custom_orders:
+                categories_x = custom_orders[x_choice]
+                counts_x = col_data.astype(str).value_counts().reindex(categories_x, fill_value=0)
+            elif x_choice in ['Coffee_Consumed', 'Brain_Working_Duration', 'Stay_Up_Late']:
+                col_numeric = pd.to_numeric(col_data, errors='coerce')
+                counts_x = col_numeric.value_counts().sort_index()
+                categories_x = counts_x.index.tolist()
+            else:
+                counts_x = col_data.astype(str).value_counts().sort_index()
+                categories_x = counts_x.index.tolist()
+
+            # ===== Determine categories for Y =====
+            col_data_y = df_plot[y_choice].astype(str)
+            if y_choice in custom_orders:
+                categories_y = custom_orders[y_choice]
+            else:
+                categories_y = col_data_y.unique().tolist()
+
+            # ===== Prepare counts for stacked bars =====
+            counts = df_plot.groupby([x_choice, y_choice]).size().reset_index(name='Count')
+
+            # ===== Green-based distinct palette =====
+            colors_palette = ["#b7e4c7", "#2db17a", "#186b46", "#d9a044", "#74c69d", "#c744c1"]
+
+            # ===== Create stacked bar chart =====
+            fig = go.Figure()
+            for i, cat in enumerate(categories_y):
+                cat_data = counts[counts[y_choice] == cat]
+                # Align x values with categories
+                cat_counts = [cat_data.loc[cat_data[x_choice] == x_val, 'Count'].sum() if x_val in cat_data[x_choice].values else 0 for x_val in categories_x]
+                fig.add_trace(go.Bar(
+                    x=categories_x,
+                    y=cat_counts,
+                    name=str(cat),
+                    marker_color=colors_palette[i % len(colors_palette)],
+                    hovertemplate=f"{y_choice}: {cat}<br>{x_choice}: %{{x}}<br>Count: %{{y}}<extra></extra>"
+                ))
+
+            fig.update_layout(
+                barmode='stack',
+                title=f"{y_choice} vs {x_choice}",
+                xaxis_title=x_choice,
+                yaxis_title="Count",
+                template="simple_white",
+                height=600,
+                hovermode="closest"
+            )
+
+            config = {
+                "displayModeBar": True,
+                "modeBarButtonsToAdd": ["drawrect", "drawopenpath", "eraseshape"],
+                "displaylogo": False,
+            }
+            st.plotly_chart(fig, use_container_width=True, config=config)
+
+        except Exception as e:
+            st.error("Graph cannot be created.")
+            print(f"Error creating interactive 2-variable plot: {e}")
+
+        st.markdown(f""" <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'> <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Correlations and Insights</h3> </div> """, unsafe_allow_html=True) 
+        st.markdown("<br>", unsafe_allow_html=True)
+        
+        st.markdown(f"""
+            <p style='font-size:18px; color:{TEXT}; margin:0;'>
+            This section explores correlations between numeric variables and key features in the dataset. 
+            Positive or negative relationships can highlight potential drivers of hair loss, stress levels, and other important outcomes. 
+            Use the heatmap below to quickly identify strong associations.
+            </p>
+            """, unsafe_allow_html=True)
+
+        st.markdown("<br>", unsafe_allow_html=True)
+        
+        
+        cols = ['Date', 'Hair_Loss_Encoding', 'Stay_Up_Late', 'Pressure_Level_Encoding', 
+        'Coffee_Consumed', 'Brain_Working_Duration', 'School_Assesssment', 
+        'Stress_Level_Encoding', 'Shampoo_Brand', 'Swimming', 'Hair_Washing', 
+        'Hair_Grease', 'Dandruff_Encoding', 'Libido']
+
+        df_corr = df_luke_cleaned[cols].copy()
+
+        # Encode categorical columns
+        for col in df_corr.select_dtypes(include='object').columns:
+            df_corr[col] = LabelEncoder().fit_transform(df_corr[col].astype(str))
+
+        # Compute correlation
+        corr_matrix = df_corr.corr()
+
+        # Define green palette
+        colors_palette = ["#c1dab8", "#77a48f", "#4e8f73", "#407059", "#255B42", "#0E3A26"]
+        cmap = LinearSegmentedColormap.from_list("green_palette", colors_palette, N=256)
+
+        # Plot heatmap
+        plt.figure(figsize=(12, 8))
+        sns.heatmap(corr_matrix, annot=True, fmt=".2f", cmap=cmap, cbar=True, linewidths=0.8, linecolor='white')
+        plt.title("Correlation Heatmap — Luke Dataset", fontsize=16, color="#2E8B57")
+        plt.xticks(rotation=45)
+        plt.yticks(rotation=0)
+        plt.tight_layout()
+        st.pyplot(plt.gcf())
+        plt.close() 
+        
+        # --- HAIR LOSS OVER TIME --- 
+        st.markdown(f""" <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'> <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Hair Loss Over Time (Smoothened)</h3> </div> """, unsafe_allow_html=True) 
+        st.markdown("<br>", unsafe_allow_html=True)
+        
+        st.markdown(f"""
+            <p style='font-size:18px; color:{TEXT}; margin:0;'>
+            Using this time series plot, we can observe that there is no consistent trend in hair fall over time. 
+            Any increases or decreases appear to depend on other factors such as <b>Coffee Consumption</b>, <b>Staying Up Late</b>, or <b>Stress Levels</b>.
+            </p>
+            """, unsafe_allow_html=True)
+
+        st.markdown("<br>", unsafe_allow_html=True)
+        
+        df_luke_cleaned['Date'] = pd.to_datetime(df_luke_cleaned['Date'], format='%d/%m/%Y')
+
+# Sort by date
+        df = df_luke_cleaned.sort_values('Date').copy()
+
+        # Apply rolling average to smooth the Hair_Loss_Encoding
+        df['Smoothed_Hair_Loss'] = df['Hair_Loss_Encoding'].rolling(window=5, center=True, min_periods=1).mean()
+
+        # Plot interactive time series
+        fig = px.line(
+            df, 
+            x='Date', 
+            y='Smoothed_Hair_Loss', 
+            labels={'Smoothed_Hair_Loss': 'Hair Loss (Smoothed)', 'Date':'Date'},
+            line_shape='spline',
+            template='simple_white'
+        )
+
+        fig.update_traces(line=dict(color='mediumseagreen', width=3), hovertemplate='Date: %{x|%d-%b-%Y}<br>Hair Loss: %{y:.2f}<extra></extra>')
+        fig.update_layout(height=500, xaxis=dict(showgrid=True), yaxis=dict(showgrid=True))
+        st.plotly_chart(fig, use_container_width=True)
+        
+        
+        st.markdown(f""" <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'> <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Useful Insights </h3> </div> """, unsafe_allow_html=True) 
+        st.markdown("<br>", unsafe_allow_html=True)
+        
+        st.markdown(f"""
+        <p style='font-size:18px; color:{TEXT}; margin:0;'>
+        The analysis reveals that <b>Hair Loss</b> has a positive correlation with several lifestyle and behavioral factors such as 
+        <b>Staying Up Late</b>, <b>Long Brain Working Duration</b>, <b>Hair Grease</b>, <b>Coffee Consumed</b>, <b>Pressure Level</b>, 
+        and <b>Stress Level</b>. 
+        <br><br>
+        This means that whenever Luke experienced higher stress or pressure levels, work for extended periods, consume more coffee, 
+        or frequently stay up late, the likelihood of hair loss tends to increase. 
+        Similarly, higher hair grease buildup — which may block follicles — also appears linked to increased hair shedding. 
+        Overall, these findings suggest that both <b>lifestyle habits</b> and <b>mental well-being</b> play a significant role in influencing hair health.
+        </p>
+        """, unsafe_allow_html=True)
+
+        st.markdown("<br>", unsafe_allow_html=True)
+        
+        cols = ['Hair_Loss_Encoding', 'Stay_Up_Late', 'Pressure_Level_Encoding', 'Coffee_Consumed', 
+        'Brain_Working_Duration', 'Stress_Level_Encoding', 
+        'Shampoo_Brand', 'Swimming', 'Hair_Washing', 'Hair_Grease', 
+        'Dandruff_Encoding', 'Libido']
+
+        df_corr = df_luke_cleaned[cols].copy()
+
+        # Encode categorical columns for correlation
+        from sklearn.preprocessing import LabelEncoder
+
+        for col in df_corr.select_dtypes(include='object').columns:
+            df_corr[col] = LabelEncoder().fit_transform(df_corr[col].astype(str))
+
+        # Compute correlations
+        corr_matrix = df_corr.corr()
+
+        # Extract correlations with Hair_Loss only
+        hair_loss_corr = corr_matrix['Hair_Loss_Encoding'].drop('Hair_Loss_Encoding').sort_values(ascending=False)
+
+        # Create interactive horizontal bar chart
+        colors_palette = ["#c1dab8", "#77a48f", "#4e8f73", "#407059", "#255B42", "#0E3A26"]
+        fig = px.bar(
+            x=hair_loss_corr.values,
+            y=hair_loss_corr.index,
+            orientation='h',
+            color=hair_loss_corr.values,
+            color_continuous_scale=colors_palette,
+            labels={'x':'Correlation with Hair_Loss', 'y':'Feature'},
+            text=hair_loss_corr.values.round(2)
+        )
+
+        fig.update_layout(
+            title=dict(text="Feature Correlation with Hair_Loss", x=0.35, font=dict(size=22)),
+            xaxis=dict(range=[-1,1]),
+            height=600,
+            template="simple_white"
+        )
+
+        fig.update_traces(textposition='outside', hovertemplate='<b>%{y}</b><br>Correlation: %{x:.2f}<extra></extra>')
+
+        st.plotly_chart(fig, use_container_width=True)
+        
+        
+        # --- Section Title ---
+        st.markdown(f""" 
+        <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px; margin-top:40px;'> 
+            <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Bubble Chart of Hair Loss vs Second Variable with Third Variable as Size & Color</h3> 
+        </div> 
+        """, unsafe_allow_html=True)
+
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # --- Description ---
+        st.markdown(f"""
+        <p style='font-size:18px; color:{TEXT}; margin:0;'>
+        This interactive <b>Bubble Chart</b> helps explore how <b>two lifestyle or behavioral factors</b> jointly influence hair loss. 
+        Each point represents an observation, where:
+        <br>• The <b>x-axis</b> shows the chosen second variable,  
+        <br>• The <b>y-axis</b> represents the <b>Hair Loss Encoding</b> (severity of hair loss),  
+        <br>• The <b>bubble size and color</b> correspond to a third variable of your choice.  
+        <br><br>
+        By analyzing this visualization, you can identify how combinations — for instance, <b>higher coffee consumption and late nights</b> — 
+        correlate with greater hair loss intensity.
+        </p>
+        """, unsafe_allow_html=True)
+
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # --- Dropdowns for dynamic variable selection ---
+        second_var = st.selectbox(
+            "Select the second variable (X-axis):",
+            ['Stay_Up_Late', 'Coffee_Consumed', 'Brain_Working_Duration', 'Stress_Level', 
+            'Pressure_Level', 'Hair_Grease', 'Dandruff', 'Libido'],
+            index=1
+        )
+
+        third_var = st.selectbox(
+            "Select the third variable (Bubble Size & Color):",
+            ['Coffee_Consumed', 'Stay_Up_Late', 'Brain_Working_Duration', 'Stress_Level_Encoding', 
+            'Pressure_Level_Encoding', 'Hair_Grease', 'Dandruff_Encoding', 'Libido'],
+            index=2
+        )
+
+        # --- Bubble Chart ---
+        try:
+            fig3 = px.scatter(
+                df,
+                x=second_var,
+                y='Hair_Loss_Encoding',
+                size=third_var,
+                color=third_var,
+                color_continuous_scale='Viridis',
+                hover_data=['Hair_Loss', 'Brain_Working_Duration', 'Stress_Level'],
+                title=f'Bubble Chart of Hair Loss vs {second_var} with {third_var} as Size & Color'
+            )
+
+            fig3.update_layout(
+            template="simple_white",
+            title_x=0.05,
+            title_font=dict(size=20),
+            xaxis_title=second_var,
+            yaxis_title="Hair Loss Encoding",
+            hovermode="closest",
+            height=700,
+            margin=dict(l=40, r=20, t=80, b=80),
+            xaxis=dict(
+                showgrid=True,
+                gridcolor='rgba(0,0,0,0.1)',
+                zeroline=False,
+                linecolor='rgba(0,0,0,0.3)'
+            ),
+            yaxis=dict(
+                showgrid=True,
+                gridcolor='rgba(0,0,0,0.1)',
+                zeroline=False,
+                linecolor='rgba(0,0,0,0.3)'
+            )
+        )
+
+
+            st.plotly_chart(fig3, use_container_width=True)
+
+        except Exception as e:
+            st.error("Could not generate the bubble chart.")
+            print(f"Error generating bubble chart: {e}")
+
+
+        st.markdown(f""" 
+        <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px; margin-top:40px;'> 
+            <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Bubble Chart of Hair Loss with Multi-Variable Interaction</h3> 
+        </div> 
+        """, unsafe_allow_html=True)
+
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # --- Description ---
+        st.markdown(f"""
+        <p style='font-size:18px; color:{TEXT}; margin:0;'>
+        This interactive <b>4-variable bubble chart</b> explores how multiple lifestyle or behavioral factors jointly influence hair loss.  
+        Each bubble represents an individual data point:
+        <br>• <b>X-axis:</b> Second variable of interest  
+        <br>• <b>Y-axis:</b> Hair Loss Encoding (severity)  
+        <br>• <b>Bubble size:</b> Third variable  
+        <br>• <b>Bubble color:</b> Fourth variable  
+        <br><br>
+        For example, you can see how <b>late-night habits (Stay Up Late)</b> and <b>coffee consumption</b> interact,  
+        with <b>stress levels</b> represented through color intensity.  
+        This view helps uncover <b>combined effects</b> that individual correlations might miss.
+        </p>
+        """, unsafe_allow_html=True)
+
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # --- Dropdowns for dynamic selection ---
+        second_var = st.selectbox(
+            "Select the second variable (X-axis):",
+            ['Stay_Up_Late', 'Coffee_Consumed', 'Brain_Working_Duration', 'Stress_Level', 
+            'Pressure_Level', 'Hair_Grease', 'Dandruff', 'Libido'],
+            index=4
+        )
+
+        third_var = st.selectbox(
+            "Select the third variable (Bubble Size):",
+            ['Coffee_Consumed', 'Stay_Up_Late', 'Brain_Working_Duration', 'Stress_Level_Encoding', 
+            'Pressure_Level_Encoding', 'Hair_Grease', 'Dandruff_Encoding', 'Libido'],
+            index=5
+        )
+
+        fourth_var = st.selectbox(
+            "Select the fourth variable (Bubble Color):",
+            ['Coffee_Consumed', 'Stay_Up_Late', 'Brain_Working_Duration', 'Stress_Level_Encoding', 
+            'Pressure_Level_Encoding', 'Hair_Grease', 'Dandruff_Encoding', 'Libido'],
+            index=6
+        )
+
+        # --- Bubble Chart ---
+        try:
+            fig4 = px.scatter(
+                df,
+                x=second_var,
+                y='Hair_Loss_Encoding',
+                size=third_var,
+                color=fourth_var,
+                color_continuous_scale='Viridis',
+                hover_data=['Hair_Loss', 'Brain_Working_Duration', 'Stress_Level'],
+                title=f'Bubble Chart of Hair Loss vs {second_var} (Size = {third_var}, Color = {fourth_var})'
+            )
+
+            # --- Gridline & Style Customization ---
+            fig4.update_layout(
+                template="simple_white",
+                title_x=0,
+                title_font=dict(size=22),
+                xaxis_title=second_var,
+                yaxis_title="Hair Loss Encoding",
+                hovermode="closest",
+                height=750,
+                margin=dict(l=50, r=20, t=80, b=80),
+                xaxis=dict(
+                    showgrid=True,
+                    gridcolor='rgba(0,0,0,0.1)',
+                    zeroline=False,
+                    linecolor='rgba(0,0,0,0.3)'
+                ),
+                yaxis=dict(
+                    showgrid=True,
+                    gridcolor='rgba(0,0,0,0.1)',
+                    zeroline=False,
+                    linecolor='rgba(0,0,0,0.3)'
+                )
+            )
+
+            st.plotly_chart(fig4, use_container_width=True)
+
+        except Exception as e:
+            st.error("Could not generate the 4-variable bubble chart.")
+            print(f"Error generating bubble chart: {e}")
         
 
+        # Optional controls
+        opacity = 1       # set bubble opacity
+        sample_n = None      # set to an int like 1000 to sample points for performance, or None to use all
+
+        # ---------- Section A (single third variable = z, size, color) ----------
+        st.markdown(f""" 
+        <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px; margin-top:30px;'> 
+            <h3 style='color:{ACCENT}; font-size:22px; margin:6px 0;'>3D Scatter: Hair Loss vs Second Variable (Size & Color = Third Variable)</h3> 
+        </div> 
+        """, unsafe_allow_html=True)
+        
+        st.markdown("<br>", unsafe_allow_html=True)
+        
+
+        st.markdown(f"""
+            <p style='font-size:18px; color:{TEXT}; margin:0;'>
+            This interactive <b>3D scatter plot</b> provides a deeper understanding of how multiple variables together influence hair loss patterns.  
+            Each point represents a data observation, and its visual properties carry distinct meanings:
+            <br>• <b>X-axis:</b> Second variable (e.g., Stay Up Late or Coffee Consumed)  
+            <br>• <b>Y-axis:</b> Hair Loss Encoding (severity level)  
+            <br>• <b>Z-axis, Bubble Size, and Color:</b> Third variable of interest  
+            <br><br>
+            By combining <b>magnitude</b> (bubble size) and <b>intensity</b> (color), you can visually interpret how certain factors interact.  
+            For instance, a strong clustering of large, darker bubbles might indicate that <b>increased coffee consumption and higher stress levels</b>  
+            coincide with greater hair loss severity.  
+            This visualization helps uncover <b>non-linear, multi-variable relationships</b> that are not visible in simple pairwise comparisons.
+            </p>
+            """, unsafe_allow_html=True)
+
+        
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        second_var_a = st.selectbox("Section A — Select X variable", 
+                                    options=['Stay_Up_Late','Coffee_Consumed','Brain_Working_Duration','Stress_Level',
+                                            'Pressure_Level','Hair_Grease','Dandruff','Libido'],
+                                    index=0, key="secA_x")
+        third_var_a = st.selectbox("Section A — Select Z / Size / Color variable", 
+                                options=['Stay_Up_Late', 'Coffee_Consumed', 'Brain_Working_Duration', 'Stress_Level_Encoding', 
+                                         'Pressure_Level_Encoding', 'Hair_Grease', 'Dandruff_Encoding', 'Libido'],
+                                index=1, key="secA_z")
+
+        try:
+            # build tmp with required columns (ensure Hair_Loss included for hover)
+            needed_cols = [second_var_a, 'Hair_Loss_Encoding', third_var_a, 'Hair_Loss']
+            # include only columns that actually exist in df
+            needed_cols = [c for c in needed_cols if c in df.columns]
+            tmp = df[needed_cols].copy()
+
+            # coerce numeric where needed
+            for col in [second_var_a, 'Hair_Loss_Encoding', third_var_a]:
+                if col in tmp.columns:
+                    tmp[col] = pd.to_numeric(tmp[col], errors='coerce')
+
+            # sampling for performance (optional)
+            if sample_n is not None and len(tmp) > sample_n:
+                tmp = tmp.sample(sample_n, random_state=42)
+
+            # drop rows missing the core axes
+            core_axes = [c for c in [second_var_a, 'Hair_Loss_Encoding', third_var_a] if c in tmp.columns]
+            tmp = tmp.dropna(subset=core_axes)
+
+            # determine hover columns that exist
+            hover_cols = [c for c in ['Hair_Loss', 'Brain_Working_Duration', 'Stress_Level'] if c in tmp.columns]
+
+            fig_a = px.scatter_3d(
+                tmp,
+                x=second_var_a if second_var_a in tmp.columns else None,
+                y='Hair_Loss_Encoding' if 'Hair_Loss_Encoding' in tmp.columns else None,
+                z=third_var_a if third_var_a in tmp.columns else None,
+                size=third_var_a if third_var_a in tmp.columns else None,
+                color=third_var_a if third_var_a in tmp.columns else None,
+                color_continuous_scale='Viridis',
+                hover_data=hover_cols,
+                title=f'\n\nHair Loss vs {second_var_a} vs {third_var_a} (size & color = {third_var_a})',
+                opacity=opacity
+            )
+
+            fig_a.update_layout(
+                height=700,
+                scene=dict(
+                    xaxis_title=second_var_a,
+                    yaxis_title='Hair_Loss_Encoding',
+                    zaxis_title=third_var_a,
+                    xaxis=dict(showgrid=True, gridcolor='rgba(0,0,0,0.08)'),
+                    yaxis=dict(showgrid=True, gridcolor='rgba(0,0,0,0.08)'),
+                    zaxis=dict(showgrid=True, gridcolor='rgba(0,0,0,0.08)')
+                ),
+                margin=dict(l=20, r=20, t=70, b=20)
+            )
+
+            st.plotly_chart(fig_a, use_container_width=True)
+
+        except Exception as e:
+            st.error("Could not generate Section A 3D chart. See console for details.")
+            print("Section A error:", e)
 
 
-
-
-                                        
+        #

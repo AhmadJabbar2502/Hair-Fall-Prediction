@@ -7,3 +7,6 @@ scipy
 altair
 Pillow
 plotly.express
+plotly.graph_objects
+sklearn.preprocessing
+matplotlib.colors
