@@ -95,9 +95,6 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )
 
-import os
-st.write(os.listdir("Data"))
-
 # ======== HEADER (page) ==========
 st.markdown(
     f"""
@@ -117,6 +114,7 @@ def load_csv(path):
     try:
         return pd.read_csv(path)
     except FileNotFoundError:
+        st.markdown(FileNotFoundError)
         return None
 
 def detect_target(col_candidates, df):
@@ -351,7 +349,7 @@ def show_dataset_about(df_head, df_analysis, title, description="", source_text=
 df_raw = load_csv("Data/Predict Hair Fall.csv")
 df_cleaned = load_csv("Data/Predict Hair Fall Cleaned.csv")
 df2_raw = load_csv("Data/Luke_hair_loss_documentation.csv")
-df2_cleaned = load_csv("Data/Luke_hair_loss_documentation_Cleaned.csv")
+df2_cleaned = load_csv("Data/Luke_hair_loss_documentation Cleaned.csv")
 
 st.markdown("<hr style='border:0px solid #AAA; margin:16px 0;'>", unsafe_allow_html=True)
 
