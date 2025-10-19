@@ -164,7 +164,6 @@ def create_donut_image(df, column, title, top_n=5, colors=None):
 # ======== FUNCTION TO RENDER DATASET SECTION (modified KPI cards and smaller fonts) ==========
 def show_dataset_about(df_head, df_analysis, title, description="", source_text=None, show_head=True, plot_type='default'):
     if df_head is None or df_analysis is None:
-        st.error(df_analysis.head())
         st.error("Dataset file not found.")
         return
 
