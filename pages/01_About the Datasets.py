@@ -362,7 +362,7 @@ if dataset_choice == "Hair Health Prediction Dataset":
 elif dataset_choice == "Luke Hair Loss Dataset":
     show_dataset_about(
         df2_raw,
-        df2_cleaned,
+        df2_raw,
         title="Luke Hair Loss Dataset",
         description="This dataset is about a postgraduate student who has been personally tracking hair loss issues since the age of 20. It records the student’s daily habits and various factors that could affect hair health over time. Hair loss was measured by placing one hand on the forehead, running the fingers through the hair toward the back of the head, and counting the number of hairs that fell on the hand. The data was collected over a period of 400 days.",
         source_text="Kaggle",
