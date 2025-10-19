@@ -56,6 +56,7 @@ df_predict_cleaned = load_csv("Data/Predict Hair Fall Cleaned.csv")
 df_luke_raw = load_csv("Data/Luke_hair_loss_documentation Raw.csv")
 df_luke_cleaned = load_csv("Data/Luke_hair_loss_documentation Cleaned.csv")
 
+
 # ======== DATASET SELECTOR ==========
 dataset_choice = st.selectbox(
     "Select dataset to view:",

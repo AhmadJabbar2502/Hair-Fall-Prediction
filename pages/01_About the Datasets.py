@@ -325,7 +325,16 @@ def show_dataset_about(df_head, df_analysis, title, description="", source_text=
     if "Hair_Loss" in df_analysis.columns:
         st.markdown("<h3 style='color:{0}; text-align:center; font-size:24px;'>Hair Loss Distribution</h3>".format(TEXT), unsafe_allow_html=True)
         fig, ax = plt.subplots(figsize=(8,4))
-        sns.countplot(x='Hair_Loss', data=df_analysis, palette=["#c1dab8", "#94b89e", "#2E8B57", "#2E8B57"], ax=ax)
+        # sns.countplot(x='Hair_Loss', data=df_analysis, palette=["#c1dab8", "#94b89e", "#2E8B57", "#2E8B57"], ax=ax)
+        sns.countplot(
+            x='Hair_Loss',
+            hue='Hair_Loss',        # add hue same as x
+            data=df_analysis,
+            palette=["#c1dab8", "#94b89e", "#2E8B57", "#2E8B57"],
+            legend=False,           # avoid duplicate legend
+            ax=ax
+        )
+
         ax.set_xlabel("Hair Loss", fontsize=12, color=TEXT)
         ax.set_ylabel("Count", fontsize=12, color=TEXT)
         ax.tick_params(axis='x', labelsize=11)
