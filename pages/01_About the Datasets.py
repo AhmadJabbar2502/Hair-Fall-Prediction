@@ -164,6 +164,7 @@ def create_donut_image(df, column, title, top_n=5, colors=None):
 # ======== FUNCTION TO RENDER DATASET SECTION (modified KPI cards and smaller fonts) ==========
 def show_dataset_about(df_head, df_analysis, title, description="", source_text=None, show_head=True, plot_type='default'):
     if df_head is None or df_analysis is None:
+        st.error(df_analysis.head())
         st.error("Dataset file not found.")
         return
 
@@ -325,7 +326,7 @@ def show_dataset_about(df_head, df_analysis, title, description="", source_text=
     if "Hair_Loss" in df_analysis.columns:
         st.markdown("<h3 style='color:{0}; text-align:center; font-size:24px;'>Hair Loss Distribution</h3>".format(TEXT), unsafe_allow_html=True)
         fig, ax = plt.subplots(figsize=(8,4))
-        sns.countplot(x='Hair_Loss', data=df_analysis, palette=["#c1dab8", "#94b89e", "#2E8B57"], ax=ax)
+        sns.countplot(x='Hair_Loss', data=df_analysis, palette=["#c1dab8", "#94b89e", "#2E8B57", "#2E8B57"], ax=ax)
         ax.set_xlabel("Hair Loss", fontsize=12, color=TEXT)
         ax.set_ylabel("Count", fontsize=12, color=TEXT)
         ax.tick_params(axis='x', labelsize=11)
@@ -362,7 +363,7 @@ if dataset_choice == "Hair Health Prediction Dataset":
 elif dataset_choice == "Luke Hair Loss Dataset":
     show_dataset_about(
         df2_raw,
-        df2_raw,
+        df2_cleaned,
         title="Luke Hair Loss Dataset",
         description="This dataset is about a postgraduate student who has been personally tracking hair loss issues since the age of 20. It records the student’s daily habits and various factors that could affect hair health over time. Hair loss was measured by placing one hand on the forehead, running the fingers through the hair toward the back of the head, and counting the number of hairs that fell on the hand. The data was collected over a period of 400 days.",
         source_text="Kaggle",
