@@ -1,1000 +1,1000 @@
-Id,Genetics,Hormonal_Changes,Medical_Conditions,Medications_and_Treatments,Nutritional_Deficiencies,Stress,Age,Poor_Hair_Care_Habits,Environmental_Factors,Smoking,Weight_Loss,Hair_Loss,Genetic_Encoding,Hormonal_Encoding,Poor_Hair_Care_Encoding,Environmental_Encoding,Smoking_Encoding,Weight_Loss_Encoding,Stress_Level,Age_Range,Medical_Conditions_missing
-0,Yes,0,Alopecia Areata,,Magnesium deficiency,Moderate,19,Yes,1,0,0,0,1,0,1,1,0,0,1,0,1
-1,No,0,Eczema,Antibiotics,Magnesium deficiency,High,43,Yes,1,0,0,0,0,0,1,1,0,0,2,2,0
-2,No,0,Dermatosis,Antifungal Cream,Protein deficiency,Moderate,26,Yes,1,0,1,0,0,0,1,1,0,1,1,0,0
-3,Yes,1,Ringworm,Antibiotics,Biotin Deficiency,Moderate,46,Yes,1,0,0,0,1,1,1,1,0,0,1,2,0
-4,No,0,Psoriasis,Accutane,Iron deficiency,Moderate,30,No,1,1,0,1,0,0,0,1,1,0,1,1,0
-5,Yes,0,Psoriasis,Antibiotics,Magnesium deficiency,Low,37,No,1,0,1,1,1,0,0,1,0,1,0,1,0
-6,Yes,1,Scalp Infection,,Selenium deficiency,High,40,Yes,0,0,0,1,1,1,1,0,0,0,2,2,1
-7,Yes,0,Dermatosis,Chemotherapy,Omega-3 fatty acids,High,35,Yes,0,1,0,0,1,0,1,0,1,0,2,1,0
-8,Yes,0,Eczema,Steroids,Selenium deficiency,Moderate,19,No,0,1,1,1,1,0,0,0,1,1,1,0,0
-9,No,1,Ringworm,Rogaine,Magnesium deficiency,Moderate,49,Yes,1,1,0,0,0,1,1,1,1,0,1,2,0
-10,Yes,1,Eczema,Blood Pressure Medication,Biotin Deficiency,High,26,Yes,1,1,0,0,1,1,1,1,1,0,2,0,0
-11,No,1,Alopecia Areata,Accutane,Zinc Deficiency,High,48,No,0,0,0,1,0,1,0,0,0,0,2,2,0
-12,Yes,1,Scalp Infection,Immunomodulators,Biotin Deficiency,Moderate,20,No,1,1,0,1,1,1,0,1,1,0,1,0,0
-13,No,0,Psoriasis,Antibiotics,Vitamin A Deficiency,High,30,Yes,1,1,1,0,0,0,1,1,1,1,2,1,0
-14,Yes,0,Eczema,Antibiotics,Biotin Deficiency,High,34,Yes,1,0,1,0,1,0,1,1,0,1,2,1,0
-15,Yes,1,Scalp Infection,Rogaine,Vitamin D Deficiency,Moderate,29,Yes,0,0,1,0,1,1,1,0,0,1,1,0,0
-16,Yes,0,Seborrheic Dermatitis,Antidepressants,Vitamin D Deficiency,High,46,Yes,1,0,1,0,1,0,1,1,0,1,2,2,0
-17,No,1,Dermatosis,Antibiotics,Zinc Deficiency,Low,19,Yes,0,0,1,1,0,1,1,0,0,1,0,0,0
-18,Yes,1,Dermatosis,Accutane,Biotin Deficiency,Low,26,No,0,1,0,0,1,1,0,0,1,0,0,0,0
-19,Yes,1,Seborrheic Dermatitis,Chemotherapy,Vitamin A Deficiency,High,46,Yes,1,0,1,1,1,1,1,1,0,1,2,2,0
-20,Yes,1,Seborrheic Dermatitis,Accutane,Protein deficiency,High,46,No,1,0,1,1,1,1,0,1,0,1,2,2,0
-21,No,0,Alopecia Areata,Chemotherapy,Zinc Deficiency,High,20,No,1,1,1,1,0,0,0,1,1,1,2,0,1
-22,Yes,1,Psoriasis,Antibiotics,Vitamin D Deficiency,Low,29,No,0,1,1,0,1,1,0,0,1,1,0,0,0
-23,No,1,Scalp Infection,Antidepressants,Vitamin D Deficiency,High,37,No,0,1,0,1,0,1,0,0,1,0,2,1,0
-24,No,1,Dermatitis,Antibiotics,Protein deficiency,High,33,Yes,1,0,0,0,0,1,1,1,0,0,2,1,0
-25,Yes,1,Dermatosis,Heart Medication,Vitamin A Deficiency,Moderate,34,No,0,0,0,0,1,1,0,0,0,0,1,1,0
-26,No,1,Dermatosis,Immunomodulators,Selenium deficiency,High,28,No,0,0,0,0,0,1,0,0,0,0,2,0,0
-27,No,1,Seborrheic Dermatitis,Antifungal Cream,Zinc Deficiency,Low,41,No,0,0,0,0,0,1,0,0,0,0,0,2,0
-28,No,1,Thyroid Problems,Chemotherapy,Omega-3 fatty acids,Low,35,Yes,1,1,0,0,0,1,1,1,1,0,0,1,0
-29,No,1,Dermatitis,Chemotherapy,,Low,21,Yes,1,1,0,0,0,1,1,1,1,0,0,0,0
-30,No,0,Dermatosis,Chemotherapy,,High,22,Yes,1,0,0,0,0,0,1,1,0,0,2,0,0
-31,No,1,Dermatitis,Antibiotics,Iron deficiency,Moderate,45,No,0,0,1,1,0,1,0,0,0,1,1,2,0
-32,Yes,0,Dermatitis,Steroids,Protein deficiency,Moderate,30,Yes,1,0,0,0,1,0,1,1,0,0,1,1,0
-33,Yes,0,Ringworm,Steroids,Selenium deficiency,High,24,Yes,1,0,1,1,1,0,1,1,0,1,2,0,0
-34,No,1,Scalp Infection,Antidepressants,Vitamin D Deficiency,Moderate,31,Yes,1,1,1,1,0,1,1,1,1,1,1,1,0
-35,Yes,1,Dermatitis,Chemotherapy,Zinc Deficiency,Low,30,Yes,1,1,1,0,1,1,1,1,1,1,0,1,0
-36,No,1,Alopecia Areata,Antibiotics,Biotin Deficiency,Low,39,No,0,0,1,1,0,1,0,0,0,1,0,1,0
-37,No,0,Eczema,Heart Medication,,Low,21,Yes,0,0,1,1,0,0,1,0,0,1,0,0,0
-38,No,1,Scalp Infection,Chemotherapy,Zinc Deficiency,Low,24,Yes,1,1,0,0,0,1,1,1,1,0,0,0,0
-39,Yes,1,Seborrheic Dermatitis,Steroids,Omega-3 fatty acids,Moderate,38,No,0,0,0,0,1,1,0,0,0,0,1,1,0
-40,No,0,Psoriasis,Chemotherapy,Vitamin E deficiency,High,19,Yes,1,1,0,0,0,0,1,1,1,0,2,0,1
-41,Yes,1,Dermatosis,Immunomodulators,Magnesium deficiency,High,39,No,0,1,1,1,1,1,0,0,1,1,2,1,0
-42,Yes,0,Alopecia Areata,Accutane,Selenium deficiency,High,30,No,0,0,0,1,1,0,0,0,0,0,2,1,0
-43,No,0,Dermatosis,Blood Pressure Medication,Magnesium deficiency,Low,24,No,1,0,1,1,0,0,0,1,0,1,0,0,0
-44,Yes,1,Thyroid Problems,Rogaine,Vitamin E deficiency,Low,37,No,0,0,0,1,1,1,0,0,0,0,0,1,0
-45,No,0,Androgenetic Alopecia,Accutane,Iron deficiency,Moderate,36,No,0,1,1,1,0,0,0,0,1,1,1,1,0
-46,No,1,Androgenetic Alopecia,Steroids,Vitamin A Deficiency,Moderate,48,Yes,1,0,0,0,0,1,1,1,0,0,1,2,0
-47,No,0,Psoriasis,Steroids,Zinc Deficiency,High,18,No,1,1,0,1,0,0,0,1,1,0,2,0,1
-48,Yes,0,Ringworm,Blood Pressure Medication,Iron deficiency,High,18,No,1,0,1,1,1,0,0,1,0,1,2,0,1
-49,No,0,Scalp Infection,Immunomodulators,Vitamin A Deficiency,Moderate,38,Yes,1,0,1,0,0,0,1,1,0,1,1,1,0
-50,Yes,1,Androgenetic Alopecia,Rogaine,Vitamin D Deficiency,Moderate,46,Yes,1,1,1,1,1,1,1,1,1,1,1,2,0
-51,Yes,0,Psoriasis,Blood Pressure Medication,Vitamin A Deficiency,Low,39,No,1,1,0,1,1,0,0,1,1,0,0,1,0
-52,No,1,Seborrheic Dermatitis,Antibiotics,Protein deficiency,Moderate,31,Yes,1,1,0,1,0,1,1,1,1,0,1,1,0
-53,Yes,1,Androgenetic Alopecia,Heart Medication,Omega-3 fatty acids,Low,28,Yes,1,0,0,0,1,1,1,1,0,0,0,0,0
-54,No,1,Alopecia Areata,Blood Pressure Medication,Iron deficiency,High,28,Yes,0,1,0,1,0,1,1,0,1,0,2,0,0
-55,Yes,0,Thyroid Problems,Steroids,Biotin Deficiency,Low,44,Yes,1,0,1,1,1,0,1,1,0,1,0,2,0
-56,No,0,Ringworm,Blood Pressure Medication,Zinc Deficiency,Moderate,45,No,0,1,0,0,0,0,0,0,1,0,1,2,0
-57,Yes,1,Thyroid Problems,Antidepressants,,Low,21,Yes,0,0,1,1,1,1,1,0,0,1,0,0,0
-58,Yes,1,Seborrheic Dermatitis,Antifungal Cream,Omega-3 fatty acids,High,50,No,1,0,1,0,1,1,0,1,0,1,2,2,1
-59,No,0,Androgenetic Alopecia,Chemotherapy,Biotin Deficiency,Moderate,35,No,1,0,0,1,0,0,0,1,0,0,1,1,0
-60,Yes,0,Eczema,Antidepressants,Selenium deficiency,Low,50,Yes,0,0,0,0,1,0,1,0,0,0,0,2,1
-61,No,0,Dermatitis,Rogaine,Zinc Deficiency,High,34,Yes,1,1,1,0,0,0,1,1,1,1,2,1,0
-62,No,0,Psoriasis,Chemotherapy,Iron deficiency,Low,28,Yes,0,1,0,1,0,0,1,0,1,0,0,0,0
-63,Yes,1,Dermatitis,Antidepressants,Vitamin E deficiency,Moderate,27,No,0,0,1,0,1,1,0,0,0,1,1,0,0
-64,Yes,1,Dermatosis,Rogaine,Magnesium deficiency,Low,35,Yes,1,0,0,1,1,1,1,1,0,0,0,1,0
-65,Yes,1,Dermatitis,Antidepressants,Vitamin D Deficiency,High,25,Yes,0,0,1,0,1,1,1,0,0,1,2,0,0
-66,Yes,0,Dermatosis,Blood Pressure Medication,,Moderate,22,Yes,1,1,0,1,1,0,1,1,1,0,1,0,0
-67,No,1,Seborrheic Dermatitis,Antibiotics,Vitamin D Deficiency,Moderate,43,Yes,1,1,0,0,0,1,1,1,1,0,1,2,0
-68,Yes,0,Thyroid Problems,Accutane,Zinc Deficiency,High,44,No,0,0,0,0,1,0,0,0,0,0,2,2,0
-69,Yes,0,Seborrheic Dermatitis,Heart Medication,Magnesium deficiency,High,34,No,0,1,0,1,1,0,0,0,1,0,2,1,0
-70,Yes,0,Alopecia Areata,Steroids,,Moderate,23,No,1,0,0,1,1,0,0,1,0,0,1,0,0
-71,Yes,0,Psoriasis,Chemotherapy,Vitamin D Deficiency,High,44,No,0,1,1,1,1,0,0,0,1,1,2,2,0
-72,Yes,1,Dermatosis,Heart Medication,Vitamin A Deficiency,Low,24,No,1,1,0,1,1,1,0,1,1,0,0,0,0
-73,No,0,Psoriasis,Antidepressants,Zinc Deficiency,Low,25,No,0,1,1,1,0,0,0,0,1,1,0,0,0
-74,No,1,Seborrheic Dermatitis,Blood Pressure Medication,Zinc Deficiency,Moderate,50,Yes,0,0,1,1,0,1,1,0,0,1,1,2,0
-75,Yes,1,Androgenetic Alopecia,Antifungal Cream,Vitamin D Deficiency,High,38,No,0,0,0,1,1,1,0,0,0,0,2,1,0
-76,No,0,Seborrheic Dermatitis,Immunomodulators,,High,22,No,1,0,0,1,0,0,0,1,0,0,2,0,0
-77,No,1,Dermatosis,Heart Medication,Vitamin E deficiency,High,49,Yes,0,1,1,0,0,1,1,0,1,1,2,2,1
-78,No,1,Dermatosis,Accutane,Zinc Deficiency,Low,34,No,1,0,0,0,0,1,0,1,0,0,0,1,0
-79,No,0,Androgenetic Alopecia,Immunomodulators,Vitamin D Deficiency,High,47,No,1,1,0,1,0,0,0,1,1,0,2,2,1
-80,No,0,Androgenetic Alopecia,Blood Pressure Medication,Vitamin D Deficiency,High,24,Yes,0,1,0,0,0,0,1,0,1,0,2,0,0
-81,No,1,Seborrheic Dermatitis,Accutane,Vitamin E deficiency,Low,41,Yes,0,1,0,0,0,1,1,0,1,0,0,2,0
-82,No,1,Androgenetic Alopecia,Antifungal Cream,Biotin Deficiency,High,18,Yes,0,0,0,0,0,1,1,0,0,0,2,0,1
-83,Yes,1,Scalp Infection,Antifungal Cream,Zinc Deficiency,Moderate,46,Yes,1,1,0,0,1,1,1,1,1,0,1,2,0
-84,Yes,0,Ringworm,Antifungal Cream,Omega-3 fatty acids,Low,43,Yes,1,0,1,0,1,0,1,1,0,1,0,2,0
-85,Yes,1,Seborrheic Dermatitis,Blood Pressure Medication,Vitamin A Deficiency,Low,32,No,0,0,0,1,1,1,0,0,0,0,0,1,0
-86,No,0,Ringworm,Steroids,Zinc Deficiency,Low,31,Yes,1,0,0,1,0,0,1,1,0,0,0,1,0
-87,Yes,1,Dermatitis,Steroids,Magnesium deficiency,Low,37,No,1,1,1,0,1,1,0,1,1,1,0,1,0
-88,No,0,Dermatosis,Antidepressants,Vitamin A Deficiency,High,24,Yes,1,0,0,0,0,0,1,1,0,0,2,0,0
-89,Yes,1,Androgenetic Alopecia,Heart Medication,Iron deficiency,Moderate,46,No,0,0,1,1,1,1,0,0,0,1,1,2,0
-90,Yes,1,Alopecia Areata,Rogaine,Zinc Deficiency,Moderate,19,No,0,1,0,0,1,1,0,0,1,0,1,0,0
-91,Yes,0,Seborrheic Dermatitis,Blood Pressure Medication,Vitamin D Deficiency,Moderate,34,Yes,1,0,0,1,1,0,1,1,0,0,1,1,0
-92,Yes,0,Psoriasis,Antibiotics,Vitamin D Deficiency,Low,29,No,0,0,0,1,1,0,0,0,0,0,0,0,0
-93,No,0,Dermatitis,Steroids,Zinc Deficiency,Moderate,28,Yes,1,1,1,1,0,0,1,1,1,1,1,0,0
-94,No,1,Seborrheic Dermatitis,Antibiotics,Iron deficiency,Moderate,41,Yes,1,0,0,1,0,1,1,1,0,0,1,2,0
-95,Yes,1,Dermatosis,Antifungal Cream,Protein deficiency,Moderate,37,No,0,0,1,1,1,1,0,0,0,1,1,1,0
-96,No,1,Androgenetic Alopecia,Immunomodulators,Iron deficiency,High,19,No,0,0,0,1,0,1,0,0,0,0,2,0,1
-97,Yes,0,Thyroid Problems,Steroids,Biotin Deficiency,Moderate,45,Yes,1,0,0,0,1,0,1,1,0,0,1,2,0
-98,Yes,0,Ringworm,Heart Medication,Vitamin A Deficiency,High,39,No,0,1,1,1,1,0,0,0,1,1,2,1,0
-99,Yes,1,Seborrheic Dermatitis,Rogaine,Iron deficiency,High,24,Yes,1,1,1,0,1,1,1,1,1,1,2,0,0
-100,Yes,1,Androgenetic Alopecia,Antifungal Cream,Magnesium deficiency,Moderate,27,No,0,0,0,1,1,1,0,0,0,0,1,0,0
-101,Yes,1,Ringworm,Heart Medication,Vitamin D Deficiency,Low,34,No,1,1,1,0,1,1,0,1,1,1,0,1,0
-102,Yes,0,Psoriasis,Blood Pressure Medication,Vitamin A Deficiency,Moderate,19,Yes,0,1,0,1,1,0,1,0,1,0,1,0,0
-103,Yes,1,Psoriasis,Antifungal Cream,Iron deficiency,Moderate,41,Yes,0,1,1,0,1,1,1,0,1,1,1,2,0
-104,No,1,Thyroid Problems,Steroids,Vitamin A Deficiency,Low,37,Yes,0,1,0,0,0,1,1,0,1,0,0,1,0
-105,No,0,Ringworm,Antidepressants,Iron deficiency,Low,50,Yes,0,1,0,0,0,0,1,0,1,0,0,2,1
-106,No,1,Thyroid Problems,Antidepressants,Protein deficiency,High,34,Yes,0,0,1,0,0,1,1,0,0,1,2,1,0
-107,Yes,0,Ringworm,Steroids,,High,23,Yes,1,1,1,1,1,0,1,1,1,1,2,0,0
-108,Yes,1,Ringworm,Antidepressants,Zinc Deficiency,Low,37,No,1,1,0,0,1,1,0,1,1,0,0,1,0
-109,No,0,Androgenetic Alopecia,Accutane,Vitamin D Deficiency,Low,50,No,0,0,0,1,0,0,0,0,0,0,0,2,1
-110,Yes,1,Ringworm,Immunomodulators,Omega-3 fatty acids,High,28,Yes,0,0,1,1,1,1,1,0,0,1,2,0,0
-111,No,1,Seborrheic Dermatitis,Antibiotics,Vitamin A Deficiency,High,24,No,1,1,0,1,0,1,0,1,1,0,2,0,0
-112,Yes,1,Alopecia Areata,Antifungal Cream,Vitamin D Deficiency,Moderate,36,No,0,0,1,1,1,1,0,0,0,1,1,1,0
-113,No,1,Alopecia Areata,Antifungal Cream,Selenium deficiency,Low,18,Yes,0,0,0,0,0,1,1,0,0,0,0,0,0
-114,No,1,Androgenetic Alopecia,Blood Pressure Medication,Biotin Deficiency,Moderate,24,Yes,1,1,0,0,0,1,1,1,1,0,1,0,0
-115,Yes,1,Psoriasis,Chemotherapy,Protein deficiency,Low,24,No,1,0,0,0,1,1,0,1,0,0,0,0,0
-116,Yes,0,Thyroid Problems,Antibiotics,,High,23,Yes,0,1,0,0,1,0,1,0,1,0,2,0,0
-117,Yes,0,Androgenetic Alopecia,Antidepressants,Biotin Deficiency,Moderate,47,Yes,0,1,0,1,1,0,1,0,1,0,1,2,0
-118,Yes,1,Androgenetic Alopecia,Heart Medication,Iron deficiency,Moderate,29,Yes,0,1,0,1,1,1,1,0,1,0,1,0,0
-119,No,1,Eczema,Antidepressants,Vitamin E deficiency,Moderate,42,No,0,1,0,1,0,1,0,0,1,0,1,2,0
-120,Yes,0,Dermatitis,Antifungal Cream,Selenium deficiency,Low,27,Yes,0,1,0,0,1,0,1,0,1,0,0,0,0
-121,Yes,0,Psoriasis,Antifungal Cream,Biotin Deficiency,High,35,No,0,0,0,0,1,0,0,0,0,0,2,1,0
-122,No,0,Eczema,Chemotherapy,,Moderate,23,No,0,1,0,0,0,0,0,0,1,0,1,0,0
-123,Yes,0,Scalp Infection,Antidepressants,Protein deficiency,Low,19,Yes,1,0,0,1,1,0,1,1,0,0,0,0,0
-124,Yes,1,Psoriasis,Chemotherapy,Biotin Deficiency,High,24,Yes,1,1,0,0,1,1,1,1,1,0,2,0,0
-125,Yes,1,Alopecia Areata,Steroids,Protein deficiency,Low,35,No,0,1,1,0,1,1,0,0,1,1,0,1,0
-126,No,0,Dermatosis,Antidepressants,Vitamin A Deficiency,Low,30,No,1,0,0,1,0,0,0,1,0,0,0,1,0
-127,Yes,0,Eczema,Antibiotics,Vitamin A Deficiency,Low,48,Yes,1,1,1,0,1,0,1,1,1,1,0,2,0
-128,Yes,1,Thyroid Problems,Heart Medication,Biotin Deficiency,Low,30,Yes,1,1,1,0,1,1,1,1,1,1,0,1,0
-129,Yes,0,Seborrheic Dermatitis,Steroids,Zinc Deficiency,Moderate,39,Yes,0,0,1,0,1,0,1,0,0,1,1,1,0
-130,Yes,0,Psoriasis,Antibiotics,Omega-3 fatty acids,Moderate,47,No,1,1,1,0,1,0,0,1,1,1,1,2,0
-131,Yes,0,Thyroid Problems,Accutane,Biotin Deficiency,Low,43,Yes,1,0,0,1,1,0,1,1,0,0,0,2,0
-132,No,1,Androgenetic Alopecia,Chemotherapy,Magnesium deficiency,High,27,Yes,1,1,1,1,0,1,1,1,1,1,2,0,0
-133,No,1,Androgenetic Alopecia,Antibiotics,Zinc Deficiency,Moderate,42,Yes,1,1,1,0,0,1,1,1,1,1,1,2,0
-134,No,0,Thyroid Problems,Antifungal Cream,,Moderate,23,No,1,1,0,0,0,0,0,1,1,0,1,0,0
-135,Yes,0,Seborrheic Dermatitis,Steroids,Biotin Deficiency,Low,42,Yes,0,1,0,1,1,0,1,0,1,0,0,2,0
-136,No,0,Ringworm,Heart Medication,Selenium deficiency,Low,37,No,0,0,1,1,0,0,0,0,0,1,0,1,0
-137,Yes,0,Androgenetic Alopecia,Antidepressants,Selenium deficiency,High,18,Yes,0,0,1,1,1,0,1,0,0,1,2,0,1
-138,Yes,0,Androgenetic Alopecia,Heart Medication,Vitamin E deficiency,High,34,No,1,1,1,0,1,0,0,1,1,1,2,1,0
-139,No,0,Psoriasis,Heart Medication,Iron deficiency,Low,18,Yes,1,0,0,0,0,0,1,1,0,0,0,0,0
-140,No,0,Scalp Infection,Chemotherapy,Iron deficiency,High,29,Yes,1,0,1,1,0,0,1,1,0,1,2,0,0
-141,No,1,Androgenetic Alopecia,Chemotherapy,Vitamin D Deficiency,High,27,No,1,1,1,1,0,1,0,1,1,1,2,0,0
-142,Yes,0,Scalp Infection,Rogaine,Selenium deficiency,Moderate,35,No,1,0,1,0,1,0,0,1,0,1,1,1,0
-143,No,0,Psoriasis,Rogaine,Biotin Deficiency,Low,39,No,0,0,1,0,0,0,0,0,0,1,0,1,0
-144,Yes,0,Psoriasis,Antidepressants,Omega-3 fatty acids,High,50,Yes,1,0,0,0,1,0,1,1,0,0,2,2,1
-145,Yes,1,Dermatitis,Heart Medication,Omega-3 fatty acids,Moderate,32,Yes,0,0,0,1,1,1,1,0,0,0,1,1,0
-146,No,0,Dermatitis,Accutane,Magnesium deficiency,Moderate,30,Yes,1,0,1,1,0,0,1,1,0,1,1,1,0
-147,No,1,Psoriasis,Antidepressants,Protein deficiency,Low,45,Yes,0,1,1,1,0,1,1,0,1,1,0,2,0
-148,No,1,Dermatitis,Chemotherapy,Zinc Deficiency,Low,19,Yes,0,1,0,0,0,1,1,0,1,0,0,0,0
-149,No,0,Seborrheic Dermatitis,Antidepressants,Iron deficiency,Low,32,Yes,1,0,0,1,0,0,1,1,0,0,0,1,0
-150,No,1,Seborrheic Dermatitis,Steroids,Iron deficiency,Moderate,20,No,1,1,0,1,0,1,0,1,1,0,1,0,0
-151,No,1,Thyroid Problems,Antidepressants,Zinc Deficiency,Moderate,32,No,1,0,0,0,0,1,0,1,0,0,1,1,0
-152,Yes,0,Scalp Infection,Immunomodulators,Protein deficiency,High,43,Yes,1,0,1,0,1,0,1,1,0,1,2,2,0
-153,No,1,Androgenetic Alopecia,Rogaine,Protein deficiency,Moderate,38,Yes,0,0,1,1,0,1,1,0,0,1,1,1,0
-154,Yes,0,Thyroid Problems,Chemotherapy,Vitamin E deficiency,Low,32,Yes,0,0,0,1,1,0,1,0,0,0,0,1,0
-155,Yes,1,Androgenetic Alopecia,Steroids,Iron deficiency,High,26,Yes,1,0,1,1,1,1,1,1,0,1,2,0,0
-156,No,1,Eczema,Antidepressants,Vitamin D Deficiency,Low,32,No,1,0,0,0,0,1,0,1,0,0,0,1,0
-157,No,0,Thyroid Problems,Rogaine,Omega-3 fatty acids,Low,41,Yes,1,1,0,1,0,0,1,1,1,0,0,2,0
-158,No,0,Seborrheic Dermatitis,Steroids,Vitamin E deficiency,High,33,Yes,0,0,1,0,0,0,1,0,0,1,2,1,0
-159,Yes,0,Eczema,Antifungal Cream,Magnesium deficiency,Moderate,20,No,0,1,1,1,1,0,0,0,1,1,1,0,0
-160,Yes,0,Alopecia Areata,Antidepressants,Selenium deficiency,Moderate,35,Yes,0,0,1,1,1,0,1,0,0,1,1,1,0
-161,No,0,Androgenetic Alopecia,Rogaine,Biotin Deficiency,Low,26,Yes,0,1,0,0,0,0,1,0,1,0,0,0,0
-162,Yes,0,Androgenetic Alopecia,Accutane,Selenium deficiency,Moderate,39,No,0,1,0,1,1,0,0,0,1,0,1,1,0
-163,Yes,0,Dermatosis,Heart Medication,Omega-3 fatty acids,Moderate,30,No,1,1,0,0,1,0,0,1,1,0,1,1,0
-164,Yes,0,Dermatosis,Immunomodulators,Protein deficiency,Low,25,Yes,1,0,1,0,1,0,1,1,0,1,0,0,0
-165,No,0,Alopecia Areata,Antibiotics,Selenium deficiency,Low,49,No,1,0,0,0,0,0,0,1,0,0,0,2,1
-166,Yes,0,Seborrheic Dermatitis,Rogaine,Protein deficiency,Moderate,33,No,1,0,0,0,1,0,0,1,0,0,1,1,0
-167,No,1,Scalp Infection,Rogaine,Protein deficiency,High,42,Yes,1,1,0,0,0,1,1,1,1,0,2,2,0
-168,Yes,0,Seborrheic Dermatitis,Blood Pressure Medication,Vitamin A Deficiency,High,43,Yes,1,0,0,0,1,0,1,1,0,0,2,2,0
-169,Yes,0,Androgenetic Alopecia,Antidepressants,Biotin Deficiency,Moderate,45,No,1,1,1,1,1,0,0,1,1,1,1,2,0
-170,Yes,1,Psoriasis,Accutane,,Low,23,Yes,0,1,1,1,1,1,1,0,1,1,0,0,0
-171,No,0,Psoriasis,Antifungal Cream,Zinc Deficiency,Moderate,50,Yes,1,1,0,0,0,0,1,1,1,0,1,2,0
-172,No,1,Alopecia Areata,Heart Medication,Selenium deficiency,Moderate,26,Yes,0,1,1,0,0,1,1,0,1,1,1,0,0
-173,No,0,Dermatosis,Blood Pressure Medication,Vitamin D Deficiency,High,46,No,0,1,1,1,0,0,0,0,1,1,2,2,0
-174,Yes,0,Androgenetic Alopecia,Antibiotics,Vitamin A Deficiency,Low,46,No,0,0,1,0,1,0,0,0,0,1,0,2,0
-175,No,0,Psoriasis,Heart Medication,Selenium deficiency,Low,18,No,0,0,1,1,0,0,0,0,0,1,0,0,0
-176,No,0,Thyroid Problems,Steroids,Vitamin A Deficiency,High,30,No,1,1,1,0,0,0,0,1,1,1,2,1,0
-177,No,0,Alopecia Areata,Immunomodulators,Protein deficiency,High,42,Yes,1,0,0,0,0,0,1,1,0,0,2,2,0
-178,Yes,0,Dermatosis,Antifungal Cream,Biotin Deficiency,Low,36,No,1,0,1,0,1,0,0,1,0,1,0,1,0
-179,Yes,0,Androgenetic Alopecia,Antidepressants,Biotin Deficiency,Low,41,No,0,1,1,0,1,0,0,0,1,1,0,2,0
-180,Yes,1,Dermatosis,Antibiotics,,Moderate,22,Yes,0,1,1,0,1,1,1,0,1,1,1,0,0
-181,No,0,Alopecia Areata,Antifungal Cream,Magnesium deficiency,High,44,Yes,0,1,0,1,0,0,1,0,1,0,2,2,0
-182,Yes,1,Ringworm,Rogaine,Biotin Deficiency,Low,30,No,1,1,1,0,1,1,0,1,1,1,0,1,0
-183,Yes,0,Psoriasis,Steroids,Vitamin E deficiency,High,47,Yes,1,0,0,1,1,0,1,1,0,0,2,2,1
-184,Yes,1,Seborrheic Dermatitis,Heart Medication,Biotin Deficiency,High,18,No,1,1,1,0,1,1,0,1,1,1,2,0,1
-185,No,0,Thyroid Problems,Rogaine,Iron deficiency,Moderate,29,Yes,0,0,1,0,0,0,1,0,0,1,1,0,0
-186,No,0,Dermatitis,Antifungal Cream,Magnesium deficiency,Moderate,29,Yes,1,0,0,0,0,0,1,1,0,0,1,0,0
-187,No,1,Seborrheic Dermatitis,Heart Medication,Biotin Deficiency,Moderate,47,No,0,0,1,1,0,1,0,0,0,1,1,2,0
-188,No,0,Thyroid Problems,Antidepressants,Vitamin D Deficiency,High,36,Yes,0,0,0,0,0,0,1,0,0,0,2,1,0
-189,No,0,Ringworm,Immunomodulators,Zinc Deficiency,Low,39,No,1,1,1,0,0,0,0,1,1,1,0,1,0
-190,No,0,Scalp Infection,Antifungal Cream,Vitamin A Deficiency,Low,31,Yes,0,0,0,0,0,0,1,0,0,0,0,1,0
-191,Yes,0,Dermatosis,Rogaine,Vitamin E deficiency,Low,33,No,0,0,0,1,1,0,0,0,0,0,0,1,0
-192,No,0,Alopecia Areata,Antifungal Cream,Iron deficiency,Moderate,24,No,1,0,0,0,0,0,0,1,0,0,1,0,0
-193,Yes,0,Psoriasis,Heart Medication,Omega-3 fatty acids,Low,32,Yes,0,1,1,0,1,0,1,0,1,1,0,1,0
-194,Yes,1,Alopecia Areata,Immunomodulators,Magnesium deficiency,Moderate,47,No,1,0,0,0,1,1,0,1,0,0,1,2,0
-195,Yes,0,Androgenetic Alopecia,Immunomodulators,Iron deficiency,High,25,No,0,0,1,0,1,0,0,0,0,1,2,0,0
-196,No,0,Alopecia Areata,Chemotherapy,Biotin Deficiency,Low,44,Yes,1,0,0,1,0,0,1,1,0,0,0,2,0
-197,No,0,Dermatosis,Immunomodulators,Zinc Deficiency,High,50,No,0,1,1,1,0,0,0,0,1,1,2,2,1
-198,Yes,1,Thyroid Problems,Antibiotics,Omega-3 fatty acids,Moderate,30,Yes,1,1,0,0,1,1,1,1,1,0,1,1,0
-199,Yes,0,Alopecia Areata,Antifungal Cream,Zinc Deficiency,High,44,No,0,0,1,1,1,0,0,0,0,1,2,2,0
-200,Yes,1,Scalp Infection,Rogaine,Protein deficiency,Moderate,43,No,0,0,0,0,1,1,0,0,0,0,1,2,0
-201,Yes,1,Seborrheic Dermatitis,Heart Medication,Protein deficiency,High,18,No,0,1,0,0,1,1,0,0,1,0,2,0,1
-202,No,0,Androgenetic Alopecia,Immunomodulators,Protein deficiency,High,26,No,0,1,1,1,0,0,0,0,1,1,2,0,0
-203,Yes,1,Eczema,Steroids,Zinc Deficiency,Low,35,No,1,1,0,0,1,1,0,1,1,0,0,1,0
-204,Yes,1,Ringworm,Heart Medication,Selenium deficiency,Moderate,27,No,1,1,0,1,1,1,0,1,1,0,1,0,0
-205,No,1,Androgenetic Alopecia,Antibiotics,Biotin Deficiency,High,48,No,0,0,0,1,0,1,0,0,0,0,2,2,0
-206,Yes,1,Psoriasis,Antifungal Cream,Selenium deficiency,Low,47,Yes,0,0,0,1,1,1,1,0,0,0,0,2,1
-207,No,0,Ringworm,Accutane,Zinc Deficiency,High,45,Yes,0,0,1,0,0,0,1,0,0,1,2,2,0
-208,Yes,0,Thyroid Problems,Blood Pressure Medication,Zinc Deficiency,Low,39,Yes,0,0,0,0,1,0,1,0,0,0,0,1,0
-209,No,0,Psoriasis,Steroids,Vitamin A Deficiency,High,48,No,1,1,0,1,0,0,0,1,1,0,2,2,0
-210,Yes,1,Alopecia Areata,Blood Pressure Medication,Vitamin E deficiency,Low,50,Yes,1,0,1,0,1,1,1,1,0,1,0,2,1
-211,Yes,1,Alopecia Areata,Steroids,Zinc Deficiency,High,28,No,1,1,0,1,1,1,0,1,1,0,2,0,0
-212,No,0,Seborrheic Dermatitis,Antidepressants,Vitamin A Deficiency,Low,45,No,0,0,1,1,0,0,0,0,0,1,0,2,0
-213,No,0,Eczema,Heart Medication,Protein deficiency,Moderate,46,No,0,1,1,1,0,0,0,0,1,1,1,2,0
-214,Yes,1,Thyroid Problems,Heart Medication,,High,23,No,1,0,1,1,1,1,0,1,0,1,2,0,0
-215,No,1,Dermatosis,Chemotherapy,Magnesium deficiency,Moderate,29,Yes,1,0,0,1,0,1,1,1,0,0,1,0,0
-216,No,1,Scalp Infection,Chemotherapy,Selenium deficiency,Low,19,No,0,0,1,1,0,1,0,0,0,1,0,0,0
-217,No,1,Thyroid Problems,Accutane,Omega-3 fatty acids,High,30,No,0,0,1,1,0,1,0,0,0,1,2,1,0
-218,Yes,1,Scalp Infection,Blood Pressure Medication,Biotin Deficiency,Low,32,Yes,1,1,0,0,1,1,1,1,1,0,0,1,0
-219,No,1,Dermatitis,Heart Medication,Zinc Deficiency,Low,18,Yes,1,1,0,0,0,1,1,1,1,0,0,0,0
-220,Yes,1,Androgenetic Alopecia,Chemotherapy,Zinc Deficiency,Moderate,27,No,1,1,1,0,1,1,0,1,1,1,1,0,0
-221,Yes,1,Alopecia Areata,Immunomodulators,Vitamin E deficiency,Moderate,27,No,0,0,0,1,1,1,0,0,0,0,1,0,0
-222,No,1,Thyroid Problems,Heart Medication,Vitamin D Deficiency,Moderate,39,No,1,1,0,0,0,1,0,1,1,0,1,1,0
-223,No,1,Androgenetic Alopecia,Chemotherapy,Omega-3 fatty acids,Low,40,No,0,1,0,1,0,1,0,0,1,0,0,2,1
-224,Yes,1,Psoriasis,Rogaine,Iron deficiency,Moderate,34,Yes,1,0,0,1,1,1,1,1,0,0,1,1,0
-225,Yes,1,Seborrheic Dermatitis,Chemotherapy,,Moderate,23,No,0,0,0,0,1,1,0,0,0,0,1,0,0
-226,Yes,1,Psoriasis,Immunomodulators,,Low,22,No,0,1,0,0,1,1,0,0,1,0,0,0,0
-227,No,0,Ringworm,Immunomodulators,Vitamin D Deficiency,Low,42,Yes,0,1,0,0,0,0,1,0,1,0,0,2,0
-228,No,0,Alopecia Areata,Antibiotics,Vitamin D Deficiency,Low,42,Yes,1,0,1,0,0,0,1,1,0,1,0,2,0
-229,Yes,1,Thyroid Problems,Accutane,Iron deficiency,Moderate,18,No,0,0,1,1,1,1,0,0,0,1,1,0,0
-230,No,0,Eczema,Heart Medication,Zinc Deficiency,Moderate,36,No,1,1,1,0,0,0,0,1,1,1,1,1,0
-231,Yes,1,Androgenetic Alopecia,Rogaine,Biotin Deficiency,Low,32,No,1,0,1,1,1,1,0,1,0,1,0,1,0
-232,Yes,0,Scalp Infection,Antifungal Cream,Vitamin A Deficiency,Low,29,No,1,0,1,0,1,0,0,1,0,1,0,0,0
-233,No,1,Androgenetic Alopecia,Rogaine,Vitamin E deficiency,Moderate,47,No,0,1,1,0,0,1,0,0,1,1,1,2,0
-234,Yes,1,Androgenetic Alopecia,Antifungal Cream,Vitamin E deficiency,Low,30,No,1,0,1,1,1,1,0,1,0,1,0,1,0
-235,No,1,Ringworm,Rogaine,Selenium deficiency,Moderate,18,No,0,1,0,1,0,1,0,0,1,0,1,0,0
-236,No,1,Seborrheic Dermatitis,Rogaine,,High,22,No,1,0,0,1,0,1,0,1,0,0,2,0,0
-237,Yes,0,Dermatosis,Rogaine,Protein deficiency,Moderate,47,Yes,0,1,1,1,1,0,1,0,1,1,1,2,0
-238,Yes,1,Dermatitis,Accutane,Biotin Deficiency,Moderate,38,No,1,0,1,1,1,1,0,1,0,1,1,1,0
-239,Yes,0,Ringworm,Antidepressants,Vitamin A Deficiency,High,18,No,1,1,1,1,1,0,0,1,1,1,2,0,1
-240,Yes,1,Thyroid Problems,Antidepressants,Iron deficiency,Moderate,33,No,1,0,0,1,1,1,0,1,0,0,1,1,0
-241,Yes,1,Dermatitis,Chemotherapy,Biotin Deficiency,Moderate,50,Yes,0,1,1,0,1,1,1,0,1,1,1,2,0
-242,No,0,Androgenetic Alopecia,Antifungal Cream,Vitamin D Deficiency,Moderate,44,Yes,1,1,1,0,0,0,1,1,1,1,1,2,0
-243,No,0,Seborrheic Dermatitis,Accutane,Vitamin A Deficiency,Moderate,19,No,0,1,0,0,0,0,0,0,1,0,1,0,0
-244,No,1,Alopecia Areata,Steroids,Biotin Deficiency,Low,20,Yes,0,1,0,1,0,1,1,0,1,0,0,0,0
-245,No,1,Androgenetic Alopecia,Rogaine,Vitamin A Deficiency,Low,43,Yes,0,1,0,0,0,1,1,0,1,0,0,2,0
-246,Yes,0,Eczema,Steroids,Biotin Deficiency,Low,43,Yes,0,0,0,0,1,0,1,0,0,0,0,2,0
-247,Yes,0,Scalp Infection,Immunomodulators,Zinc Deficiency,Low,43,Yes,0,0,1,0,1,0,1,0,0,1,0,2,0
-248,No,1,Thyroid Problems,Accutane,Protein deficiency,Moderate,34,Yes,1,1,1,0,0,1,1,1,1,1,1,1,0
-249,Yes,1,Seborrheic Dermatitis,Antifungal Cream,Biotin Deficiency,Moderate,39,Yes,1,1,0,1,1,1,1,1,1,0,1,1,0
-250,Yes,1,Seborrheic Dermatitis,Antibiotics,Vitamin E deficiency,High,25,Yes,0,1,1,0,1,1,1,0,1,1,2,0,0
-251,Yes,1,Androgenetic Alopecia,Chemotherapy,Vitamin D Deficiency,Moderate,26,Yes,1,0,1,1,1,1,1,1,0,1,1,0,0
-252,Yes,0,Dermatitis,Rogaine,,Low,21,No,0,1,0,1,1,0,0,0,1,0,0,0,0
-253,Yes,0,Alopecia Areata,Accutane,Protein deficiency,High,37,No,0,1,1,0,1,0,0,0,1,1,2,1,0
-254,Yes,0,Thyroid Problems,Accutane,Selenium deficiency,Moderate,45,Yes,1,1,0,0,1,0,1,1,1,0,1,2,0
-255,No,1,Alopecia Areata,Blood Pressure Medication,Zinc Deficiency,High,24,No,0,1,1,0,0,1,0,0,1,1,2,0,0
-256,No,0,Eczema,Antidepressants,Vitamin D Deficiency,High,48,No,1,1,1,0,0,0,0,1,1,1,2,2,0
-257,Yes,0,Dermatitis,Steroids,Iron deficiency,Moderate,27,No,0,1,0,0,1,0,0,0,1,0,1,0,0
-258,No,1,Seborrheic Dermatitis,Steroids,Vitamin D Deficiency,High,37,No,0,0,0,0,0,1,0,0,0,0,2,1,0
-259,Yes,0,Alopecia Areata,Accutane,Protein deficiency,Low,31,Yes,1,0,1,1,1,0,1,1,0,1,0,1,0
-260,Yes,0,Dermatitis,Blood Pressure Medication,Zinc Deficiency,Moderate,45,No,1,1,1,0,1,0,0,1,1,1,1,2,0
-261,Yes,1,Eczema,Immunomodulators,Vitamin E deficiency,Moderate,25,Yes,0,0,0,1,1,1,1,0,0,0,1,0,0
-262,Yes,0,Scalp Infection,Rogaine,Vitamin A Deficiency,High,42,No,0,1,1,1,1,0,0,0,1,1,2,2,0
-263,Yes,0,Scalp Infection,Chemotherapy,Biotin Deficiency,Low,38,No,1,0,0,1,1,0,0,1,0,0,0,1,0
-264,No,1,Thyroid Problems,Immunomodulators,Vitamin E deficiency,Low,33,Yes,1,0,1,0,0,1,1,1,0,1,0,1,0
-265,Yes,1,Ringworm,Immunomodulators,Vitamin E deficiency,Moderate,34,No,1,1,0,1,1,1,0,1,1,0,1,1,0
-266,Yes,0,Dermatosis,Rogaine,Omega-3 fatty acids,Moderate,46,Yes,1,1,0,0,1,0,1,1,1,0,1,2,0
-267,Yes,1,Dermatosis,Blood Pressure Medication,Zinc Deficiency,Moderate,25,Yes,1,0,0,1,1,1,1,1,0,0,1,0,0
-268,Yes,1,Scalp Infection,Rogaine,Vitamin E deficiency,High,44,No,0,0,0,1,1,1,0,0,0,0,2,2,0
-269,Yes,0,Eczema,Heart Medication,Vitamin D Deficiency,Low,50,No,1,1,1,1,1,0,0,1,1,1,0,2,1
-270,Yes,1,Androgenetic Alopecia,Antidepressants,Biotin Deficiency,High,35,Yes,0,0,0,0,1,1,1,0,0,0,2,1,0
-271,No,1,Seborrheic Dermatitis,Antifungal Cream,Vitamin A Deficiency,High,18,No,1,0,0,1,0,1,0,1,0,0,2,0,1
-272,No,0,Ringworm,Immunomodulators,Selenium deficiency,High,47,Yes,0,0,1,1,0,0,1,0,0,1,2,2,1
-273,No,0,Dermatosis,Accutane,Protein deficiency,Moderate,26,No,1,0,1,0,0,0,0,1,0,1,1,0,0
-274,No,1,Scalp Infection,Blood Pressure Medication,Omega-3 fatty acids,High,26,Yes,0,1,1,0,0,1,1,0,1,1,2,0,0
-275,No,0,Thyroid Problems,Steroids,Magnesium deficiency,Moderate,42,No,0,1,0,1,0,0,0,0,1,0,1,2,0
-276,No,1,Eczema,Antibiotics,Zinc Deficiency,High,37,No,1,0,0,0,0,1,0,1,0,0,2,1,0
-277,No,1,Dermatosis,Steroids,Vitamin E deficiency,Low,44,Yes,0,1,0,0,0,1,1,0,1,0,0,2,0
-278,Yes,1,Eczema,Rogaine,Vitamin D Deficiency,Low,32,No,1,0,1,1,1,1,0,1,0,1,0,1,0
-279,Yes,0,Scalp Infection,Steroids,Magnesium deficiency,Moderate,36,No,0,0,1,1,1,0,0,0,0,1,1,1,0
-280,No,1,Dermatitis,Rogaine,Iron deficiency,Low,37,Yes,1,1,1,1,0,1,1,1,1,1,0,1,0
-281,No,1,Psoriasis,Antidepressants,Protein deficiency,Low,49,No,1,0,1,0,0,1,0,1,0,1,0,2,1
-282,No,0,Dermatitis,Rogaine,Iron deficiency,Low,39,Yes,1,0,1,0,0,0,1,1,0,1,0,1,0
-283,Yes,0,Thyroid Problems,Accutane,Biotin Deficiency,Moderate,47,No,0,0,1,1,1,0,0,0,0,1,1,2,0
-284,No,0,Eczema,Steroids,Zinc Deficiency,Low,25,No,1,1,0,1,0,0,0,1,1,0,0,0,0
-285,No,0,Androgenetic Alopecia,Immunomodulators,Zinc Deficiency,High,47,No,0,0,0,0,0,0,0,0,0,0,2,2,1
-286,No,0,Psoriasis,Chemotherapy,Biotin Deficiency,High,27,Yes,1,1,0,0,0,0,1,1,1,0,2,0,0
-287,Yes,0,Androgenetic Alopecia,Steroids,Magnesium deficiency,High,20,No,0,0,1,1,1,0,0,0,0,1,2,0,1
-288,No,0,Thyroid Problems,Heart Medication,Iron deficiency,Moderate,43,Yes,1,1,1,0,0,0,1,1,1,1,1,2,0
-289,Yes,1,Dermatitis,Heart Medication,Zinc Deficiency,High,33,Yes,0,1,0,1,1,1,1,0,1,0,2,1,0
-290,No,1,Eczema,Rogaine,Vitamin E deficiency,High,24,No,1,1,0,0,0,1,0,1,1,0,2,0,0
-291,Yes,0,Psoriasis,Steroids,Magnesium deficiency,High,43,No,1,1,0,0,1,0,0,1,1,0,2,2,0
-292,Yes,0,Thyroid Problems,Rogaine,Omega-3 fatty acids,High,35,Yes,0,1,0,1,1,0,1,0,1,0,2,1,0
-293,Yes,1,Eczema,Chemotherapy,Zinc Deficiency,Low,28,No,1,1,1,0,1,1,0,1,1,1,0,0,0
-294,Yes,0,Thyroid Problems,Heart Medication,Biotin Deficiency,Low,41,Yes,1,1,0,0,1,0,1,1,1,0,0,2,0
-295,No,1,Thyroid Problems,Heart Medication,Vitamin E deficiency,High,36,No,1,1,0,1,0,1,0,1,1,0,2,1,0
-296,No,1,Androgenetic Alopecia,Antidepressants,Iron deficiency,High,47,No,0,1,0,0,0,1,0,0,1,0,2,2,1
-297,Yes,1,Scalp Infection,Steroids,Zinc Deficiency,Low,33,Yes,1,0,0,1,1,1,1,1,0,0,0,1,0
-298,Yes,1,Ringworm,Steroids,Vitamin A Deficiency,Low,38,No,1,1,0,0,1,1,0,1,1,0,0,1,0
-299,Yes,1,Alopecia Areata,Blood Pressure Medication,,Moderate,21,Yes,0,1,0,1,1,1,1,0,1,0,1,0,0
-300,Yes,1,Ringworm,Accutane,Zinc Deficiency,High,45,No,1,0,1,0,1,1,0,1,0,1,2,2,0
-301,Yes,1,Thyroid Problems,Accutane,Omega-3 fatty acids,Low,27,Yes,1,0,0,0,1,1,1,1,0,0,0,0,0
-302,Yes,1,Eczema,Antifungal Cream,Vitamin D Deficiency,Low,29,No,0,1,1,0,1,1,0,0,1,1,0,0,0
-303,No,0,Dermatitis,Antifungal Cream,,Low,21,Yes,1,0,0,0,0,0,1,1,0,0,0,0,0
-304,No,0,Scalp Infection,Antidepressants,Selenium deficiency,Moderate,36,Yes,0,1,0,0,0,0,1,0,1,0,1,1,0
-305,Yes,1,Dermatosis,Heart Medication,Zinc Deficiency,Moderate,38,Yes,0,1,1,0,1,1,1,0,1,1,1,1,0
-306,Yes,1,Alopecia Areata,Antibiotics,Selenium deficiency,Moderate,32,No,1,1,0,1,1,1,0,1,1,0,1,1,0
-307,No,1,Psoriasis,Chemotherapy,Zinc Deficiency,Low,40,Yes,0,1,1,1,0,1,1,0,1,1,0,2,1
-308,Yes,1,Dermatosis,Accutane,Vitamin E deficiency,Low,40,Yes,0,1,1,1,1,1,1,0,1,1,0,2,1
-309,Yes,0,Eczema,Heart Medication,Zinc Deficiency,Moderate,33,No,0,1,0,1,1,0,0,0,1,0,1,1,0
-310,Yes,0,Dermatitis,Immunomodulators,,Low,22,Yes,0,0,1,1,1,0,1,0,0,1,0,0,0
-311,No,1,Seborrheic Dermatitis,Antifungal Cream,Vitamin E deficiency,Low,18,Yes,1,1,0,0,0,1,1,1,1,0,0,0,0
-312,No,1,Dermatitis,Antidepressants,Selenium deficiency,High,38,No,0,0,1,0,0,1,0,0,0,1,2,1,0
-313,Yes,1,Scalp Infection,Steroids,Zinc Deficiency,High,26,Yes,1,1,1,1,1,1,1,1,1,1,2,0,0
-314,Yes,1,Dermatosis,Antifungal Cream,,High,22,No,0,0,0,0,1,1,0,0,0,0,2,0,0
-315,No,0,Androgenetic Alopecia,Accutane,,Low,21,No,0,0,1,0,0,0,0,0,0,1,0,0,0
-316,No,1,Androgenetic Alopecia,Rogaine,Zinc Deficiency,Moderate,30,No,0,1,0,0,0,1,0,0,1,0,1,1,0
-317,No,1,Scalp Infection,Antifungal Cream,Zinc Deficiency,High,48,Yes,0,1,0,0,0,1,1,0,1,0,2,2,0
-318,Yes,0,Androgenetic Alopecia,Antifungal Cream,Vitamin D Deficiency,Moderate,24,No,1,1,0,1,1,0,0,1,1,0,1,0,0
-319,Yes,1,Dermatitis,Heart Medication,,Moderate,22,Yes,0,1,0,1,1,1,1,0,1,0,1,0,0
-320,No,1,Dermatosis,Accutane,Vitamin A Deficiency,Low,40,Yes,0,0,0,1,0,1,1,0,0,0,0,2,1
-321,Yes,1,Alopecia Areata,Heart Medication,Vitamin D Deficiency,High,44,Yes,1,1,0,1,1,1,1,1,1,0,2,2,0
-322,No,1,Dermatitis,Blood Pressure Medication,Vitamin D Deficiency,Moderate,47,Yes,0,1,1,0,0,1,1,0,1,1,1,2,0
-323,Yes,0,Thyroid Problems,Accutane,Zinc Deficiency,High,47,Yes,0,1,0,1,1,0,1,0,1,0,2,2,1
-324,No,1,Androgenetic Alopecia,Antidepressants,Vitamin D Deficiency,Moderate,47,Yes,1,0,0,1,0,1,1,1,0,0,1,2,0
-325,Yes,0,Psoriasis,Rogaine,Omega-3 fatty acids,Low,41,No,1,1,1,0,1,0,0,1,1,1,0,2,0
-326,No,1,Thyroid Problems,Antibiotics,Vitamin A Deficiency,Low,45,Yes,1,0,0,1,0,1,1,1,0,0,0,2,0
-327,Yes,0,Psoriasis,Antidepressants,Protein deficiency,Moderate,26,Yes,0,1,1,0,1,0,1,0,1,1,1,0,0
-328,Yes,0,Eczema,Accutane,Omega-3 fatty acids,Moderate,29,Yes,0,1,0,1,1,0,1,0,1,0,1,0,0
-329,Yes,0,Androgenetic Alopecia,Rogaine,,Low,22,Yes,0,1,0,0,1,0,1,0,1,0,0,0,0
-330,No,1,Thyroid Problems,Heart Medication,Vitamin D Deficiency,Moderate,39,No,1,0,0,0,0,1,0,1,0,0,1,1,0
-331,No,1,Scalp Infection,Blood Pressure Medication,Vitamin E deficiency,High,27,Yes,1,0,0,1,0,1,1,1,0,0,2,0,0
-332,Yes,1,Androgenetic Alopecia,Rogaine,Vitamin D Deficiency,High,48,Yes,0,0,1,1,1,1,1,0,0,1,2,2,0
-333,Yes,1,Seborrheic Dermatitis,Antibiotics,Vitamin D Deficiency,Moderate,29,No,0,1,1,1,1,1,0,0,1,1,1,0,0
-334,Yes,0,Psoriasis,Accutane,Biotin Deficiency,Low,33,Yes,0,0,0,0,1,0,1,0,0,0,0,1,0
-335,Yes,1,Scalp Infection,Antibiotics,Vitamin D Deficiency,High,46,No,0,0,0,1,1,1,0,0,0,0,2,2,0
-336,No,1,Psoriasis,Blood Pressure Medication,Omega-3 fatty acids,Low,45,No,1,1,1,0,0,1,0,1,1,1,0,2,0
-337,No,1,Thyroid Problems,Blood Pressure Medication,Biotin Deficiency,Moderate,32,No,1,1,1,0,0,1,0,1,1,1,1,1,0
-338,Yes,1,Psoriasis,Blood Pressure Medication,Magnesium deficiency,High,35,Yes,0,1,1,1,1,1,1,0,1,1,2,1,0
-339,No,1,Ringworm,Blood Pressure Medication,Omega-3 fatty acids,High,25,Yes,0,0,0,0,0,1,1,0,0,0,2,0,0
-340,No,1,Dermatosis,Chemotherapy,Biotin Deficiency,Low,31,Yes,0,0,1,0,0,1,1,0,0,1,0,1,0
-341,Yes,1,Alopecia Areata,Antifungal Cream,Zinc Deficiency,High,40,No,1,1,0,0,1,1,0,1,1,0,2,2,1
-342,No,1,Alopecia Areata,Accutane,Omega-3 fatty acids,High,30,No,0,1,0,0,0,1,0,0,1,0,2,1,0
-343,Yes,0,Alopecia Areata,Heart Medication,Protein deficiency,Low,49,No,1,1,0,0,1,0,0,1,1,0,0,2,1
-344,No,1,Androgenetic Alopecia,Steroids,,High,23,Yes,0,0,0,1,0,1,1,0,0,0,2,0,0
-345,No,1,Alopecia Areata,Heart Medication,Omega-3 fatty acids,Low,43,Yes,1,1,1,1,0,1,1,1,1,1,0,2,0
-346,No,1,Dermatitis,Antidepressants,Selenium deficiency,Moderate,38,No,0,1,0,0,0,1,0,0,1,0,1,1,0
-347,Yes,0,Alopecia Areata,Accutane,Biotin Deficiency,High,31,Yes,0,1,0,1,1,0,1,0,1,0,2,1,0
-348,No,1,Scalp Infection,Accutane,Biotin Deficiency,Low,36,No,1,1,1,0,0,1,0,1,1,1,0,1,0
-349,No,1,Dermatosis,Antifungal Cream,Omega-3 fatty acids,High,28,No,1,0,1,1,0,1,0,1,0,1,2,0,0
-350,Yes,0,Thyroid Problems,Steroids,Vitamin E deficiency,High,50,Yes,1,1,1,0,1,0,1,1,1,1,2,2,1
-351,No,1,Thyroid Problems,Rogaine,Vitamin A Deficiency,Low,48,No,0,1,0,1,0,1,0,0,1,0,0,2,0
-352,Yes,1,Seborrheic Dermatitis,Accutane,Selenium deficiency,High,28,No,0,0,0,1,1,1,0,0,0,0,2,0,0
-353,Yes,1,Dermatitis,Chemotherapy,,Low,22,Yes,1,0,0,0,1,1,1,1,0,0,0,0,0
-354,No,0,Alopecia Areata,Chemotherapy,Magnesium deficiency,Low,40,Yes,1,1,0,0,0,0,1,1,1,0,0,2,1
-355,No,1,Alopecia Areata,Immunomodulators,Vitamin A Deficiency,High,27,No,0,1,0,0,0,1,0,0,1,0,2,0,0
-356,Yes,0,Eczema,Chemotherapy,Vitamin A Deficiency,Moderate,32,Yes,0,0,0,0,1,0,1,0,0,0,1,1,0
-357,Yes,1,Eczema,Blood Pressure Medication,Magnesium deficiency,Low,18,No,1,0,1,0,1,1,0,1,0,1,0,0,0
-358,Yes,1,Dermatosis,Blood Pressure Medication,Magnesium deficiency,Low,47,No,0,1,1,0,1,1,0,0,1,1,0,2,1
-359,Yes,0,Dermatitis,Antibiotics,Iron deficiency,Moderate,41,No,0,0,0,1,1,0,0,0,0,0,1,2,0
-360,No,1,Scalp Infection,Antidepressants,Omega-3 fatty acids,High,41,No,1,1,1,1,0,1,0,1,1,1,2,2,0
-361,Yes,0,Dermatitis,Chemotherapy,Vitamin E deficiency,High,43,Yes,1,1,1,1,1,0,1,1,1,1,2,2,0
-362,Yes,0,Thyroid Problems,Antidepressants,Protein deficiency,Moderate,48,No,1,1,1,0,1,0,0,1,1,1,1,2,0
-363,No,0,Seborrheic Dermatitis,Accutane,Vitamin A Deficiency,Low,41,Yes,1,0,1,1,0,0,1,1,0,1,0,2,0
-364,Yes,1,Dermatosis,Antidepressants,Vitamin D Deficiency,Moderate,19,No,1,0,1,1,1,1,0,1,0,1,1,0,0
-365,Yes,0,Androgenetic Alopecia,Chemotherapy,,Moderate,22,No,0,0,1,1,1,0,0,0,0,1,1,0,0
-366,Yes,0,Psoriasis,Antibiotics,Magnesium deficiency,Low,35,No,1,0,1,1,1,0,0,1,0,1,0,1,0
-367,Yes,1,Psoriasis,Heart Medication,Vitamin D Deficiency,High,38,No,0,0,0,1,1,1,0,0,0,0,2,1,0
-368,Yes,0,Ringworm,Antibiotics,Magnesium deficiency,High,20,Yes,1,1,1,0,1,0,1,1,1,1,2,0,1
-369,Yes,0,Seborrheic Dermatitis,Rogaine,Biotin Deficiency,Moderate,40,No,0,1,1,1,1,0,0,0,1,1,1,2,0
-370,No,1,Seborrheic Dermatitis,Accutane,Iron deficiency,Low,30,No,0,1,1,1,0,1,0,0,1,1,0,1,0
-371,Yes,1,Psoriasis,Immunomodulators,Selenium deficiency,Moderate,40,No,0,0,0,1,1,1,0,0,0,0,1,2,0
-372,No,0,Psoriasis,Blood Pressure Medication,Protein deficiency,High,43,No,1,1,1,0,0,0,0,1,1,1,2,2,0
-373,No,0,Ringworm,Chemotherapy,Zinc Deficiency,High,28,No,0,1,1,1,0,0,0,0,1,1,2,0,0
-374,No,0,Psoriasis,Chemotherapy,Omega-3 fatty acids,Low,48,Yes,1,0,0,0,0,0,1,1,0,0,0,2,0
-375,No,0,Ringworm,Antidepressants,Selenium deficiency,Moderate,40,Yes,1,0,0,1,0,0,1,1,0,0,1,2,0
-376,Yes,0,Seborrheic Dermatitis,Antibiotics,Vitamin A Deficiency,Low,33,Yes,1,1,0,0,1,0,1,1,1,0,0,1,0
-377,Yes,1,Alopecia Areata,Rogaine,Vitamin A Deficiency,Low,19,Yes,1,0,1,1,1,1,1,1,0,1,0,0,0
-378,Yes,0,Alopecia Areata,Blood Pressure Medication,Selenium deficiency,Moderate,20,No,1,0,0,1,1,0,0,1,0,0,1,0,0
-379,No,1,Psoriasis,Heart Medication,,Low,23,No,0,0,1,0,0,1,0,0,0,1,0,0,0
-380,Yes,1,Ringworm,Immunomodulators,Vitamin E deficiency,High,36,Yes,1,1,0,0,1,1,1,1,1,0,2,1,0
-381,Yes,1,Dermatosis,Steroids,Zinc Deficiency,Moderate,43,No,0,0,0,1,1,1,0,0,0,0,1,2,0
-382,Yes,1,Thyroid Problems,Steroids,Iron deficiency,Moderate,29,No,0,1,1,1,1,1,0,0,1,1,1,0,0
-383,Yes,1,Thyroid Problems,Accutane,,Moderate,21,Yes,1,0,0,1,1,1,1,1,0,0,1,0,0
-384,No,1,Androgenetic Alopecia,Rogaine,Biotin Deficiency,Low,40,No,1,1,0,0,0,1,0,1,1,0,0,2,1
-385,Yes,1,Dermatitis,Antifungal Cream,Vitamin D Deficiency,Moderate,46,Yes,0,1,0,1,1,1,1,0,1,0,1,2,0
-386,Yes,1,Seborrheic Dermatitis,Chemotherapy,Vitamin A Deficiency,High,19,No,0,1,0,1,1,1,0,0,1,0,2,0,1
-387,Yes,0,Psoriasis,Blood Pressure Medication,Vitamin A Deficiency,High,24,No,1,0,0,1,1,0,0,1,0,0,2,0,0
-388,Yes,0,Thyroid Problems,Antifungal Cream,Selenium deficiency,Low,25,Yes,0,1,1,0,1,0,1,0,1,1,0,0,0
-389,No,1,Dermatitis,Antifungal Cream,Zinc Deficiency,High,43,No,0,0,0,1,0,1,0,0,0,0,2,2,0
-390,No,0,Seborrheic Dermatitis,Antifungal Cream,Vitamin D Deficiency,Moderate,43,Yes,0,1,0,1,0,0,1,0,1,0,1,2,0
-391,No,0,Ringworm,Rogaine,Protein deficiency,Low,39,Yes,0,1,0,1,0,0,1,0,1,0,0,1,0
-392,Yes,0,Dermatosis,Accutane,,Low,21,Yes,1,0,0,1,1,0,1,1,0,0,0,0,0
-393,Yes,1,Psoriasis,Rogaine,Zinc Deficiency,Moderate,46,No,1,0,1,0,1,1,0,1,0,1,1,2,0
-394,No,1,Thyroid Problems,Chemotherapy,Vitamin D Deficiency,Moderate,36,Yes,1,1,1,1,0,1,1,1,1,1,1,1,0
-395,Yes,0,Scalp Infection,Accutane,Vitamin D Deficiency,Low,33,No,0,1,1,0,1,0,0,0,1,1,0,1,0
-396,Yes,1,Androgenetic Alopecia,Blood Pressure Medication,Vitamin A Deficiency,Low,29,Yes,1,0,1,0,1,1,1,1,0,1,0,0,0
-397,No,0,Androgenetic Alopecia,Antidepressants,Vitamin A Deficiency,Moderate,44,No,0,0,0,0,0,0,0,0,0,0,1,2,0
-398,Yes,1,Androgenetic Alopecia,Antibiotics,Vitamin A Deficiency,Moderate,39,Yes,0,1,1,1,1,1,1,0,1,1,1,1,0
-399,Yes,1,Dermatosis,Steroids,Vitamin D Deficiency,Moderate,32,Yes,0,1,0,0,1,1,1,0,1,0,1,1,0
-400,Yes,0,Thyroid Problems,Antidepressants,Biotin Deficiency,Moderate,44,No,1,0,0,0,1,0,0,1,0,0,1,2,0
-401,Yes,1,Alopecia Areata,Antifungal Cream,Biotin Deficiency,Moderate,20,No,1,1,0,1,1,1,0,1,1,0,1,0,0
-402,Yes,0,Alopecia Areata,Chemotherapy,Vitamin D Deficiency,High,42,Yes,1,1,1,1,1,0,1,1,1,1,2,2,0
-403,No,1,Psoriasis,Steroids,Magnesium deficiency,Low,40,No,0,1,1,0,0,1,0,0,1,1,0,2,1
-404,Yes,0,Alopecia Areata,Chemotherapy,Vitamin D Deficiency,High,36,Yes,1,1,0,0,1,0,1,1,1,0,2,1,0
-405,Yes,0,Ringworm,Heart Medication,Biotin Deficiency,Low,27,No,0,0,1,1,1,0,0,0,0,1,0,0,0
-406,Yes,0,Androgenetic Alopecia,Antidepressants,Selenium deficiency,High,18,Yes,0,0,1,1,1,0,1,0,0,1,2,0,1
-407,Yes,1,Thyroid Problems,Antibiotics,Selenium deficiency,Moderate,25,Yes,0,1,1,1,1,1,1,0,1,1,1,0,0
-408,No,0,Psoriasis,Immunomodulators,Vitamin E deficiency,Low,41,Yes,0,0,1,0,0,0,1,0,0,1,0,2,0
-409,Yes,1,Alopecia Areata,Accutane,Selenium deficiency,Moderate,26,No,1,1,0,0,1,1,0,1,1,0,1,0,0
-410,Yes,0,Scalp Infection,Heart Medication,Selenium deficiency,High,34,Yes,1,0,1,1,1,0,1,1,0,1,2,1,0
-411,No,0,Scalp Infection,Rogaine,Biotin Deficiency,High,35,No,0,0,0,1,0,0,0,0,0,0,2,1,0
-412,Yes,0,Dermatitis,Antidepressants,Biotin Deficiency,Moderate,32,Yes,0,1,0,1,1,0,1,0,1,0,1,1,0
-413,No,0,Eczema,Blood Pressure Medication,Omega-3 fatty acids,Low,32,Yes,0,1,0,1,0,0,1,0,1,0,0,1,0
-414,No,0,Thyroid Problems,Rogaine,Selenium deficiency,High,46,Yes,1,1,1,0,0,0,1,1,1,1,2,2,0
-415,Yes,0,Alopecia Areata,Rogaine,Omega-3 fatty acids,Low,47,Yes,1,1,0,0,1,0,1,1,1,0,0,2,1
-416,No,1,Eczema,Blood Pressure Medication,Vitamin A Deficiency,High,45,No,0,0,0,0,0,1,0,0,0,0,2,2,0
-417,Yes,1,Dermatosis,Antidepressants,Protein deficiency,Low,32,No,1,0,1,1,1,1,0,1,0,1,0,1,0
-418,Yes,0,Androgenetic Alopecia,Antibiotics,,Low,21,Yes,1,1,0,1,1,0,1,1,1,0,0,0,0
-419,No,1,Dermatosis,Rogaine,Vitamin E deficiency,Low,40,No,0,0,0,0,0,1,0,0,0,0,0,2,1
-420,No,1,Androgenetic Alopecia,Accutane,Vitamin D Deficiency,Moderate,32,Yes,0,1,1,1,0,1,1,0,1,1,1,1,0
-421,No,0,Eczema,Antibiotics,Protein deficiency,High,36,Yes,0,0,1,1,0,0,1,0,0,1,2,1,0
-422,Yes,0,Psoriasis,Steroids,,High,22,Yes,1,0,0,1,1,0,1,1,0,0,2,0,0
-423,Yes,1,Scalp Infection,Rogaine,Vitamin D Deficiency,Moderate,38,No,1,1,1,0,1,1,0,1,1,1,1,1,0
-424,No,0,Ringworm,Steroids,Protein deficiency,High,45,No,1,1,1,0,0,0,0,1,1,1,2,2,0
-425,No,1,Psoriasis,Immunomodulators,Omega-3 fatty acids,Moderate,41,Yes,0,1,0,0,0,1,1,0,1,0,1,2,0
-426,Yes,0,Eczema,Immunomodulators,Vitamin A Deficiency,Low,19,Yes,1,0,0,0,1,0,1,1,0,0,0,0,0
-427,No,0,Psoriasis,Steroids,,Moderate,23,Yes,0,0,1,0,0,0,1,0,0,1,1,0,0
-428,No,0,Androgenetic Alopecia,Antifungal Cream,Selenium deficiency,Moderate,37,No,0,1,0,1,0,0,0,0,1,0,1,1,0
-429,No,0,Seborrheic Dermatitis,Chemotherapy,Biotin Deficiency,High,35,No,0,1,1,0,0,0,0,0,1,1,2,1,0
-430,Yes,0,Thyroid Problems,Rogaine,Biotin Deficiency,Moderate,20,No,1,1,1,1,1,0,0,1,1,1,1,0,0
-431,No,1,Alopecia Areata,Chemotherapy,Iron deficiency,Low,32,Yes,0,1,1,1,0,1,1,0,1,1,0,1,0
-432,Yes,0,Alopecia Areata,Immunomodulators,Zinc Deficiency,Moderate,44,No,0,0,1,0,1,0,0,0,0,1,1,2,0
-433,Yes,0,Thyroid Problems,Accutane,Vitamin A Deficiency,Low,43,Yes,1,1,1,1,1,0,1,1,1,1,0,2,0
-434,No,1,Thyroid Problems,Blood Pressure Medication,Magnesium deficiency,Low,19,No,0,1,1,1,0,1,0,0,1,1,0,0,0
-435,Yes,1,Alopecia Areata,Accutane,Vitamin E deficiency,Low,48,No,0,0,1,1,1,1,0,0,0,1,0,2,0
-436,Yes,0,Psoriasis,Accutane,Vitamin A Deficiency,Moderate,33,Yes,0,0,0,1,1,0,1,0,0,0,1,1,0
-437,Yes,1,Eczema,Rogaine,Vitamin E deficiency,High,40,Yes,0,1,0,0,1,1,1,0,1,0,2,2,1
-438,Yes,1,Dermatosis,Heart Medication,Vitamin E deficiency,High,27,Yes,0,0,1,0,1,1,1,0,0,1,2,0,0
-439,No,1,Psoriasis,Heart Medication,Vitamin D Deficiency,Low,46,No,1,0,1,0,0,1,0,1,0,1,0,2,0
-440,No,1,Thyroid Problems,Antibiotics,Protein deficiency,Moderate,26,Yes,0,0,1,0,0,1,1,0,0,1,1,0,0
-441,No,1,Scalp Infection,Accutane,Selenium deficiency,Low,24,Yes,0,0,0,0,0,1,1,0,0,0,0,0,0
-442,Yes,0,Psoriasis,Accutane,Iron deficiency,High,47,No,1,1,0,0,1,0,0,1,1,0,2,2,1
-443,No,1,Alopecia Areata,Heart Medication,Magnesium deficiency,Moderate,32,Yes,1,1,0,0,0,1,1,1,1,0,1,1,0
-444,Yes,0,Alopecia Areata,Antifungal Cream,Biotin Deficiency,Low,40,No,1,1,0,0,1,0,0,1,1,0,0,2,1
-445,Yes,0,Ringworm,Antibiotics,Vitamin A Deficiency,Low,18,No,1,0,0,0,1,0,0,1,0,0,0,0,0
-446,No,0,Eczema,Steroids,Vitamin D Deficiency,Moderate,32,No,1,1,1,0,0,0,0,1,1,1,1,1,0
-447,No,1,Eczema,Rogaine,Magnesium deficiency,High,48,Yes,1,1,1,1,0,1,1,1,1,1,2,2,0
-448,No,1,Androgenetic Alopecia,Heart Medication,Iron deficiency,High,49,No,0,0,0,1,0,1,0,0,0,0,2,2,1
-449,Yes,0,Thyroid Problems,Accutane,Biotin Deficiency,Moderate,43,No,1,1,1,0,1,0,0,1,1,1,1,2,0
-450,Yes,0,Psoriasis,Heart Medication,Magnesium deficiency,Low,29,No,1,0,1,1,1,0,0,1,0,1,0,0,0
-451,No,0,Thyroid Problems,Blood Pressure Medication,Selenium deficiency,High,44,No,1,0,1,0,0,0,0,1,0,1,2,2,0
-452,Yes,0,Alopecia Areata,Accutane,Selenium deficiency,High,50,No,0,0,1,0,1,0,0,0,0,1,2,2,1
-453,No,1,Thyroid Problems,Heart Medication,,High,23,No,0,1,1,1,0,1,0,0,1,1,2,0,0
-454,No,0,Dermatosis,Antidepressants,Vitamin D Deficiency,Moderate,32,Yes,0,0,0,0,0,0,1,0,0,0,1,1,0
-455,No,0,Thyroid Problems,Blood Pressure Medication,Selenium deficiency,High,31,No,0,1,1,0,0,0,0,0,1,1,2,1,0
-456,No,0,Eczema,Rogaine,Omega-3 fatty acids,Moderate,34,Yes,1,0,1,0,0,0,1,1,0,1,1,1,0
-457,Yes,0,Psoriasis,Steroids,Iron deficiency,Moderate,41,No,0,1,0,0,1,0,0,0,1,0,1,2,0
-458,No,1,Dermatosis,Heart Medication,Omega-3 fatty acids,Low,42,No,0,0,0,1,0,1,0,0,0,0,0,2,0
-459,No,1,Dermatosis,Antidepressants,Vitamin E deficiency,Moderate,34,No,1,0,1,1,0,1,0,1,0,1,1,1,0
-460,No,1,Scalp Infection,Accutane,Vitamin E deficiency,High,24,Yes,1,1,1,1,0,1,1,1,1,1,2,0,0
-461,Yes,1,Ringworm,Heart Medication,Zinc Deficiency,High,26,No,1,0,0,1,1,1,0,1,0,0,2,0,0
-462,No,0,Thyroid Problems,Steroids,Magnesium deficiency,High,29,Yes,0,1,1,1,0,0,1,0,1,1,2,0,0
-463,No,1,Dermatosis,Antibiotics,Selenium deficiency,Moderate,31,No,0,0,0,1,0,1,0,0,0,0,1,1,0
-464,Yes,1,Alopecia Areata,Rogaine,Biotin Deficiency,Low,18,Yes,0,1,1,1,1,1,1,0,1,1,0,0,0
-465,No,1,Ringworm,Accutane,Protein deficiency,High,37,Yes,1,0,0,0,0,1,1,1,0,0,2,1,0
-466,Yes,1,Ringworm,Chemotherapy,Selenium deficiency,Moderate,50,Yes,0,0,0,0,1,1,1,0,0,0,1,2,0
-467,No,0,Seborrheic Dermatitis,Heart Medication,Magnesium deficiency,Moderate,41,Yes,0,1,0,1,0,0,1,0,1,0,1,2,0
-468,No,0,Psoriasis,Accutane,Protein deficiency,High,29,Yes,1,0,1,1,0,0,1,1,0,1,2,0,0
-469,Yes,1,Androgenetic Alopecia,Antidepressants,Vitamin D Deficiency,High,49,Yes,0,1,1,1,1,1,1,0,1,1,2,2,1
-470,No,1,Seborrheic Dermatitis,Accutane,Omega-3 fatty acids,Moderate,48,No,1,0,0,1,0,1,0,1,0,0,1,2,0
-471,No,1,Dermatosis,Rogaine,Zinc Deficiency,Moderate,27,Yes,1,1,1,1,0,1,1,1,1,1,1,0,0
-472,Yes,0,Eczema,Antifungal Cream,Zinc Deficiency,Low,49,No,1,1,1,0,1,0,0,1,1,1,0,2,1
-473,No,1,Ringworm,Antibiotics,Protein deficiency,Moderate,28,No,1,1,0,1,0,1,0,1,1,0,1,0,0
-474,Yes,0,Psoriasis,Blood Pressure Medication,Vitamin D Deficiency,High,49,No,1,0,0,0,1,0,0,1,0,0,2,2,1
-475,Yes,0,Eczema,Steroids,Vitamin A Deficiency,Low,27,Yes,0,0,1,0,1,0,1,0,0,1,0,0,0
-476,No,0,Scalp Infection,Steroids,Magnesium deficiency,Low,39,Yes,0,1,1,1,0,0,1,0,1,1,0,1,0
-477,No,1,Seborrheic Dermatitis,Immunomodulators,Zinc Deficiency,Moderate,35,No,1,0,1,1,0,1,0,1,0,1,1,1,0
-478,Yes,1,Androgenetic Alopecia,Antidepressants,Magnesium deficiency,Moderate,38,No,0,0,0,1,1,1,0,0,0,0,1,1,0
-479,No,1,Ringworm,Chemotherapy,Vitamin E deficiency,Moderate,37,No,1,1,1,1,0,1,0,1,1,1,1,1,0
-480,No,1,Scalp Infection,Rogaine,,High,23,Yes,0,0,1,0,0,1,1,0,0,1,2,0,0
-481,Yes,0,Alopecia Areata,Antibiotics,Vitamin A Deficiency,Moderate,28,No,0,1,1,0,1,0,0,0,1,1,1,0,0
-482,No,0,Thyroid Problems,Blood Pressure Medication,Vitamin A Deficiency,High,41,No,1,1,1,0,0,0,0,1,1,1,2,2,0
-483,Yes,0,Alopecia Areata,Blood Pressure Medication,Biotin Deficiency,Moderate,35,No,0,1,1,0,1,0,0,0,1,1,1,1,0
-484,No,0,Alopecia Areata,Antifungal Cream,Vitamin A Deficiency,High,28,Yes,1,0,1,0,0,0,1,1,0,1,2,0,0
-485,Yes,0,Scalp Infection,Antifungal Cream,Vitamin A Deficiency,Low,42,No,0,0,1,1,1,0,0,0,0,1,0,2,0
-486,Yes,1,Eczema,Blood Pressure Medication,Omega-3 fatty acids,Low,40,No,1,1,0,1,1,1,0,1,1,0,0,2,1
-487,Yes,1,Dermatitis,Antibiotics,Iron deficiency,Low,33,No,0,1,0,1,1,1,0,0,1,0,0,1,0
-488,No,0,Alopecia Areata,Antifungal Cream,Biotin Deficiency,Low,39,No,0,0,0,0,0,0,0,0,0,0,0,1,0
-489,No,0,Ringworm,Antifungal Cream,Selenium deficiency,High,40,No,0,0,1,1,0,0,0,0,0,1,2,2,1
-490,Yes,0,Thyroid Problems,Heart Medication,Omega-3 fatty acids,Low,47,Yes,1,0,0,0,1,0,1,1,0,0,0,2,1
-491,Yes,0,Dermatitis,Blood Pressure Medication,Magnesium deficiency,Low,28,Yes,0,0,1,1,1,0,1,0,0,1,0,0,0
-492,Yes,1,Ringworm,Steroids,Vitamin D Deficiency,Moderate,18,Yes,0,1,1,0,1,1,1,0,1,1,1,0,0
-493,No,0,Thyroid Problems,Chemotherapy,Zinc Deficiency,Moderate,45,No,1,1,0,0,0,0,0,1,1,0,1,2,0
-494,Yes,0,Scalp Infection,Steroids,Biotin Deficiency,High,50,Yes,0,1,1,0,1,0,1,0,1,1,2,2,1
-495,No,0,Dermatitis,Antidepressants,Vitamin D Deficiency,Low,18,Yes,1,1,1,1,0,0,1,1,1,1,0,0,0
-496,Yes,1,Psoriasis,Rogaine,Iron deficiency,Low,47,Yes,0,0,0,1,1,1,1,0,0,0,0,2,1
-497,No,0,Eczema,Steroids,Omega-3 fatty acids,Low,32,Yes,1,0,1,1,0,0,1,1,0,1,0,1,0
-498,No,0,Seborrheic Dermatitis,Immunomodulators,Vitamin E deficiency,High,43,Yes,1,1,1,0,0,0,1,1,1,1,2,2,0
-499,No,1,Seborrheic Dermatitis,Immunomodulators,Magnesium deficiency,High,18,No,1,0,0,1,0,1,0,1,0,0,2,0,1
-500,No,0,Alopecia Areata,Steroids,Vitamin A Deficiency,High,24,No,0,1,0,1,0,0,0,0,1,0,2,0,0
-501,Yes,1,Androgenetic Alopecia,Heart Medication,Vitamin D Deficiency,Moderate,34,Yes,1,1,0,1,1,1,1,1,1,0,1,1,0
-502,Yes,0,Alopecia Areata,Chemotherapy,Magnesium deficiency,Low,30,No,1,0,1,1,1,0,0,1,0,1,0,1,0
-503,No,1,Ringworm,Antibiotics,Zinc Deficiency,Moderate,41,No,0,1,0,0,0,1,0,0,1,0,1,2,0
-504,No,0,Thyroid Problems,Antidepressants,Selenium deficiency,Moderate,50,Yes,1,1,1,1,0,0,1,1,1,1,1,2,0
-505,Yes,0,Psoriasis,Blood Pressure Medication,Selenium deficiency,Moderate,40,No,1,0,0,0,1,0,0,1,0,0,1,2,0
-506,Yes,0,Dermatitis,Immunomodulators,Iron deficiency,Moderate,31,No,1,1,0,0,1,0,0,1,1,0,1,1,0
-507,Yes,0,Dermatitis,Accutane,Magnesium deficiency,Low,24,Yes,0,1,0,0,1,0,1,0,1,0,0,0,0
-508,Yes,0,Ringworm,Steroids,Selenium deficiency,Moderate,31,Yes,0,1,0,0,1,0,1,0,1,0,1,1,0
-509,Yes,1,Alopecia Areata,Antidepressants,Vitamin A Deficiency,Moderate,37,No,1,1,0,0,1,1,0,1,1,0,1,1,0
-510,No,0,Psoriasis,Steroids,Magnesium deficiency,Moderate,50,Yes,1,1,1,0,0,0,1,1,1,1,1,2,0
-511,Yes,0,Ringworm,Chemotherapy,,High,23,Yes,1,1,1,1,1,0,1,1,1,1,2,0,0
-512,No,1,Scalp Infection,Heart Medication,Vitamin D Deficiency,Moderate,18,No,0,0,0,0,0,1,0,0,0,0,1,0,0
-513,No,0,Seborrheic Dermatitis,Steroids,Omega-3 fatty acids,High,29,No,1,1,0,1,0,0,0,1,1,0,2,0,0
-514,No,0,Seborrheic Dermatitis,Blood Pressure Medication,Zinc Deficiency,High,48,No,1,1,1,1,0,0,0,1,1,1,2,2,0
-515,Yes,0,Thyroid Problems,Blood Pressure Medication,Zinc Deficiency,Moderate,39,No,0,0,1,1,1,0,0,0,0,1,1,1,0
-516,No,1,Ringworm,Heart Medication,Vitamin E deficiency,High,46,No,0,0,1,0,0,1,0,0,0,1,2,2,0
-517,Yes,1,Dermatitis,Antidepressants,,Low,22,Yes,1,1,0,0,1,1,1,1,1,0,0,0,0
-518,No,1,Ringworm,Blood Pressure Medication,Magnesium deficiency,High,47,No,0,0,1,0,0,1,0,0,0,1,2,2,1
-519,No,1,Dermatitis,Heart Medication,Vitamin A Deficiency,High,48,No,1,1,1,1,0,1,0,1,1,1,2,2,0
-520,Yes,0,Androgenetic Alopecia,Heart Medication,Vitamin E deficiency,Low,24,Yes,1,1,0,1,1,0,1,1,1,0,0,0,0
-521,Yes,0,Ringworm,Rogaine,Iron deficiency,Moderate,36,No,0,0,1,1,1,0,0,0,0,1,1,1,0
-522,Yes,1,Psoriasis,Rogaine,Zinc Deficiency,Low,37,Yes,1,1,1,1,1,1,1,1,1,1,0,1,0
-523,No,1,Psoriasis,Antidepressants,Protein deficiency,Moderate,49,No,0,0,0,0,0,1,0,0,0,0,1,2,0
-524,No,0,Dermatitis,Rogaine,Protein deficiency,Moderate,33,No,1,1,1,1,0,0,0,1,1,1,1,1,0
-525,No,0,Dermatitis,Immunomodulators,Omega-3 fatty acids,Low,36,No,0,1,1,1,0,0,0,0,1,1,0,1,0
-526,Yes,1,Scalp Infection,Steroids,Biotin Deficiency,Low,29,No,1,0,0,0,1,1,0,1,0,0,0,0,0
-527,No,1,Dermatitis,Immunomodulators,Protein deficiency,Moderate,44,No,1,0,0,1,0,1,0,1,0,0,1,2,0
-528,Yes,0,Seborrheic Dermatitis,Accutane,Omega-3 fatty acids,Low,36,Yes,0,1,1,1,1,0,1,0,1,1,0,1,0
-529,No,1,Thyroid Problems,Antidepressants,Zinc Deficiency,Low,45,No,1,1,1,0,0,1,0,1,1,1,0,2,0
-530,Yes,1,Androgenetic Alopecia,Rogaine,Omega-3 fatty acids,Moderate,34,Yes,0,1,1,1,1,1,1,0,1,1,1,1,0
-531,Yes,1,Androgenetic Alopecia,Antidepressants,Iron deficiency,Moderate,46,No,0,1,0,0,1,1,0,0,1,0,1,2,0
-532,No,0,Seborrheic Dermatitis,Heart Medication,Vitamin A Deficiency,High,48,No,0,1,0,0,0,0,0,0,1,0,2,2,0
-533,Yes,0,Thyroid Problems,Antifungal Cream,Zinc Deficiency,Moderate,49,Yes,0,0,0,1,1,0,1,0,0,0,1,2,0
-534,No,1,Alopecia Areata,Antifungal Cream,Protein deficiency,Moderate,34,Yes,0,1,1,1,0,1,1,0,1,1,1,1,0
-535,No,1,Psoriasis,Antifungal Cream,Omega-3 fatty acids,Moderate,32,No,0,1,0,1,0,1,0,0,1,0,1,1,0
-536,No,0,Alopecia Areata,Accutane,,High,21,No,0,0,1,0,0,0,0,0,0,1,2,0,0
-537,No,0,Dermatosis,Antidepressants,Omega-3 fatty acids,Moderate,49,Yes,0,1,0,1,0,0,1,0,1,0,1,2,0
-538,Yes,0,Androgenetic Alopecia,Heart Medication,Iron deficiency,Low,48,Yes,1,0,1,0,1,0,1,1,0,1,0,2,0
-539,No,0,Thyroid Problems,Rogaine,Vitamin E deficiency,High,33,No,0,0,0,1,0,0,0,0,0,0,2,1,0
-540,Yes,0,Seborrheic Dermatitis,Rogaine,Omega-3 fatty acids,Low,25,Yes,0,0,1,0,1,0,1,0,0,1,0,0,0
-541,Yes,1,Alopecia Areata,Accutane,Omega-3 fatty acids,Moderate,41,Yes,0,1,0,0,1,1,1,0,1,0,1,2,0
-542,No,0,Androgenetic Alopecia,Immunomodulators,Iron deficiency,Low,41,No,0,0,0,1,0,0,0,0,0,0,0,2,0
-543,Yes,1,Eczema,Antidepressants,Iron deficiency,High,36,No,1,1,1,0,1,1,0,1,1,1,2,1,0
-544,No,0,Dermatosis,Immunomodulators,Vitamin A Deficiency,Moderate,29,No,1,0,0,1,0,0,0,1,0,0,1,0,0
-545,No,1,Seborrheic Dermatitis,Antidepressants,Zinc Deficiency,Low,18,No,1,1,0,1,0,1,0,1,1,0,0,0,0
-546,Yes,0,Scalp Infection,Immunomodulators,Zinc Deficiency,Moderate,43,Yes,1,1,0,1,1,0,1,1,1,0,1,2,0
-547,No,1,Dermatosis,Chemotherapy,Vitamin E deficiency,Low,39,No,1,1,1,0,0,1,0,1,1,1,0,1,0
-548,No,1,Thyroid Problems,Rogaine,Magnesium deficiency,Low,48,Yes,1,0,1,1,0,1,1,1,0,1,0,2,0
-549,No,1,Androgenetic Alopecia,Heart Medication,Protein deficiency,Moderate,37,Yes,0,1,1,1,0,1,1,0,1,1,1,1,0
-550,Yes,0,Dermatosis,Steroids,Vitamin E deficiency,Low,24,Yes,1,0,0,0,1,0,1,1,0,0,0,0,0
-551,Yes,0,Scalp Infection,Steroids,Omega-3 fatty acids,Low,43,Yes,1,0,1,0,1,0,1,1,0,1,0,2,0
-552,No,1,Androgenetic Alopecia,Antifungal Cream,Biotin Deficiency,High,28,Yes,0,1,0,0,0,1,1,0,1,0,2,0,0
-553,No,1,Dermatitis,Immunomodulators,Vitamin A Deficiency,Moderate,41,Yes,0,0,0,0,0,1,1,0,0,0,1,2,0
-554,No,1,Scalp Infection,Steroids,Vitamin D Deficiency,High,38,Yes,1,0,0,1,0,1,1,1,0,0,2,1,0
-555,Yes,1,Alopecia Areata,Heart Medication,Vitamin E deficiency,Low,28,Yes,1,0,0,0,1,1,1,1,0,0,0,0,0
-556,No,0,Alopecia Areata,Antidepressants,Vitamin E deficiency,Low,40,Yes,1,1,0,1,0,0,1,1,1,0,0,2,1
-557,Yes,0,Psoriasis,Immunomodulators,Vitamin A Deficiency,High,28,No,0,0,1,0,1,0,0,0,0,1,2,0,0
-558,No,0,Dermatosis,Steroids,Vitamin E deficiency,High,49,Yes,0,1,1,0,0,0,1,0,1,1,2,2,1
-559,No,1,Psoriasis,Rogaine,Magnesium deficiency,Moderate,29,Yes,1,0,0,1,0,1,1,1,0,0,1,0,0
-560,No,0,Psoriasis,Antidepressants,Protein deficiency,Moderate,46,Yes,0,0,0,0,0,0,1,0,0,0,1,2,0
-561,No,0,Androgenetic Alopecia,Rogaine,Magnesium deficiency,Low,35,Yes,0,0,1,0,0,0,1,0,0,1,0,1,0
-562,No,1,Dermatitis,Rogaine,Magnesium deficiency,Moderate,24,No,1,1,0,1,0,1,0,1,1,0,1,0,0
-563,No,0,Alopecia Areata,Chemotherapy,Selenium deficiency,Low,38,No,0,0,0,1,0,0,0,0,0,0,0,1,0
-564,No,0,Ringworm,Accutane,Iron deficiency,Low,36,No,0,0,1,1,0,0,0,0,0,1,0,1,0
-565,Yes,1,Dermatosis,Antidepressants,Biotin Deficiency,High,19,No,0,0,0,1,1,1,0,0,0,0,2,0,1
-566,Yes,0,Alopecia Areata,Immunomodulators,Biotin Deficiency,Low,40,Yes,1,1,0,1,1,0,1,1,1,0,0,2,1
-567,No,0,Androgenetic Alopecia,Antibiotics,Vitamin D Deficiency,High,45,Yes,1,0,1,0,0,0,1,1,0,1,2,2,0
-568,Yes,1,Ringworm,Chemotherapy,Biotin Deficiency,Low,31,Yes,1,1,1,0,1,1,1,1,1,1,0,1,0
-569,No,0,Psoriasis,Blood Pressure Medication,Vitamin A Deficiency,Low,29,Yes,1,1,0,1,0,0,1,1,1,0,0,0,0
-570,Yes,0,Androgenetic Alopecia,Accutane,Zinc Deficiency,Low,50,Yes,1,0,1,0,1,0,1,1,0,1,0,2,1
-571,Yes,1,Thyroid Problems,Chemotherapy,Iron deficiency,Low,24,No,0,1,0,1,1,1,0,0,1,0,0,0,0
-572,Yes,1,Eczema,Chemotherapy,Zinc Deficiency,Low,42,No,1,1,0,0,1,1,0,1,1,0,0,2,0
-573,No,1,Dermatosis,Blood Pressure Medication,Vitamin E deficiency,Low,46,Yes,0,0,1,1,0,1,1,0,0,1,0,2,0
-574,No,1,Seborrheic Dermatitis,Accutane,Iron deficiency,High,34,Yes,1,1,0,0,0,1,1,1,1,0,2,1,0
-575,No,1,Androgenetic Alopecia,Immunomodulators,Protein deficiency,Moderate,24,No,0,1,0,1,0,1,0,0,1,0,1,0,0
-576,No,0,Thyroid Problems,Blood Pressure Medication,Zinc Deficiency,Low,37,Yes,1,0,1,0,0,0,1,1,0,1,0,1,0
-577,Yes,0,Psoriasis,Accutane,Vitamin A Deficiency,Moderate,29,No,1,1,1,0,1,0,0,1,1,1,1,0,0
-578,Yes,1,Dermatitis,Antibiotics,Omega-3 fatty acids,High,39,No,0,0,0,0,1,1,0,0,0,0,2,1,0
-579,Yes,0,Eczema,Antibiotics,Biotin Deficiency,High,26,Yes,1,0,0,1,1,0,1,1,0,0,2,0,0
-580,No,1,Seborrheic Dermatitis,Antidepressants,Vitamin D Deficiency,High,38,No,1,1,1,0,0,1,0,1,1,1,2,1,0
-581,Yes,0,Psoriasis,Antidepressants,Zinc Deficiency,High,19,No,1,0,0,0,1,0,0,1,0,0,2,0,1
-582,Yes,0,Eczema,Antidepressants,Protein deficiency,Low,26,No,0,0,0,0,1,0,0,0,0,0,0,0,0
-583,Yes,0,Ringworm,Blood Pressure Medication,,Moderate,23,No,0,1,0,0,1,0,0,0,1,0,1,0,0
-584,Yes,1,Androgenetic Alopecia,Immunomodulators,Biotin Deficiency,High,46,No,0,1,1,0,1,1,0,0,1,1,2,2,0
-585,Yes,1,Androgenetic Alopecia,Antifungal Cream,Protein deficiency,High,40,Yes,0,1,1,1,1,1,1,0,1,1,2,2,1
-586,Yes,1,Alopecia Areata,Antibiotics,Vitamin D Deficiency,Low,41,Yes,0,0,1,0,1,1,1,0,0,1,0,2,0
-587,Yes,0,Ringworm,Heart Medication,Omega-3 fatty acids,High,18,Yes,1,0,1,1,1,0,1,1,0,1,2,0,1
-588,Yes,0,Psoriasis,Heart Medication,Selenium deficiency,Low,45,No,0,1,1,1,1,0,0,0,1,1,0,2,0
-589,No,0,Ringworm,Antibiotics,Vitamin D Deficiency,High,49,No,0,0,1,1,0,0,0,0,0,1,2,2,1
-590,Yes,0,Dermatosis,Rogaine,Vitamin D Deficiency,Moderate,32,No,0,0,1,0,1,0,0,0,0,1,1,1,0
-591,Yes,0,Scalp Infection,Chemotherapy,,High,22,Yes,0,0,0,0,1,0,1,0,0,0,2,0,0
-592,No,0,Psoriasis,Antidepressants,Zinc Deficiency,Low,28,No,1,1,0,1,0,0,0,1,1,0,0,0,0
-593,Yes,1,Thyroid Problems,Antidepressants,Protein deficiency,High,34,Yes,1,1,1,0,1,1,1,1,1,1,2,1,0
-594,Yes,0,Scalp Infection,Antibiotics,Biotin Deficiency,Moderate,32,No,0,1,0,0,1,0,0,0,1,0,1,1,0
-595,No,1,Androgenetic Alopecia,Blood Pressure Medication,Magnesium deficiency,High,31,No,1,1,0,1,0,1,0,1,1,0,2,1,0
-596,Yes,1,Androgenetic Alopecia,Antibiotics,Vitamin D Deficiency,Moderate,37,No,0,1,0,0,1,1,0,0,1,0,1,1,0
-597,Yes,1,Alopecia Areata,Blood Pressure Medication,Iron deficiency,Low,28,Yes,0,0,0,1,1,1,1,0,0,0,0,0,0
-598,Yes,0,Androgenetic Alopecia,Immunomodulators,Protein deficiency,High,27,No,0,1,1,1,1,0,0,0,1,1,2,0,0
-599,Yes,1,Ringworm,Steroids,Magnesium deficiency,Moderate,32,Yes,1,1,0,1,1,1,1,1,1,0,1,1,0
-600,No,0,Thyroid Problems,Accutane,Protein deficiency,Moderate,44,Yes,1,1,1,0,0,0,1,1,1,1,1,2,0
-601,Yes,1,Thyroid Problems,Blood Pressure Medication,Vitamin E deficiency,High,27,No,0,0,0,0,1,1,0,0,0,0,2,0,0
-602,No,1,Eczema,Steroids,Magnesium deficiency,Low,38,No,0,0,0,0,0,1,0,0,0,0,0,1,0
-603,Yes,1,Thyroid Problems,Chemotherapy,Iron deficiency,High,45,No,1,0,1,1,1,1,0,1,0,1,2,2,0
-604,No,0,Scalp Infection,Antifungal Cream,Vitamin E deficiency,Low,48,No,0,0,1,1,0,0,0,0,0,1,0,2,0
-605,Yes,1,Dermatitis,Steroids,Omega-3 fatty acids,Moderate,24,Yes,0,1,0,0,1,1,1,0,1,0,1,0,0
-606,Yes,0,Dermatosis,Rogaine,Vitamin E deficiency,Moderate,20,Yes,0,1,0,0,1,0,1,0,1,0,1,0,0
-607,No,1,Dermatitis,Immunomodulators,Biotin Deficiency,Low,43,No,1,1,0,1,0,1,0,1,1,0,0,2,0
-608,Yes,0,Seborrheic Dermatitis,Steroids,Vitamin D Deficiency,Moderate,25,No,1,0,1,1,1,0,0,1,0,1,1,0,0
-609,No,1,Dermatosis,Rogaine,Iron deficiency,Low,30,No,1,1,1,0,0,1,0,1,1,1,0,1,0
-610,No,0,Alopecia Areata,Blood Pressure Medication,Omega-3 fatty acids,Moderate,33,Yes,0,1,0,1,0,0,1,0,1,0,1,1,0
-611,No,0,Eczema,Blood Pressure Medication,Magnesium deficiency,Moderate,37,No,1,1,0,0,0,0,0,1,1,0,1,1,0
-612,No,0,Psoriasis,Immunomodulators,Biotin Deficiency,High,32,No,1,0,1,0,0,0,0,1,0,1,2,1,0
-613,Yes,0,Dermatosis,Steroids,Vitamin A Deficiency,Low,36,Yes,0,1,1,1,1,0,1,0,1,1,0,1,0
-614,Yes,0,Scalp Infection,Accutane,Zinc Deficiency,High,39,Yes,0,0,0,1,1,0,1,0,0,0,2,1,0
-615,Yes,1,Seborrheic Dermatitis,Chemotherapy,Selenium deficiency,High,19,No,1,1,1,1,1,1,0,1,1,1,2,0,1
-616,No,1,Dermatitis,Heart Medication,Magnesium deficiency,High,18,No,0,0,1,1,0,1,0,0,0,1,2,0,1
-617,No,0,Ringworm,Chemotherapy,Selenium deficiency,High,28,No,0,1,1,1,0,0,0,0,1,1,2,0,0
-618,Yes,1,Seborrheic Dermatitis,Rogaine,Selenium deficiency,Moderate,35,No,1,0,0,1,1,1,0,1,0,0,1,1,0
-619,No,1,Dermatitis,Antifungal Cream,Zinc Deficiency,Moderate,35,Yes,1,0,0,1,0,1,1,1,0,0,1,1,0
-620,No,0,Eczema,Rogaine,Selenium deficiency,Moderate,41,Yes,0,1,1,0,0,0,1,0,1,1,1,2,0
-621,Yes,1,Seborrheic Dermatitis,Heart Medication,Omega-3 fatty acids,High,18,No,0,1,1,1,1,1,0,0,1,1,2,0,1
-622,No,1,Ringworm,Steroids,Omega-3 fatty acids,High,43,No,0,1,0,0,0,1,0,0,1,0,2,2,0
-623,Yes,0,Ringworm,Accutane,Zinc Deficiency,Moderate,20,No,1,1,0,0,1,0,0,1,1,0,1,0,0
-624,No,0,Seborrheic Dermatitis,Immunomodulators,Vitamin A Deficiency,Moderate,25,Yes,1,1,1,0,0,0,1,1,1,1,1,0,0
-625,Yes,1,Alopecia Areata,Antifungal Cream,Protein deficiency,High,50,Yes,1,0,0,0,1,1,1,1,0,0,2,2,1
-626,No,0,Dermatitis,Heart Medication,Biotin Deficiency,Low,33,Yes,0,1,1,1,0,0,1,0,1,1,0,1,0
-627,No,1,Dermatosis,Antifungal Cream,Vitamin D Deficiency,Low,19,No,0,1,0,1,0,1,0,0,1,0,0,0,0
-628,Yes,0,Androgenetic Alopecia,Blood Pressure Medication,Magnesium deficiency,Moderate,25,Yes,1,0,1,1,1,0,1,1,0,1,1,0,0
-629,Yes,0,Eczema,Rogaine,Vitamin E deficiency,Moderate,27,Yes,0,1,1,0,1,0,1,0,1,1,1,0,0
-630,No,0,Seborrheic Dermatitis,Rogaine,,Moderate,22,Yes,1,1,1,1,0,0,1,1,1,1,1,0,0
-631,Yes,1,Alopecia Areata,Antidepressants,Magnesium deficiency,Moderate,28,Yes,0,0,0,1,1,1,1,0,0,0,1,0,0
-632,No,1,Eczema,Antifungal Cream,Zinc Deficiency,Moderate,28,No,1,1,0,1,0,1,0,1,1,0,1,0,0
-633,No,0,Alopecia Areata,Antifungal Cream,Zinc Deficiency,Moderate,43,No,0,1,1,1,0,0,0,0,1,1,1,2,0
-634,Yes,1,Androgenetic Alopecia,Chemotherapy,,High,22,Yes,0,1,1,1,1,1,1,0,1,1,2,0,0
-635,No,1,Scalp Infection,Antifungal Cream,,Moderate,23,Yes,1,0,1,1,0,1,1,1,0,1,1,0,0
-636,No,0,Alopecia Areata,Antifungal Cream,Biotin Deficiency,Moderate,42,Yes,1,1,0,0,0,0,1,1,1,0,1,2,0
-637,Yes,0,Psoriasis,Steroids,Vitamin A Deficiency,Low,31,No,0,1,1,1,1,0,0,0,1,1,0,1,0
-638,Yes,1,Dermatosis,Antidepressants,Magnesium deficiency,Moderate,43,No,0,0,1,1,1,1,0,0,0,1,1,2,0
-639,Yes,1,Scalp Infection,Heart Medication,Selenium deficiency,Moderate,40,No,0,1,1,0,1,1,0,0,1,1,1,2,0
-640,Yes,0,Dermatosis,Blood Pressure Medication,,Moderate,22,No,0,0,0,1,1,0,0,0,0,0,1,0,0
-641,No,0,Alopecia Areata,Antidepressants,Vitamin D Deficiency,Low,36,Yes,1,0,0,1,0,0,1,1,0,0,0,1,0
-642,Yes,1,Eczema,Chemotherapy,,Low,22,No,1,0,0,0,1,1,0,1,0,0,0,0,0
-643,No,0,Dermatosis,Heart Medication,Protein deficiency,Moderate,31,Yes,1,1,0,0,0,0,1,1,1,0,1,1,0
-644,No,0,Psoriasis,Immunomodulators,Vitamin E deficiency,High,26,No,1,1,0,0,0,0,0,1,1,0,2,0,0
-645,No,1,Psoriasis,Blood Pressure Medication,Vitamin A Deficiency,Moderate,44,No,1,1,0,0,0,1,0,1,1,0,1,2,0
-646,No,1,Seborrheic Dermatitis,Steroids,Iron deficiency,High,35,Yes,1,0,0,1,0,1,1,1,0,0,2,1,0
-647,No,0,Ringworm,Blood Pressure Medication,Omega-3 fatty acids,High,24,No,1,0,1,1,0,0,0,1,0,1,2,0,0
-648,Yes,0,Psoriasis,Antibiotics,Protein deficiency,Moderate,49,No,0,1,0,1,1,0,0,0,1,0,1,2,0
-649,Yes,1,Dermatitis,Accutane,Vitamin E deficiency,Low,34,No,1,1,1,0,1,1,0,1,1,1,0,1,0
-650,No,0,Ringworm,Antibiotics,,Moderate,22,Yes,0,1,1,1,0,0,1,0,1,1,1,0,0
-651,No,0,Eczema,Immunomodulators,Zinc Deficiency,Moderate,33,Yes,1,0,0,1,0,0,1,1,0,0,1,1,0
-652,Yes,1,Thyroid Problems,Immunomodulators,Vitamin D Deficiency,High,34,No,0,1,0,0,1,1,0,0,1,0,2,1,0
-653,Yes,0,Seborrheic Dermatitis,Accutane,,High,22,No,1,1,0,0,1,0,0,1,1,0,2,0,0
-654,Yes,1,Dermatitis,Antibiotics,Protein deficiency,High,44,Yes,0,0,1,1,1,1,1,0,0,1,2,2,0
-655,Yes,1,Seborrheic Dermatitis,Antibiotics,Vitamin E deficiency,High,25,No,0,1,0,0,1,1,0,0,1,0,2,0,0
-656,Yes,1,Psoriasis,Immunomodulators,Zinc Deficiency,High,42,Yes,1,1,0,1,1,1,1,1,1,0,2,2,0
-657,Yes,1,Alopecia Areata,Antidepressants,Selenium deficiency,High,39,No,1,0,0,0,1,1,0,1,0,0,2,1,0
-658,Yes,0,Seborrheic Dermatitis,Heart Medication,,Moderate,22,No,0,1,0,0,1,0,0,0,1,0,1,0,0
-659,Yes,1,Psoriasis,Accutane,Magnesium deficiency,Low,46,Yes,0,0,0,0,1,1,1,0,0,0,0,2,0
-660,No,1,Thyroid Problems,Immunomodulators,Selenium deficiency,High,19,No,1,0,1,0,0,1,0,1,0,1,2,0,1
-661,No,1,Eczema,Steroids,,Low,21,No,0,0,0,1,0,1,0,0,0,0,0,0,0
-662,No,0,Thyroid Problems,Antibiotics,,High,21,Yes,1,1,0,0,0,0,1,1,1,0,2,0,0
-663,Yes,1,Alopecia Areata,Rogaine,Selenium deficiency,Moderate,46,Yes,1,1,1,1,1,1,1,1,1,1,1,2,0
-664,No,1,Alopecia Areata,Antidepressants,Selenium deficiency,Low,30,No,0,1,0,0,0,1,0,0,1,0,0,1,0
-665,No,1,Dermatitis,Antidepressants,Vitamin D Deficiency,High,24,Yes,0,0,0,0,0,1,1,0,0,0,2,0,0
-666,No,1,Androgenetic Alopecia,Steroids,Protein deficiency,Low,47,No,1,1,0,1,0,1,0,1,1,0,0,2,1
-667,No,0,Androgenetic Alopecia,Steroids,Vitamin D Deficiency,Moderate,39,Yes,1,0,1,0,0,0,1,1,0,1,1,1,0
-668,No,1,Androgenetic Alopecia,Chemotherapy,Magnesium deficiency,Low,24,Yes,1,0,1,0,0,1,1,1,0,1,0,0,0
-669,No,0,Seborrheic Dermatitis,Blood Pressure Medication,Vitamin E deficiency,Moderate,41,No,0,0,0,1,0,0,0,0,0,0,1,2,0
-670,Yes,1,Dermatitis,Antibiotics,Zinc Deficiency,Low,31,No,1,1,0,1,1,1,0,1,1,0,0,1,0
-671,Yes,1,Psoriasis,Antibiotics,Zinc Deficiency,Low,37,Yes,1,0,0,1,1,1,1,1,0,0,0,1,0
-672,No,1,Psoriasis,Accutane,Omega-3 fatty acids,Low,40,No,0,1,1,0,0,1,0,0,1,1,0,2,1
-673,Yes,0,Androgenetic Alopecia,Antibiotics,Magnesium deficiency,Moderate,42,Yes,1,1,1,1,1,0,1,1,1,1,1,2,0
-674,No,0,Scalp Infection,Antidepressants,Omega-3 fatty acids,Moderate,35,Yes,0,0,1,1,0,0,1,0,0,1,1,1,0
-675,Yes,1,Dermatosis,Antibiotics,Vitamin E deficiency,Moderate,39,No,1,0,1,1,1,1,0,1,0,1,1,1,0
-676,No,0,Seborrheic Dermatitis,Immunomodulators,Vitamin D Deficiency,High,36,Yes,0,0,0,0,0,0,1,0,0,0,2,1,0
-677,Yes,0,Thyroid Problems,Accutane,Magnesium deficiency,High,42,No,0,1,0,1,1,0,0,0,1,0,2,2,0
-678,Yes,0,Seborrheic Dermatitis,Rogaine,Omega-3 fatty acids,Low,36,No,1,0,0,1,1,0,0,1,0,0,0,1,0
-679,Yes,1,Alopecia Areata,Chemotherapy,,High,23,Yes,1,0,1,0,1,1,1,1,0,1,2,0,0
-680,Yes,0,Ringworm,Antifungal Cream,Protein deficiency,Moderate,48,No,1,1,0,0,1,0,0,1,1,0,1,2,0
-681,Yes,1,Scalp Infection,Antibiotics,Vitamin A Deficiency,Low,19,No,0,0,0,0,1,1,0,0,0,0,0,0,0
-682,Yes,0,Scalp Infection,Steroids,Vitamin D Deficiency,High,32,No,0,0,0,1,1,0,0,0,0,0,2,1,0
-683,No,0,Psoriasis,Accutane,Selenium deficiency,Low,47,No,0,0,1,0,0,0,0,0,0,1,0,2,1
-684,Yes,1,Thyroid Problems,Heart Medication,,Moderate,21,Yes,0,1,0,0,1,1,1,0,1,0,1,0,0
-685,Yes,0,Scalp Infection,Steroids,Biotin Deficiency,Moderate,35,No,0,1,1,1,1,0,0,0,1,1,1,1,0
-686,Yes,0,Dermatitis,Rogaine,Biotin Deficiency,High,39,Yes,1,0,0,1,1,0,1,1,0,0,2,1,0
-687,Yes,0,Psoriasis,Blood Pressure Medication,Omega-3 fatty acids,Moderate,49,Yes,1,1,1,1,1,0,1,1,1,1,1,2,0
-688,Yes,0,Psoriasis,Antibiotics,Vitamin A Deficiency,Moderate,45,Yes,1,1,1,1,1,0,1,1,1,1,1,2,0
-689,No,1,Seborrheic Dermatitis,Antidepressants,Vitamin A Deficiency,Low,24,Yes,1,1,0,1,0,1,1,1,1,0,0,0,0
-690,Yes,0,Dermatosis,Antifungal Cream,Selenium deficiency,Low,33,No,1,0,1,1,1,0,0,1,0,1,0,1,0
-691,No,0,Androgenetic Alopecia,Antifungal Cream,Vitamin D Deficiency,Moderate,45,Yes,0,0,1,0,0,0,1,0,0,1,1,2,0
-692,No,0,Alopecia Areata,Antibiotics,Selenium deficiency,Low,49,No,1,1,0,1,0,0,0,1,1,0,0,2,1
-693,Yes,1,Seborrheic Dermatitis,Steroids,Vitamin E deficiency,Moderate,49,No,0,0,0,1,1,1,0,0,0,0,1,2,0
-694,No,0,Eczema,Heart Medication,Biotin Deficiency,Moderate,35,No,1,0,1,1,0,0,0,1,0,1,1,1,0
-695,No,0,Dermatitis,Heart Medication,Selenium deficiency,Moderate,48,Yes,0,0,1,0,0,0,1,0,0,1,1,2,0
-696,Yes,1,Psoriasis,Antidepressants,Selenium deficiency,High,37,Yes,1,0,1,0,1,1,1,1,0,1,2,1,0
-697,Yes,0,Eczema,Antibiotics,Magnesium deficiency,Low,26,No,1,0,0,1,1,0,0,1,0,0,0,0,0
-698,No,1,Alopecia Areata,Chemotherapy,Protein deficiency,High,43,No,1,0,1,1,0,1,0,1,0,1,2,2,0
-699,Yes,0,Psoriasis,Rogaine,Vitamin A Deficiency,Moderate,27,No,1,1,1,0,1,0,0,1,1,1,1,0,0
-700,No,0,Seborrheic Dermatitis,Antidepressants,Magnesium deficiency,High,29,Yes,1,1,0,0,0,0,1,1,1,0,2,0,0
-701,Yes,0,Psoriasis,Blood Pressure Medication,Magnesium deficiency,Moderate,49,Yes,1,1,1,0,1,0,1,1,1,1,1,2,0
-702,No,1,Psoriasis,Accutane,Iron deficiency,Moderate,30,Yes,0,1,0,0,0,1,1,0,1,0,1,1,0
-703,Yes,0,Scalp Infection,Rogaine,Protein deficiency,Moderate,41,No,0,1,1,0,1,0,0,0,1,1,1,2,0
-704,Yes,0,Alopecia Areata,Immunomodulators,,Low,21,No,0,0,0,1,1,0,0,0,0,0,0,0,0
-705,No,1,Ringworm,Antibiotics,Biotin Deficiency,Low,43,Yes,0,0,0,0,0,1,1,0,0,0,0,2,0
-706,Yes,0,Ringworm,Antidepressants,Vitamin D Deficiency,Low,31,No,0,0,0,1,1,0,0,0,0,0,0,1,0
-707,No,0,Dermatosis,Rogaine,Omega-3 fatty acids,High,24,Yes,0,1,1,0,0,0,1,0,1,1,2,0,0
-708,No,1,Scalp Infection,Immunomodulators,Vitamin A Deficiency,Low,32,Yes,0,0,0,0,0,1,1,0,0,0,0,1,0
-709,No,1,Psoriasis,Rogaine,Protein deficiency,Low,33,No,0,0,1,1,0,1,0,0,0,1,0,1,0
-710,No,1,Ringworm,Antifungal Cream,Selenium deficiency,Moderate,33,Yes,0,0,0,0,0,1,1,0,0,0,1,1,0
-711,Yes,1,Dermatosis,Antibiotics,Omega-3 fatty acids,Low,32,Yes,0,0,1,1,1,1,1,0,0,1,0,1,0
-712,No,1,Thyroid Problems,Heart Medication,Omega-3 fatty acids,Moderate,33,Yes,0,1,0,0,0,1,1,0,1,0,1,1,0
-713,No,0,Thyroid Problems,Antibiotics,Vitamin E deficiency,High,49,Yes,1,0,1,0,0,0,1,1,0,1,2,2,1
-714,No,0,Dermatitis,Steroids,Iron deficiency,Moderate,47,No,0,1,0,0,0,0,0,0,1,0,1,2,0
-715,Yes,1,Ringworm,Immunomodulators,Zinc Deficiency,High,31,No,1,0,1,1,1,1,0,1,0,1,2,1,0
-716,No,1,Alopecia Areata,Antidepressants,Vitamin E deficiency,Moderate,29,No,0,1,1,0,0,1,0,0,1,1,1,0,0
-717,No,0,Scalp Infection,Chemotherapy,Protein deficiency,Moderate,43,Yes,1,1,0,1,0,0,1,1,1,0,1,2,0
-718,Yes,0,Eczema,Heart Medication,Vitamin D Deficiency,Low,38,No,1,1,1,1,1,0,0,1,1,1,0,1,0
-719,No,0,Androgenetic Alopecia,Antifungal Cream,Vitamin E deficiency,High,43,No,0,0,0,0,0,0,0,0,0,0,2,2,0
-720,Yes,0,Ringworm,Steroids,,Moderate,22,Yes,1,1,0,0,1,0,1,1,1,0,1,0,0
-721,No,0,Dermatosis,Rogaine,Selenium deficiency,Moderate,45,Yes,0,1,0,0,0,0,1,0,1,0,1,2,0
-722,Yes,0,Ringworm,Blood Pressure Medication,,High,23,Yes,1,0,0,1,1,0,1,1,0,0,2,0,0
-723,Yes,0,Scalp Infection,Rogaine,Zinc Deficiency,High,40,No,0,1,1,0,1,0,0,0,1,1,2,2,1
-724,No,1,Dermatosis,Blood Pressure Medication,Biotin Deficiency,Low,49,Yes,0,0,0,0,0,1,1,0,0,0,0,2,1
-725,No,1,Alopecia Areata,Antibiotics,Iron deficiency,Low,20,Yes,1,1,1,0,0,1,1,1,1,1,0,0,0
-726,Yes,0,Scalp Infection,Blood Pressure Medication,Vitamin E deficiency,Moderate,28,No,0,0,1,0,1,0,0,0,0,1,1,0,0
-727,Yes,1,Seborrheic Dermatitis,Antibiotics,Iron deficiency,Moderate,45,No,1,0,0,1,1,1,0,1,0,0,1,2,0
-728,Yes,0,Dermatitis,Accutane,Zinc Deficiency,Low,29,Yes,1,1,0,1,1,0,1,1,1,0,0,0,0
-729,No,1,Seborrheic Dermatitis,Antifungal Cream,Vitamin A Deficiency,Moderate,44,No,0,0,1,1,0,1,0,0,0,1,1,2,0
-730,No,1,Alopecia Areata,Immunomodulators,Iron deficiency,Moderate,37,Yes,0,0,1,1,0,1,1,0,0,1,1,1,0
-731,Yes,0,Psoriasis,Steroids,Magnesium deficiency,Low,29,No,1,1,1,1,1,0,0,1,1,1,0,0,0
-732,No,1,Seborrheic Dermatitis,Accutane,Omega-3 fatty acids,High,36,No,1,0,0,0,0,1,0,1,0,0,2,1,0
-733,No,1,Thyroid Problems,Steroids,Selenium deficiency,Moderate,38,Yes,1,1,0,1,0,1,1,1,1,0,1,1,0
-734,Yes,0,Eczema,Antidepressants,Vitamin D Deficiency,Low,26,No,1,0,0,0,1,0,0,1,0,0,0,0,0
-735,No,1,Dermatitis,Antibiotics,Magnesium deficiency,Moderate,28,Yes,1,0,1,1,0,1,1,1,0,1,1,0,0
-736,No,0,Thyroid Problems,Accutane,Protein deficiency,High,46,Yes,1,0,1,0,0,0,1,1,0,1,2,2,0
-737,No,0,Seborrheic Dermatitis,Immunomodulators,Biotin Deficiency,Low,35,No,1,0,0,0,0,0,0,1,0,0,0,1,0
-738,Yes,1,Ringworm,Antibiotics,Protein deficiency,Moderate,29,Yes,1,1,1,1,1,1,1,1,1,1,1,0,0
-739,Yes,0,Scalp Infection,Chemotherapy,Vitamin E deficiency,High,34,Yes,0,1,1,1,1,0,1,0,1,1,2,1,0
-740,No,0,Alopecia Areata,Blood Pressure Medication,Iron deficiency,Low,30,Yes,1,0,1,1,0,0,1,1,0,1,0,1,0
-741,Yes,0,Psoriasis,Antibiotics,Vitamin E deficiency,High,37,No,1,1,0,1,1,0,0,1,1,0,2,1,0
-742,No,1,Thyroid Problems,Chemotherapy,Magnesium deficiency,Moderate,31,No,0,0,1,0,0,1,0,0,0,1,1,1,0
-743,No,0,Alopecia Areata,Rogaine,Protein deficiency,Low,24,No,0,0,0,1,0,0,0,0,0,0,0,0,0
-744,Yes,0,Alopecia Areata,Antidepressants,Vitamin D Deficiency,High,30,No,0,1,0,1,1,0,0,0,1,0,2,1,0
-745,Yes,0,Dermatitis,Antifungal Cream,,Moderate,22,No,0,0,0,1,1,0,0,0,0,0,1,0,0
-746,No,1,Dermatosis,Rogaine,Vitamin E deficiency,Low,33,No,1,1,1,0,0,1,0,1,1,1,0,1,0
-747,Yes,1,Dermatitis,Heart Medication,Vitamin D Deficiency,Moderate,27,Yes,0,0,0,0,1,1,1,0,0,0,1,0,0
-748,Yes,0,Eczema,Steroids,Omega-3 fatty acids,Moderate,29,Yes,0,1,1,1,1,0,1,0,1,1,1,0,0
-749,No,1,Dermatitis,Rogaine,Zinc Deficiency,Moderate,50,No,0,0,0,0,0,1,0,0,0,0,1,2,0
-750,No,0,Psoriasis,Immunomodulators,Omega-3 fatty acids,High,31,Yes,1,1,1,0,0,0,1,1,1,1,2,1,0
-751,No,1,Psoriasis,Antifungal Cream,Selenium deficiency,Moderate,32,No,0,1,0,0,0,1,0,0,1,0,1,1,0
-752,No,0,Scalp Infection,Steroids,Iron deficiency,Low,26,No,0,1,0,1,0,0,0,0,1,0,0,0,0
-753,Yes,1,Psoriasis,Chemotherapy,Vitamin E deficiency,Moderate,25,No,1,0,1,1,1,1,0,1,0,1,1,0,0
-754,Yes,1,Scalp Infection,Chemotherapy,Vitamin D Deficiency,Moderate,47,No,1,0,0,0,1,1,0,1,0,0,1,2,0
-755,Yes,1,Seborrheic Dermatitis,Chemotherapy,Vitamin A Deficiency,High,18,No,0,1,1,0,1,1,0,0,1,1,2,0,1
-756,Yes,1,Scalp Infection,Rogaine,Zinc Deficiency,Moderate,18,Yes,0,1,0,0,1,1,1,0,1,0,1,0,0
-757,Yes,1,Psoriasis,Chemotherapy,Magnesium deficiency,Moderate,50,No,0,0,0,0,1,1,0,0,0,0,1,2,0
-758,No,0,Eczema,Heart Medication,Vitamin E deficiency,High,31,Yes,0,0,1,1,0,0,1,0,0,1,2,1,0
-759,No,0,Dermatitis,Antifungal Cream,Omega-3 fatty acids,Low,43,No,0,1,1,1,0,0,0,0,1,1,0,2,0
-760,No,0,Ringworm,Immunomodulators,Magnesium deficiency,Low,25,No,1,0,1,0,0,0,0,1,0,1,0,0,0
-761,No,1,Psoriasis,Accutane,Vitamin E deficiency,Moderate,34,Yes,0,1,1,1,0,1,1,0,1,1,1,1,0
-762,No,0,Seborrheic Dermatitis,Blood Pressure Medication,Vitamin E deficiency,Low,19,No,0,1,1,0,0,0,0,0,1,1,0,0,0
-763,No,0,Dermatitis,Antidepressants,Magnesium deficiency,Moderate,18,Yes,1,0,1,0,0,0,1,1,0,1,1,0,0
-764,Yes,1,Psoriasis,Steroids,Protein deficiency,Moderate,38,No,0,1,1,1,1,1,0,0,1,1,1,1,0
-765,No,1,Dermatosis,Chemotherapy,Vitamin D Deficiency,High,28,Yes,0,1,1,1,0,1,1,0,1,1,2,0,0
-766,No,0,Scalp Infection,Antidepressants,Iron deficiency,High,45,Yes,0,1,0,0,0,0,1,0,1,0,2,2,0
-767,Yes,0,Scalp Infection,Accutane,Vitamin A Deficiency,High,37,No,1,1,0,1,1,0,0,1,1,0,2,1,0
-768,Yes,1,Alopecia Areata,Accutane,Vitamin E deficiency,Moderate,32,Yes,1,1,0,1,1,1,1,1,1,0,1,1,0
-769,Yes,0,Androgenetic Alopecia,Heart Medication,Vitamin A Deficiency,High,35,No,0,1,0,1,1,0,0,0,1,0,2,1,0
-770,Yes,1,Androgenetic Alopecia,Antidepressants,Biotin Deficiency,Low,40,No,1,1,1,1,1,1,0,1,1,1,0,2,1
-771,Yes,1,Alopecia Areata,Accutane,Selenium deficiency,Low,48,Yes,1,0,1,1,1,1,1,1,0,1,0,2,0
-772,Yes,1,Androgenetic Alopecia,Rogaine,Protein deficiency,Low,38,No,0,1,0,1,1,1,0,0,1,0,0,1,0
-773,Yes,1,Androgenetic Alopecia,Accutane,Magnesium deficiency,Low,40,No,1,1,1,0,1,1,0,1,1,1,0,2,1
-774,Yes,0,Thyroid Problems,Steroids,Omega-3 fatty acids,Low,19,No,0,0,1,0,1,0,0,0,0,1,0,0,0
-775,Yes,1,Scalp Infection,Antifungal Cream,Selenium deficiency,Low,34,Yes,0,0,0,0,1,1,1,0,0,0,0,1,0
-776,Yes,0,Scalp Infection,Blood Pressure Medication,Biotin Deficiency,Moderate,30,No,0,1,0,0,1,0,0,0,1,0,1,1,0
-777,Yes,0,Dermatitis,Accutane,Vitamin E deficiency,Low,26,Yes,1,1,1,0,1,0,1,1,1,1,0,0,0
-778,Yes,0,Ringworm,Steroids,Biotin Deficiency,Moderate,29,Yes,1,0,0,1,1,0,1,1,0,0,1,0,0
-779,Yes,1,Ringworm,Heart Medication,Vitamin E deficiency,Low,41,Yes,1,0,0,1,1,1,1,1,0,0,0,2,0
-780,No,1,Dermatosis,Antifungal Cream,,Moderate,21,No,0,0,0,0,0,1,0,0,0,0,1,0,0
-781,No,1,Dermatosis,Heart Medication,Vitamin A Deficiency,Moderate,38,No,0,1,0,0,0,1,0,0,1,0,1,1,0
-782,Yes,1,Seborrheic Dermatitis,Accutane,Zinc Deficiency,Low,19,No,0,1,1,0,1,1,0,0,1,1,0,0,0
-783,Yes,0,Thyroid Problems,Antibiotics,Vitamin A Deficiency,High,31,Yes,0,0,1,0,1,0,1,0,0,1,2,1,0
-784,Yes,0,Dermatitis,Blood Pressure Medication,Omega-3 fatty acids,Low,45,Yes,1,0,0,1,1,0,1,1,0,0,0,2,0
-785,No,1,Eczema,Immunomodulators,Iron deficiency,Low,38,Yes,1,0,0,0,0,1,1,1,0,0,0,1,0
-786,Yes,0,Psoriasis,Heart Medication,Omega-3 fatty acids,High,50,Yes,1,1,0,0,1,0,1,1,1,0,2,2,1
-787,Yes,1,Seborrheic Dermatitis,Blood Pressure Medication,Omega-3 fatty acids,Moderate,37,Yes,0,1,0,1,1,1,1,0,1,0,1,1,0
-788,Yes,0,Dermatosis,Antidepressants,Vitamin A Deficiency,Moderate,35,Yes,1,0,0,1,1,0,1,1,0,0,1,1,0
-789,Yes,0,Thyroid Problems,Steroids,Vitamin D Deficiency,Moderate,32,Yes,0,0,1,1,1,0,1,0,0,1,1,1,0
-790,No,1,Seborrheic Dermatitis,Immunomodulators,Iron deficiency,Low,26,No,0,1,0,0,0,1,0,0,1,0,0,0,0
-791,No,0,Dermatosis,Rogaine,Iron deficiency,High,31,No,1,1,1,0,0,0,0,1,1,1,2,1,0
-792,Yes,0,Dermatitis,Steroids,Omega-3 fatty acids,Low,19,No,1,0,0,0,1,0,0,1,0,0,0,0,0
-793,No,1,Psoriasis,Steroids,Zinc Deficiency,Moderate,50,No,0,1,1,1,0,1,0,0,1,1,1,2,0
-794,Yes,1,Eczema,Immunomodulators,Vitamin A Deficiency,Moderate,45,No,1,1,0,1,1,1,0,1,1,0,1,2,0
-795,No,1,Eczema,Blood Pressure Medication,Magnesium deficiency,Moderate,24,No,0,0,0,0,0,1,0,0,0,0,1,0,0
-796,No,0,Androgenetic Alopecia,Immunomodulators,Magnesium deficiency,Moderate,50,Yes,0,1,0,1,0,0,1,0,1,0,1,2,0
-797,No,0,Dermatitis,Steroids,Vitamin A Deficiency,Moderate,39,No,0,0,1,1,0,0,0,0,0,1,1,1,0
-798,Yes,0,Dermatosis,Accutane,Vitamin A Deficiency,Low,19,Yes,1,1,1,1,1,0,1,1,1,1,0,0,0
-799,No,1,Alopecia Areata,Steroids,Vitamin D Deficiency,Low,40,Yes,1,1,1,0,0,1,1,1,1,1,0,2,1
-800,No,1,Psoriasis,Blood Pressure Medication,Zinc Deficiency,Low,40,No,1,0,1,1,0,1,0,1,0,1,0,2,1
-801,Yes,0,Alopecia Areata,Heart Medication,Vitamin A Deficiency,High,37,Yes,0,0,1,1,1,0,1,0,0,1,2,1,0
-802,Yes,1,Eczema,Accutane,Vitamin A Deficiency,Low,47,Yes,1,1,0,0,1,1,1,1,1,0,0,2,1
-803,No,0,Alopecia Areata,Accutane,,High,22,Yes,0,0,1,1,0,0,1,0,0,1,2,0,0
-804,Yes,0,Androgenetic Alopecia,Accutane,,Low,21,Yes,1,0,1,1,1,0,1,1,0,1,0,0,0
-805,No,0,Alopecia Areata,Blood Pressure Medication,Vitamin A Deficiency,Low,34,Yes,1,0,0,1,0,0,1,1,0,0,0,1,0
-806,Yes,0,Ringworm,Chemotherapy,Vitamin D Deficiency,High,48,No,1,0,0,1,1,0,0,1,0,0,2,2,0
-807,Yes,1,Androgenetic Alopecia,Immunomodulators,Vitamin A Deficiency,High,37,No,1,1,0,1,1,1,0,1,1,0,2,1,0
-808,No,0,Dermatosis,Heart Medication,Omega-3 fatty acids,Moderate,26,Yes,1,1,1,0,0,0,1,1,1,1,1,0,0
-809,No,0,Androgenetic Alopecia,Immunomodulators,,Moderate,23,No,0,1,0,1,0,0,0,0,1,0,1,0,0
-810,No,1,Alopecia Areata,Antidepressants,Omega-3 fatty acids,Low,30,No,0,1,1,0,0,1,0,0,1,1,0,1,0
-811,No,1,Alopecia Areata,Antifungal Cream,Iron deficiency,Low,32,No,0,1,1,0,0,1,0,0,1,1,0,1,0
-812,Yes,1,Alopecia Areata,Rogaine,Protein deficiency,High,40,Yes,1,1,0,1,1,1,1,1,1,0,2,2,1
-813,Yes,1,Alopecia Areata,Steroids,,High,23,Yes,0,0,1,0,1,1,1,0,0,1,2,0,0
-814,Yes,1,Dermatitis,Heart Medication,Selenium deficiency,Moderate,40,Yes,1,1,0,1,1,1,1,1,1,0,1,2,0
-815,Yes,0,Thyroid Problems,Steroids,Protein deficiency,High,47,No,1,1,1,1,1,0,0,1,1,1,2,2,1
-816,Yes,1,Dermatitis,Accutane,,Moderate,23,Yes,1,1,1,0,1,1,1,1,1,1,1,0,0
-817,No,0,Seborrheic Dermatitis,Heart Medication,Omega-3 fatty acids,Moderate,48,Yes,0,1,1,1,0,0,1,0,1,1,1,2,0
-818,No,1,Dermatosis,Antibiotics,Omega-3 fatty acids,High,41,No,0,1,1,0,0,1,0,0,1,1,2,2,0
-819,Yes,1,Seborrheic Dermatitis,Rogaine,,Low,21,Yes,1,1,0,1,1,1,1,1,1,0,0,0,0
-820,Yes,1,Eczema,Rogaine,Magnesium deficiency,High,50,Yes,1,1,1,0,1,1,1,1,1,1,2,2,1
-821,No,1,Scalp Infection,Rogaine,Protein deficiency,Moderate,38,No,1,0,0,1,0,1,0,1,0,0,1,1,0
-822,No,1,Alopecia Areata,Antibiotics,Protein deficiency,High,30,No,0,0,0,1,0,1,0,0,0,0,2,1,0
-823,No,1,Scalp Infection,Blood Pressure Medication,Protein deficiency,High,41,No,1,0,0,0,0,1,0,1,0,0,2,2,0
-824,Yes,1,Androgenetic Alopecia,Antibiotics,Vitamin D Deficiency,Low,49,Yes,0,1,0,1,1,1,1,0,1,0,0,2,1
-825,No,1,Psoriasis,Chemotherapy,Protein deficiency,High,27,No,0,0,1,1,0,1,0,0,0,1,2,0,0
-826,Yes,1,Psoriasis,Steroids,,Moderate,22,No,0,0,1,1,1,1,0,0,0,1,1,0,0
-827,No,1,Scalp Infection,Immunomodulators,Selenium deficiency,Low,44,Yes,0,1,0,0,0,1,1,0,1,0,0,2,0
-828,Yes,1,Alopecia Areata,Chemotherapy,Protein deficiency,High,19,No,1,1,0,0,1,1,0,1,1,0,2,0,1
-829,No,1,Dermatitis,Antifungal Cream,Zinc Deficiency,Moderate,27,No,0,1,1,0,0,1,0,0,1,1,1,0,0
-830,Yes,1,Eczema,Blood Pressure Medication,Zinc Deficiency,High,34,Yes,1,0,1,0,1,1,1,1,0,1,2,1,0
-831,No,0,Dermatitis,Blood Pressure Medication,Omega-3 fatty acids,Low,39,No,0,1,1,1,0,0,0,0,1,1,0,1,0
-832,No,0,Dermatosis,Antifungal Cream,Iron deficiency,High,36,No,1,0,0,0,0,0,0,1,0,0,2,1,0
-833,Yes,1,Dermatosis,Accutane,Vitamin D Deficiency,Moderate,35,Yes,0,0,0,0,1,1,1,0,0,0,1,1,0
-834,Yes,0,Seborrheic Dermatitis,Chemotherapy,Iron deficiency,Low,37,Yes,1,0,1,1,1,0,1,1,0,1,0,1,0
-835,Yes,1,Thyroid Problems,Steroids,Omega-3 fatty acids,High,30,No,1,1,0,0,1,1,0,1,1,0,2,1,0
-836,No,1,Androgenetic Alopecia,Antidepressants,Vitamin A Deficiency,High,50,No,0,0,0,0,0,1,0,0,0,0,2,2,1
-837,Yes,0,Seborrheic Dermatitis,Accutane,Biotin Deficiency,High,34,Yes,0,0,0,1,1,0,1,0,0,0,2,1,0
-838,Yes,0,Alopecia Areata,Antidepressants,Omega-3 fatty acids,Moderate,20,Yes,0,1,1,0,1,0,1,0,1,1,1,0,0
-839,No,0,Psoriasis,Antifungal Cream,Selenium deficiency,Low,20,Yes,1,1,0,0,0,0,1,1,1,0,0,0,0
-840,No,1,Eczema,Chemotherapy,Magnesium deficiency,Moderate,31,No,0,1,0,1,0,1,0,0,1,0,1,1,0
-841,Yes,1,Eczema,Heart Medication,Vitamin D Deficiency,Low,47,Yes,1,1,0,0,1,1,1,1,1,0,0,2,1
-842,No,1,Dermatitis,Antifungal Cream,Zinc Deficiency,High,28,No,0,0,1,1,0,1,0,0,0,1,2,0,0
-843,Yes,1,Dermatitis,Steroids,Omega-3 fatty acids,Moderate,35,Yes,0,0,1,1,1,1,1,0,0,1,1,1,0
-844,Yes,1,Dermatitis,Steroids,Vitamin D Deficiency,Low,30,No,1,0,1,1,1,1,0,1,0,1,0,1,0
-845,No,1,Ringworm,Antibiotics,Vitamin A Deficiency,Moderate,19,Yes,1,0,1,1,0,1,1,1,0,1,1,0,0
-846,Yes,1,Alopecia Areata,Steroids,Vitamin D Deficiency,Moderate,20,Yes,1,0,0,1,1,1,1,1,0,0,1,0,0
-847,No,1,Ringworm,Antifungal Cream,Iron deficiency,Low,25,No,0,0,1,0,0,1,0,0,0,1,0,0,0
-848,No,0,Dermatitis,Antibiotics,Biotin Deficiency,Low,39,No,1,0,1,0,0,0,0,1,0,1,0,1,0
-849,Yes,1,Dermatitis,Antifungal Cream,Selenium deficiency,High,36,No,0,0,1,0,1,1,0,0,0,1,2,1,0
-850,No,1,Dermatosis,Blood Pressure Medication,Vitamin D Deficiency,Moderate,20,Yes,0,0,1,0,0,1,1,0,0,1,1,0,0
-851,Yes,0,Thyroid Problems,Steroids,Vitamin A Deficiency,Moderate,44,Yes,1,0,0,0,1,0,1,1,0,0,1,2,0
-852,Yes,0,Androgenetic Alopecia,Antidepressants,Protein deficiency,Low,49,No,1,0,1,0,1,0,0,1,0,1,0,2,1
-853,Yes,0,Alopecia Areata,Accutane,Biotin Deficiency,Moderate,31,Yes,1,0,0,1,1,0,1,1,0,0,1,1,0
-854,No,0,Seborrheic Dermatitis,Antidepressants,,High,22,Yes,0,0,1,1,0,0,1,0,0,1,2,0,0
-855,No,1,Thyroid Problems,Heart Medication,Vitamin E deficiency,Moderate,18,Yes,0,1,0,0,0,1,1,0,1,0,1,0,0
-856,No,1,Thyroid Problems,Antifungal Cream,Biotin Deficiency,High,26,No,1,0,1,1,0,1,0,1,0,1,2,0,0
-857,Yes,1,Thyroid Problems,Antidepressants,Iron deficiency,Moderate,27,Yes,1,1,1,0,1,1,1,1,1,1,1,0,0
-858,Yes,1,Eczema,Rogaine,Selenium deficiency,Moderate,36,No,1,1,1,1,1,1,0,1,1,1,1,1,0
-859,Yes,0,Seborrheic Dermatitis,Immunomodulators,Vitamin D Deficiency,Moderate,39,No,0,1,1,0,1,0,0,0,1,1,1,1,0
-860,Yes,0,Seborrheic Dermatitis,Immunomodulators,Zinc Deficiency,Low,34,No,0,0,0,0,1,0,0,0,0,0,0,1,0
-861,Yes,0,Dermatitis,Blood Pressure Medication,Vitamin D Deficiency,High,43,No,0,0,0,0,1,0,0,0,0,0,2,2,0
-862,No,1,Androgenetic Alopecia,Rogaine,Omega-3 fatty acids,Low,42,No,1,1,0,1,0,1,0,1,1,0,0,2,0
-863,No,0,Dermatosis,Rogaine,Vitamin D Deficiency,Moderate,48,Yes,1,1,0,0,0,0,1,1,1,0,1,2,0
-864,No,0,Dermatitis,Chemotherapy,Vitamin A Deficiency,High,31,Yes,1,1,0,1,0,0,1,1,1,0,2,1,0
-865,No,0,Dermatosis,Immunomodulators,Zinc Deficiency,Low,45,No,0,1,0,1,0,0,0,0,1,0,0,2,0
-866,Yes,1,Alopecia Areata,Accutane,Vitamin A Deficiency,Low,47,Yes,0,0,1,0,1,1,1,0,0,1,0,2,1
-867,Yes,0,Thyroid Problems,Chemotherapy,Vitamin D Deficiency,High,33,No,1,0,1,1,1,0,0,1,0,1,2,1,0
-868,No,1,Dermatitis,Rogaine,Magnesium deficiency,High,37,Yes,0,1,1,0,0,1,1,0,1,1,2,1,0
-869,Yes,0,Dermatosis,Rogaine,Iron deficiency,High,42,Yes,0,0,0,0,1,0,1,0,0,0,2,2,0
-870,No,1,Androgenetic Alopecia,Steroids,Vitamin E deficiency,High,45,Yes,0,0,0,1,0,1,1,0,0,0,2,2,0
-871,No,0,Dermatitis,Rogaine,Vitamin D Deficiency,Moderate,31,Yes,1,1,0,0,0,0,1,1,1,0,1,1,0
-872,Yes,1,Thyroid Problems,Heart Medication,Omega-3 fatty acids,Low,35,Yes,1,0,1,1,1,1,1,1,0,1,0,1,0
-873,No,0,Androgenetic Alopecia,Chemotherapy,Biotin Deficiency,Moderate,20,Yes,0,1,0,0,0,0,1,0,1,0,1,0,0
-874,No,1,Seborrheic Dermatitis,Immunomodulators,Vitamin E deficiency,Low,42,No,1,1,0,1,0,1,0,1,1,0,0,2,0
-875,No,0,Eczema,Antidepressants,Protein deficiency,High,33,Yes,0,1,0,1,0,0,1,0,1,0,2,1,0
-876,No,0,Alopecia Areata,Antidepressants,Zinc Deficiency,High,24,No,1,0,0,1,0,0,0,1,0,0,2,0,0
-877,No,1,Alopecia Areata,Blood Pressure Medication,Biotin Deficiency,Moderate,45,No,0,0,0,0,0,1,0,0,0,0,1,2,0
-878,No,1,Eczema,Antibiotics,Vitamin D Deficiency,Low,28,No,0,1,1,0,0,1,0,0,1,1,0,0,0
-879,Yes,1,Dermatitis,Heart Medication,Biotin Deficiency,Moderate,19,No,0,0,1,0,1,1,0,0,0,1,1,0,0
-880,Yes,1,Scalp Infection,Antidepressants,Selenium deficiency,Low,24,No,0,1,1,1,1,1,0,0,1,1,0,0,0
-881,Yes,1,Alopecia Areata,Steroids,,High,23,No,1,0,0,0,1,1,0,1,0,0,2,0,0
-882,No,0,Thyroid Problems,Antibiotics,Omega-3 fatty acids,Low,31,Yes,1,1,1,1,0,0,1,1,1,1,0,1,0
-883,Yes,1,Scalp Infection,Immunomodulators,Selenium deficiency,High,50,Yes,0,0,0,0,1,1,1,0,0,0,2,2,1
-884,Yes,1,Ringworm,Rogaine,,Low,23,Yes,0,1,1,1,1,1,1,0,1,1,0,0,0
-885,Yes,1,Psoriasis,Steroids,Iron deficiency,Moderate,29,Yes,1,1,1,1,1,1,1,1,1,1,1,0,0
-886,Yes,0,Alopecia Areata,Antifungal Cream,Protein deficiency,Moderate,46,Yes,0,0,0,0,1,0,1,0,0,0,1,2,0
-887,Yes,1,Androgenetic Alopecia,Immunomodulators,Zinc Deficiency,High,39,No,0,1,0,0,1,1,0,0,1,0,2,1,0
-888,No,0,Seborrheic Dermatitis,Immunomodulators,Protein deficiency,Low,27,Yes,1,0,0,0,0,0,1,1,0,0,0,0,0
-889,Yes,0,Alopecia Areata,Rogaine,Vitamin E deficiency,Low,38,No,0,0,1,1,1,0,0,0,0,1,0,1,0
-890,Yes,0,Dermatosis,Heart Medication,Omega-3 fatty acids,Low,35,No,1,0,0,0,1,0,0,1,0,0,0,1,0
-891,No,0,Scalp Infection,Antidepressants,,Low,21,No,1,1,1,1,0,0,0,1,1,1,0,0,0
-892,Yes,1,Ringworm,Blood Pressure Medication,Vitamin A Deficiency,Moderate,40,Yes,0,1,0,0,1,1,1,0,1,0,1,2,0
-893,Yes,1,Dermatosis,Antibiotics,Vitamin D Deficiency,Moderate,19,No,1,1,0,1,1,1,0,1,1,0,1,0,0
-894,No,1,Androgenetic Alopecia,Rogaine,Protein deficiency,Low,43,Yes,1,0,0,1,0,1,1,1,0,0,0,2,0
-895,No,0,Dermatitis,Immunomodulators,Omega-3 fatty acids,High,44,Yes,1,1,1,0,0,0,1,1,1,1,2,2,0
-896,Yes,1,Eczema,Antidepressants,Protein deficiency,High,43,Yes,0,1,0,1,1,1,1,0,1,0,2,2,0
-897,No,0,Psoriasis,Antidepressants,,Moderate,21,Yes,1,1,0,1,0,0,1,1,1,0,1,0,0
-898,No,1,Scalp Infection,Antifungal Cream,Vitamin D Deficiency,High,40,No,1,0,0,1,0,1,0,1,0,0,2,2,1
-899,No,1,Androgenetic Alopecia,Immunomodulators,Vitamin A Deficiency,Moderate,29,Yes,0,1,1,1,0,1,1,0,1,1,1,0,0
-900,No,1,Psoriasis,Antifungal Cream,Iron deficiency,Moderate,35,No,1,0,1,1,0,1,0,1,0,1,1,1,0
-901,No,0,Ringworm,Antidepressants,,Low,23,No,1,0,1,0,0,0,0,1,0,1,0,0,0
-902,No,1,Thyroid Problems,Blood Pressure Medication,Selenium deficiency,Low,33,No,0,1,0,0,0,1,0,0,1,0,0,1,0
-903,No,0,Androgenetic Alopecia,Rogaine,Omega-3 fatty acids,Low,26,No,0,1,0,0,0,0,0,0,1,0,0,0,0
-904,No,0,Alopecia Areata,Immunomodulators,Vitamin D Deficiency,Moderate,48,Yes,0,1,0,1,0,0,1,0,1,0,1,2,0
-905,No,1,Thyroid Problems,Rogaine,Vitamin A Deficiency,Moderate,39,Yes,0,0,1,1,0,1,1,0,0,1,1,1,0
-906,No,1,Alopecia Areata,Heart Medication,Biotin Deficiency,High,29,No,1,1,1,0,0,1,0,1,1,1,2,0,0
-907,Yes,1,Eczema,Accutane,Protein deficiency,High,45,Yes,0,0,0,0,1,1,1,0,0,0,2,2,0
-908,Yes,1,Androgenetic Alopecia,Antifungal Cream,Vitamin E deficiency,Moderate,32,No,1,1,1,1,1,1,0,1,1,1,1,1,0
-909,Yes,0,Scalp Infection,Antidepressants,Biotin Deficiency,High,28,No,1,0,0,1,1,0,0,1,0,0,2,0,0
-910,No,1,Alopecia Areata,Heart Medication,Selenium deficiency,Moderate,20,No,1,0,1,1,0,1,0,1,0,1,1,0,0
-911,No,1,Alopecia Areata,Accutane,Vitamin E deficiency,Low,36,No,1,1,0,0,0,1,0,1,1,0,0,1,0
-912,Yes,1,Dermatitis,Immunomodulators,Omega-3 fatty acids,Moderate,50,Yes,1,0,1,0,1,1,1,1,0,1,1,2,0
-913,Yes,0,Thyroid Problems,Blood Pressure Medication,Zinc Deficiency,High,45,Yes,1,1,1,1,1,0,1,1,1,1,2,2,0
-914,Yes,1,Dermatosis,Heart Medication,Zinc Deficiency,Moderate,49,Yes,1,0,1,1,1,1,1,1,0,1,1,2,0
-915,Yes,1,Dermatitis,Heart Medication,Vitamin A Deficiency,High,26,No,1,1,0,1,1,1,0,1,1,0,2,0,0
-916,No,1,Dermatosis,Chemotherapy,Protein deficiency,Moderate,38,Yes,0,1,1,0,0,1,1,0,1,1,1,1,0
-917,Yes,0,Alopecia Areata,Antidepressants,Protein deficiency,Low,34,Yes,1,1,0,1,1,0,1,1,1,0,0,1,0
-918,Yes,1,Eczema,Accutane,Biotin Deficiency,High,48,No,1,1,1,1,1,1,0,1,1,1,2,2,0
-919,No,1,Alopecia Areata,Rogaine,Biotin Deficiency,Moderate,27,Yes,1,0,1,0,0,1,1,1,0,1,1,0,0
-920,Yes,0,Dermatosis,Antibiotics,Zinc Deficiency,High,41,Yes,0,1,1,1,1,0,1,0,1,1,2,2,0
-921,Yes,1,Alopecia Areata,Rogaine,Vitamin A Deficiency,High,46,Yes,0,0,0,1,1,1,1,0,0,0,2,2,0
-922,Yes,0,Dermatitis,Antidepressants,Iron deficiency,High,26,No,1,1,0,0,1,0,0,1,1,0,2,0,0
-923,No,0,Dermatosis,Heart Medication,,High,21,Yes,1,1,0,1,0,0,1,1,1,0,2,0,0
-924,No,1,Seborrheic Dermatitis,Accutane,Protein deficiency,High,29,Yes,1,1,1,1,0,1,1,1,1,1,2,0,0
-925,No,0,Alopecia Areata,Immunomodulators,Magnesium deficiency,Moderate,49,Yes,0,1,1,0,0,0,1,0,1,1,1,2,0
-926,No,1,Dermatosis,Rogaine,Protein deficiency,Moderate,25,No,0,1,1,1,0,1,0,0,1,1,1,0,0
-927,No,1,Scalp Infection,Blood Pressure Medication,Biotin Deficiency,Low,42,Yes,1,0,0,1,0,1,1,1,0,0,0,2,0
-928,Yes,1,Psoriasis,Antibiotics,Protein deficiency,Low,28,No,0,0,0,1,1,1,0,0,0,0,0,0,0
-929,No,0,Scalp Infection,Accutane,Zinc Deficiency,High,24,Yes,1,0,1,1,0,0,1,1,0,1,2,0,0
-930,No,0,Alopecia Areata,Rogaine,Vitamin A Deficiency,High,48,Yes,1,0,1,1,0,0,1,1,0,1,2,2,0
-931,No,1,Scalp Infection,Blood Pressure Medication,Iron deficiency,High,40,No,1,1,1,0,0,1,0,1,1,1,2,2,1
-932,No,0,Eczema,Heart Medication,Protein deficiency,High,31,Yes,0,0,1,1,0,0,1,0,0,1,2,1,0
-933,Yes,1,Seborrheic Dermatitis,Antibiotics,Magnesium deficiency,High,49,No,1,0,1,1,1,1,0,1,0,1,2,2,1
-934,Yes,0,Psoriasis,Heart Medication,Iron deficiency,High,20,Yes,1,0,0,0,1,0,1,1,0,0,2,0,1
-935,No,0,Androgenetic Alopecia,Antifungal Cream,Vitamin A Deficiency,High,45,Yes,1,1,0,0,0,0,1,1,1,0,2,2,0
-936,No,0,Androgenetic Alopecia,Antidepressants,Selenium deficiency,High,33,No,1,1,0,1,0,0,0,1,1,0,2,1,0
-937,No,1,Thyroid Problems,Antifungal Cream,Protein deficiency,High,38,Yes,0,1,1,1,0,1,1,0,1,1,2,1,0
-938,Yes,1,Seborrheic Dermatitis,Chemotherapy,Vitamin E deficiency,High,41,No,1,0,1,0,1,1,0,1,0,1,2,2,0
-939,No,0,Eczema,Chemotherapy,Magnesium deficiency,Low,32,No,0,0,0,0,0,0,0,0,0,0,0,1,0
-940,No,0,Alopecia Areata,Chemotherapy,Magnesium deficiency,Low,48,No,1,1,0,0,0,0,0,1,1,0,0,2,0
-941,Yes,0,Androgenetic Alopecia,Antidepressants,Vitamin E deficiency,High,18,No,0,0,1,0,1,0,0,0,0,1,2,0,1
-942,Yes,1,Eczema,Antibiotics,Vitamin A Deficiency,Low,24,No,0,1,0,1,1,1,0,0,1,0,0,0,0
-943,No,0,Ringworm,Rogaine,Vitamin A Deficiency,Moderate,37,No,1,0,1,0,0,0,0,1,0,1,1,1,0
-944,Yes,1,Dermatosis,Antifungal Cream,Vitamin D Deficiency,Low,38,No,1,1,0,0,1,1,0,1,1,0,0,1,0
-945,No,0,Dermatitis,Antibiotics,,Low,21,No,0,0,1,1,0,0,0,0,0,1,0,0,0
-946,No,1,Scalp Infection,Antibiotics,Biotin Deficiency,High,47,No,1,1,1,0,0,1,0,1,1,1,2,2,1
-947,No,1,Ringworm,Chemotherapy,,High,22,Yes,0,1,0,0,0,1,1,0,1,0,2,0,0
-948,No,0,Alopecia Areata,Steroids,Magnesium deficiency,Moderate,46,No,0,1,1,1,0,0,0,0,1,1,1,2,0
-949,Yes,0,Eczema,Antifungal Cream,Vitamin E deficiency,Low,26,No,1,0,1,1,1,0,0,1,0,1,0,0,0
-950,Yes,1,Psoriasis,Antifungal Cream,Vitamin D Deficiency,Low,35,Yes,0,0,0,1,1,1,1,0,0,0,0,1,0
-951,Yes,1,Dermatosis,Accutane,Omega-3 fatty acids,Low,45,No,0,1,1,1,1,1,0,0,1,1,0,2,0
-952,No,1,Scalp Infection,Heart Medication,Vitamin E deficiency,High,41,Yes,1,0,1,0,0,1,1,1,0,1,2,2,0
-953,No,0,Alopecia Areata,Chemotherapy,Omega-3 fatty acids,High,27,Yes,0,0,0,1,0,0,1,0,0,0,2,0,0
-954,No,0,Thyroid Problems,Accutane,Iron deficiency,High,44,No,0,1,0,0,0,0,0,0,1,0,2,2,0
-955,No,0,Androgenetic Alopecia,Rogaine,Zinc Deficiency,Low,38,Yes,0,0,1,0,0,0,1,0,0,1,0,1,0
-956,Yes,1,Seborrheic Dermatitis,Chemotherapy,,Moderate,21,No,0,1,0,1,1,1,0,0,1,0,1,0,0
-957,No,0,Androgenetic Alopecia,Heart Medication,Vitamin A Deficiency,High,28,No,1,1,0,0,0,0,0,1,1,0,2,0,0
-958,Yes,0,Eczema,Heart Medication,Biotin Deficiency,High,35,No,1,0,0,1,1,0,0,1,0,0,2,1,0
-959,Yes,0,Androgenetic Alopecia,Steroids,Iron deficiency,Moderate,50,Yes,1,1,0,0,1,0,1,1,1,0,1,2,0
-960,Yes,0,Scalp Infection,Rogaine,Omega-3 fatty acids,Moderate,38,No,1,1,1,0,1,0,0,1,1,1,1,1,0
-961,Yes,0,Thyroid Problems,Steroids,Magnesium deficiency,High,33,Yes,1,1,0,0,1,0,1,1,1,0,2,1,0
-962,No,0,Thyroid Problems,Immunomodulators,Magnesium deficiency,Moderate,42,Yes,0,0,0,0,0,0,1,0,0,0,1,2,0
-963,Yes,0,Psoriasis,Heart Medication,Magnesium deficiency,High,43,No,1,0,0,0,1,0,0,1,0,0,2,2,0
-964,No,0,Seborrheic Dermatitis,Immunomodulators,Magnesium deficiency,High,49,No,0,1,0,0,0,0,0,0,1,0,2,2,1
-965,No,0,Psoriasis,Antidepressants,,Low,22,No,0,0,1,0,0,0,0,0,0,1,0,0,0
-966,No,0,Alopecia Areata,Antifungal Cream,,High,23,No,1,1,1,0,0,0,0,1,1,1,2,0,0
-967,Yes,0,Androgenetic Alopecia,Chemotherapy,Iron deficiency,Moderate,41,Yes,1,0,0,1,1,0,1,1,0,0,1,2,0
-968,No,1,Androgenetic Alopecia,Chemotherapy,Iron deficiency,High,41,Yes,0,1,0,0,0,1,1,0,1,0,2,2,0
-969,Yes,0,Thyroid Problems,Rogaine,Omega-3 fatty acids,High,35,Yes,1,0,1,0,1,0,1,1,0,1,2,1,0
-970,No,1,Alopecia Areata,Antifungal Cream,Biotin Deficiency,Low,18,No,1,1,0,1,0,1,0,1,1,0,0,0,0
-971,No,0,Alopecia Areata,Antibiotics,Magnesium deficiency,Moderate,40,Yes,1,0,0,1,0,0,1,1,0,0,1,2,0
-972,Yes,1,Androgenetic Alopecia,Accutane,Vitamin E deficiency,Low,46,Yes,1,1,1,0,1,1,1,1,1,1,0,2,0
-973,Yes,0,Psoriasis,Heart Medication,Omega-3 fatty acids,High,38,Yes,1,1,0,0,1,0,1,1,1,0,2,1,0
-974,No,1,Scalp Infection,Immunomodulators,Omega-3 fatty acids,Low,41,Yes,0,1,0,0,0,1,1,0,1,0,0,2,0
-975,Yes,1,Dermatitis,Heart Medication,Vitamin D Deficiency,High,44,No,1,1,0,0,1,1,0,1,1,0,2,2,0
-976,Yes,1,Psoriasis,Blood Pressure Medication,,Low,21,Yes,1,1,0,0,1,1,1,1,1,0,0,0,0
-977,Yes,1,Alopecia Areata,Accutane,Vitamin E deficiency,Low,25,No,1,0,0,0,1,1,0,1,0,0,0,0,0
-978,Yes,0,Dermatosis,Antibiotics,Zinc Deficiency,Low,46,No,0,0,1,0,1,0,0,0,0,1,0,2,0
-979,Yes,1,Psoriasis,Antifungal Cream,Omega-3 fatty acids,Moderate,27,Yes,1,0,1,1,1,1,1,1,0,1,1,0,0
-980,Yes,1,Dermatosis,Antidepressants,Selenium deficiency,Moderate,26,No,0,0,0,0,1,1,0,0,0,0,1,0,0
-981,Yes,1,Eczema,Antibiotics,Iron deficiency,High,40,Yes,1,1,1,0,1,1,1,1,1,1,2,2,1
-982,Yes,1,Psoriasis,Antifungal Cream,Zinc Deficiency,Moderate,50,Yes,0,0,0,0,1,1,1,0,0,0,1,2,0
-983,No,1,Thyroid Problems,Steroids,Biotin Deficiency,High,33,Yes,1,0,0,1,0,1,1,1,0,0,2,1,0
-984,No,0,Androgenetic Alopecia,Antibiotics,Protein deficiency,High,43,No,0,0,0,0,0,0,0,0,0,0,2,2,0
-985,Yes,0,Seborrheic Dermatitis,Blood Pressure Medication,Biotin Deficiency,Low,33,Yes,0,1,1,0,1,0,1,0,1,1,0,1,0
-986,No,1,Androgenetic Alopecia,Immunomodulators,Biotin Deficiency,Low,46,No,0,1,0,1,0,1,0,0,1,0,0,2,0
-987,Yes,1,Androgenetic Alopecia,Immunomodulators,Selenium deficiency,Moderate,19,Yes,0,1,0,0,1,1,1,0,1,0,1,0,0
-988,No,0,Androgenetic Alopecia,Antibiotics,,High,23,Yes,1,0,1,0,0,0,1,1,0,1,2,0,0
-989,No,0,Ringworm,Rogaine,Selenium deficiency,Moderate,45,No,1,0,1,1,0,0,0,1,0,1,1,2,0
-990,Yes,0,Alopecia Areata,Antidepressants,Zinc Deficiency,Low,42,No,1,1,0,0,1,0,0,1,1,0,0,2,0
-991,No,1,Thyroid Problems,Antidepressants,Zinc Deficiency,High,33,Yes,1,0,0,0,0,1,1,1,0,0,2,1,0
-992,Yes,1,Dermatosis,Rogaine,Magnesium deficiency,Low,30,No,0,0,0,1,1,1,0,0,0,0,0,1,0
-993,No,1,Scalp Infection,Immunomodulators,,Moderate,23,Yes,1,1,1,0,0,1,1,1,1,1,1,0,0
-994,Yes,0,Seborrheic Dermatitis,Rogaine,Vitamin A Deficiency,Low,33,Yes,1,1,1,1,1,0,1,1,1,1,0,1,0
-995,Yes,1,Alopecia Areata,Accutane,Protein deficiency,Low,47,No,0,0,1,0,1,1,0,0,0,1,0,2,1
-996,No,1,Androgenetic Alopecia,Antidepressants,Protein deficiency,Moderate,20,Yes,0,1,1,1,0,1,1,0,1,1,1,0,0
-997,No,1,Dermatitis,Immunomodulators,Biotin Deficiency,Moderate,32,Yes,1,1,1,1,0,1,1,1,1,1,1,1,0
-998,Yes,1,Psoriasis,Blood Pressure Medication,Vitamin D Deficiency,Low,34,No,1,0,0,1,1,1,0,1,0,0,0,1,0
+Id,Genetics,Hormonal_Changes,Medical_Conditions,Medications_and_Treatments,Nutritional_Deficiencies,Stress,Age,Poor_Hair_Care_Habits,Environmental_Factors,Smoking,Weight_Loss,Hair_Loss,Genetic_Encoding,Hormonal_Encoding,Poor_Hair_Care_Encoding,Environmental_Encoding,Smoking_Encoding,Weight_Loss_Encoding,Stress_Level,Age_Range
+0,Yes,0,Alopecia Areata,,Magnesium deficiency,Moderate,19,Yes,1,0,0,0,1,0,1,1,0,0,1,0
+1,No,0,Eczema,Antibiotics,Magnesium deficiency,High,43,Yes,1,0,0,0,0,0,1,1,0,0,2,2
+2,No,0,Dermatosis,Antifungal Cream,Protein deficiency,Moderate,26,Yes,1,0,1,0,0,0,1,1,0,1,1,0
+3,Yes,1,Ringworm,Antibiotics,Biotin Deficiency,Moderate,46,Yes,1,0,0,0,1,1,1,1,0,0,1,2
+4,No,0,Psoriasis,Accutane,Iron deficiency,Moderate,30,No,1,1,0,1,0,0,0,1,1,0,1,1
+5,Yes,0,Psoriasis,Antibiotics,Magnesium deficiency,Low,37,No,1,0,1,1,1,0,0,1,0,1,0,1
+6,Yes,1,Scalp Infection,,Selenium deficiency,High,40,Yes,0,0,0,1,1,1,1,0,0,0,2,2
+7,Yes,0,Dermatosis,Chemotherapy,Omega-3 fatty acids,High,35,Yes,0,1,0,0,1,0,1,0,1,0,2,1
+8,Yes,0,Eczema,Steroids,Selenium deficiency,Moderate,19,No,0,1,1,1,1,0,0,0,1,1,1,0
+9,No,1,Ringworm,Rogaine,Magnesium deficiency,Moderate,49,Yes,1,1,0,0,0,1,1,1,1,0,1,2
+10,Yes,1,Eczema,Blood Pressure Medication,Biotin Deficiency,High,26,Yes,1,1,0,0,1,1,1,1,1,0,2,0
+11,No,1,Alopecia Areata,Accutane,Zinc Deficiency,High,48,No,0,0,0,1,0,1,0,0,0,0,2,2
+12,Yes,1,Scalp Infection,Immunomodulators,Biotin Deficiency,Moderate,20,No,1,1,0,1,1,1,0,1,1,0,1,0
+13,No,0,Psoriasis,Antibiotics,Vitamin A Deficiency,High,30,Yes,1,1,1,0,0,0,1,1,1,1,2,1
+14,Yes,0,Eczema,Antibiotics,Biotin Deficiency,High,34,Yes,1,0,1,0,1,0,1,1,0,1,2,1
+15,Yes,1,Scalp Infection,Rogaine,Vitamin D Deficiency,Moderate,29,Yes,0,0,1,0,1,1,1,0,0,1,1,0
+16,Yes,0,Seborrheic Dermatitis,Antidepressants,Vitamin D Deficiency,High,46,Yes,1,0,1,0,1,0,1,1,0,1,2,2
+17,No,1,Dermatosis,Antibiotics,Zinc Deficiency,Low,19,Yes,0,0,1,1,0,1,1,0,0,1,0,0
+18,Yes,1,Dermatosis,Accutane,Biotin Deficiency,Low,26,No,0,1,0,0,1,1,0,0,1,0,0,0
+19,Yes,1,Seborrheic Dermatitis,Chemotherapy,Vitamin A Deficiency,High,46,Yes,1,0,1,1,1,1,1,1,0,1,2,2
+20,Yes,1,Seborrheic Dermatitis,Accutane,Protein deficiency,High,46,No,1,0,1,1,1,1,0,1,0,1,2,2
+21,No,0,Alopecia Areata,Chemotherapy,Zinc Deficiency,High,20,No,1,1,1,1,0,0,0,1,1,1,2,0
+22,Yes,1,Psoriasis,Antibiotics,Vitamin D Deficiency,Low,29,No,0,1,1,0,1,1,0,0,1,1,0,0
+23,No,1,Scalp Infection,Antidepressants,Vitamin D Deficiency,High,37,No,0,1,0,1,0,1,0,0,1,0,2,1
+24,No,1,Dermatitis,Antibiotics,Protein deficiency,High,33,Yes,1,0,0,0,0,1,1,1,0,0,2,1
+25,Yes,1,Dermatosis,Heart Medication,Vitamin A Deficiency,Moderate,34,No,0,0,0,0,1,1,0,0,0,0,1,1
+26,No,1,Dermatosis,Immunomodulators,Selenium deficiency,High,28,No,0,0,0,0,0,1,0,0,0,0,2,0
+27,No,1,Seborrheic Dermatitis,Antifungal Cream,Zinc Deficiency,Low,41,No,0,0,0,0,0,1,0,0,0,0,0,2
+28,No,1,Thyroid Problems,Chemotherapy,Omega-3 fatty acids,Low,35,Yes,1,1,0,0,0,1,1,1,1,0,0,1
+29,No,1,Dermatitis,Chemotherapy,,Low,21,Yes,1,1,0,0,0,1,1,1,1,0,0,0
+30,No,0,Dermatosis,Chemotherapy,,High,22,Yes,1,0,0,0,0,0,1,1,0,0,2,0
+31,No,1,Dermatitis,Antibiotics,Iron deficiency,Moderate,45,No,0,0,1,1,0,1,0,0,0,1,1,2
+32,Yes,0,Dermatitis,Steroids,Protein deficiency,Moderate,30,Yes,1,0,0,0,1,0,1,1,0,0,1,1
+33,Yes,0,Ringworm,Steroids,Selenium deficiency,High,24,Yes,1,0,1,1,1,0,1,1,0,1,2,0
+34,No,1,Scalp Infection,Antidepressants,Vitamin D Deficiency,Moderate,31,Yes,1,1,1,1,0,1,1,1,1,1,1,1
+35,Yes,1,Dermatitis,Chemotherapy,Zinc Deficiency,Low,30,Yes,1,1,1,0,1,1,1,1,1,1,0,1
+36,No,1,Alopecia Areata,Antibiotics,Biotin Deficiency,Low,39,No,0,0,1,1,0,1,0,0,0,1,0,1
+37,No,0,Eczema,Heart Medication,,Low,21,Yes,0,0,1,1,0,0,1,0,0,1,0,0
+38,No,1,Scalp Infection,Chemotherapy,Zinc Deficiency,Low,24,Yes,1,1,0,0,0,1,1,1,1,0,0,0
+39,Yes,1,Seborrheic Dermatitis,Steroids,Omega-3 fatty acids,Moderate,38,No,0,0,0,0,1,1,0,0,0,0,1,1
+40,No,0,Psoriasis,Chemotherapy,Vitamin E deficiency,High,19,Yes,1,1,0,0,0,0,1,1,1,0,2,0
+41,Yes,1,Dermatosis,Immunomodulators,Magnesium deficiency,High,39,No,0,1,1,1,1,1,0,0,1,1,2,1
+42,Yes,0,Alopecia Areata,Accutane,Selenium deficiency,High,30,No,0,0,0,1,1,0,0,0,0,0,2,1
+43,No,0,Dermatosis,Blood Pressure Medication,Magnesium deficiency,Low,24,No,1,0,1,1,0,0,0,1,0,1,0,0
+44,Yes,1,Thyroid Problems,Rogaine,Vitamin E deficiency,Low,37,No,0,0,0,1,1,1,0,0,0,0,0,1
+45,No,0,Androgenetic Alopecia,Accutane,Iron deficiency,Moderate,36,No,0,1,1,1,0,0,0,0,1,1,1,1
+46,No,1,Androgenetic Alopecia,Steroids,Vitamin A Deficiency,Moderate,48,Yes,1,0,0,0,0,1,1,1,0,0,1,2
+47,No,0,Psoriasis,Steroids,Zinc Deficiency,High,18,No,1,1,0,1,0,0,0,1,1,0,2,0
+48,Yes,0,Ringworm,Blood Pressure Medication,Iron deficiency,High,18,No,1,0,1,1,1,0,0,1,0,1,2,0
+49,No,0,Scalp Infection,Immunomodulators,Vitamin A Deficiency,Moderate,38,Yes,1,0,1,0,0,0,1,1,0,1,1,1
+50,Yes,1,Androgenetic Alopecia,Rogaine,Vitamin D Deficiency,Moderate,46,Yes,1,1,1,1,1,1,1,1,1,1,1,2
+51,Yes,0,Psoriasis,Blood Pressure Medication,Vitamin A Deficiency,Low,39,No,1,1,0,1,1,0,0,1,1,0,0,1
+52,No,1,Seborrheic Dermatitis,Antibiotics,Protein deficiency,Moderate,31,Yes,1,1,0,1,0,1,1,1,1,0,1,1
+53,Yes,1,Androgenetic Alopecia,Heart Medication,Omega-3 fatty acids,Low,28,Yes,1,0,0,0,1,1,1,1,0,0,0,0
+54,No,1,Alopecia Areata,Blood Pressure Medication,Iron deficiency,High,28,Yes,0,1,0,1,0,1,1,0,1,0,2,0
+55,Yes,0,Thyroid Problems,Steroids,Biotin Deficiency,Low,44,Yes,1,0,1,1,1,0,1,1,0,1,0,2
+56,No,0,Ringworm,Blood Pressure Medication,Zinc Deficiency,Moderate,45,No,0,1,0,0,0,0,0,0,1,0,1,2
+57,Yes,1,Thyroid Problems,Antidepressants,,Low,21,Yes,0,0,1,1,1,1,1,0,0,1,0,0
+58,Yes,1,Seborrheic Dermatitis,Antifungal Cream,Omega-3 fatty acids,High,50,No,1,0,1,0,1,1,0,1,0,1,2,2
+59,No,0,Androgenetic Alopecia,Chemotherapy,Biotin Deficiency,Moderate,35,No,1,0,0,1,0,0,0,1,0,0,1,1
+60,Yes,0,Eczema,Antidepressants,Selenium deficiency,Low,50,Yes,0,0,0,0,1,0,1,0,0,0,0,2
+61,No,0,Dermatitis,Rogaine,Zinc Deficiency,High,34,Yes,1,1,1,0,0,0,1,1,1,1,2,1
+62,No,0,Psoriasis,Chemotherapy,Iron deficiency,Low,28,Yes,0,1,0,1,0,0,1,0,1,0,0,0
+63,Yes,1,Dermatitis,Antidepressants,Vitamin E deficiency,Moderate,27,No,0,0,1,0,1,1,0,0,0,1,1,0
+64,Yes,1,Dermatosis,Rogaine,Magnesium deficiency,Low,35,Yes,1,0,0,1,1,1,1,1,0,0,0,1
+65,Yes,1,Dermatitis,Antidepressants,Vitamin D Deficiency,High,25,Yes,0,0,1,0,1,1,1,0,0,1,2,0
+66,Yes,0,Dermatosis,Blood Pressure Medication,,Moderate,22,Yes,1,1,0,1,1,0,1,1,1,0,1,0
+67,No,1,Seborrheic Dermatitis,Antibiotics,Vitamin D Deficiency,Moderate,43,Yes,1,1,0,0,0,1,1,1,1,0,1,2
+68,Yes,0,Thyroid Problems,Accutane,Zinc Deficiency,High,44,No,0,0,0,0,1,0,0,0,0,0,2,2
+69,Yes,0,Seborrheic Dermatitis,Heart Medication,Magnesium deficiency,High,34,No,0,1,0,1,1,0,0,0,1,0,2,1
+70,Yes,0,Alopecia Areata,Steroids,,Moderate,23,No,1,0,0,1,1,0,0,1,0,0,1,0
+71,Yes,0,Psoriasis,Chemotherapy,Vitamin D Deficiency,High,44,No,0,1,1,1,1,0,0,0,1,1,2,2
+72,Yes,1,Dermatosis,Heart Medication,Vitamin A Deficiency,Low,24,No,1,1,0,1,1,1,0,1,1,0,0,0
+73,No,0,Psoriasis,Antidepressants,Zinc Deficiency,Low,25,No,0,1,1,1,0,0,0,0,1,1,0,0
+74,No,1,Seborrheic Dermatitis,Blood Pressure Medication,Zinc Deficiency,Moderate,50,Yes,0,0,1,1,0,1,1,0,0,1,1,2
+75,Yes,1,Androgenetic Alopecia,Antifungal Cream,Vitamin D Deficiency,High,38,No,0,0,0,1,1,1,0,0,0,0,2,1
+76,No,0,Seborrheic Dermatitis,Immunomodulators,,High,22,No,1,0,0,1,0,0,0,1,0,0,2,0
+77,No,1,Dermatosis,Heart Medication,Vitamin E deficiency,High,49,Yes,0,1,1,0,0,1,1,0,1,1,2,2
+78,No,1,Dermatosis,Accutane,Zinc Deficiency,Low,34,No,1,0,0,0,0,1,0,1,0,0,0,1
+79,No,0,Androgenetic Alopecia,Immunomodulators,Vitamin D Deficiency,High,47,No,1,1,0,1,0,0,0,1,1,0,2,2
+80,No,0,Androgenetic Alopecia,Blood Pressure Medication,Vitamin D Deficiency,High,24,Yes,0,1,0,0,0,0,1,0,1,0,2,0
+81,No,1,Seborrheic Dermatitis,Accutane,Vitamin E deficiency,Low,41,Yes,0,1,0,0,0,1,1,0,1,0,0,2
+82,No,1,Androgenetic Alopecia,Antifungal Cream,Biotin Deficiency,High,18,Yes,0,0,0,0,0,1,1,0,0,0,2,0
+83,Yes,1,Scalp Infection,Antifungal Cream,Zinc Deficiency,Moderate,46,Yes,1,1,0,0,1,1,1,1,1,0,1,2
+84,Yes,0,Ringworm,Antifungal Cream,Omega-3 fatty acids,Low,43,Yes,1,0,1,0,1,0,1,1,0,1,0,2
+85,Yes,1,Seborrheic Dermatitis,Blood Pressure Medication,Vitamin A Deficiency,Low,32,No,0,0,0,1,1,1,0,0,0,0,0,1
+86,No,0,Ringworm,Steroids,Zinc Deficiency,Low,31,Yes,1,0,0,1,0,0,1,1,0,0,0,1
+87,Yes,1,Dermatitis,Steroids,Magnesium deficiency,Low,37,No,1,1,1,0,1,1,0,1,1,1,0,1
+88,No,0,Dermatosis,Antidepressants,Vitamin A Deficiency,High,24,Yes,1,0,0,0,0,0,1,1,0,0,2,0
+89,Yes,1,Androgenetic Alopecia,Heart Medication,Iron deficiency,Moderate,46,No,0,0,1,1,1,1,0,0,0,1,1,2
+90,Yes,1,Alopecia Areata,Rogaine,Zinc Deficiency,Moderate,19,No,0,1,0,0,1,1,0,0,1,0,1,0
+91,Yes,0,Seborrheic Dermatitis,Blood Pressure Medication,Vitamin D Deficiency,Moderate,34,Yes,1,0,0,1,1,0,1,1,0,0,1,1
+92,Yes,0,Psoriasis,Antibiotics,Vitamin D Deficiency,Low,29,No,0,0,0,1,1,0,0,0,0,0,0,0
+93,No,0,Dermatitis,Steroids,Zinc Deficiency,Moderate,28,Yes,1,1,1,1,0,0,1,1,1,1,1,0
+94,No,1,Seborrheic Dermatitis,Antibiotics,Iron deficiency,Moderate,41,Yes,1,0,0,1,0,1,1,1,0,0,1,2
+95,Yes,1,Dermatosis,Antifungal Cream,Protein deficiency,Moderate,37,No,0,0,1,1,1,1,0,0,0,1,1,1
+96,No,1,Androgenetic Alopecia,Immunomodulators,Iron deficiency,High,19,No,0,0,0,1,0,1,0,0,0,0,2,0
+97,Yes,0,Thyroid Problems,Steroids,Biotin Deficiency,Moderate,45,Yes,1,0,0,0,1,0,1,1,0,0,1,2
+98,Yes,0,Ringworm,Heart Medication,Vitamin A Deficiency,High,39,No,0,1,1,1,1,0,0,0,1,1,2,1
+99,Yes,1,Seborrheic Dermatitis,Rogaine,Iron deficiency,High,24,Yes,1,1,1,0,1,1,1,1,1,1,2,0
+100,Yes,1,Androgenetic Alopecia,Antifungal Cream,Magnesium deficiency,Moderate,27,No,0,0,0,1,1,1,0,0,0,0,1,0
+101,Yes,1,Ringworm,Heart Medication,Vitamin D Deficiency,Low,34,No,1,1,1,0,1,1,0,1,1,1,0,1
+102,Yes,0,Psoriasis,Blood Pressure Medication,Vitamin A Deficiency,Moderate,19,Yes,0,1,0,1,1,0,1,0,1,0,1,0
+103,Yes,1,Psoriasis,Antifungal Cream,Iron deficiency,Moderate,41,Yes,0,1,1,0,1,1,1,0,1,1,1,2
+104,No,1,Thyroid Problems,Steroids,Vitamin A Deficiency,Low,37,Yes,0,1,0,0,0,1,1,0,1,0,0,1
+105,No,0,Ringworm,Antidepressants,Iron deficiency,Low,50,Yes,0,1,0,0,0,0,1,0,1,0,0,2
+106,No,1,Thyroid Problems,Antidepressants,Protein deficiency,High,34,Yes,0,0,1,0,0,1,1,0,0,1,2,1
+107,Yes,0,Ringworm,Steroids,,High,23,Yes,1,1,1,1,1,0,1,1,1,1,2,0
+108,Yes,1,Ringworm,Antidepressants,Zinc Deficiency,Low,37,No,1,1,0,0,1,1,0,1,1,0,0,1
+109,No,0,Androgenetic Alopecia,Accutane,Vitamin D Deficiency,Low,50,No,0,0,0,1,0,0,0,0,0,0,0,2
+110,Yes,1,Ringworm,Immunomodulators,Omega-3 fatty acids,High,28,Yes,0,0,1,1,1,1,1,0,0,1,2,0
+111,No,1,Seborrheic Dermatitis,Antibiotics,Vitamin A Deficiency,High,24,No,1,1,0,1,0,1,0,1,1,0,2,0
+112,Yes,1,Alopecia Areata,Antifungal Cream,Vitamin D Deficiency,Moderate,36,No,0,0,1,1,1,1,0,0,0,1,1,1
+113,No,1,Alopecia Areata,Antifungal Cream,Selenium deficiency,Low,18,Yes,0,0,0,0,0,1,1,0,0,0,0,0
+114,No,1,Androgenetic Alopecia,Blood Pressure Medication,Biotin Deficiency,Moderate,24,Yes,1,1,0,0,0,1,1,1,1,0,1,0
+115,Yes,1,Psoriasis,Chemotherapy,Protein deficiency,Low,24,No,1,0,0,0,1,1,0,1,0,0,0,0
+116,Yes,0,Thyroid Problems,Antibiotics,,High,23,Yes,0,1,0,0,1,0,1,0,1,0,2,0
+117,Yes,0,Androgenetic Alopecia,Antidepressants,Biotin Deficiency,Moderate,47,Yes,0,1,0,1,1,0,1,0,1,0,1,2
+118,Yes,1,Androgenetic Alopecia,Heart Medication,Iron deficiency,Moderate,29,Yes,0,1,0,1,1,1,1,0,1,0,1,0
+119,No,1,Eczema,Antidepressants,Vitamin E deficiency,Moderate,42,No,0,1,0,1,0,1,0,0,1,0,1,2
+120,Yes,0,Dermatitis,Antifungal Cream,Selenium deficiency,Low,27,Yes,0,1,0,0,1,0,1,0,1,0,0,0
+121,Yes,0,Psoriasis,Antifungal Cream,Biotin Deficiency,High,35,No,0,0,0,0,1,0,0,0,0,0,2,1
+122,No,0,Eczema,Chemotherapy,,Moderate,23,No,0,1,0,0,0,0,0,0,1,0,1,0
+123,Yes,0,Scalp Infection,Antidepressants,Protein deficiency,Low,19,Yes,1,0,0,1,1,0,1,1,0,0,0,0
+124,Yes,1,Psoriasis,Chemotherapy,Biotin Deficiency,High,24,Yes,1,1,0,0,1,1,1,1,1,0,2,0
+125,Yes,1,Alopecia Areata,Steroids,Protein deficiency,Low,35,No,0,1,1,0,1,1,0,0,1,1,0,1
+126,No,0,Dermatosis,Antidepressants,Vitamin A Deficiency,Low,30,No,1,0,0,1,0,0,0,1,0,0,0,1
+127,Yes,0,Eczema,Antibiotics,Vitamin A Deficiency,Low,48,Yes,1,1,1,0,1,0,1,1,1,1,0,2
+128,Yes,1,Thyroid Problems,Heart Medication,Biotin Deficiency,Low,30,Yes,1,1,1,0,1,1,1,1,1,1,0,1
+129,Yes,0,Seborrheic Dermatitis,Steroids,Zinc Deficiency,Moderate,39,Yes,0,0,1,0,1,0,1,0,0,1,1,1
+130,Yes,0,Psoriasis,Antibiotics,Omega-3 fatty acids,Moderate,47,No,1,1,1,0,1,0,0,1,1,1,1,2
+131,Yes,0,Thyroid Problems,Accutane,Biotin Deficiency,Low,43,Yes,1,0,0,1,1,0,1,1,0,0,0,2
+132,No,1,Androgenetic Alopecia,Chemotherapy,Magnesium deficiency,High,27,Yes,1,1,1,1,0,1,1,1,1,1,2,0
+133,No,1,Androgenetic Alopecia,Antibiotics,Zinc Deficiency,Moderate,42,Yes,1,1,1,0,0,1,1,1,1,1,1,2
+134,No,0,Thyroid Problems,Antifungal Cream,,Moderate,23,No,1,1,0,0,0,0,0,1,1,0,1,0
+135,Yes,0,Seborrheic Dermatitis,Steroids,Biotin Deficiency,Low,42,Yes,0,1,0,1,1,0,1,0,1,0,0,2
+136,No,0,Ringworm,Heart Medication,Selenium deficiency,Low,37,No,0,0,1,1,0,0,0,0,0,1,0,1
+137,Yes,0,Androgenetic Alopecia,Antidepressants,Selenium deficiency,High,18,Yes,0,0,1,1,1,0,1,0,0,1,2,0
+138,Yes,0,Androgenetic Alopecia,Heart Medication,Vitamin E deficiency,High,34,No,1,1,1,0,1,0,0,1,1,1,2,1
+139,No,0,Psoriasis,Heart Medication,Iron deficiency,Low,18,Yes,1,0,0,0,0,0,1,1,0,0,0,0
+140,No,0,Scalp Infection,Chemotherapy,Iron deficiency,High,29,Yes,1,0,1,1,0,0,1,1,0,1,2,0
+141,No,1,Androgenetic Alopecia,Chemotherapy,Vitamin D Deficiency,High,27,No,1,1,1,1,0,1,0,1,1,1,2,0
+142,Yes,0,Scalp Infection,Rogaine,Selenium deficiency,Moderate,35,No,1,0,1,0,1,0,0,1,0,1,1,1
+143,No,0,Psoriasis,Rogaine,Biotin Deficiency,Low,39,No,0,0,1,0,0,0,0,0,0,1,0,1
+144,Yes,0,Psoriasis,Antidepressants,Omega-3 fatty acids,High,50,Yes,1,0,0,0,1,0,1,1,0,0,2,2
+145,Yes,1,Dermatitis,Heart Medication,Omega-3 fatty acids,Moderate,32,Yes,0,0,0,1,1,1,1,0,0,0,1,1
+146,No,0,Dermatitis,Accutane,Magnesium deficiency,Moderate,30,Yes,1,0,1,1,0,0,1,1,0,1,1,1
+147,No,1,Psoriasis,Antidepressants,Protein deficiency,Low,45,Yes,0,1,1,1,0,1,1,0,1,1,0,2
+148,No,1,Dermatitis,Chemotherapy,Zinc Deficiency,Low,19,Yes,0,1,0,0,0,1,1,0,1,0,0,0
+149,No,0,Seborrheic Dermatitis,Antidepressants,Iron deficiency,Low,32,Yes,1,0,0,1,0,0,1,1,0,0,0,1
+150,No,1,Seborrheic Dermatitis,Steroids,Iron deficiency,Moderate,20,No,1,1,0,1,0,1,0,1,1,0,1,0
+151,No,1,Thyroid Problems,Antidepressants,Zinc Deficiency,Moderate,32,No,1,0,0,0,0,1,0,1,0,0,1,1
+152,Yes,0,Scalp Infection,Immunomodulators,Protein deficiency,High,43,Yes,1,0,1,0,1,0,1,1,0,1,2,2
+153,No,1,Androgenetic Alopecia,Rogaine,Protein deficiency,Moderate,38,Yes,0,0,1,1,0,1,1,0,0,1,1,1
+154,Yes,0,Thyroid Problems,Chemotherapy,Vitamin E deficiency,Low,32,Yes,0,0,0,1,1,0,1,0,0,0,0,1
+155,Yes,1,Androgenetic Alopecia,Steroids,Iron deficiency,High,26,Yes,1,0,1,1,1,1,1,1,0,1,2,0
+156,No,1,Eczema,Antidepressants,Vitamin D Deficiency,Low,32,No,1,0,0,0,0,1,0,1,0,0,0,1
+157,No,0,Thyroid Problems,Rogaine,Omega-3 fatty acids,Low,41,Yes,1,1,0,1,0,0,1,1,1,0,0,2
+158,No,0,Seborrheic Dermatitis,Steroids,Vitamin E deficiency,High,33,Yes,0,0,1,0,0,0,1,0,0,1,2,1
+159,Yes,0,Eczema,Antifungal Cream,Magnesium deficiency,Moderate,20,No,0,1,1,1,1,0,0,0,1,1,1,0
+160,Yes,0,Alopecia Areata,Antidepressants,Selenium deficiency,Moderate,35,Yes,0,0,1,1,1,0,1,0,0,1,1,1
+161,No,0,Androgenetic Alopecia,Rogaine,Biotin Deficiency,Low,26,Yes,0,1,0,0,0,0,1,0,1,0,0,0
+162,Yes,0,Androgenetic Alopecia,Accutane,Selenium deficiency,Moderate,39,No,0,1,0,1,1,0,0,0,1,0,1,1
+163,Yes,0,Dermatosis,Heart Medication,Omega-3 fatty acids,Moderate,30,No,1,1,0,0,1,0,0,1,1,0,1,1
+164,Yes,0,Dermatosis,Immunomodulators,Protein deficiency,Low,25,Yes,1,0,1,0,1,0,1,1,0,1,0,0
+165,No,0,Alopecia Areata,Antibiotics,Selenium deficiency,Low,49,No,1,0,0,0,0,0,0,1,0,0,0,2
+166,Yes,0,Seborrheic Dermatitis,Rogaine,Protein deficiency,Moderate,33,No,1,0,0,0,1,0,0,1,0,0,1,1
+167,No,1,Scalp Infection,Rogaine,Protein deficiency,High,42,Yes,1,1,0,0,0,1,1,1,1,0,2,2
+168,Yes,0,Seborrheic Dermatitis,Blood Pressure Medication,Vitamin A Deficiency,High,43,Yes,1,0,0,0,1,0,1,1,0,0,2,2
+169,Yes,0,Androgenetic Alopecia,Antidepressants,Biotin Deficiency,Moderate,45,No,1,1,1,1,1,0,0,1,1,1,1,2
+170,Yes,1,Psoriasis,Accutane,,Low,23,Yes,0,1,1,1,1,1,1,0,1,1,0,0
+171,No,0,Psoriasis,Antifungal Cream,Zinc Deficiency,Moderate,50,Yes,1,1,0,0,0,0,1,1,1,0,1,2
+172,No,1,Alopecia Areata,Heart Medication,Selenium deficiency,Moderate,26,Yes,0,1,1,0,0,1,1,0,1,1,1,0
+173,No,0,Dermatosis,Blood Pressure Medication,Vitamin D Deficiency,High,46,No,0,1,1,1,0,0,0,0,1,1,2,2
+174,Yes,0,Androgenetic Alopecia,Antibiotics,Vitamin A Deficiency,Low,46,No,0,0,1,0,1,0,0,0,0,1,0,2
+175,No,0,Psoriasis,Heart Medication,Selenium deficiency,Low,18,No,0,0,1,1,0,0,0,0,0,1,0,0
+176,No,0,Thyroid Problems,Steroids,Vitamin A Deficiency,High,30,No,1,1,1,0,0,0,0,1,1,1,2,1
+177,No,0,Alopecia Areata,Immunomodulators,Protein deficiency,High,42,Yes,1,0,0,0,0,0,1,1,0,0,2,2
+178,Yes,0,Dermatosis,Antifungal Cream,Biotin Deficiency,Low,36,No,1,0,1,0,1,0,0,1,0,1,0,1
+179,Yes,0,Androgenetic Alopecia,Antidepressants,Biotin Deficiency,Low,41,No,0,1,1,0,1,0,0,0,1,1,0,2
+180,Yes,1,Dermatosis,Antibiotics,,Moderate,22,Yes,0,1,1,0,1,1,1,0,1,1,1,0
+181,No,0,Alopecia Areata,Antifungal Cream,Magnesium deficiency,High,44,Yes,0,1,0,1,0,0,1,0,1,0,2,2
+182,Yes,1,Ringworm,Rogaine,Biotin Deficiency,Low,30,No,1,1,1,0,1,1,0,1,1,1,0,1
+183,Yes,0,Psoriasis,Steroids,Vitamin E deficiency,High,47,Yes,1,0,0,1,1,0,1,1,0,0,2,2
+184,Yes,1,Seborrheic Dermatitis,Heart Medication,Biotin Deficiency,High,18,No,1,1,1,0,1,1,0,1,1,1,2,0
+185,No,0,Thyroid Problems,Rogaine,Iron deficiency,Moderate,29,Yes,0,0,1,0,0,0,1,0,0,1,1,0
+186,No,0,Dermatitis,Antifungal Cream,Magnesium deficiency,Moderate,29,Yes,1,0,0,0,0,0,1,1,0,0,1,0
+187,No,1,Seborrheic Dermatitis,Heart Medication,Biotin Deficiency,Moderate,47,No,0,0,1,1,0,1,0,0,0,1,1,2
+188,No,0,Thyroid Problems,Antidepressants,Vitamin D Deficiency,High,36,Yes,0,0,0,0,0,0,1,0,0,0,2,1
+189,No,0,Ringworm,Immunomodulators,Zinc Deficiency,Low,39,No,1,1,1,0,0,0,0,1,1,1,0,1
+190,No,0,Scalp Infection,Antifungal Cream,Vitamin A Deficiency,Low,31,Yes,0,0,0,0,0,0,1,0,0,0,0,1
+191,Yes,0,Dermatosis,Rogaine,Vitamin E deficiency,Low,33,No,0,0,0,1,1,0,0,0,0,0,0,1
+192,No,0,Alopecia Areata,Antifungal Cream,Iron deficiency,Moderate,24,No,1,0,0,0,0,0,0,1,0,0,1,0
+193,Yes,0,Psoriasis,Heart Medication,Omega-3 fatty acids,Low,32,Yes,0,1,1,0,1,0,1,0,1,1,0,1
+194,Yes,1,Alopecia Areata,Immunomodulators,Magnesium deficiency,Moderate,47,No,1,0,0,0,1,1,0,1,0,0,1,2
+195,Yes,0,Androgenetic Alopecia,Immunomodulators,Iron deficiency,High,25,No,0,0,1,0,1,0,0,0,0,1,2,0
+196,No,0,Alopecia Areata,Chemotherapy,Biotin Deficiency,Low,44,Yes,1,0,0,1,0,0,1,1,0,0,0,2
+197,No,0,Dermatosis,Immunomodulators,Zinc Deficiency,High,50,No,0,1,1,1,0,0,0,0,1,1,2,2
+198,Yes,1,Thyroid Problems,Antibiotics,Omega-3 fatty acids,Moderate,30,Yes,1,1,0,0,1,1,1,1,1,0,1,1
+199,Yes,0,Alopecia Areata,Antifungal Cream,Zinc Deficiency,High,44,No,0,0,1,1,1,0,0,0,0,1,2,2
+200,Yes,1,Scalp Infection,Rogaine,Protein deficiency,Moderate,43,No,0,0,0,0,1,1,0,0,0,0,1,2
+201,Yes,1,Seborrheic Dermatitis,Heart Medication,Protein deficiency,High,18,No,0,1,0,0,1,1,0,0,1,0,2,0
+202,No,0,Androgenetic Alopecia,Immunomodulators,Protein deficiency,High,26,No,0,1,1,1,0,0,0,0,1,1,2,0
+203,Yes,1,Eczema,Steroids,Zinc Deficiency,Low,35,No,1,1,0,0,1,1,0,1,1,0,0,1
+204,Yes,1,Ringworm,Heart Medication,Selenium deficiency,Moderate,27,No,1,1,0,1,1,1,0,1,1,0,1,0
+205,No,1,Androgenetic Alopecia,Antibiotics,Biotin Deficiency,High,48,No,0,0,0,1,0,1,0,0,0,0,2,2
+206,Yes,1,Psoriasis,Antifungal Cream,Selenium deficiency,Low,47,Yes,0,0,0,1,1,1,1,0,0,0,0,2
+207,No,0,Ringworm,Accutane,Zinc Deficiency,High,45,Yes,0,0,1,0,0,0,1,0,0,1,2,2
+208,Yes,0,Thyroid Problems,Blood Pressure Medication,Zinc Deficiency,Low,39,Yes,0,0,0,0,1,0,1,0,0,0,0,1
+209,No,0,Psoriasis,Steroids,Vitamin A Deficiency,High,48,No,1,1,0,1,0,0,0,1,1,0,2,2
+210,Yes,1,Alopecia Areata,Blood Pressure Medication,Vitamin E deficiency,Low,50,Yes,1,0,1,0,1,1,1,1,0,1,0,2
+211,Yes,1,Alopecia Areata,Steroids,Zinc Deficiency,High,28,No,1,1,0,1,1,1,0,1,1,0,2,0
+212,No,0,Seborrheic Dermatitis,Antidepressants,Vitamin A Deficiency,Low,45,No,0,0,1,1,0,0,0,0,0,1,0,2
+213,No,0,Eczema,Heart Medication,Protein deficiency,Moderate,46,No,0,1,1,1,0,0,0,0,1,1,1,2
+214,Yes,1,Thyroid Problems,Heart Medication,,High,23,No,1,0,1,1,1,1,0,1,0,1,2,0
+215,No,1,Dermatosis,Chemotherapy,Magnesium deficiency,Moderate,29,Yes,1,0,0,1,0,1,1,1,0,0,1,0
+216,No,1,Scalp Infection,Chemotherapy,Selenium deficiency,Low,19,No,0,0,1,1,0,1,0,0,0,1,0,0
+217,No,1,Thyroid Problems,Accutane,Omega-3 fatty acids,High,30,No,0,0,1,1,0,1,0,0,0,1,2,1
+218,Yes,1,Scalp Infection,Blood Pressure Medication,Biotin Deficiency,Low,32,Yes,1,1,0,0,1,1,1,1,1,0,0,1
+219,No,1,Dermatitis,Heart Medication,Zinc Deficiency,Low,18,Yes,1,1,0,0,0,1,1,1,1,0,0,0
+220,Yes,1,Androgenetic Alopecia,Chemotherapy,Zinc Deficiency,Moderate,27,No,1,1,1,0,1,1,0,1,1,1,1,0
+221,Yes,1,Alopecia Areata,Immunomodulators,Vitamin E deficiency,Moderate,27,No,0,0,0,1,1,1,0,0,0,0,1,0
+222,No,1,Thyroid Problems,Heart Medication,Vitamin D Deficiency,Moderate,39,No,1,1,0,0,0,1,0,1,1,0,1,1
+223,No,1,Androgenetic Alopecia,Chemotherapy,Omega-3 fatty acids,Low,40,No,0,1,0,1,0,1,0,0,1,0,0,2
+224,Yes,1,Psoriasis,Rogaine,Iron deficiency,Moderate,34,Yes,1,0,0,1,1,1,1,1,0,0,1,1
+225,Yes,1,Seborrheic Dermatitis,Chemotherapy,,Moderate,23,No,0,0,0,0,1,1,0,0,0,0,1,0
+226,Yes,1,Psoriasis,Immunomodulators,,Low,22,No,0,1,0,0,1,1,0,0,1,0,0,0
+227,No,0,Ringworm,Immunomodulators,Vitamin D Deficiency,Low,42,Yes,0,1,0,0,0,0,1,0,1,0,0,2
+228,No,0,Alopecia Areata,Antibiotics,Vitamin D Deficiency,Low,42,Yes,1,0,1,0,0,0,1,1,0,1,0,2
+229,Yes,1,Thyroid Problems,Accutane,Iron deficiency,Moderate,18,No,0,0,1,1,1,1,0,0,0,1,1,0
+230,No,0,Eczema,Heart Medication,Zinc Deficiency,Moderate,36,No,1,1,1,0,0,0,0,1,1,1,1,1
+231,Yes,1,Androgenetic Alopecia,Rogaine,Biotin Deficiency,Low,32,No,1,0,1,1,1,1,0,1,0,1,0,1
+232,Yes,0,Scalp Infection,Antifungal Cream,Vitamin A Deficiency,Low,29,No,1,0,1,0,1,0,0,1,0,1,0,0
+233,No,1,Androgenetic Alopecia,Rogaine,Vitamin E deficiency,Moderate,47,No,0,1,1,0,0,1,0,0,1,1,1,2
+234,Yes,1,Androgenetic Alopecia,Antifungal Cream,Vitamin E deficiency,Low,30,No,1,0,1,1,1,1,0,1,0,1,0,1
+235,No,1,Ringworm,Rogaine,Selenium deficiency,Moderate,18,No,0,1,0,1,0,1,0,0,1,0,1,0
+236,No,1,Seborrheic Dermatitis,Rogaine,,High,22,No,1,0,0,1,0,1,0,1,0,0,2,0
+237,Yes,0,Dermatosis,Rogaine,Protein deficiency,Moderate,47,Yes,0,1,1,1,1,0,1,0,1,1,1,2
+238,Yes,1,Dermatitis,Accutane,Biotin Deficiency,Moderate,38,No,1,0,1,1,1,1,0,1,0,1,1,1
+239,Yes,0,Ringworm,Antidepressants,Vitamin A Deficiency,High,18,No,1,1,1,1,1,0,0,1,1,1,2,0
+240,Yes,1,Thyroid Problems,Antidepressants,Iron deficiency,Moderate,33,No,1,0,0,1,1,1,0,1,0,0,1,1
+241,Yes,1,Dermatitis,Chemotherapy,Biotin Deficiency,Moderate,50,Yes,0,1,1,0,1,1,1,0,1,1,1,2
+242,No,0,Androgenetic Alopecia,Antifungal Cream,Vitamin D Deficiency,Moderate,44,Yes,1,1,1,0,0,0,1,1,1,1,1,2
+243,No,0,Seborrheic Dermatitis,Accutane,Vitamin A Deficiency,Moderate,19,No,0,1,0,0,0,0,0,0,1,0,1,0
+244,No,1,Alopecia Areata,Steroids,Biotin Deficiency,Low,20,Yes,0,1,0,1,0,1,1,0,1,0,0,0
+245,No,1,Androgenetic Alopecia,Rogaine,Vitamin A Deficiency,Low,43,Yes,0,1,0,0,0,1,1,0,1,0,0,2
+246,Yes,0,Eczema,Steroids,Biotin Deficiency,Low,43,Yes,0,0,0,0,1,0,1,0,0,0,0,2
+247,Yes,0,Scalp Infection,Immunomodulators,Zinc Deficiency,Low,43,Yes,0,0,1,0,1,0,1,0,0,1,0,2
+248,No,1,Thyroid Problems,Accutane,Protein deficiency,Moderate,34,Yes,1,1,1,0,0,1,1,1,1,1,1,1
+249,Yes,1,Seborrheic Dermatitis,Antifungal Cream,Biotin Deficiency,Moderate,39,Yes,1,1,0,1,1,1,1,1,1,0,1,1
+250,Yes,1,Seborrheic Dermatitis,Antibiotics,Vitamin E deficiency,High,25,Yes,0,1,1,0,1,1,1,0,1,1,2,0
+251,Yes,1,Androgenetic Alopecia,Chemotherapy,Vitamin D Deficiency,Moderate,26,Yes,1,0,1,1,1,1,1,1,0,1,1,0
+252,Yes,0,Dermatitis,Rogaine,,Low,21,No,0,1,0,1,1,0,0,0,1,0,0,0
+253,Yes,0,Alopecia Areata,Accutane,Protein deficiency,High,37,No,0,1,1,0,1,0,0,0,1,1,2,1
+254,Yes,0,Thyroid Problems,Accutane,Selenium deficiency,Moderate,45,Yes,1,1,0,0,1,0,1,1,1,0,1,2
+255,No,1,Alopecia Areata,Blood Pressure Medication,Zinc Deficiency,High,24,No,0,1,1,0,0,1,0,0,1,1,2,0
+256,No,0,Eczema,Antidepressants,Vitamin D Deficiency,High,48,No,1,1,1,0,0,0,0,1,1,1,2,2
+257,Yes,0,Dermatitis,Steroids,Iron deficiency,Moderate,27,No,0,1,0,0,1,0,0,0,1,0,1,0
+258,No,1,Seborrheic Dermatitis,Steroids,Vitamin D Deficiency,High,37,No,0,0,0,0,0,1,0,0,0,0,2,1
+259,Yes,0,Alopecia Areata,Accutane,Protein deficiency,Low,31,Yes,1,0,1,1,1,0,1,1,0,1,0,1
+260,Yes,0,Dermatitis,Blood Pressure Medication,Zinc Deficiency,Moderate,45,No,1,1,1,0,1,0,0,1,1,1,1,2
+261,Yes,1,Eczema,Immunomodulators,Vitamin E deficiency,Moderate,25,Yes,0,0,0,1,1,1,1,0,0,0,1,0
+262,Yes,0,Scalp Infection,Rogaine,Vitamin A Deficiency,High,42,No,0,1,1,1,1,0,0,0,1,1,2,2
+263,Yes,0,Scalp Infection,Chemotherapy,Biotin Deficiency,Low,38,No,1,0,0,1,1,0,0,1,0,0,0,1
+264,No,1,Thyroid Problems,Immunomodulators,Vitamin E deficiency,Low,33,Yes,1,0,1,0,0,1,1,1,0,1,0,1
+265,Yes,1,Ringworm,Immunomodulators,Vitamin E deficiency,Moderate,34,No,1,1,0,1,1,1,0,1,1,0,1,1
+266,Yes,0,Dermatosis,Rogaine,Omega-3 fatty acids,Moderate,46,Yes,1,1,0,0,1,0,1,1,1,0,1,2
+267,Yes,1,Dermatosis,Blood Pressure Medication,Zinc Deficiency,Moderate,25,Yes,1,0,0,1,1,1,1,1,0,0,1,0
+268,Yes,1,Scalp Infection,Rogaine,Vitamin E deficiency,High,44,No,0,0,0,1,1,1,0,0,0,0,2,2
+269,Yes,0,Eczema,Heart Medication,Vitamin D Deficiency,Low,50,No,1,1,1,1,1,0,0,1,1,1,0,2
+270,Yes,1,Androgenetic Alopecia,Antidepressants,Biotin Deficiency,High,35,Yes,0,0,0,0,1,1,1,0,0,0,2,1
+271,No,1,Seborrheic Dermatitis,Antifungal Cream,Vitamin A Deficiency,High,18,No,1,0,0,1,0,1,0,1,0,0,2,0
+272,No,0,Ringworm,Immunomodulators,Selenium deficiency,High,47,Yes,0,0,1,1,0,0,1,0,0,1,2,2
+273,No,0,Dermatosis,Accutane,Protein deficiency,Moderate,26,No,1,0,1,0,0,0,0,1,0,1,1,0
+274,No,1,Scalp Infection,Blood Pressure Medication,Omega-3 fatty acids,High,26,Yes,0,1,1,0,0,1,1,0,1,1,2,0
+275,No,0,Thyroid Problems,Steroids,Magnesium deficiency,Moderate,42,No,0,1,0,1,0,0,0,0,1,0,1,2
+276,No,1,Eczema,Antibiotics,Zinc Deficiency,High,37,No,1,0,0,0,0,1,0,1,0,0,2,1
+277,No,1,Dermatosis,Steroids,Vitamin E deficiency,Low,44,Yes,0,1,0,0,0,1,1,0,1,0,0,2
+278,Yes,1,Eczema,Rogaine,Vitamin D Deficiency,Low,32,No,1,0,1,1,1,1,0,1,0,1,0,1
+279,Yes,0,Scalp Infection,Steroids,Magnesium deficiency,Moderate,36,No,0,0,1,1,1,0,0,0,0,1,1,1
+280,No,1,Dermatitis,Rogaine,Iron deficiency,Low,37,Yes,1,1,1,1,0,1,1,1,1,1,0,1
+281,No,1,Psoriasis,Antidepressants,Protein deficiency,Low,49,No,1,0,1,0,0,1,0,1,0,1,0,2
+282,No,0,Dermatitis,Rogaine,Iron deficiency,Low,39,Yes,1,0,1,0,0,0,1,1,0,1,0,1
+283,Yes,0,Thyroid Problems,Accutane,Biotin Deficiency,Moderate,47,No,0,0,1,1,1,0,0,0,0,1,1,2
+284,No,0,Eczema,Steroids,Zinc Deficiency,Low,25,No,1,1,0,1,0,0,0,1,1,0,0,0
+285,No,0,Androgenetic Alopecia,Immunomodulators,Zinc Deficiency,High,47,No,0,0,0,0,0,0,0,0,0,0,2,2
+286,No,0,Psoriasis,Chemotherapy,Biotin Deficiency,High,27,Yes,1,1,0,0,0,0,1,1,1,0,2,0
+287,Yes,0,Androgenetic Alopecia,Steroids,Magnesium deficiency,High,20,No,0,0,1,1,1,0,0,0,0,1,2,0
+288,No,0,Thyroid Problems,Heart Medication,Iron deficiency,Moderate,43,Yes,1,1,1,0,0,0,1,1,1,1,1,2
+289,Yes,1,Dermatitis,Heart Medication,Zinc Deficiency,High,33,Yes,0,1,0,1,1,1,1,0,1,0,2,1
+290,No,1,Eczema,Rogaine,Vitamin E deficiency,High,24,No,1,1,0,0,0,1,0,1,1,0,2,0
+291,Yes,0,Psoriasis,Steroids,Magnesium deficiency,High,43,No,1,1,0,0,1,0,0,1,1,0,2,2
+292,Yes,0,Thyroid Problems,Rogaine,Omega-3 fatty acids,High,35,Yes,0,1,0,1,1,0,1,0,1,0,2,1
+293,Yes,1,Eczema,Chemotherapy,Zinc Deficiency,Low,28,No,1,1,1,0,1,1,0,1,1,1,0,0
+294,Yes,0,Thyroid Problems,Heart Medication,Biotin Deficiency,Low,41,Yes,1,1,0,0,1,0,1,1,1,0,0,2
+295,No,1,Thyroid Problems,Heart Medication,Vitamin E deficiency,High,36,No,1,1,0,1,0,1,0,1,1,0,2,1
+296,No,1,Androgenetic Alopecia,Antidepressants,Iron deficiency,High,47,No,0,1,0,0,0,1,0,0,1,0,2,2
+297,Yes,1,Scalp Infection,Steroids,Zinc Deficiency,Low,33,Yes,1,0,0,1,1,1,1,1,0,0,0,1
+298,Yes,1,Ringworm,Steroids,Vitamin A Deficiency,Low,38,No,1,1,0,0,1,1,0,1,1,0,0,1
+299,Yes,1,Alopecia Areata,Blood Pressure Medication,,Moderate,21,Yes,0,1,0,1,1,1,1,0,1,0,1,0
+300,Yes,1,Ringworm,Accutane,Zinc Deficiency,High,45,No,1,0,1,0,1,1,0,1,0,1,2,2
+301,Yes,1,Thyroid Problems,Accutane,Omega-3 fatty acids,Low,27,Yes,1,0,0,0,1,1,1,1,0,0,0,0
+302,Yes,1,Eczema,Antifungal Cream,Vitamin D Deficiency,Low,29,No,0,1,1,0,1,1,0,0,1,1,0,0
+303,No,0,Dermatitis,Antifungal Cream,,Low,21,Yes,1,0,0,0,0,0,1,1,0,0,0,0
+304,No,0,Scalp Infection,Antidepressants,Selenium deficiency,Moderate,36,Yes,0,1,0,0,0,0,1,0,1,0,1,1
+305,Yes,1,Dermatosis,Heart Medication,Zinc Deficiency,Moderate,38,Yes,0,1,1,0,1,1,1,0,1,1,1,1
+306,Yes,1,Alopecia Areata,Antibiotics,Selenium deficiency,Moderate,32,No,1,1,0,1,1,1,0,1,1,0,1,1
+307,No,1,Psoriasis,Chemotherapy,Zinc Deficiency,Low,40,Yes,0,1,1,1,0,1,1,0,1,1,0,2
+308,Yes,1,Dermatosis,Accutane,Vitamin E deficiency,Low,40,Yes,0,1,1,1,1,1,1,0,1,1,0,2
+309,Yes,0,Eczema,Heart Medication,Zinc Deficiency,Moderate,33,No,0,1,0,1,1,0,0,0,1,0,1,1
+310,Yes,0,Dermatitis,Immunomodulators,,Low,22,Yes,0,0,1,1,1,0,1,0,0,1,0,0
+311,No,1,Seborrheic Dermatitis,Antifungal Cream,Vitamin E deficiency,Low,18,Yes,1,1,0,0,0,1,1,1,1,0,0,0
+312,No,1,Dermatitis,Antidepressants,Selenium deficiency,High,38,No,0,0,1,0,0,1,0,0,0,1,2,1
+313,Yes,1,Scalp Infection,Steroids,Zinc Deficiency,High,26,Yes,1,1,1,1,1,1,1,1,1,1,2,0
+314,Yes,1,Dermatosis,Antifungal Cream,,High,22,No,0,0,0,0,1,1,0,0,0,0,2,0
+315,No,0,Androgenetic Alopecia,Accutane,,Low,21,No,0,0,1,0,0,0,0,0,0,1,0,0
+316,No,1,Androgenetic Alopecia,Rogaine,Zinc Deficiency,Moderate,30,No,0,1,0,0,0,1,0,0,1,0,1,1
+317,No,1,Scalp Infection,Antifungal Cream,Zinc Deficiency,High,48,Yes,0,1,0,0,0,1,1,0,1,0,2,2
+318,Yes,0,Androgenetic Alopecia,Antifungal Cream,Vitamin D Deficiency,Moderate,24,No,1,1,0,1,1,0,0,1,1,0,1,0
+319,Yes,1,Dermatitis,Heart Medication,,Moderate,22,Yes,0,1,0,1,1,1,1,0,1,0,1,0
+320,No,1,Dermatosis,Accutane,Vitamin A Deficiency,Low,40,Yes,0,0,0,1,0,1,1,0,0,0,0,2
+321,Yes,1,Alopecia Areata,Heart Medication,Vitamin D Deficiency,High,44,Yes,1,1,0,1,1,1,1,1,1,0,2,2
+322,No,1,Dermatitis,Blood Pressure Medication,Vitamin D Deficiency,Moderate,47,Yes,0,1,1,0,0,1,1,0,1,1,1,2
+323,Yes,0,Thyroid Problems,Accutane,Zinc Deficiency,High,47,Yes,0,1,0,1,1,0,1,0,1,0,2,2
+324,No,1,Androgenetic Alopecia,Antidepressants,Vitamin D Deficiency,Moderate,47,Yes,1,0,0,1,0,1,1,1,0,0,1,2
+325,Yes,0,Psoriasis,Rogaine,Omega-3 fatty acids,Low,41,No,1,1,1,0,1,0,0,1,1,1,0,2
+326,No,1,Thyroid Problems,Antibiotics,Vitamin A Deficiency,Low,45,Yes,1,0,0,1,0,1,1,1,0,0,0,2
+327,Yes,0,Psoriasis,Antidepressants,Protein deficiency,Moderate,26,Yes,0,1,1,0,1,0,1,0,1,1,1,0
+328,Yes,0,Eczema,Accutane,Omega-3 fatty acids,Moderate,29,Yes,0,1,0,1,1,0,1,0,1,0,1,0
+329,Yes,0,Androgenetic Alopecia,Rogaine,,Low,22,Yes,0,1,0,0,1,0,1,0,1,0,0,0
+330,No,1,Thyroid Problems,Heart Medication,Vitamin D Deficiency,Moderate,39,No,1,0,0,0,0,1,0,1,0,0,1,1
+331,No,1,Scalp Infection,Blood Pressure Medication,Vitamin E deficiency,High,27,Yes,1,0,0,1,0,1,1,1,0,0,2,0
+332,Yes,1,Androgenetic Alopecia,Rogaine,Vitamin D Deficiency,High,48,Yes,0,0,1,1,1,1,1,0,0,1,2,2
+333,Yes,1,Seborrheic Dermatitis,Antibiotics,Vitamin D Deficiency,Moderate,29,No,0,1,1,1,1,1,0,0,1,1,1,0
+334,Yes,0,Psoriasis,Accutane,Biotin Deficiency,Low,33,Yes,0,0,0,0,1,0,1,0,0,0,0,1
+335,Yes,1,Scalp Infection,Antibiotics,Vitamin D Deficiency,High,46,No,0,0,0,1,1,1,0,0,0,0,2,2
+336,No,1,Psoriasis,Blood Pressure Medication,Omega-3 fatty acids,Low,45,No,1,1,1,0,0,1,0,1,1,1,0,2
+337,No,1,Thyroid Problems,Blood Pressure Medication,Biotin Deficiency,Moderate,32,No,1,1,1,0,0,1,0,1,1,1,1,1
+338,Yes,1,Psoriasis,Blood Pressure Medication,Magnesium deficiency,High,35,Yes,0,1,1,1,1,1,1,0,1,1,2,1
+339,No,1,Ringworm,Blood Pressure Medication,Omega-3 fatty acids,High,25,Yes,0,0,0,0,0,1,1,0,0,0,2,0
+340,No,1,Dermatosis,Chemotherapy,Biotin Deficiency,Low,31,Yes,0,0,1,0,0,1,1,0,0,1,0,1
+341,Yes,1,Alopecia Areata,Antifungal Cream,Zinc Deficiency,High,40,No,1,1,0,0,1,1,0,1,1,0,2,2
+342,No,1,Alopecia Areata,Accutane,Omega-3 fatty acids,High,30,No,0,1,0,0,0,1,0,0,1,0,2,1
+343,Yes,0,Alopecia Areata,Heart Medication,Protein deficiency,Low,49,No,1,1,0,0,1,0,0,1,1,0,0,2
+344,No,1,Androgenetic Alopecia,Steroids,,High,23,Yes,0,0,0,1,0,1,1,0,0,0,2,0
+345,No,1,Alopecia Areata,Heart Medication,Omega-3 fatty acids,Low,43,Yes,1,1,1,1,0,1,1,1,1,1,0,2
+346,No,1,Dermatitis,Antidepressants,Selenium deficiency,Moderate,38,No,0,1,0,0,0,1,0,0,1,0,1,1
+347,Yes,0,Alopecia Areata,Accutane,Biotin Deficiency,High,31,Yes,0,1,0,1,1,0,1,0,1,0,2,1
+348,No,1,Scalp Infection,Accutane,Biotin Deficiency,Low,36,No,1,1,1,0,0,1,0,1,1,1,0,1
+349,No,1,Dermatosis,Antifungal Cream,Omega-3 fatty acids,High,28,No,1,0,1,1,0,1,0,1,0,1,2,0
+350,Yes,0,Thyroid Problems,Steroids,Vitamin E deficiency,High,50,Yes,1,1,1,0,1,0,1,1,1,1,2,2
+351,No,1,Thyroid Problems,Rogaine,Vitamin A Deficiency,Low,48,No,0,1,0,1,0,1,0,0,1,0,0,2
+352,Yes,1,Seborrheic Dermatitis,Accutane,Selenium deficiency,High,28,No,0,0,0,1,1,1,0,0,0,0,2,0
+353,Yes,1,Dermatitis,Chemotherapy,,Low,22,Yes,1,0,0,0,1,1,1,1,0,0,0,0
+354,No,0,Alopecia Areata,Chemotherapy,Magnesium deficiency,Low,40,Yes,1,1,0,0,0,0,1,1,1,0,0,2
+355,No,1,Alopecia Areata,Immunomodulators,Vitamin A Deficiency,High,27,No,0,1,0,0,0,1,0,0,1,0,2,0
+356,Yes,0,Eczema,Chemotherapy,Vitamin A Deficiency,Moderate,32,Yes,0,0,0,0,1,0,1,0,0,0,1,1
+357,Yes,1,Eczema,Blood Pressure Medication,Magnesium deficiency,Low,18,No,1,0,1,0,1,1,0,1,0,1,0,0
+358,Yes,1,Dermatosis,Blood Pressure Medication,Magnesium deficiency,Low,47,No,0,1,1,0,1,1,0,0,1,1,0,2
+359,Yes,0,Dermatitis,Antibiotics,Iron deficiency,Moderate,41,No,0,0,0,1,1,0,0,0,0,0,1,2
+360,No,1,Scalp Infection,Antidepressants,Omega-3 fatty acids,High,41,No,1,1,1,1,0,1,0,1,1,1,2,2
+361,Yes,0,Dermatitis,Chemotherapy,Vitamin E deficiency,High,43,Yes,1,1,1,1,1,0,1,1,1,1,2,2
+362,Yes,0,Thyroid Problems,Antidepressants,Protein deficiency,Moderate,48,No,1,1,1,0,1,0,0,1,1,1,1,2
+363,No,0,Seborrheic Dermatitis,Accutane,Vitamin A Deficiency,Low,41,Yes,1,0,1,1,0,0,1,1,0,1,0,2
+364,Yes,1,Dermatosis,Antidepressants,Vitamin D Deficiency,Moderate,19,No,1,0,1,1,1,1,0,1,0,1,1,0
+365,Yes,0,Androgenetic Alopecia,Chemotherapy,,Moderate,22,No,0,0,1,1,1,0,0,0,0,1,1,0
+366,Yes,0,Psoriasis,Antibiotics,Magnesium deficiency,Low,35,No,1,0,1,1,1,0,0,1,0,1,0,1
+367,Yes,1,Psoriasis,Heart Medication,Vitamin D Deficiency,High,38,No,0,0,0,1,1,1,0,0,0,0,2,1
+368,Yes,0,Ringworm,Antibiotics,Magnesium deficiency,High,20,Yes,1,1,1,0,1,0,1,1,1,1,2,0
+369,Yes,0,Seborrheic Dermatitis,Rogaine,Biotin Deficiency,Moderate,40,No,0,1,1,1,1,0,0,0,1,1,1,2
+370,No,1,Seborrheic Dermatitis,Accutane,Iron deficiency,Low,30,No,0,1,1,1,0,1,0,0,1,1,0,1
+371,Yes,1,Psoriasis,Immunomodulators,Selenium deficiency,Moderate,40,No,0,0,0,1,1,1,0,0,0,0,1,2
+372,No,0,Psoriasis,Blood Pressure Medication,Protein deficiency,High,43,No,1,1,1,0,0,0,0,1,1,1,2,2
+373,No,0,Ringworm,Chemotherapy,Zinc Deficiency,High,28,No,0,1,1,1,0,0,0,0,1,1,2,0
+374,No,0,Psoriasis,Chemotherapy,Omega-3 fatty acids,Low,48,Yes,1,0,0,0,0,0,1,1,0,0,0,2
+375,No,0,Ringworm,Antidepressants,Selenium deficiency,Moderate,40,Yes,1,0,0,1,0,0,1,1,0,0,1,2
+376,Yes,0,Seborrheic Dermatitis,Antibiotics,Vitamin A Deficiency,Low,33,Yes,1,1,0,0,1,0,1,1,1,0,0,1
+377,Yes,1,Alopecia Areata,Rogaine,Vitamin A Deficiency,Low,19,Yes,1,0,1,1,1,1,1,1,0,1,0,0
+378,Yes,0,Alopecia Areata,Blood Pressure Medication,Selenium deficiency,Moderate,20,No,1,0,0,1,1,0,0,1,0,0,1,0
+379,No,1,Psoriasis,Heart Medication,,Low,23,No,0,0,1,0,0,1,0,0,0,1,0,0
+380,Yes,1,Ringworm,Immunomodulators,Vitamin E deficiency,High,36,Yes,1,1,0,0,1,1,1,1,1,0,2,1
+381,Yes,1,Dermatosis,Steroids,Zinc Deficiency,Moderate,43,No,0,0,0,1,1,1,0,0,0,0,1,2
+382,Yes,1,Thyroid Problems,Steroids,Iron deficiency,Moderate,29,No,0,1,1,1,1,1,0,0,1,1,1,0
+383,Yes,1,Thyroid Problems,Accutane,,Moderate,21,Yes,1,0,0,1,1,1,1,1,0,0,1,0
+384,No,1,Androgenetic Alopecia,Rogaine,Biotin Deficiency,Low,40,No,1,1,0,0,0,1,0,1,1,0,0,2
+385,Yes,1,Dermatitis,Antifungal Cream,Vitamin D Deficiency,Moderate,46,Yes,0,1,0,1,1,1,1,0,1,0,1,2
+386,Yes,1,Seborrheic Dermatitis,Chemotherapy,Vitamin A Deficiency,High,19,No,0,1,0,1,1,1,0,0,1,0,2,0
+387,Yes,0,Psoriasis,Blood Pressure Medication,Vitamin A Deficiency,High,24,No,1,0,0,1,1,0,0,1,0,0,2,0
+388,Yes,0,Thyroid Problems,Antifungal Cream,Selenium deficiency,Low,25,Yes,0,1,1,0,1,0,1,0,1,1,0,0
+389,No,1,Dermatitis,Antifungal Cream,Zinc Deficiency,High,43,No,0,0,0,1,0,1,0,0,0,0,2,2
+390,No,0,Seborrheic Dermatitis,Antifungal Cream,Vitamin D Deficiency,Moderate,43,Yes,0,1,0,1,0,0,1,0,1,0,1,2
+391,No,0,Ringworm,Rogaine,Protein deficiency,Low,39,Yes,0,1,0,1,0,0,1,0,1,0,0,1
+392,Yes,0,Dermatosis,Accutane,,Low,21,Yes,1,0,0,1,1,0,1,1,0,0,0,0
+393,Yes,1,Psoriasis,Rogaine,Zinc Deficiency,Moderate,46,No,1,0,1,0,1,1,0,1,0,1,1,2
+394,No,1,Thyroid Problems,Chemotherapy,Vitamin D Deficiency,Moderate,36,Yes,1,1,1,1,0,1,1,1,1,1,1,1
+395,Yes,0,Scalp Infection,Accutane,Vitamin D Deficiency,Low,33,No,0,1,1,0,1,0,0,0,1,1,0,1
+396,Yes,1,Androgenetic Alopecia,Blood Pressure Medication,Vitamin A Deficiency,Low,29,Yes,1,0,1,0,1,1,1,1,0,1,0,0
+397,No,0,Androgenetic Alopecia,Antidepressants,Vitamin A Deficiency,Moderate,44,No,0,0,0,0,0,0,0,0,0,0,1,2
+398,Yes,1,Androgenetic Alopecia,Antibiotics,Vitamin A Deficiency,Moderate,39,Yes,0,1,1,1,1,1,1,0,1,1,1,1
+399,Yes,1,Dermatosis,Steroids,Vitamin D Deficiency,Moderate,32,Yes,0,1,0,0,1,1,1,0,1,0,1,1
+400,Yes,0,Thyroid Problems,Antidepressants,Biotin Deficiency,Moderate,44,No,1,0,0,0,1,0,0,1,0,0,1,2
+401,Yes,1,Alopecia Areata,Antifungal Cream,Biotin Deficiency,Moderate,20,No,1,1,0,1,1,1,0,1,1,0,1,0
+402,Yes,0,Alopecia Areata,Chemotherapy,Vitamin D Deficiency,High,42,Yes,1,1,1,1,1,0,1,1,1,1,2,2
+403,No,1,Psoriasis,Steroids,Magnesium deficiency,Low,40,No,0,1,1,0,0,1,0,0,1,1,0,2
+404,Yes,0,Alopecia Areata,Chemotherapy,Vitamin D Deficiency,High,36,Yes,1,1,0,0,1,0,1,1,1,0,2,1
+405,Yes,0,Ringworm,Heart Medication,Biotin Deficiency,Low,27,No,0,0,1,1,1,0,0,0,0,1,0,0
+406,Yes,0,Androgenetic Alopecia,Antidepressants,Selenium deficiency,High,18,Yes,0,0,1,1,1,0,1,0,0,1,2,0
+407,Yes,1,Thyroid Problems,Antibiotics,Selenium deficiency,Moderate,25,Yes,0,1,1,1,1,1,1,0,1,1,1,0
+408,No,0,Psoriasis,Immunomodulators,Vitamin E deficiency,Low,41,Yes,0,0,1,0,0,0,1,0,0,1,0,2
+409,Yes,1,Alopecia Areata,Accutane,Selenium deficiency,Moderate,26,No,1,1,0,0,1,1,0,1,1,0,1,0
+410,Yes,0,Scalp Infection,Heart Medication,Selenium deficiency,High,34,Yes,1,0,1,1,1,0,1,1,0,1,2,1
+411,No,0,Scalp Infection,Rogaine,Biotin Deficiency,High,35,No,0,0,0,1,0,0,0,0,0,0,2,1
+412,Yes,0,Dermatitis,Antidepressants,Biotin Deficiency,Moderate,32,Yes,0,1,0,1,1,0,1,0,1,0,1,1
+413,No,0,Eczema,Blood Pressure Medication,Omega-3 fatty acids,Low,32,Yes,0,1,0,1,0,0,1,0,1,0,0,1
+414,No,0,Thyroid Problems,Rogaine,Selenium deficiency,High,46,Yes,1,1,1,0,0,0,1,1,1,1,2,2
+415,Yes,0,Alopecia Areata,Rogaine,Omega-3 fatty acids,Low,47,Yes,1,1,0,0,1,0,1,1,1,0,0,2
+416,No,1,Eczema,Blood Pressure Medication,Vitamin A Deficiency,High,45,No,0,0,0,0,0,1,0,0,0,0,2,2
+417,Yes,1,Dermatosis,Antidepressants,Protein deficiency,Low,32,No,1,0,1,1,1,1,0,1,0,1,0,1
+418,Yes,0,Androgenetic Alopecia,Antibiotics,,Low,21,Yes,1,1,0,1,1,0,1,1,1,0,0,0
+419,No,1,Dermatosis,Rogaine,Vitamin E deficiency,Low,40,No,0,0,0,0,0,1,0,0,0,0,0,2
+420,No,1,Androgenetic Alopecia,Accutane,Vitamin D Deficiency,Moderate,32,Yes,0,1,1,1,0,1,1,0,1,1,1,1
+421,No,0,Eczema,Antibiotics,Protein deficiency,High,36,Yes,0,0,1,1,0,0,1,0,0,1,2,1
+422,Yes,0,Psoriasis,Steroids,,High,22,Yes,1,0,0,1,1,0,1,1,0,0,2,0
+423,Yes,1,Scalp Infection,Rogaine,Vitamin D Deficiency,Moderate,38,No,1,1,1,0,1,1,0,1,1,1,1,1
+424,No,0,Ringworm,Steroids,Protein deficiency,High,45,No,1,1,1,0,0,0,0,1,1,1,2,2
+425,No,1,Psoriasis,Immunomodulators,Omega-3 fatty acids,Moderate,41,Yes,0,1,0,0,0,1,1,0,1,0,1,2
+426,Yes,0,Eczema,Immunomodulators,Vitamin A Deficiency,Low,19,Yes,1,0,0,0,1,0,1,1,0,0,0,0
+427,No,0,Psoriasis,Steroids,,Moderate,23,Yes,0,0,1,0,0,0,1,0,0,1,1,0
+428,No,0,Androgenetic Alopecia,Antifungal Cream,Selenium deficiency,Moderate,37,No,0,1,0,1,0,0,0,0,1,0,1,1
+429,No,0,Seborrheic Dermatitis,Chemotherapy,Biotin Deficiency,High,35,No,0,1,1,0,0,0,0,0,1,1,2,1
+430,Yes,0,Thyroid Problems,Rogaine,Biotin Deficiency,Moderate,20,No,1,1,1,1,1,0,0,1,1,1,1,0
+431,No,1,Alopecia Areata,Chemotherapy,Iron deficiency,Low,32,Yes,0,1,1,1,0,1,1,0,1,1,0,1
+432,Yes,0,Alopecia Areata,Immunomodulators,Zinc Deficiency,Moderate,44,No,0,0,1,0,1,0,0,0,0,1,1,2
+433,Yes,0,Thyroid Problems,Accutane,Vitamin A Deficiency,Low,43,Yes,1,1,1,1,1,0,1,1,1,1,0,2
+434,No,1,Thyroid Problems,Blood Pressure Medication,Magnesium deficiency,Low,19,No,0,1,1,1,0,1,0,0,1,1,0,0
+435,Yes,1,Alopecia Areata,Accutane,Vitamin E deficiency,Low,48,No,0,0,1,1,1,1,0,0,0,1,0,2
+436,Yes,0,Psoriasis,Accutane,Vitamin A Deficiency,Moderate,33,Yes,0,0,0,1,1,0,1,0,0,0,1,1
+437,Yes,1,Eczema,Rogaine,Vitamin E deficiency,High,40,Yes,0,1,0,0,1,1,1,0,1,0,2,2
+438,Yes,1,Dermatosis,Heart Medication,Vitamin E deficiency,High,27,Yes,0,0,1,0,1,1,1,0,0,1,2,0
+439,No,1,Psoriasis,Heart Medication,Vitamin D Deficiency,Low,46,No,1,0,1,0,0,1,0,1,0,1,0,2
+440,No,1,Thyroid Problems,Antibiotics,Protein deficiency,Moderate,26,Yes,0,0,1,0,0,1,1,0,0,1,1,0
+441,No,1,Scalp Infection,Accutane,Selenium deficiency,Low,24,Yes,0,0,0,0,0,1,1,0,0,0,0,0
+442,Yes,0,Psoriasis,Accutane,Iron deficiency,High,47,No,1,1,0,0,1,0,0,1,1,0,2,2
+443,No,1,Alopecia Areata,Heart Medication,Magnesium deficiency,Moderate,32,Yes,1,1,0,0,0,1,1,1,1,0,1,1
+444,Yes,0,Alopecia Areata,Antifungal Cream,Biotin Deficiency,Low,40,No,1,1,0,0,1,0,0,1,1,0,0,2
+445,Yes,0,Ringworm,Antibiotics,Vitamin A Deficiency,Low,18,No,1,0,0,0,1,0,0,1,0,0,0,0
+446,No,0,Eczema,Steroids,Vitamin D Deficiency,Moderate,32,No,1,1,1,0,0,0,0,1,1,1,1,1
+447,No,1,Eczema,Rogaine,Magnesium deficiency,High,48,Yes,1,1,1,1,0,1,1,1,1,1,2,2
+448,No,1,Androgenetic Alopecia,Heart Medication,Iron deficiency,High,49,No,0,0,0,1,0,1,0,0,0,0,2,2
+449,Yes,0,Thyroid Problems,Accutane,Biotin Deficiency,Moderate,43,No,1,1,1,0,1,0,0,1,1,1,1,2
+450,Yes,0,Psoriasis,Heart Medication,Magnesium deficiency,Low,29,No,1,0,1,1,1,0,0,1,0,1,0,0
+451,No,0,Thyroid Problems,Blood Pressure Medication,Selenium deficiency,High,44,No,1,0,1,0,0,0,0,1,0,1,2,2
+452,Yes,0,Alopecia Areata,Accutane,Selenium deficiency,High,50,No,0,0,1,0,1,0,0,0,0,1,2,2
+453,No,1,Thyroid Problems,Heart Medication,,High,23,No,0,1,1,1,0,1,0,0,1,1,2,0
+454,No,0,Dermatosis,Antidepressants,Vitamin D Deficiency,Moderate,32,Yes,0,0,0,0,0,0,1,0,0,0,1,1
+455,No,0,Thyroid Problems,Blood Pressure Medication,Selenium deficiency,High,31,No,0,1,1,0,0,0,0,0,1,1,2,1
+456,No,0,Eczema,Rogaine,Omega-3 fatty acids,Moderate,34,Yes,1,0,1,0,0,0,1,1,0,1,1,1
+457,Yes,0,Psoriasis,Steroids,Iron deficiency,Moderate,41,No,0,1,0,0,1,0,0,0,1,0,1,2
+458,No,1,Dermatosis,Heart Medication,Omega-3 fatty acids,Low,42,No,0,0,0,1,0,1,0,0,0,0,0,2
+459,No,1,Dermatosis,Antidepressants,Vitamin E deficiency,Moderate,34,No,1,0,1,1,0,1,0,1,0,1,1,1
+460,No,1,Scalp Infection,Accutane,Vitamin E deficiency,High,24,Yes,1,1,1,1,0,1,1,1,1,1,2,0
+461,Yes,1,Ringworm,Heart Medication,Zinc Deficiency,High,26,No,1,0,0,1,1,1,0,1,0,0,2,0
+462,No,0,Thyroid Problems,Steroids,Magnesium deficiency,High,29,Yes,0,1,1,1,0,0,1,0,1,1,2,0
+463,No,1,Dermatosis,Antibiotics,Selenium deficiency,Moderate,31,No,0,0,0,1,0,1,0,0,0,0,1,1
+464,Yes,1,Alopecia Areata,Rogaine,Biotin Deficiency,Low,18,Yes,0,1,1,1,1,1,1,0,1,1,0,0
+465,No,1,Ringworm,Accutane,Protein deficiency,High,37,Yes,1,0,0,0,0,1,1,1,0,0,2,1
+466,Yes,1,Ringworm,Chemotherapy,Selenium deficiency,Moderate,50,Yes,0,0,0,0,1,1,1,0,0,0,1,2
+467,No,0,Seborrheic Dermatitis,Heart Medication,Magnesium deficiency,Moderate,41,Yes,0,1,0,1,0,0,1,0,1,0,1,2
+468,No,0,Psoriasis,Accutane,Protein deficiency,High,29,Yes,1,0,1,1,0,0,1,1,0,1,2,0
+469,Yes,1,Androgenetic Alopecia,Antidepressants,Vitamin D Deficiency,High,49,Yes,0,1,1,1,1,1,1,0,1,1,2,2
+470,No,1,Seborrheic Dermatitis,Accutane,Omega-3 fatty acids,Moderate,48,No,1,0,0,1,0,1,0,1,0,0,1,2
+471,No,1,Dermatosis,Rogaine,Zinc Deficiency,Moderate,27,Yes,1,1,1,1,0,1,1,1,1,1,1,0
+472,Yes,0,Eczema,Antifungal Cream,Zinc Deficiency,Low,49,No,1,1,1,0,1,0,0,1,1,1,0,2
+473,No,1,Ringworm,Antibiotics,Protein deficiency,Moderate,28,No,1,1,0,1,0,1,0,1,1,0,1,0
+474,Yes,0,Psoriasis,Blood Pressure Medication,Vitamin D Deficiency,High,49,No,1,0,0,0,1,0,0,1,0,0,2,2
+475,Yes,0,Eczema,Steroids,Vitamin A Deficiency,Low,27,Yes,0,0,1,0,1,0,1,0,0,1,0,0
+476,No,0,Scalp Infection,Steroids,Magnesium deficiency,Low,39,Yes,0,1,1,1,0,0,1,0,1,1,0,1
+477,No,1,Seborrheic Dermatitis,Immunomodulators,Zinc Deficiency,Moderate,35,No,1,0,1,1,0,1,0,1,0,1,1,1
+478,Yes,1,Androgenetic Alopecia,Antidepressants,Magnesium deficiency,Moderate,38,No,0,0,0,1,1,1,0,0,0,0,1,1
+479,No,1,Ringworm,Chemotherapy,Vitamin E deficiency,Moderate,37,No,1,1,1,1,0,1,0,1,1,1,1,1
+480,No,1,Scalp Infection,Rogaine,,High,23,Yes,0,0,1,0,0,1,1,0,0,1,2,0
+481,Yes,0,Alopecia Areata,Antibiotics,Vitamin A Deficiency,Moderate,28,No,0,1,1,0,1,0,0,0,1,1,1,0
+482,No,0,Thyroid Problems,Blood Pressure Medication,Vitamin A Deficiency,High,41,No,1,1,1,0,0,0,0,1,1,1,2,2
+483,Yes,0,Alopecia Areata,Blood Pressure Medication,Biotin Deficiency,Moderate,35,No,0,1,1,0,1,0,0,0,1,1,1,1
+484,No,0,Alopecia Areata,Antifungal Cream,Vitamin A Deficiency,High,28,Yes,1,0,1,0,0,0,1,1,0,1,2,0
+485,Yes,0,Scalp Infection,Antifungal Cream,Vitamin A Deficiency,Low,42,No,0,0,1,1,1,0,0,0,0,1,0,2
+486,Yes,1,Eczema,Blood Pressure Medication,Omega-3 fatty acids,Low,40,No,1,1,0,1,1,1,0,1,1,0,0,2
+487,Yes,1,Dermatitis,Antibiotics,Iron deficiency,Low,33,No,0,1,0,1,1,1,0,0,1,0,0,1
+488,No,0,Alopecia Areata,Antifungal Cream,Biotin Deficiency,Low,39,No,0,0,0,0,0,0,0,0,0,0,0,1
+489,No,0,Ringworm,Antifungal Cream,Selenium deficiency,High,40,No,0,0,1,1,0,0,0,0,0,1,2,2
+490,Yes,0,Thyroid Problems,Heart Medication,Omega-3 fatty acids,Low,47,Yes,1,0,0,0,1,0,1,1,0,0,0,2
+491,Yes,0,Dermatitis,Blood Pressure Medication,Magnesium deficiency,Low,28,Yes,0,0,1,1,1,0,1,0,0,1,0,0
+492,Yes,1,Ringworm,Steroids,Vitamin D Deficiency,Moderate,18,Yes,0,1,1,0,1,1,1,0,1,1,1,0
+493,No,0,Thyroid Problems,Chemotherapy,Zinc Deficiency,Moderate,45,No,1,1,0,0,0,0,0,1,1,0,1,2
+494,Yes,0,Scalp Infection,Steroids,Biotin Deficiency,High,50,Yes,0,1,1,0,1,0,1,0,1,1,2,2
+495,No,0,Dermatitis,Antidepressants,Vitamin D Deficiency,Low,18,Yes,1,1,1,1,0,0,1,1,1,1,0,0
+496,Yes,1,Psoriasis,Rogaine,Iron deficiency,Low,47,Yes,0,0,0,1,1,1,1,0,0,0,0,2
+497,No,0,Eczema,Steroids,Omega-3 fatty acids,Low,32,Yes,1,0,1,1,0,0,1,1,0,1,0,1
+498,No,0,Seborrheic Dermatitis,Immunomodulators,Vitamin E deficiency,High,43,Yes,1,1,1,0,0,0,1,1,1,1,2,2
+499,No,1,Seborrheic Dermatitis,Immunomodulators,Magnesium deficiency,High,18,No,1,0,0,1,0,1,0,1,0,0,2,0
+500,No,0,Alopecia Areata,Steroids,Vitamin A Deficiency,High,24,No,0,1,0,1,0,0,0,0,1,0,2,0
+501,Yes,1,Androgenetic Alopecia,Heart Medication,Vitamin D Deficiency,Moderate,34,Yes,1,1,0,1,1,1,1,1,1,0,1,1
+502,Yes,0,Alopecia Areata,Chemotherapy,Magnesium deficiency,Low,30,No,1,0,1,1,1,0,0,1,0,1,0,1
+503,No,1,Ringworm,Antibiotics,Zinc Deficiency,Moderate,41,No,0,1,0,0,0,1,0,0,1,0,1,2
+504,No,0,Thyroid Problems,Antidepressants,Selenium deficiency,Moderate,50,Yes,1,1,1,1,0,0,1,1,1,1,1,2
+505,Yes,0,Psoriasis,Blood Pressure Medication,Selenium deficiency,Moderate,40,No,1,0,0,0,1,0,0,1,0,0,1,2
+506,Yes,0,Dermatitis,Immunomodulators,Iron deficiency,Moderate,31,No,1,1,0,0,1,0,0,1,1,0,1,1
+507,Yes,0,Dermatitis,Accutane,Magnesium deficiency,Low,24,Yes,0,1,0,0,1,0,1,0,1,0,0,0
+508,Yes,0,Ringworm,Steroids,Selenium deficiency,Moderate,31,Yes,0,1,0,0,1,0,1,0,1,0,1,1
+509,Yes,1,Alopecia Areata,Antidepressants,Vitamin A Deficiency,Moderate,37,No,1,1,0,0,1,1,0,1,1,0,1,1
+510,No,0,Psoriasis,Steroids,Magnesium deficiency,Moderate,50,Yes,1,1,1,0,0,0,1,1,1,1,1,2
+511,Yes,0,Ringworm,Chemotherapy,,High,23,Yes,1,1,1,1,1,0,1,1,1,1,2,0
+512,No,1,Scalp Infection,Heart Medication,Vitamin D Deficiency,Moderate,18,No,0,0,0,0,0,1,0,0,0,0,1,0
+513,No,0,Seborrheic Dermatitis,Steroids,Omega-3 fatty acids,High,29,No,1,1,0,1,0,0,0,1,1,0,2,0
+514,No,0,Seborrheic Dermatitis,Blood Pressure Medication,Zinc Deficiency,High,48,No,1,1,1,1,0,0,0,1,1,1,2,2
+515,Yes,0,Thyroid Problems,Blood Pressure Medication,Zinc Deficiency,Moderate,39,No,0,0,1,1,1,0,0,0,0,1,1,1
+516,No,1,Ringworm,Heart Medication,Vitamin E deficiency,High,46,No,0,0,1,0,0,1,0,0,0,1,2,2
+517,Yes,1,Dermatitis,Antidepressants,,Low,22,Yes,1,1,0,0,1,1,1,1,1,0,0,0
+518,No,1,Ringworm,Blood Pressure Medication,Magnesium deficiency,High,47,No,0,0,1,0,0,1,0,0,0,1,2,2
+519,No,1,Dermatitis,Heart Medication,Vitamin A Deficiency,High,48,No,1,1,1,1,0,1,0,1,1,1,2,2
+520,Yes,0,Androgenetic Alopecia,Heart Medication,Vitamin E deficiency,Low,24,Yes,1,1,0,1,1,0,1,1,1,0,0,0
+521,Yes,0,Ringworm,Rogaine,Iron deficiency,Moderate,36,No,0,0,1,1,1,0,0,0,0,1,1,1
+522,Yes,1,Psoriasis,Rogaine,Zinc Deficiency,Low,37,Yes,1,1,1,1,1,1,1,1,1,1,0,1
+523,No,1,Psoriasis,Antidepressants,Protein deficiency,Moderate,49,No,0,0,0,0,0,1,0,0,0,0,1,2
+524,No,0,Dermatitis,Rogaine,Protein deficiency,Moderate,33,No,1,1,1,1,0,0,0,1,1,1,1,1
+525,No,0,Dermatitis,Immunomodulators,Omega-3 fatty acids,Low,36,No,0,1,1,1,0,0,0,0,1,1,0,1
+526,Yes,1,Scalp Infection,Steroids,Biotin Deficiency,Low,29,No,1,0,0,0,1,1,0,1,0,0,0,0
+527,No,1,Dermatitis,Immunomodulators,Protein deficiency,Moderate,44,No,1,0,0,1,0,1,0,1,0,0,1,2
+528,Yes,0,Seborrheic Dermatitis,Accutane,Omega-3 fatty acids,Low,36,Yes,0,1,1,1,1,0,1,0,1,1,0,1
+529,No,1,Thyroid Problems,Antidepressants,Zinc Deficiency,Low,45,No,1,1,1,0,0,1,0,1,1,1,0,2
+530,Yes,1,Androgenetic Alopecia,Rogaine,Omega-3 fatty acids,Moderate,34,Yes,0,1,1,1,1,1,1,0,1,1,1,1
+531,Yes,1,Androgenetic Alopecia,Antidepressants,Iron deficiency,Moderate,46,No,0,1,0,0,1,1,0,0,1,0,1,2
+532,No,0,Seborrheic Dermatitis,Heart Medication,Vitamin A Deficiency,High,48,No,0,1,0,0,0,0,0,0,1,0,2,2
+533,Yes,0,Thyroid Problems,Antifungal Cream,Zinc Deficiency,Moderate,49,Yes,0,0,0,1,1,0,1,0,0,0,1,2
+534,No,1,Alopecia Areata,Antifungal Cream,Protein deficiency,Moderate,34,Yes,0,1,1,1,0,1,1,0,1,1,1,1
+535,No,1,Psoriasis,Antifungal Cream,Omega-3 fatty acids,Moderate,32,No,0,1,0,1,0,1,0,0,1,0,1,1
+536,No,0,Alopecia Areata,Accutane,,High,21,No,0,0,1,0,0,0,0,0,0,1,2,0
+537,No,0,Dermatosis,Antidepressants,Omega-3 fatty acids,Moderate,49,Yes,0,1,0,1,0,0,1,0,1,0,1,2
+538,Yes,0,Androgenetic Alopecia,Heart Medication,Iron deficiency,Low,48,Yes,1,0,1,0,1,0,1,1,0,1,0,2
+539,No,0,Thyroid Problems,Rogaine,Vitamin E deficiency,High,33,No,0,0,0,1,0,0,0,0,0,0,2,1
+540,Yes,0,Seborrheic Dermatitis,Rogaine,Omega-3 fatty acids,Low,25,Yes,0,0,1,0,1,0,1,0,0,1,0,0
+541,Yes,1,Alopecia Areata,Accutane,Omega-3 fatty acids,Moderate,41,Yes,0,1,0,0,1,1,1,0,1,0,1,2
+542,No,0,Androgenetic Alopecia,Immunomodulators,Iron deficiency,Low,41,No,0,0,0,1,0,0,0,0,0,0,0,2
+543,Yes,1,Eczema,Antidepressants,Iron deficiency,High,36,No,1,1,1,0,1,1,0,1,1,1,2,1
+544,No,0,Dermatosis,Immunomodulators,Vitamin A Deficiency,Moderate,29,No,1,0,0,1,0,0,0,1,0,0,1,0
+545,No,1,Seborrheic Dermatitis,Antidepressants,Zinc Deficiency,Low,18,No,1,1,0,1,0,1,0,1,1,0,0,0
+546,Yes,0,Scalp Infection,Immunomodulators,Zinc Deficiency,Moderate,43,Yes,1,1,0,1,1,0,1,1,1,0,1,2
+547,No,1,Dermatosis,Chemotherapy,Vitamin E deficiency,Low,39,No,1,1,1,0,0,1,0,1,1,1,0,1
+548,No,1,Thyroid Problems,Rogaine,Magnesium deficiency,Low,48,Yes,1,0,1,1,0,1,1,1,0,1,0,2
+549,No,1,Androgenetic Alopecia,Heart Medication,Protein deficiency,Moderate,37,Yes,0,1,1,1,0,1,1,0,1,1,1,1
+550,Yes,0,Dermatosis,Steroids,Vitamin E deficiency,Low,24,Yes,1,0,0,0,1,0,1,1,0,0,0,0
+551,Yes,0,Scalp Infection,Steroids,Omega-3 fatty acids,Low,43,Yes,1,0,1,0,1,0,1,1,0,1,0,2
+552,No,1,Androgenetic Alopecia,Antifungal Cream,Biotin Deficiency,High,28,Yes,0,1,0,0,0,1,1,0,1,0,2,0
+553,No,1,Dermatitis,Immunomodulators,Vitamin A Deficiency,Moderate,41,Yes,0,0,0,0,0,1,1,0,0,0,1,2
+554,No,1,Scalp Infection,Steroids,Vitamin D Deficiency,High,38,Yes,1,0,0,1,0,1,1,1,0,0,2,1
+555,Yes,1,Alopecia Areata,Heart Medication,Vitamin E deficiency,Low,28,Yes,1,0,0,0,1,1,1,1,0,0,0,0
+556,No,0,Alopecia Areata,Antidepressants,Vitamin E deficiency,Low,40,Yes,1,1,0,1,0,0,1,1,1,0,0,2
+557,Yes,0,Psoriasis,Immunomodulators,Vitamin A Deficiency,High,28,No,0,0,1,0,1,0,0,0,0,1,2,0
+558,No,0,Dermatosis,Steroids,Vitamin E deficiency,High,49,Yes,0,1,1,0,0,0,1,0,1,1,2,2
+559,No,1,Psoriasis,Rogaine,Magnesium deficiency,Moderate,29,Yes,1,0,0,1,0,1,1,1,0,0,1,0
+560,No,0,Psoriasis,Antidepressants,Protein deficiency,Moderate,46,Yes,0,0,0,0,0,0,1,0,0,0,1,2
+561,No,0,Androgenetic Alopecia,Rogaine,Magnesium deficiency,Low,35,Yes,0,0,1,0,0,0,1,0,0,1,0,1
+562,No,1,Dermatitis,Rogaine,Magnesium deficiency,Moderate,24,No,1,1,0,1,0,1,0,1,1,0,1,0
+563,No,0,Alopecia Areata,Chemotherapy,Selenium deficiency,Low,38,No,0,0,0,1,0,0,0,0,0,0,0,1
+564,No,0,Ringworm,Accutane,Iron deficiency,Low,36,No,0,0,1,1,0,0,0,0,0,1,0,1
+565,Yes,1,Dermatosis,Antidepressants,Biotin Deficiency,High,19,No,0,0,0,1,1,1,0,0,0,0,2,0
+566,Yes,0,Alopecia Areata,Immunomodulators,Biotin Deficiency,Low,40,Yes,1,1,0,1,1,0,1,1,1,0,0,2
+567,No,0,Androgenetic Alopecia,Antibiotics,Vitamin D Deficiency,High,45,Yes,1,0,1,0,0,0,1,1,0,1,2,2
+568,Yes,1,Ringworm,Chemotherapy,Biotin Deficiency,Low,31,Yes,1,1,1,0,1,1,1,1,1,1,0,1
+569,No,0,Psoriasis,Blood Pressure Medication,Vitamin A Deficiency,Low,29,Yes,1,1,0,1,0,0,1,1,1,0,0,0
+570,Yes,0,Androgenetic Alopecia,Accutane,Zinc Deficiency,Low,50,Yes,1,0,1,0,1,0,1,1,0,1,0,2
+571,Yes,1,Thyroid Problems,Chemotherapy,Iron deficiency,Low,24,No,0,1,0,1,1,1,0,0,1,0,0,0
+572,Yes,1,Eczema,Chemotherapy,Zinc Deficiency,Low,42,No,1,1,0,0,1,1,0,1,1,0,0,2
+573,No,1,Dermatosis,Blood Pressure Medication,Vitamin E deficiency,Low,46,Yes,0,0,1,1,0,1,1,0,0,1,0,2
+574,No,1,Seborrheic Dermatitis,Accutane,Iron deficiency,High,34,Yes,1,1,0,0,0,1,1,1,1,0,2,1
+575,No,1,Androgenetic Alopecia,Immunomodulators,Protein deficiency,Moderate,24,No,0,1,0,1,0,1,0,0,1,0,1,0
+576,No,0,Thyroid Problems,Blood Pressure Medication,Zinc Deficiency,Low,37,Yes,1,0,1,0,0,0,1,1,0,1,0,1
+577,Yes,0,Psoriasis,Accutane,Vitamin A Deficiency,Moderate,29,No,1,1,1,0,1,0,0,1,1,1,1,0
+578,Yes,1,Dermatitis,Antibiotics,Omega-3 fatty acids,High,39,No,0,0,0,0,1,1,0,0,0,0,2,1
+579,Yes,0,Eczema,Antibiotics,Biotin Deficiency,High,26,Yes,1,0,0,1,1,0,1,1,0,0,2,0
+580,No,1,Seborrheic Dermatitis,Antidepressants,Vitamin D Deficiency,High,38,No,1,1,1,0,0,1,0,1,1,1,2,1
+581,Yes,0,Psoriasis,Antidepressants,Zinc Deficiency,High,19,No,1,0,0,0,1,0,0,1,0,0,2,0
+582,Yes,0,Eczema,Antidepressants,Protein deficiency,Low,26,No,0,0,0,0,1,0,0,0,0,0,0,0
+583,Yes,0,Ringworm,Blood Pressure Medication,,Moderate,23,No,0,1,0,0,1,0,0,0,1,0,1,0
+584,Yes,1,Androgenetic Alopecia,Immunomodulators,Biotin Deficiency,High,46,No,0,1,1,0,1,1,0,0,1,1,2,2
+585,Yes,1,Androgenetic Alopecia,Antifungal Cream,Protein deficiency,High,40,Yes,0,1,1,1,1,1,1,0,1,1,2,2
+586,Yes,1,Alopecia Areata,Antibiotics,Vitamin D Deficiency,Low,41,Yes,0,0,1,0,1,1,1,0,0,1,0,2
+587,Yes,0,Ringworm,Heart Medication,Omega-3 fatty acids,High,18,Yes,1,0,1,1,1,0,1,1,0,1,2,0
+588,Yes,0,Psoriasis,Heart Medication,Selenium deficiency,Low,45,No,0,1,1,1,1,0,0,0,1,1,0,2
+589,No,0,Ringworm,Antibiotics,Vitamin D Deficiency,High,49,No,0,0,1,1,0,0,0,0,0,1,2,2
+590,Yes,0,Dermatosis,Rogaine,Vitamin D Deficiency,Moderate,32,No,0,0,1,0,1,0,0,0,0,1,1,1
+591,Yes,0,Scalp Infection,Chemotherapy,,High,22,Yes,0,0,0,0,1,0,1,0,0,0,2,0
+592,No,0,Psoriasis,Antidepressants,Zinc Deficiency,Low,28,No,1,1,0,1,0,0,0,1,1,0,0,0
+593,Yes,1,Thyroid Problems,Antidepressants,Protein deficiency,High,34,Yes,1,1,1,0,1,1,1,1,1,1,2,1
+594,Yes,0,Scalp Infection,Antibiotics,Biotin Deficiency,Moderate,32,No,0,1,0,0,1,0,0,0,1,0,1,1
+595,No,1,Androgenetic Alopecia,Blood Pressure Medication,Magnesium deficiency,High,31,No,1,1,0,1,0,1,0,1,1,0,2,1
+596,Yes,1,Androgenetic Alopecia,Antibiotics,Vitamin D Deficiency,Moderate,37,No,0,1,0,0,1,1,0,0,1,0,1,1
+597,Yes,1,Alopecia Areata,Blood Pressure Medication,Iron deficiency,Low,28,Yes,0,0,0,1,1,1,1,0,0,0,0,0
+598,Yes,0,Androgenetic Alopecia,Immunomodulators,Protein deficiency,High,27,No,0,1,1,1,1,0,0,0,1,1,2,0
+599,Yes,1,Ringworm,Steroids,Magnesium deficiency,Moderate,32,Yes,1,1,0,1,1,1,1,1,1,0,1,1
+600,No,0,Thyroid Problems,Accutane,Protein deficiency,Moderate,44,Yes,1,1,1,0,0,0,1,1,1,1,1,2
+601,Yes,1,Thyroid Problems,Blood Pressure Medication,Vitamin E deficiency,High,27,No,0,0,0,0,1,1,0,0,0,0,2,0
+602,No,1,Eczema,Steroids,Magnesium deficiency,Low,38,No,0,0,0,0,0,1,0,0,0,0,0,1
+603,Yes,1,Thyroid Problems,Chemotherapy,Iron deficiency,High,45,No,1,0,1,1,1,1,0,1,0,1,2,2
+604,No,0,Scalp Infection,Antifungal Cream,Vitamin E deficiency,Low,48,No,0,0,1,1,0,0,0,0,0,1,0,2
+605,Yes,1,Dermatitis,Steroids,Omega-3 fatty acids,Moderate,24,Yes,0,1,0,0,1,1,1,0,1,0,1,0
+606,Yes,0,Dermatosis,Rogaine,Vitamin E deficiency,Moderate,20,Yes,0,1,0,0,1,0,1,0,1,0,1,0
+607,No,1,Dermatitis,Immunomodulators,Biotin Deficiency,Low,43,No,1,1,0,1,0,1,0,1,1,0,0,2
+608,Yes,0,Seborrheic Dermatitis,Steroids,Vitamin D Deficiency,Moderate,25,No,1,0,1,1,1,0,0,1,0,1,1,0
+609,No,1,Dermatosis,Rogaine,Iron deficiency,Low,30,No,1,1,1,0,0,1,0,1,1,1,0,1
+610,No,0,Alopecia Areata,Blood Pressure Medication,Omega-3 fatty acids,Moderate,33,Yes,0,1,0,1,0,0,1,0,1,0,1,1
+611,No,0,Eczema,Blood Pressure Medication,Magnesium deficiency,Moderate,37,No,1,1,0,0,0,0,0,1,1,0,1,1
+612,No,0,Psoriasis,Immunomodulators,Biotin Deficiency,High,32,No,1,0,1,0,0,0,0,1,0,1,2,1
+613,Yes,0,Dermatosis,Steroids,Vitamin A Deficiency,Low,36,Yes,0,1,1,1,1,0,1,0,1,1,0,1
+614,Yes,0,Scalp Infection,Accutane,Zinc Deficiency,High,39,Yes,0,0,0,1,1,0,1,0,0,0,2,1
+615,Yes,1,Seborrheic Dermatitis,Chemotherapy,Selenium deficiency,High,19,No,1,1,1,1,1,1,0,1,1,1,2,0
+616,No,1,Dermatitis,Heart Medication,Magnesium deficiency,High,18,No,0,0,1,1,0,1,0,0,0,1,2,0
+617,No,0,Ringworm,Chemotherapy,Selenium deficiency,High,28,No,0,1,1,1,0,0,0,0,1,1,2,0
+618,Yes,1,Seborrheic Dermatitis,Rogaine,Selenium deficiency,Moderate,35,No,1,0,0,1,1,1,0,1,0,0,1,1
+619,No,1,Dermatitis,Antifungal Cream,Zinc Deficiency,Moderate,35,Yes,1,0,0,1,0,1,1,1,0,0,1,1
+620,No,0,Eczema,Rogaine,Selenium deficiency,Moderate,41,Yes,0,1,1,0,0,0,1,0,1,1,1,2
+621,Yes,1,Seborrheic Dermatitis,Heart Medication,Omega-3 fatty acids,High,18,No,0,1,1,1,1,1,0,0,1,1,2,0
+622,No,1,Ringworm,Steroids,Omega-3 fatty acids,High,43,No,0,1,0,0,0,1,0,0,1,0,2,2
+623,Yes,0,Ringworm,Accutane,Zinc Deficiency,Moderate,20,No,1,1,0,0,1,0,0,1,1,0,1,0
+624,No,0,Seborrheic Dermatitis,Immunomodulators,Vitamin A Deficiency,Moderate,25,Yes,1,1,1,0,0,0,1,1,1,1,1,0
+625,Yes,1,Alopecia Areata,Antifungal Cream,Protein deficiency,High,50,Yes,1,0,0,0,1,1,1,1,0,0,2,2
+626,No,0,Dermatitis,Heart Medication,Biotin Deficiency,Low,33,Yes,0,1,1,1,0,0,1,0,1,1,0,1
+627,No,1,Dermatosis,Antifungal Cream,Vitamin D Deficiency,Low,19,No,0,1,0,1,0,1,0,0,1,0,0,0
+628,Yes,0,Androgenetic Alopecia,Blood Pressure Medication,Magnesium deficiency,Moderate,25,Yes,1,0,1,1,1,0,1,1,0,1,1,0
+629,Yes,0,Eczema,Rogaine,Vitamin E deficiency,Moderate,27,Yes,0,1,1,0,1,0,1,0,1,1,1,0
+630,No,0,Seborrheic Dermatitis,Rogaine,,Moderate,22,Yes,1,1,1,1,0,0,1,1,1,1,1,0
+631,Yes,1,Alopecia Areata,Antidepressants,Magnesium deficiency,Moderate,28,Yes,0,0,0,1,1,1,1,0,0,0,1,0
+632,No,1,Eczema,Antifungal Cream,Zinc Deficiency,Moderate,28,No,1,1,0,1,0,1,0,1,1,0,1,0
+633,No,0,Alopecia Areata,Antifungal Cream,Zinc Deficiency,Moderate,43,No,0,1,1,1,0,0,0,0,1,1,1,2
+634,Yes,1,Androgenetic Alopecia,Chemotherapy,,High,22,Yes,0,1,1,1,1,1,1,0,1,1,2,0
+635,No,1,Scalp Infection,Antifungal Cream,,Moderate,23,Yes,1,0,1,1,0,1,1,1,0,1,1,0
+636,No,0,Alopecia Areata,Antifungal Cream,Biotin Deficiency,Moderate,42,Yes,1,1,0,0,0,0,1,1,1,0,1,2
+637,Yes,0,Psoriasis,Steroids,Vitamin A Deficiency,Low,31,No,0,1,1,1,1,0,0,0,1,1,0,1
+638,Yes,1,Dermatosis,Antidepressants,Magnesium deficiency,Moderate,43,No,0,0,1,1,1,1,0,0,0,1,1,2
+639,Yes,1,Scalp Infection,Heart Medication,Selenium deficiency,Moderate,40,No,0,1,1,0,1,1,0,0,1,1,1,2
+640,Yes,0,Dermatosis,Blood Pressure Medication,,Moderate,22,No,0,0,0,1,1,0,0,0,0,0,1,0
+641,No,0,Alopecia Areata,Antidepressants,Vitamin D Deficiency,Low,36,Yes,1,0,0,1,0,0,1,1,0,0,0,1
+642,Yes,1,Eczema,Chemotherapy,,Low,22,No,1,0,0,0,1,1,0,1,0,0,0,0
+643,No,0,Dermatosis,Heart Medication,Protein deficiency,Moderate,31,Yes,1,1,0,0,0,0,1,1,1,0,1,1
+644,No,0,Psoriasis,Immunomodulators,Vitamin E deficiency,High,26,No,1,1,0,0,0,0,0,1,1,0,2,0
+645,No,1,Psoriasis,Blood Pressure Medication,Vitamin A Deficiency,Moderate,44,No,1,1,0,0,0,1,0,1,1,0,1,2
+646,No,1,Seborrheic Dermatitis,Steroids,Iron deficiency,High,35,Yes,1,0,0,1,0,1,1,1,0,0,2,1
+647,No,0,Ringworm,Blood Pressure Medication,Omega-3 fatty acids,High,24,No,1,0,1,1,0,0,0,1,0,1,2,0
+648,Yes,0,Psoriasis,Antibiotics,Protein deficiency,Moderate,49,No,0,1,0,1,1,0,0,0,1,0,1,2
+649,Yes,1,Dermatitis,Accutane,Vitamin E deficiency,Low,34,No,1,1,1,0,1,1,0,1,1,1,0,1
+650,No,0,Ringworm,Antibiotics,,Moderate,22,Yes,0,1,1,1,0,0,1,0,1,1,1,0
+651,No,0,Eczema,Immunomodulators,Zinc Deficiency,Moderate,33,Yes,1,0,0,1,0,0,1,1,0,0,1,1
+652,Yes,1,Thyroid Problems,Immunomodulators,Vitamin D Deficiency,High,34,No,0,1,0,0,1,1,0,0,1,0,2,1
+653,Yes,0,Seborrheic Dermatitis,Accutane,,High,22,No,1,1,0,0,1,0,0,1,1,0,2,0
+654,Yes,1,Dermatitis,Antibiotics,Protein deficiency,High,44,Yes,0,0,1,1,1,1,1,0,0,1,2,2
+655,Yes,1,Seborrheic Dermatitis,Antibiotics,Vitamin E deficiency,High,25,No,0,1,0,0,1,1,0,0,1,0,2,0
+656,Yes,1,Psoriasis,Immunomodulators,Zinc Deficiency,High,42,Yes,1,1,0,1,1,1,1,1,1,0,2,2
+657,Yes,1,Alopecia Areata,Antidepressants,Selenium deficiency,High,39,No,1,0,0,0,1,1,0,1,0,0,2,1
+658,Yes,0,Seborrheic Dermatitis,Heart Medication,,Moderate,22,No,0,1,0,0,1,0,0,0,1,0,1,0
+659,Yes,1,Psoriasis,Accutane,Magnesium deficiency,Low,46,Yes,0,0,0,0,1,1,1,0,0,0,0,2
+660,No,1,Thyroid Problems,Immunomodulators,Selenium deficiency,High,19,No,1,0,1,0,0,1,0,1,0,1,2,0
+661,No,1,Eczema,Steroids,,Low,21,No,0,0,0,1,0,1,0,0,0,0,0,0
+662,No,0,Thyroid Problems,Antibiotics,,High,21,Yes,1,1,0,0,0,0,1,1,1,0,2,0
+663,Yes,1,Alopecia Areata,Rogaine,Selenium deficiency,Moderate,46,Yes,1,1,1,1,1,1,1,1,1,1,1,2
+664,No,1,Alopecia Areata,Antidepressants,Selenium deficiency,Low,30,No,0,1,0,0,0,1,0,0,1,0,0,1
+665,No,1,Dermatitis,Antidepressants,Vitamin D Deficiency,High,24,Yes,0,0,0,0,0,1,1,0,0,0,2,0
+666,No,1,Androgenetic Alopecia,Steroids,Protein deficiency,Low,47,No,1,1,0,1,0,1,0,1,1,0,0,2
+667,No,0,Androgenetic Alopecia,Steroids,Vitamin D Deficiency,Moderate,39,Yes,1,0,1,0,0,0,1,1,0,1,1,1
+668,No,1,Androgenetic Alopecia,Chemotherapy,Magnesium deficiency,Low,24,Yes,1,0,1,0,0,1,1,1,0,1,0,0
+669,No,0,Seborrheic Dermatitis,Blood Pressure Medication,Vitamin E deficiency,Moderate,41,No,0,0,0,1,0,0,0,0,0,0,1,2
+670,Yes,1,Dermatitis,Antibiotics,Zinc Deficiency,Low,31,No,1,1,0,1,1,1,0,1,1,0,0,1
+671,Yes,1,Psoriasis,Antibiotics,Zinc Deficiency,Low,37,Yes,1,0,0,1,1,1,1,1,0,0,0,1
+672,No,1,Psoriasis,Accutane,Omega-3 fatty acids,Low,40,No,0,1,1,0,0,1,0,0,1,1,0,2
+673,Yes,0,Androgenetic Alopecia,Antibiotics,Magnesium deficiency,Moderate,42,Yes,1,1,1,1,1,0,1,1,1,1,1,2
+674,No,0,Scalp Infection,Antidepressants,Omega-3 fatty acids,Moderate,35,Yes,0,0,1,1,0,0,1,0,0,1,1,1
+675,Yes,1,Dermatosis,Antibiotics,Vitamin E deficiency,Moderate,39,No,1,0,1,1,1,1,0,1,0,1,1,1
+676,No,0,Seborrheic Dermatitis,Immunomodulators,Vitamin D Deficiency,High,36,Yes,0,0,0,0,0,0,1,0,0,0,2,1
+677,Yes,0,Thyroid Problems,Accutane,Magnesium deficiency,High,42,No,0,1,0,1,1,0,0,0,1,0,2,2
+678,Yes,0,Seborrheic Dermatitis,Rogaine,Omega-3 fatty acids,Low,36,No,1,0,0,1,1,0,0,1,0,0,0,1
+679,Yes,1,Alopecia Areata,Chemotherapy,,High,23,Yes,1,0,1,0,1,1,1,1,0,1,2,0
+680,Yes,0,Ringworm,Antifungal Cream,Protein deficiency,Moderate,48,No,1,1,0,0,1,0,0,1,1,0,1,2
+681,Yes,1,Scalp Infection,Antibiotics,Vitamin A Deficiency,Low,19,No,0,0,0,0,1,1,0,0,0,0,0,0
+682,Yes,0,Scalp Infection,Steroids,Vitamin D Deficiency,High,32,No,0,0,0,1,1,0,0,0,0,0,2,1
+683,No,0,Psoriasis,Accutane,Selenium deficiency,Low,47,No,0,0,1,0,0,0,0,0,0,1,0,2
+684,Yes,1,Thyroid Problems,Heart Medication,,Moderate,21,Yes,0,1,0,0,1,1,1,0,1,0,1,0
+685,Yes,0,Scalp Infection,Steroids,Biotin Deficiency,Moderate,35,No,0,1,1,1,1,0,0,0,1,1,1,1
+686,Yes,0,Dermatitis,Rogaine,Biotin Deficiency,High,39,Yes,1,0,0,1,1,0,1,1,0,0,2,1
+687,Yes,0,Psoriasis,Blood Pressure Medication,Omega-3 fatty acids,Moderate,49,Yes,1,1,1,1,1,0,1,1,1,1,1,2
+688,Yes,0,Psoriasis,Antibiotics,Vitamin A Deficiency,Moderate,45,Yes,1,1,1,1,1,0,1,1,1,1,1,2
+689,No,1,Seborrheic Dermatitis,Antidepressants,Vitamin A Deficiency,Low,24,Yes,1,1,0,1,0,1,1,1,1,0,0,0
+690,Yes,0,Dermatosis,Antifungal Cream,Selenium deficiency,Low,33,No,1,0,1,1,1,0,0,1,0,1,0,1
+691,No,0,Androgenetic Alopecia,Antifungal Cream,Vitamin D Deficiency,Moderate,45,Yes,0,0,1,0,0,0,1,0,0,1,1,2
+692,No,0,Alopecia Areata,Antibiotics,Selenium deficiency,Low,49,No,1,1,0,1,0,0,0,1,1,0,0,2
+693,Yes,1,Seborrheic Dermatitis,Steroids,Vitamin E deficiency,Moderate,49,No,0,0,0,1,1,1,0,0,0,0,1,2
+694,No,0,Eczema,Heart Medication,Biotin Deficiency,Moderate,35,No,1,0,1,1,0,0,0,1,0,1,1,1
+695,No,0,Dermatitis,Heart Medication,Selenium deficiency,Moderate,48,Yes,0,0,1,0,0,0,1,0,0,1,1,2
+696,Yes,1,Psoriasis,Antidepressants,Selenium deficiency,High,37,Yes,1,0,1,0,1,1,1,1,0,1,2,1
+697,Yes,0,Eczema,Antibiotics,Magnesium deficiency,Low,26,No,1,0,0,1,1,0,0,1,0,0,0,0
+698,No,1,Alopecia Areata,Chemotherapy,Protein deficiency,High,43,No,1,0,1,1,0,1,0,1,0,1,2,2
+699,Yes,0,Psoriasis,Rogaine,Vitamin A Deficiency,Moderate,27,No,1,1,1,0,1,0,0,1,1,1,1,0
+700,No,0,Seborrheic Dermatitis,Antidepressants,Magnesium deficiency,High,29,Yes,1,1,0,0,0,0,1,1,1,0,2,0
+701,Yes,0,Psoriasis,Blood Pressure Medication,Magnesium deficiency,Moderate,49,Yes,1,1,1,0,1,0,1,1,1,1,1,2
+702,No,1,Psoriasis,Accutane,Iron deficiency,Moderate,30,Yes,0,1,0,0,0,1,1,0,1,0,1,1
+703,Yes,0,Scalp Infection,Rogaine,Protein deficiency,Moderate,41,No,0,1,1,0,1,0,0,0,1,1,1,2
+704,Yes,0,Alopecia Areata,Immunomodulators,,Low,21,No,0,0,0,1,1,0,0,0,0,0,0,0
+705,No,1,Ringworm,Antibiotics,Biotin Deficiency,Low,43,Yes,0,0,0,0,0,1,1,0,0,0,0,2
+706,Yes,0,Ringworm,Antidepressants,Vitamin D Deficiency,Low,31,No,0,0,0,1,1,0,0,0,0,0,0,1
+707,No,0,Dermatosis,Rogaine,Omega-3 fatty acids,High,24,Yes,0,1,1,0,0,0,1,0,1,1,2,0
+708,No,1,Scalp Infection,Immunomodulators,Vitamin A Deficiency,Low,32,Yes,0,0,0,0,0,1,1,0,0,0,0,1
+709,No,1,Psoriasis,Rogaine,Protein deficiency,Low,33,No,0,0,1,1,0,1,0,0,0,1,0,1
+710,No,1,Ringworm,Antifungal Cream,Selenium deficiency,Moderate,33,Yes,0,0,0,0,0,1,1,0,0,0,1,1
+711,Yes,1,Dermatosis,Antibiotics,Omega-3 fatty acids,Low,32,Yes,0,0,1,1,1,1,1,0,0,1,0,1
+712,No,1,Thyroid Problems,Heart Medication,Omega-3 fatty acids,Moderate,33,Yes,0,1,0,0,0,1,1,0,1,0,1,1
+713,No,0,Thyroid Problems,Antibiotics,Vitamin E deficiency,High,49,Yes,1,0,1,0,0,0,1,1,0,1,2,2
+714,No,0,Dermatitis,Steroids,Iron deficiency,Moderate,47,No,0,1,0,0,0,0,0,0,1,0,1,2
+715,Yes,1,Ringworm,Immunomodulators,Zinc Deficiency,High,31,No,1,0,1,1,1,1,0,1,0,1,2,1
+716,No,1,Alopecia Areata,Antidepressants,Vitamin E deficiency,Moderate,29,No,0,1,1,0,0,1,0,0,1,1,1,0
+717,No,0,Scalp Infection,Chemotherapy,Protein deficiency,Moderate,43,Yes,1,1,0,1,0,0,1,1,1,0,1,2
+718,Yes,0,Eczema,Heart Medication,Vitamin D Deficiency,Low,38,No,1,1,1,1,1,0,0,1,1,1,0,1
+719,No,0,Androgenetic Alopecia,Antifungal Cream,Vitamin E deficiency,High,43,No,0,0,0,0,0,0,0,0,0,0,2,2
+720,Yes,0,Ringworm,Steroids,,Moderate,22,Yes,1,1,0,0,1,0,1,1,1,0,1,0
+721,No,0,Dermatosis,Rogaine,Selenium deficiency,Moderate,45,Yes,0,1,0,0,0,0,1,0,1,0,1,2
+722,Yes,0,Ringworm,Blood Pressure Medication,,High,23,Yes,1,0,0,1,1,0,1,1,0,0,2,0
+723,Yes,0,Scalp Infection,Rogaine,Zinc Deficiency,High,40,No,0,1,1,0,1,0,0,0,1,1,2,2
+724,No,1,Dermatosis,Blood Pressure Medication,Biotin Deficiency,Low,49,Yes,0,0,0,0,0,1,1,0,0,0,0,2
+725,No,1,Alopecia Areata,Antibiotics,Iron deficiency,Low,20,Yes,1,1,1,0,0,1,1,1,1,1,0,0
+726,Yes,0,Scalp Infection,Blood Pressure Medication,Vitamin E deficiency,Moderate,28,No,0,0,1,0,1,0,0,0,0,1,1,0
+727,Yes,1,Seborrheic Dermatitis,Antibiotics,Iron deficiency,Moderate,45,No,1,0,0,1,1,1,0,1,0,0,1,2
+728,Yes,0,Dermatitis,Accutane,Zinc Deficiency,Low,29,Yes,1,1,0,1,1,0,1,1,1,0,0,0
+729,No,1,Seborrheic Dermatitis,Antifungal Cream,Vitamin A Deficiency,Moderate,44,No,0,0,1,1,0,1,0,0,0,1,1,2
+730,No,1,Alopecia Areata,Immunomodulators,Iron deficiency,Moderate,37,Yes,0,0,1,1,0,1,1,0,0,1,1,1
+731,Yes,0,Psoriasis,Steroids,Magnesium deficiency,Low,29,No,1,1,1,1,1,0,0,1,1,1,0,0
+732,No,1,Seborrheic Dermatitis,Accutane,Omega-3 fatty acids,High,36,No,1,0,0,0,0,1,0,1,0,0,2,1
+733,No,1,Thyroid Problems,Steroids,Selenium deficiency,Moderate,38,Yes,1,1,0,1,0,1,1,1,1,0,1,1
+734,Yes,0,Eczema,Antidepressants,Vitamin D Deficiency,Low,26,No,1,0,0,0,1,0,0,1,0,0,0,0
+735,No,1,Dermatitis,Antibiotics,Magnesium deficiency,Moderate,28,Yes,1,0,1,1,0,1,1,1,0,1,1,0
+736,No,0,Thyroid Problems,Accutane,Protein deficiency,High,46,Yes,1,0,1,0,0,0,1,1,0,1,2,2
+737,No,0,Seborrheic Dermatitis,Immunomodulators,Biotin Deficiency,Low,35,No,1,0,0,0,0,0,0,1,0,0,0,1
+738,Yes,1,Ringworm,Antibiotics,Protein deficiency,Moderate,29,Yes,1,1,1,1,1,1,1,1,1,1,1,0
+739,Yes,0,Scalp Infection,Chemotherapy,Vitamin E deficiency,High,34,Yes,0,1,1,1,1,0,1,0,1,1,2,1
+740,No,0,Alopecia Areata,Blood Pressure Medication,Iron deficiency,Low,30,Yes,1,0,1,1,0,0,1,1,0,1,0,1
+741,Yes,0,Psoriasis,Antibiotics,Vitamin E deficiency,High,37,No,1,1,0,1,1,0,0,1,1,0,2,1
+742,No,1,Thyroid Problems,Chemotherapy,Magnesium deficiency,Moderate,31,No,0,0,1,0,0,1,0,0,0,1,1,1
+743,No,0,Alopecia Areata,Rogaine,Protein deficiency,Low,24,No,0,0,0,1,0,0,0,0,0,0,0,0
+744,Yes,0,Alopecia Areata,Antidepressants,Vitamin D Deficiency,High,30,No,0,1,0,1,1,0,0,0,1,0,2,1
+745,Yes,0,Dermatitis,Antifungal Cream,,Moderate,22,No,0,0,0,1,1,0,0,0,0,0,1,0
+746,No,1,Dermatosis,Rogaine,Vitamin E deficiency,Low,33,No,1,1,1,0,0,1,0,1,1,1,0,1
+747,Yes,1,Dermatitis,Heart Medication,Vitamin D Deficiency,Moderate,27,Yes,0,0,0,0,1,1,1,0,0,0,1,0
+748,Yes,0,Eczema,Steroids,Omega-3 fatty acids,Moderate,29,Yes,0,1,1,1,1,0,1,0,1,1,1,0
+749,No,1,Dermatitis,Rogaine,Zinc Deficiency,Moderate,50,No,0,0,0,0,0,1,0,0,0,0,1,2
+750,No,0,Psoriasis,Immunomodulators,Omega-3 fatty acids,High,31,Yes,1,1,1,0,0,0,1,1,1,1,2,1
+751,No,1,Psoriasis,Antifungal Cream,Selenium deficiency,Moderate,32,No,0,1,0,0,0,1,0,0,1,0,1,1
+752,No,0,Scalp Infection,Steroids,Iron deficiency,Low,26,No,0,1,0,1,0,0,0,0,1,0,0,0
+753,Yes,1,Psoriasis,Chemotherapy,Vitamin E deficiency,Moderate,25,No,1,0,1,1,1,1,0,1,0,1,1,0
+754,Yes,1,Scalp Infection,Chemotherapy,Vitamin D Deficiency,Moderate,47,No,1,0,0,0,1,1,0,1,0,0,1,2
+755,Yes,1,Seborrheic Dermatitis,Chemotherapy,Vitamin A Deficiency,High,18,No,0,1,1,0,1,1,0,0,1,1,2,0
+756,Yes,1,Scalp Infection,Rogaine,Zinc Deficiency,Moderate,18,Yes,0,1,0,0,1,1,1,0,1,0,1,0
+757,Yes,1,Psoriasis,Chemotherapy,Magnesium deficiency,Moderate,50,No,0,0,0,0,1,1,0,0,0,0,1,2
+758,No,0,Eczema,Heart Medication,Vitamin E deficiency,High,31,Yes,0,0,1,1,0,0,1,0,0,1,2,1
+759,No,0,Dermatitis,Antifungal Cream,Omega-3 fatty acids,Low,43,No,0,1,1,1,0,0,0,0,1,1,0,2
+760,No,0,Ringworm,Immunomodulators,Magnesium deficiency,Low,25,No,1,0,1,0,0,0,0,1,0,1,0,0
+761,No,1,Psoriasis,Accutane,Vitamin E deficiency,Moderate,34,Yes,0,1,1,1,0,1,1,0,1,1,1,1
+762,No,0,Seborrheic Dermatitis,Blood Pressure Medication,Vitamin E deficiency,Low,19,No,0,1,1,0,0,0,0,0,1,1,0,0
+763,No,0,Dermatitis,Antidepressants,Magnesium deficiency,Moderate,18,Yes,1,0,1,0,0,0,1,1,0,1,1,0
+764,Yes,1,Psoriasis,Steroids,Protein deficiency,Moderate,38,No,0,1,1,1,1,1,0,0,1,1,1,1
+765,No,1,Dermatosis,Chemotherapy,Vitamin D Deficiency,High,28,Yes,0,1,1,1,0,1,1,0,1,1,2,0
+766,No,0,Scalp Infection,Antidepressants,Iron deficiency,High,45,Yes,0,1,0,0,0,0,1,0,1,0,2,2
+767,Yes,0,Scalp Infection,Accutane,Vitamin A Deficiency,High,37,No,1,1,0,1,1,0,0,1,1,0,2,1
+768,Yes,1,Alopecia Areata,Accutane,Vitamin E deficiency,Moderate,32,Yes,1,1,0,1,1,1,1,1,1,0,1,1
+769,Yes,0,Androgenetic Alopecia,Heart Medication,Vitamin A Deficiency,High,35,No,0,1,0,1,1,0,0,0,1,0,2,1
+770,Yes,1,Androgenetic Alopecia,Antidepressants,Biotin Deficiency,Low,40,No,1,1,1,1,1,1,0,1,1,1,0,2
+771,Yes,1,Alopecia Areata,Accutane,Selenium deficiency,Low,48,Yes,1,0,1,1,1,1,1,1,0,1,0,2
+772,Yes,1,Androgenetic Alopecia,Rogaine,Protein deficiency,Low,38,No,0,1,0,1,1,1,0,0,1,0,0,1
+773,Yes,1,Androgenetic Alopecia,Accutane,Magnesium deficiency,Low,40,No,1,1,1,0,1,1,0,1,1,1,0,2
+774,Yes,0,Thyroid Problems,Steroids,Omega-3 fatty acids,Low,19,No,0,0,1,0,1,0,0,0,0,1,0,0
+775,Yes,1,Scalp Infection,Antifungal Cream,Selenium deficiency,Low,34,Yes,0,0,0,0,1,1,1,0,0,0,0,1
+776,Yes,0,Scalp Infection,Blood Pressure Medication,Biotin Deficiency,Moderate,30,No,0,1,0,0,1,0,0,0,1,0,1,1
+777,Yes,0,Dermatitis,Accutane,Vitamin E deficiency,Low,26,Yes,1,1,1,0,1,0,1,1,1,1,0,0
+778,Yes,0,Ringworm,Steroids,Biotin Deficiency,Moderate,29,Yes,1,0,0,1,1,0,1,1,0,0,1,0
+779,Yes,1,Ringworm,Heart Medication,Vitamin E deficiency,Low,41,Yes,1,0,0,1,1,1,1,1,0,0,0,2
+780,No,1,Dermatosis,Antifungal Cream,,Moderate,21,No,0,0,0,0,0,1,0,0,0,0,1,0
+781,No,1,Dermatosis,Heart Medication,Vitamin A Deficiency,Moderate,38,No,0,1,0,0,0,1,0,0,1,0,1,1
+782,Yes,1,Seborrheic Dermatitis,Accutane,Zinc Deficiency,Low,19,No,0,1,1,0,1,1,0,0,1,1,0,0
+783,Yes,0,Thyroid Problems,Antibiotics,Vitamin A Deficiency,High,31,Yes,0,0,1,0,1,0,1,0,0,1,2,1
+784,Yes,0,Dermatitis,Blood Pressure Medication,Omega-3 fatty acids,Low,45,Yes,1,0,0,1,1,0,1,1,0,0,0,2
+785,No,1,Eczema,Immunomodulators,Iron deficiency,Low,38,Yes,1,0,0,0,0,1,1,1,0,0,0,1
+786,Yes,0,Psoriasis,Heart Medication,Omega-3 fatty acids,High,50,Yes,1,1,0,0,1,0,1,1,1,0,2,2
+787,Yes,1,Seborrheic Dermatitis,Blood Pressure Medication,Omega-3 fatty acids,Moderate,37,Yes,0,1,0,1,1,1,1,0,1,0,1,1
+788,Yes,0,Dermatosis,Antidepressants,Vitamin A Deficiency,Moderate,35,Yes,1,0,0,1,1,0,1,1,0,0,1,1
+789,Yes,0,Thyroid Problems,Steroids,Vitamin D Deficiency,Moderate,32,Yes,0,0,1,1,1,0,1,0,0,1,1,1
+790,No,1,Seborrheic Dermatitis,Immunomodulators,Iron deficiency,Low,26,No,0,1,0,0,0,1,0,0,1,0,0,0
+791,No,0,Dermatosis,Rogaine,Iron deficiency,High,31,No,1,1,1,0,0,0,0,1,1,1,2,1
+792,Yes,0,Dermatitis,Steroids,Omega-3 fatty acids,Low,19,No,1,0,0,0,1,0,0,1,0,0,0,0
+793,No,1,Psoriasis,Steroids,Zinc Deficiency,Moderate,50,No,0,1,1,1,0,1,0,0,1,1,1,2
+794,Yes,1,Eczema,Immunomodulators,Vitamin A Deficiency,Moderate,45,No,1,1,0,1,1,1,0,1,1,0,1,2
+795,No,1,Eczema,Blood Pressure Medication,Magnesium deficiency,Moderate,24,No,0,0,0,0,0,1,0,0,0,0,1,0
+796,No,0,Androgenetic Alopecia,Immunomodulators,Magnesium deficiency,Moderate,50,Yes,0,1,0,1,0,0,1,0,1,0,1,2
+797,No,0,Dermatitis,Steroids,Vitamin A Deficiency,Moderate,39,No,0,0,1,1,0,0,0,0,0,1,1,1
+798,Yes,0,Dermatosis,Accutane,Vitamin A Deficiency,Low,19,Yes,1,1,1,1,1,0,1,1,1,1,0,0
+799,No,1,Alopecia Areata,Steroids,Vitamin D Deficiency,Low,40,Yes,1,1,1,0,0,1,1,1,1,1,0,2
+800,No,1,Psoriasis,Blood Pressure Medication,Zinc Deficiency,Low,40,No,1,0,1,1,0,1,0,1,0,1,0,2
+801,Yes,0,Alopecia Areata,Heart Medication,Vitamin A Deficiency,High,37,Yes,0,0,1,1,1,0,1,0,0,1,2,1
+802,Yes,1,Eczema,Accutane,Vitamin A Deficiency,Low,47,Yes,1,1,0,0,1,1,1,1,1,0,0,2
+803,No,0,Alopecia Areata,Accutane,,High,22,Yes,0,0,1,1,0,0,1,0,0,1,2,0
+804,Yes,0,Androgenetic Alopecia,Accutane,,Low,21,Yes,1,0,1,1,1,0,1,1,0,1,0,0
+805,No,0,Alopecia Areata,Blood Pressure Medication,Vitamin A Deficiency,Low,34,Yes,1,0,0,1,0,0,1,1,0,0,0,1
+806,Yes,0,Ringworm,Chemotherapy,Vitamin D Deficiency,High,48,No,1,0,0,1,1,0,0,1,0,0,2,2
+807,Yes,1,Androgenetic Alopecia,Immunomodulators,Vitamin A Deficiency,High,37,No,1,1,0,1,1,1,0,1,1,0,2,1
+808,No,0,Dermatosis,Heart Medication,Omega-3 fatty acids,Moderate,26,Yes,1,1,1,0,0,0,1,1,1,1,1,0
+809,No,0,Androgenetic Alopecia,Immunomodulators,,Moderate,23,No,0,1,0,1,0,0,0,0,1,0,1,0
+810,No,1,Alopecia Areata,Antidepressants,Omega-3 fatty acids,Low,30,No,0,1,1,0,0,1,0,0,1,1,0,1
+811,No,1,Alopecia Areata,Antifungal Cream,Iron deficiency,Low,32,No,0,1,1,0,0,1,0,0,1,1,0,1
+812,Yes,1,Alopecia Areata,Rogaine,Protein deficiency,High,40,Yes,1,1,0,1,1,1,1,1,1,0,2,2
+813,Yes,1,Alopecia Areata,Steroids,,High,23,Yes,0,0,1,0,1,1,1,0,0,1,2,0
+814,Yes,1,Dermatitis,Heart Medication,Selenium deficiency,Moderate,40,Yes,1,1,0,1,1,1,1,1,1,0,1,2
+815,Yes,0,Thyroid Problems,Steroids,Protein deficiency,High,47,No,1,1,1,1,1,0,0,1,1,1,2,2
+816,Yes,1,Dermatitis,Accutane,,Moderate,23,Yes,1,1,1,0,1,1,1,1,1,1,1,0
+817,No,0,Seborrheic Dermatitis,Heart Medication,Omega-3 fatty acids,Moderate,48,Yes,0,1,1,1,0,0,1,0,1,1,1,2
+818,No,1,Dermatosis,Antibiotics,Omega-3 fatty acids,High,41,No,0,1,1,0,0,1,0,0,1,1,2,2
+819,Yes,1,Seborrheic Dermatitis,Rogaine,,Low,21,Yes,1,1,0,1,1,1,1,1,1,0,0,0
+820,Yes,1,Eczema,Rogaine,Magnesium deficiency,High,50,Yes,1,1,1,0,1,1,1,1,1,1,2,2
+821,No,1,Scalp Infection,Rogaine,Protein deficiency,Moderate,38,No,1,0,0,1,0,1,0,1,0,0,1,1
+822,No,1,Alopecia Areata,Antibiotics,Protein deficiency,High,30,No,0,0,0,1,0,1,0,0,0,0,2,1
+823,No,1,Scalp Infection,Blood Pressure Medication,Protein deficiency,High,41,No,1,0,0,0,0,1,0,1,0,0,2,2
+824,Yes,1,Androgenetic Alopecia,Antibiotics,Vitamin D Deficiency,Low,49,Yes,0,1,0,1,1,1,1,0,1,0,0,2
+825,No,1,Psoriasis,Chemotherapy,Protein deficiency,High,27,No,0,0,1,1,0,1,0,0,0,1,2,0
+826,Yes,1,Psoriasis,Steroids,,Moderate,22,No,0,0,1,1,1,1,0,0,0,1,1,0
+827,No,1,Scalp Infection,Immunomodulators,Selenium deficiency,Low,44,Yes,0,1,0,0,0,1,1,0,1,0,0,2
+828,Yes,1,Alopecia Areata,Chemotherapy,Protein deficiency,High,19,No,1,1,0,0,1,1,0,1,1,0,2,0
+829,No,1,Dermatitis,Antifungal Cream,Zinc Deficiency,Moderate,27,No,0,1,1,0,0,1,0,0,1,1,1,0
+830,Yes,1,Eczema,Blood Pressure Medication,Zinc Deficiency,High,34,Yes,1,0,1,0,1,1,1,1,0,1,2,1
+831,No,0,Dermatitis,Blood Pressure Medication,Omega-3 fatty acids,Low,39,No,0,1,1,1,0,0,0,0,1,1,0,1
+832,No,0,Dermatosis,Antifungal Cream,Iron deficiency,High,36,No,1,0,0,0,0,0,0,1,0,0,2,1
+833,Yes,1,Dermatosis,Accutane,Vitamin D Deficiency,Moderate,35,Yes,0,0,0,0,1,1,1,0,0,0,1,1
+834,Yes,0,Seborrheic Dermatitis,Chemotherapy,Iron deficiency,Low,37,Yes,1,0,1,1,1,0,1,1,0,1,0,1
+835,Yes,1,Thyroid Problems,Steroids,Omega-3 fatty acids,High,30,No,1,1,0,0,1,1,0,1,1,0,2,1
+836,No,1,Androgenetic Alopecia,Antidepressants,Vitamin A Deficiency,High,50,No,0,0,0,0,0,1,0,0,0,0,2,2
+837,Yes,0,Seborrheic Dermatitis,Accutane,Biotin Deficiency,High,34,Yes,0,0,0,1,1,0,1,0,0,0,2,1
+838,Yes,0,Alopecia Areata,Antidepressants,Omega-3 fatty acids,Moderate,20,Yes,0,1,1,0,1,0,1,0,1,1,1,0
+839,No,0,Psoriasis,Antifungal Cream,Selenium deficiency,Low,20,Yes,1,1,0,0,0,0,1,1,1,0,0,0
+840,No,1,Eczema,Chemotherapy,Magnesium deficiency,Moderate,31,No,0,1,0,1,0,1,0,0,1,0,1,1
+841,Yes,1,Eczema,Heart Medication,Vitamin D Deficiency,Low,47,Yes,1,1,0,0,1,1,1,1,1,0,0,2
+842,No,1,Dermatitis,Antifungal Cream,Zinc Deficiency,High,28,No,0,0,1,1,0,1,0,0,0,1,2,0
+843,Yes,1,Dermatitis,Steroids,Omega-3 fatty acids,Moderate,35,Yes,0,0,1,1,1,1,1,0,0,1,1,1
+844,Yes,1,Dermatitis,Steroids,Vitamin D Deficiency,Low,30,No,1,0,1,1,1,1,0,1,0,1,0,1
+845,No,1,Ringworm,Antibiotics,Vitamin A Deficiency,Moderate,19,Yes,1,0,1,1,0,1,1,1,0,1,1,0
+846,Yes,1,Alopecia Areata,Steroids,Vitamin D Deficiency,Moderate,20,Yes,1,0,0,1,1,1,1,1,0,0,1,0
+847,No,1,Ringworm,Antifungal Cream,Iron deficiency,Low,25,No,0,0,1,0,0,1,0,0,0,1,0,0
+848,No,0,Dermatitis,Antibiotics,Biotin Deficiency,Low,39,No,1,0,1,0,0,0,0,1,0,1,0,1
+849,Yes,1,Dermatitis,Antifungal Cream,Selenium deficiency,High,36,No,0,0,1,0,1,1,0,0,0,1,2,1
+850,No,1,Dermatosis,Blood Pressure Medication,Vitamin D Deficiency,Moderate,20,Yes,0,0,1,0,0,1,1,0,0,1,1,0
+851,Yes,0,Thyroid Problems,Steroids,Vitamin A Deficiency,Moderate,44,Yes,1,0,0,0,1,0,1,1,0,0,1,2
+852,Yes,0,Androgenetic Alopecia,Antidepressants,Protein deficiency,Low,49,No,1,0,1,0,1,0,0,1,0,1,0,2
+853,Yes,0,Alopecia Areata,Accutane,Biotin Deficiency,Moderate,31,Yes,1,0,0,1,1,0,1,1,0,0,1,1
+854,No,0,Seborrheic Dermatitis,Antidepressants,,High,22,Yes,0,0,1,1,0,0,1,0,0,1,2,0
+855,No,1,Thyroid Problems,Heart Medication,Vitamin E deficiency,Moderate,18,Yes,0,1,0,0,0,1,1,0,1,0,1,0
+856,No,1,Thyroid Problems,Antifungal Cream,Biotin Deficiency,High,26,No,1,0,1,1,0,1,0,1,0,1,2,0
+857,Yes,1,Thyroid Problems,Antidepressants,Iron deficiency,Moderate,27,Yes,1,1,1,0,1,1,1,1,1,1,1,0
+858,Yes,1,Eczema,Rogaine,Selenium deficiency,Moderate,36,No,1,1,1,1,1,1,0,1,1,1,1,1
+859,Yes,0,Seborrheic Dermatitis,Immunomodulators,Vitamin D Deficiency,Moderate,39,No,0,1,1,0,1,0,0,0,1,1,1,1
+860,Yes,0,Seborrheic Dermatitis,Immunomodulators,Zinc Deficiency,Low,34,No,0,0,0,0,1,0,0,0,0,0,0,1
+861,Yes,0,Dermatitis,Blood Pressure Medication,Vitamin D Deficiency,High,43,No,0,0,0,0,1,0,0,0,0,0,2,2
+862,No,1,Androgenetic Alopecia,Rogaine,Omega-3 fatty acids,Low,42,No,1,1,0,1,0,1,0,1,1,0,0,2
+863,No,0,Dermatosis,Rogaine,Vitamin D Deficiency,Moderate,48,Yes,1,1,0,0,0,0,1,1,1,0,1,2
+864,No,0,Dermatitis,Chemotherapy,Vitamin A Deficiency,High,31,Yes,1,1,0,1,0,0,1,1,1,0,2,1
+865,No,0,Dermatosis,Immunomodulators,Zinc Deficiency,Low,45,No,0,1,0,1,0,0,0,0,1,0,0,2
+866,Yes,1,Alopecia Areata,Accutane,Vitamin A Deficiency,Low,47,Yes,0,0,1,0,1,1,1,0,0,1,0,2
+867,Yes,0,Thyroid Problems,Chemotherapy,Vitamin D Deficiency,High,33,No,1,0,1,1,1,0,0,1,0,1,2,1
+868,No,1,Dermatitis,Rogaine,Magnesium deficiency,High,37,Yes,0,1,1,0,0,1,1,0,1,1,2,1
+869,Yes,0,Dermatosis,Rogaine,Iron deficiency,High,42,Yes,0,0,0,0,1,0,1,0,0,0,2,2
+870,No,1,Androgenetic Alopecia,Steroids,Vitamin E deficiency,High,45,Yes,0,0,0,1,0,1,1,0,0,0,2,2
+871,No,0,Dermatitis,Rogaine,Vitamin D Deficiency,Moderate,31,Yes,1,1,0,0,0,0,1,1,1,0,1,1
+872,Yes,1,Thyroid Problems,Heart Medication,Omega-3 fatty acids,Low,35,Yes,1,0,1,1,1,1,1,1,0,1,0,1
+873,No,0,Androgenetic Alopecia,Chemotherapy,Biotin Deficiency,Moderate,20,Yes,0,1,0,0,0,0,1,0,1,0,1,0
+874,No,1,Seborrheic Dermatitis,Immunomodulators,Vitamin E deficiency,Low,42,No,1,1,0,1,0,1,0,1,1,0,0,2
+875,No,0,Eczema,Antidepressants,Protein deficiency,High,33,Yes,0,1,0,1,0,0,1,0,1,0,2,1
+876,No,0,Alopecia Areata,Antidepressants,Zinc Deficiency,High,24,No,1,0,0,1,0,0,0,1,0,0,2,0
+877,No,1,Alopecia Areata,Blood Pressure Medication,Biotin Deficiency,Moderate,45,No,0,0,0,0,0,1,0,0,0,0,1,2
+878,No,1,Eczema,Antibiotics,Vitamin D Deficiency,Low,28,No,0,1,1,0,0,1,0,0,1,1,0,0
+879,Yes,1,Dermatitis,Heart Medication,Biotin Deficiency,Moderate,19,No,0,0,1,0,1,1,0,0,0,1,1,0
+880,Yes,1,Scalp Infection,Antidepressants,Selenium deficiency,Low,24,No,0,1,1,1,1,1,0,0,1,1,0,0
+881,Yes,1,Alopecia Areata,Steroids,,High,23,No,1,0,0,0,1,1,0,1,0,0,2,0
+882,No,0,Thyroid Problems,Antibiotics,Omega-3 fatty acids,Low,31,Yes,1,1,1,1,0,0,1,1,1,1,0,1
+883,Yes,1,Scalp Infection,Immunomodulators,Selenium deficiency,High,50,Yes,0,0,0,0,1,1,1,0,0,0,2,2
+884,Yes,1,Ringworm,Rogaine,,Low,23,Yes,0,1,1,1,1,1,1,0,1,1,0,0
+885,Yes,1,Psoriasis,Steroids,Iron deficiency,Moderate,29,Yes,1,1,1,1,1,1,1,1,1,1,1,0
+886,Yes,0,Alopecia Areata,Antifungal Cream,Protein deficiency,Moderate,46,Yes,0,0,0,0,1,0,1,0,0,0,1,2
+887,Yes,1,Androgenetic Alopecia,Immunomodulators,Zinc Deficiency,High,39,No,0,1,0,0,1,1,0,0,1,0,2,1
+888,No,0,Seborrheic Dermatitis,Immunomodulators,Protein deficiency,Low,27,Yes,1,0,0,0,0,0,1,1,0,0,0,0
+889,Yes,0,Alopecia Areata,Rogaine,Vitamin E deficiency,Low,38,No,0,0,1,1,1,0,0,0,0,1,0,1
+890,Yes,0,Dermatosis,Heart Medication,Omega-3 fatty acids,Low,35,No,1,0,0,0,1,0,0,1,0,0,0,1
+891,No,0,Scalp Infection,Antidepressants,,Low,21,No,1,1,1,1,0,0,0,1,1,1,0,0
+892,Yes,1,Ringworm,Blood Pressure Medication,Vitamin A Deficiency,Moderate,40,Yes,0,1,0,0,1,1,1,0,1,0,1,2
+893,Yes,1,Dermatosis,Antibiotics,Vitamin D Deficiency,Moderate,19,No,1,1,0,1,1,1,0,1,1,0,1,0
+894,No,1,Androgenetic Alopecia,Rogaine,Protein deficiency,Low,43,Yes,1,0,0,1,0,1,1,1,0,0,0,2
+895,No,0,Dermatitis,Immunomodulators,Omega-3 fatty acids,High,44,Yes,1,1,1,0,0,0,1,1,1,1,2,2
+896,Yes,1,Eczema,Antidepressants,Protein deficiency,High,43,Yes,0,1,0,1,1,1,1,0,1,0,2,2
+897,No,0,Psoriasis,Antidepressants,,Moderate,21,Yes,1,1,0,1,0,0,1,1,1,0,1,0
+898,No,1,Scalp Infection,Antifungal Cream,Vitamin D Deficiency,High,40,No,1,0,0,1,0,1,0,1,0,0,2,2
+899,No,1,Androgenetic Alopecia,Immunomodulators,Vitamin A Deficiency,Moderate,29,Yes,0,1,1,1,0,1,1,0,1,1,1,0
+900,No,1,Psoriasis,Antifungal Cream,Iron deficiency,Moderate,35,No,1,0,1,1,0,1,0,1,0,1,1,1
+901,No,0,Ringworm,Antidepressants,,Low,23,No,1,0,1,0,0,0,0,1,0,1,0,0
+902,No,1,Thyroid Problems,Blood Pressure Medication,Selenium deficiency,Low,33,No,0,1,0,0,0,1,0,0,1,0,0,1
+903,No,0,Androgenetic Alopecia,Rogaine,Omega-3 fatty acids,Low,26,No,0,1,0,0,0,0,0,0,1,0,0,0
+904,No,0,Alopecia Areata,Immunomodulators,Vitamin D Deficiency,Moderate,48,Yes,0,1,0,1,0,0,1,0,1,0,1,2
+905,No,1,Thyroid Problems,Rogaine,Vitamin A Deficiency,Moderate,39,Yes,0,0,1,1,0,1,1,0,0,1,1,1
+906,No,1,Alopecia Areata,Heart Medication,Biotin Deficiency,High,29,No,1,1,1,0,0,1,0,1,1,1,2,0
+907,Yes,1,Eczema,Accutane,Protein deficiency,High,45,Yes,0,0,0,0,1,1,1,0,0,0,2,2
+908,Yes,1,Androgenetic Alopecia,Antifungal Cream,Vitamin E deficiency,Moderate,32,No,1,1,1,1,1,1,0,1,1,1,1,1
+909,Yes,0,Scalp Infection,Antidepressants,Biotin Deficiency,High,28,No,1,0,0,1,1,0,0,1,0,0,2,0
+910,No,1,Alopecia Areata,Heart Medication,Selenium deficiency,Moderate,20,No,1,0,1,1,0,1,0,1,0,1,1,0
+911,No,1,Alopecia Areata,Accutane,Vitamin E deficiency,Low,36,No,1,1,0,0,0,1,0,1,1,0,0,1
+912,Yes,1,Dermatitis,Immunomodulators,Omega-3 fatty acids,Moderate,50,Yes,1,0,1,0,1,1,1,1,0,1,1,2
+913,Yes,0,Thyroid Problems,Blood Pressure Medication,Zinc Deficiency,High,45,Yes,1,1,1,1,1,0,1,1,1,1,2,2
+914,Yes,1,Dermatosis,Heart Medication,Zinc Deficiency,Moderate,49,Yes,1,0,1,1,1,1,1,1,0,1,1,2
+915,Yes,1,Dermatitis,Heart Medication,Vitamin A Deficiency,High,26,No,1,1,0,1,1,1,0,1,1,0,2,0
+916,No,1,Dermatosis,Chemotherapy,Protein deficiency,Moderate,38,Yes,0,1,1,0,0,1,1,0,1,1,1,1
+917,Yes,0,Alopecia Areata,Antidepressants,Protein deficiency,Low,34,Yes,1,1,0,1,1,0,1,1,1,0,0,1
+918,Yes,1,Eczema,Accutane,Biotin Deficiency,High,48,No,1,1,1,1,1,1,0,1,1,1,2,2
+919,No,1,Alopecia Areata,Rogaine,Biotin Deficiency,Moderate,27,Yes,1,0,1,0,0,1,1,1,0,1,1,0
+920,Yes,0,Dermatosis,Antibiotics,Zinc Deficiency,High,41,Yes,0,1,1,1,1,0,1,0,1,1,2,2
+921,Yes,1,Alopecia Areata,Rogaine,Vitamin A Deficiency,High,46,Yes,0,0,0,1,1,1,1,0,0,0,2,2
+922,Yes,0,Dermatitis,Antidepressants,Iron deficiency,High,26,No,1,1,0,0,1,0,0,1,1,0,2,0
+923,No,0,Dermatosis,Heart Medication,,High,21,Yes,1,1,0,1,0,0,1,1,1,0,2,0
+924,No,1,Seborrheic Dermatitis,Accutane,Protein deficiency,High,29,Yes,1,1,1,1,0,1,1,1,1,1,2,0
+925,No,0,Alopecia Areata,Immunomodulators,Magnesium deficiency,Moderate,49,Yes,0,1,1,0,0,0,1,0,1,1,1,2
+926,No,1,Dermatosis,Rogaine,Protein deficiency,Moderate,25,No,0,1,1,1,0,1,0,0,1,1,1,0
+927,No,1,Scalp Infection,Blood Pressure Medication,Biotin Deficiency,Low,42,Yes,1,0,0,1,0,1,1,1,0,0,0,2
+928,Yes,1,Psoriasis,Antibiotics,Protein deficiency,Low,28,No,0,0,0,1,1,1,0,0,0,0,0,0
+929,No,0,Scalp Infection,Accutane,Zinc Deficiency,High,24,Yes,1,0,1,1,0,0,1,1,0,1,2,0
+930,No,0,Alopecia Areata,Rogaine,Vitamin A Deficiency,High,48,Yes,1,0,1,1,0,0,1,1,0,1,2,2
+931,No,1,Scalp Infection,Blood Pressure Medication,Iron deficiency,High,40,No,1,1,1,0,0,1,0,1,1,1,2,2
+932,No,0,Eczema,Heart Medication,Protein deficiency,High,31,Yes,0,0,1,1,0,0,1,0,0,1,2,1
+933,Yes,1,Seborrheic Dermatitis,Antibiotics,Magnesium deficiency,High,49,No,1,0,1,1,1,1,0,1,0,1,2,2
+934,Yes,0,Psoriasis,Heart Medication,Iron deficiency,High,20,Yes,1,0,0,0,1,0,1,1,0,0,2,0
+935,No,0,Androgenetic Alopecia,Antifungal Cream,Vitamin A Deficiency,High,45,Yes,1,1,0,0,0,0,1,1,1,0,2,2
+936,No,0,Androgenetic Alopecia,Antidepressants,Selenium deficiency,High,33,No,1,1,0,1,0,0,0,1,1,0,2,1
+937,No,1,Thyroid Problems,Antifungal Cream,Protein deficiency,High,38,Yes,0,1,1,1,0,1,1,0,1,1,2,1
+938,Yes,1,Seborrheic Dermatitis,Chemotherapy,Vitamin E deficiency,High,41,No,1,0,1,0,1,1,0,1,0,1,2,2
+939,No,0,Eczema,Chemotherapy,Magnesium deficiency,Low,32,No,0,0,0,0,0,0,0,0,0,0,0,1
+940,No,0,Alopecia Areata,Chemotherapy,Magnesium deficiency,Low,48,No,1,1,0,0,0,0,0,1,1,0,0,2
+941,Yes,0,Androgenetic Alopecia,Antidepressants,Vitamin E deficiency,High,18,No,0,0,1,0,1,0,0,0,0,1,2,0
+942,Yes,1,Eczema,Antibiotics,Vitamin A Deficiency,Low,24,No,0,1,0,1,1,1,0,0,1,0,0,0
+943,No,0,Ringworm,Rogaine,Vitamin A Deficiency,Moderate,37,No,1,0,1,0,0,0,0,1,0,1,1,1
+944,Yes,1,Dermatosis,Antifungal Cream,Vitamin D Deficiency,Low,38,No,1,1,0,0,1,1,0,1,1,0,0,1
+945,No,0,Dermatitis,Antibiotics,,Low,21,No,0,0,1,1,0,0,0,0,0,1,0,0
+946,No,1,Scalp Infection,Antibiotics,Biotin Deficiency,High,47,No,1,1,1,0,0,1,0,1,1,1,2,2
+947,No,1,Ringworm,Chemotherapy,,High,22,Yes,0,1,0,0,0,1,1,0,1,0,2,0
+948,No,0,Alopecia Areata,Steroids,Magnesium deficiency,Moderate,46,No,0,1,1,1,0,0,0,0,1,1,1,2
+949,Yes,0,Eczema,Antifungal Cream,Vitamin E deficiency,Low,26,No,1,0,1,1,1,0,0,1,0,1,0,0
+950,Yes,1,Psoriasis,Antifungal Cream,Vitamin D Deficiency,Low,35,Yes,0,0,0,1,1,1,1,0,0,0,0,1
+951,Yes,1,Dermatosis,Accutane,Omega-3 fatty acids,Low,45,No,0,1,1,1,1,1,0,0,1,1,0,2
+952,No,1,Scalp Infection,Heart Medication,Vitamin E deficiency,High,41,Yes,1,0,1,0,0,1,1,1,0,1,2,2
+953,No,0,Alopecia Areata,Chemotherapy,Omega-3 fatty acids,High,27,Yes,0,0,0,1,0,0,1,0,0,0,2,0
+954,No,0,Thyroid Problems,Accutane,Iron deficiency,High,44,No,0,1,0,0,0,0,0,0,1,0,2,2
+955,No,0,Androgenetic Alopecia,Rogaine,Zinc Deficiency,Low,38,Yes,0,0,1,0,0,0,1,0,0,1,0,1
+956,Yes,1,Seborrheic Dermatitis,Chemotherapy,,Moderate,21,No,0,1,0,1,1,1,0,0,1,0,1,0
+957,No,0,Androgenetic Alopecia,Heart Medication,Vitamin A Deficiency,High,28,No,1,1,0,0,0,0,0,1,1,0,2,0
+958,Yes,0,Eczema,Heart Medication,Biotin Deficiency,High,35,No,1,0,0,1,1,0,0,1,0,0,2,1
+959,Yes,0,Androgenetic Alopecia,Steroids,Iron deficiency,Moderate,50,Yes,1,1,0,0,1,0,1,1,1,0,1,2
+960,Yes,0,Scalp Infection,Rogaine,Omega-3 fatty acids,Moderate,38,No,1,1,1,0,1,0,0,1,1,1,1,1
+961,Yes,0,Thyroid Problems,Steroids,Magnesium deficiency,High,33,Yes,1,1,0,0,1,0,1,1,1,0,2,1
+962,No,0,Thyroid Problems,Immunomodulators,Magnesium deficiency,Moderate,42,Yes,0,0,0,0,0,0,1,0,0,0,1,2
+963,Yes,0,Psoriasis,Heart Medication,Magnesium deficiency,High,43,No,1,0,0,0,1,0,0,1,0,0,2,2
+964,No,0,Seborrheic Dermatitis,Immunomodulators,Magnesium deficiency,High,49,No,0,1,0,0,0,0,0,0,1,0,2,2
+965,No,0,Psoriasis,Antidepressants,,Low,22,No,0,0,1,0,0,0,0,0,0,1,0,0
+966,No,0,Alopecia Areata,Antifungal Cream,,High,23,No,1,1,1,0,0,0,0,1,1,1,2,0
+967,Yes,0,Androgenetic Alopecia,Chemotherapy,Iron deficiency,Moderate,41,Yes,1,0,0,1,1,0,1,1,0,0,1,2
+968,No,1,Androgenetic Alopecia,Chemotherapy,Iron deficiency,High,41,Yes,0,1,0,0,0,1,1,0,1,0,2,2
+969,Yes,0,Thyroid Problems,Rogaine,Omega-3 fatty acids,High,35,Yes,1,0,1,0,1,0,1,1,0,1,2,1
+970,No,1,Alopecia Areata,Antifungal Cream,Biotin Deficiency,Low,18,No,1,1,0,1,0,1,0,1,1,0,0,0
+971,No,0,Alopecia Areata,Antibiotics,Magnesium deficiency,Moderate,40,Yes,1,0,0,1,0,0,1,1,0,0,1,2
+972,Yes,1,Androgenetic Alopecia,Accutane,Vitamin E deficiency,Low,46,Yes,1,1,1,0,1,1,1,1,1,1,0,2
+973,Yes,0,Psoriasis,Heart Medication,Omega-3 fatty acids,High,38,Yes,1,1,0,0,1,0,1,1,1,0,2,1
+974,No,1,Scalp Infection,Immunomodulators,Omega-3 fatty acids,Low,41,Yes,0,1,0,0,0,1,1,0,1,0,0,2
+975,Yes,1,Dermatitis,Heart Medication,Vitamin D Deficiency,High,44,No,1,1,0,0,1,1,0,1,1,0,2,2
+976,Yes,1,Psoriasis,Blood Pressure Medication,,Low,21,Yes,1,1,0,0,1,1,1,1,1,0,0,0
+977,Yes,1,Alopecia Areata,Accutane,Vitamin E deficiency,Low,25,No,1,0,0,0,1,1,0,1,0,0,0,0
+978,Yes,0,Dermatosis,Antibiotics,Zinc Deficiency,Low,46,No,0,0,1,0,1,0,0,0,0,1,0,2
+979,Yes,1,Psoriasis,Antifungal Cream,Omega-3 fatty acids,Moderate,27,Yes,1,0,1,1,1,1,1,1,0,1,1,0
+980,Yes,1,Dermatosis,Antidepressants,Selenium deficiency,Moderate,26,No,0,0,0,0,1,1,0,0,0,0,1,0
+981,Yes,1,Eczema,Antibiotics,Iron deficiency,High,40,Yes,1,1,1,0,1,1,1,1,1,1,2,2
+982,Yes,1,Psoriasis,Antifungal Cream,Zinc Deficiency,Moderate,50,Yes,0,0,0,0,1,1,1,0,0,0,1,2
+983,No,1,Thyroid Problems,Steroids,Biotin Deficiency,High,33,Yes,1,0,0,1,0,1,1,1,0,0,2,1
+984,No,0,Androgenetic Alopecia,Antibiotics,Protein deficiency,High,43,No,0,0,0,0,0,0,0,0,0,0,2,2
+985,Yes,0,Seborrheic Dermatitis,Blood Pressure Medication,Biotin Deficiency,Low,33,Yes,0,1,1,0,1,0,1,0,1,1,0,1
+986,No,1,Androgenetic Alopecia,Immunomodulators,Biotin Deficiency,Low,46,No,0,1,0,1,0,1,0,0,1,0,0,2
+987,Yes,1,Androgenetic Alopecia,Immunomodulators,Selenium deficiency,Moderate,19,Yes,0,1,0,0,1,1,1,0,1,0,1,0
+988,No,0,Androgenetic Alopecia,Antibiotics,,High,23,Yes,1,0,1,0,0,0,1,1,0,1,2,0
+989,No,0,Ringworm,Rogaine,Selenium deficiency,Moderate,45,No,1,0,1,1,0,0,0,1,0,1,1,2
+990,Yes,0,Alopecia Areata,Antidepressants,Zinc Deficiency,Low,42,No,1,1,0,0,1,0,0,1,1,0,0,2
+991,No,1,Thyroid Problems,Antidepressants,Zinc Deficiency,High,33,Yes,1,0,0,0,0,1,1,1,0,0,2,1
+992,Yes,1,Dermatosis,Rogaine,Magnesium deficiency,Low,30,No,0,0,0,1,1,1,0,0,0,0,0,1
+993,No,1,Scalp Infection,Immunomodulators,,Moderate,23,Yes,1,1,1,0,0,1,1,1,1,1,1,0
+994,Yes,0,Seborrheic Dermatitis,Rogaine,Vitamin A Deficiency,Low,33,Yes,1,1,1,1,1,0,1,1,1,1,0,1
+995,Yes,1,Alopecia Areata,Accutane,Protein deficiency,Low,47,No,0,0,1,0,1,1,0,0,0,1,0,2
+996,No,1,Androgenetic Alopecia,Antidepressants,Protein deficiency,Moderate,20,Yes,0,1,1,1,0,1,1,0,1,1,1,0
+997,No,1,Dermatitis,Immunomodulators,Biotin Deficiency,Moderate,32,Yes,1,1,1,1,0,1,1,1,1,1,1,1
+998,Yes,1,Psoriasis,Blood Pressure Medication,Vitamin D Deficiency,Low,34,No,1,0,0,1,1,1,0,1,0,0,0,1

@@ -18,7 +18,7 @@ SECONDARY = "#E67E22"
 TEXT = "#2C3E50"
 SECTION_BG = "#2a5a55"
 BG_COLOR = "#0C0505"
-SIDBAR_TEXT ="#a9cac6"
+SIDBAR_TEXT ="#202424"
 st.markdown("""
     <style>
     /* Change the main app background */
