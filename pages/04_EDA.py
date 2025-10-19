@@ -20,6 +20,8 @@ TEXT = "#2C3E50"
 SECTION_BG = "#2a5a55"
 SECTION_BG_PLOTS = "#6f918d"
 SIDBAR_TEXT = "#a9cac6"
+CARD_COLOR ="#d4e6e4"
+CARD_COLOR2 = "#dcf4e0"
 
 st.markdown(f"""
 <style>
@@ -89,7 +91,7 @@ if dataset_option == "Hair Health Prediction Dataset":
 
     st.markdown("<br>", unsafe_allow_html=True)
     
-    st.markdown(f""" <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'> <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Feature Distributions</h3> </div> """, unsafe_allow_html=True) 
+    st.markdown(f""" <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'> <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Feature Distributions</h3> </div> """, unsafe_allow_html=True) 
     st.markdown("<br>", unsafe_allow_html=True)
     
     st.markdown(f"""
@@ -129,7 +131,7 @@ if dataset_option == "Hair Health Prediction Dataset":
                 values = counts.values
 
                 # color mapping (cycle palette if needed)
-                colors = [palette[i % len(palette)] for i in range(len(categories))]
+                colors = ["#A8D5BA", "#4c8179", "#A8D5BA", "#5d9189", "#2E8B57"]
 
                 # create Plotly bar chart
                 fig = go.Figure(
@@ -180,7 +182,7 @@ if dataset_option == "Hair Health Prediction Dataset":
                 print(f"Error creating interactive distribution plot for {col_choice}: {e}")
 
         
-        st.markdown(f""" <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'> <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Relationships Between Variables</h3> </div> """, unsafe_allow_html=True) 
+        st.markdown(f""" <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'> <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Relationships Between Variables</h3> </div> """, unsafe_allow_html=True) 
         st.markdown("<br>", unsafe_allow_html=True)
         
         
@@ -265,7 +267,7 @@ if dataset_option == "Hair Health Prediction Dataset":
                 st.error("Graph cannot be created.")
                 print(f"Error creating plot for {x_var} vs {y_var}: {e}")
 
-        st.markdown(f""" <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'> <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Correlations and Insights</h3> </div> """, unsafe_allow_html=True) 
+        st.markdown(f""" <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'> <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Correlations and Insights</h3> </div> """, unsafe_allow_html=True) 
         st.markdown("<br>", unsafe_allow_html=True)
         
         st.markdown(f"""
@@ -301,6 +303,189 @@ if dataset_option == "Hair Health Prediction Dataset":
             margin=dict(t=60, b=60, l=40, r=40)
         )
         st.plotly_chart(fig, use_container_width=True)
+        
+        # ===== Genetics Insight Section =====
+        st.markdown(f"""
+        <div style='background-color:#2a5a55; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'>
+            <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Useful Findings</h3>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # Prepare data for stacked bar
+        changeWithTarget = df.groupby(['Genetic_Encoding', 'Hair_Loss']).size().unstack(fill_value=0)
+
+        # Calculate proportions
+        prop_with_genetic = changeWithTarget.loc[1] / changeWithTarget.loc[1].sum() * 100
+        prop_without_genetic = changeWithTarget.loc[0] / changeWithTarget.loc[0].sum() * 100
+        
+        st.markdown(f"""
+        <div style='background-color:{CARD_COLOR};; padding:12px 20px; border-left:6px solid #2E8B57; border-radius:10px; margin-top:20px;'>
+            <p style='font-size:20px; color:{TEXT}; margin:0;'>
+                <b>1) Genetics and Hair Loss Insight</b><br><br>
+                Genetics plays a major role in hair loss. People without a genetic predisposition report much lower hair loss, 
+                whereas among people with a genetic predisposition, a significantly higher proportion report hair loss. 
+                This confirms that family history is a strong risk factor.
+            </p>
+            <br>
+            <p style='font-size:18px; color:{TEXT}; margin:0;'>
+                <b>Hair loss proportion among people WITH genetic predisposition:</b><br>{prop_with_genetic.to_frame(name='proportion')}
+            </p>
+            <br>
+            <p style='font-size:18px; color:{TEXT}; margin:0;'>
+                <b>Hair loss proportion among people WITHOUT genetic predisposition:</b><br>{prop_without_genetic.to_frame(name='proportion')}
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        # Plot stacked bar chart
+        fig, ax = plt.subplots(figsize=(10,6))
+        changeWithTarget.plot(
+            kind='bar',
+            stacked=True,
+            alpha=0.9,
+            ax=ax,
+            color = ["#bddb8e", "#85ada6", "#A8D5BA", "#5d9189", "#2E8B57"]   # color scheme
+        )
+        ax.set_title("Counts of Genetic_Encoding by Hair Loss", fontsize=16, pad=15)
+        ax.set_xlabel('Genetic_Encoding', fontsize=14, labelpad=10)
+        ax.set_ylabel("Count", fontsize=14, labelpad=10)
+        ax.legend(title="Hair Loss", labels=["No Hair Loss", "Hair Loss"], fontsize=12)
+        ax.tick_params(axis='x', rotation=45, labelsize=12)
+        ax.tick_params(axis='y', labelsize=12)
+        plt.tight_layout()
+
+        st.pyplot(fig)
+        plt.close(fig)
+        
+        colors = ["#85ada6", "#5d9189", "#A8D5BA", "#5d9189", "#2E8B57"] 
+        # Filter dataset for genetically predisposed individuals
+        df_genetic = df_predict_cleaned[df_predict_cleaned['Genetic_Encoding'] == 1]
+
+        # --- Step 2: Group by Nutritional Deficiency and Hair_Loss ---
+        counts = df_genetic.groupby(['Nutritional_Deficiencies', 'Hair_Loss']).size().reset_index(name='Count')
+
+        # --- Step 3: Convert Hair_Loss to string for hue ---
+        counts['Hair_Loss'] = counts['Hair_Loss'].astype(str)
+
+        # --- Step 4: Display card ---
+        st.markdown(f"""
+        <div style='background-color:{CARD_COLOR}; padding:12px 20px; border-left:6px solid #2E8B57; border-radius:10px; margin-top:20px;'>
+            <p style='font-size:20px; color:{TEXT}; margin:0;'>
+                <b>2) Nutritional Deficiencies and Hair Loss</b><br><br>
+                Nutritional deficiencies further modulate hair loss among genetically predisposed individuals. 
+                For example, iron deficiency is present in 54% of people reporting hair loss with genetic predisposition,
+                and Vitamin D deficiency in 58%, highlighting the importance of these nutrients for hair strength and growth.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+        st.markdown("<br>", unsafe_allow_html=True)
+        green_palette = ["#bddb8e", "#85ada6"] 
+        
+        # --- Step 5: Plot ---
+        try:
+            fig, ax = plt.subplots(figsize=(14,6))
+            sns.barplot(
+                data=counts,
+                x='Nutritional_Deficiencies',
+                y='Count',
+                hue='Hair_Loss',
+                ax=ax,
+                palette=green_palette  # use palette instead of color
+            )
+            ax.set_title('Hair Loss Distribution by Nutritional Deficiency (Genetic Hair Loss = 1)', fontsize=16, pad=15)
+            ax.set_xlabel('Nutritional Deficiencies', fontsize=14, labelpad=10)
+            ax.set_ylabel('Number of People', fontsize=14, labelpad=10)
+            ax.set_xticklabels(ax.get_xticklabels(), rotation=45, fontsize=12)
+            ax.legend(title='Hair Loss', labels=['No (0)', 'Yes (1)'], fontsize=12)
+            st.pyplot(fig)
+            plt.close(fig)
+        except:
+            st.error("Graph cannot be created.")
+        
+        st.markdown("<br>", unsafe_allow_html=True)
+            
+        # --- Step 1: Create age bins ---
+        bins = [18, 25, 40, 51]
+        labels = ['18-25', '25-40', '40-51']
+        df_predict_cleaned['Age_Range_New'] = pd.cut(df_predict_cleaned['Age'], bins=bins, labels=labels, right=False)
+
+        # --- Step 2: Filter for Alopecia conditions ---
+        alopecia_conditions = ['Alopecia Areata', 'Androgenetic Alopecia']
+        df_alopecia = df_predict_cleaned[df_predict_cleaned['Medical_Conditions'].isin(alopecia_conditions)]
+
+        # --- Step 3: Group by new age range and condition, summing hair loss ---
+        alopecia_counts = df_alopecia.groupby(['Age_Range_New', 'Medical_Conditions'])['Hair_Loss'].sum().unstack(fill_value=0)
+
+        # --- Step 4: Display observation card ---
+        # Convert alopecia_counts to HTML table
+        alopecia_table_html = alopecia_counts.to_html(classes='table', border=0, index=True)
+
+        st.markdown(f"""
+        <div style='background-color:{CARD_COLOR}; padding:12px 20px; border-left:6px solid #2E8B57; border-radius:10px; margin-top:20px;'>
+            <p style='font-size:20px; color:{TEXT}; margin:0;'>
+                <b>3) Alopecia and Age Trends</b><br><br>
+                As expected, individuals with Alopecia (Alopecia Areata and Androgenetic Alopecia) report higher hair loss. 
+                Androgenetic Alopecia, strongly linked to genetics (male pattern baldness), is most prevalent in people with a family history of hair fall. 
+                This pattern is also reflected in age trends: individuals aged 25-40 report the highest number of hair loss cases, 
+                consistent with the peak occurrence of Androgenetic Alopecia.
+            </p>
+            <br>
+            <p style='font-size:20px; color:{TEXT}; margin:0;'>
+                <b>Hair Loss Counts by Age Range for Alopecia Types:</b>
+            </p>
+            {alopecia_table_html}
+        </div>
+        """, unsafe_allow_html=True)
+
+        st.markdown("<br>", unsafe_allow_html=True)
+        
+        # Filter genetic + alopecia conditions
+        alopecia_conditions = ['Alopecia Areata', 'Androgenetic Alopecia']
+        df_genetic = df_predict_cleaned[(df_predict_cleaned['Genetic_Encoding'] == 1) & 
+                            (df_predict_cleaned['Medical_Conditions'].isin(alopecia_conditions))]
+
+        # Group by Alopecia type and Hair_Loss
+        counts = df_genetic.groupby(['Medical_Conditions', 'Hair_Loss']).size().reset_index(name='Count')
+        counts['Hair_Loss'] = counts['Hair_Loss'].astype(str)  # Convert Hair_Loss to string for hue
+
+        st.markdown("<br>", unsafe_allow_html=True)
+        # Plot
+        fig, ax = plt.subplots(figsize=(8,6))
+        sns.barplot(data=counts, x='Medical_Conditions', y='Count', hue='Hair_Loss', palette=["#a4d4be", "#85ada6"], ax=ax)
+        ax.set_title('Hair Loss by Alopecia Type (Genetic Encoding = 1)', fontsize=9, pad=15)
+        ax.set_xlabel('Alopecia Type', fontsize=9)
+        ax.set_ylabel('Number of People', fontsize=9)
+        ax.legend(title='Hair Loss', labels=['No (0)', 'Yes (1)'], fontsize=12)
+        ax.grid(axis='y', linestyle='--', alpha=0.7)
+        st.pyplot(fig)
+        plt.close(fig)
 
 
-                
+        
+        # --- Step 5: Plot ---
+        try:
+            fig, ax = plt.subplots(figsize=(10,6))
+            alopecia_counts.plot(kind='bar', ax=ax, color=["#a4d4be", "#85ada6"])
+            ax.set_title('Hair Loss by Age Range for Alopecia Conditions', fontsize=9)
+            ax.set_ylabel('Number of People Reporting Hair Loss', fontsize=9)
+            ax.set_xlabel('Age Range', fontsize=9)
+            ax.set_xticks(range(len(labels)))
+            ax.set_xticklabels(labels)
+            ax.grid(axis='y', linestyle='--', alpha=0.7)
+            ax.legend(title='Alopecia Type')
+            st.pyplot(fig)
+            plt.close(fig)
+        except:
+            st.error("Graph cannot be created.")
+            
+        
+
+
+
+
+
+                                        
