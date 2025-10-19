@@ -18,7 +18,7 @@ BOXCOLOR = "#5d9189"
 SECONDARY = "#E67E22"
 TEXT = "#2C3E50"
 SECTION_BG = "#2a5a55"
-SECTION_BG_PLOTS = "#6f918d"
+SECTION_BG_PLOTS = "#749683"
 SIDBAR_TEXT = "#a9cac6"
 CARD_COLOR ="#d4e6e4"
 CARD_COLOR2 = "#dcf4e0"
@@ -481,7 +481,34 @@ if dataset_option == "Hair Health Prediction Dataset":
             plt.close(fig)
         except:
             st.error("Graph cannot be created.")
-            
+elif dataset_option == "Luke Hair Loss Dataset":
+    st.markdown(f"""
+    <div padding:14px; border-radius:12px;'>
+    <p style='font-size:18px; color:{TEXT}; margin:0;'>
+    This section explores the overall distribution of key features in the dataset. Understanding how factors like <b>Stress Level</b>, <b>Age Range</b>, and <b>Environmental Conditions</b> are spread across the population helps reveal underlying data patterns and potential biases. 
+    Interactive visualizations below allow you to observe how each attribute varies among individuals.
+    </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("<br>", unsafe_allow_html=True)
+    
+    st.markdown(f""" <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'> <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Feature Distributions</h3> </div> """, unsafe_allow_html=True) 
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown(f"""
+   <p style='font-size:18px; color:{TEXT}; margin:0;'>
+    This section visualizes the distribution of individual features to build intuition about the dataset.
+    Use the selector below to choose any variable — each plot shows simple counts for that feature so you can quickly assess skew, balance, and rare categories.
+    Start with the default view (Hair_Loss) to see how severity is distributed across the population.
+    </p>
+    """, unsafe_allow_html=True)
+
+    st.markdown("<br>", unsafe_allow_html=True) 
+    
+    if 'df_luke_cleaned' not in globals() or df_luke_cleaned is None:
+        st.error("Luke Hair Dataset not loaded.")
+    else:
+        df = df_luke_cleaned.copy()         
         
 
 

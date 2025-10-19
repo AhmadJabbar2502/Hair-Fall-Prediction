@@ -302,8 +302,8 @@ else:
         
         # ---- Unique values table ----
         unique_values_list = []
-
-        for col in df_luke_cleaned.columns:
+        column_duke = df_luke_cleaned.columns
+        for col in column_duke:
             vals = df_luke_cleaned[col].dropna().unique()
             
             # Check if the column is numeric
