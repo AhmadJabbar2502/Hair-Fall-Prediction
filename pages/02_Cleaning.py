@@ -44,12 +44,36 @@ st.markdown(
 st.markdown("<hr style='border:2px solid #DDD;'>", unsafe_allow_html=True)
 
 # ======== LOAD DATASETS ==========
+import os, sys, traceback
+
 @st.cache_data
 def load_csv(path):
+    # Helpful diagnostics for deploy vs local
+    st.write(f"Attempting to load: {path}")
+    st.write("CWD:", os.getcwd())
+    st.write("Files in cwd:", os.listdir(".")[:50])
+    # also show contents of Data/ if it exists
+    if os.path.isdir("Data"):
+        st.write("Files in Data/:", os.listdir("Data")[:200])
+    st.write("Python version:", sys.version)
     try:
-        return pd.read_csv(path)
-    except FileNotFoundError:
-        return None
+        import pandas as pd
+        st.write("pandas version:", pd.__version__)
+    except Exception:
+        st.write("Unable to import pandas for version check")
+
+    # Try load with clear errors
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"File not found at path: {path} (CWD: {os.getcwd()})")
+    try:
+        df = pd.read_csv(path)
+    except Exception as e:
+        st.error(f"Error reading CSV at {path}: {e}")
+        st.exception(e)
+        raise
+    if not isinstance(df, pd.DataFrame):
+        raise TypeError(f"Loaded object is not DataFrame: {type(df)}")
+    return df
 
 df_predict_raw = load_csv("Data/Predict Hair Fall Raw.csv")
 df_predict_cleaned = load_csv("Data/Predict Hair Fall Cleaned.csv")
@@ -196,6 +220,7 @@ else:
 
 
         # ---- Visualizations ----
+
         st.markdown(f"""
         <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'>
             <h3 style='color:{ACCENT}; font-size:32px; margin:6px 0;'>Visualizations After Cleaning</h3>
@@ -302,8 +327,8 @@ else:
         
         # ---- Unique values table ----
         unique_values_list = []
-        column_duke = df_luke_cleaned.columns
-        for col in column_duke:
+
+        for col in df_luke_cleaned.columns:
             vals = df_luke_cleaned[col].dropna().unique()
             
             # Check if the column is numeric
