@@ -129,7 +129,7 @@ else:
                 plt.close(fig)
 
                 # ---- Missing counts table ----
-                st.markdown(f"<p style='font-size:20px; color:{TEXT}; text-align:center; '><b>Missing Value Counts</b></p>", unsafe_allow_html=True)
+                st.markdown(f"<p style='font-size:25px; color:{TEXT}; text-align:center; '><b>Missing Value Counts</b></p>", unsafe_allow_html=True)
                 missing_counts = hair_raw.isna().sum().reset_index().rename(columns={"index":"Feature", 0:"Missing Count"})
                 st.dataframe(missing_counts, use_container_width=True)
                 st.markdown("<br>", unsafe_allow_html=True)
