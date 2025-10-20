@@ -23,11 +23,10 @@ st.markdown("""
     <style>
     /* Change the main app background */
     .stApp {
-        background-color:#EFEFEF; /* light gray background, change as you like */
+        background-color:#EFEFEF; /* keep existing background */
     }
 
-
-   /* --- SIDEBAR STYLING --- */
+    /* --- SIDEBAR STYLING --- */
     section[data-testid="stSidebar"] {
         background-color: #2a5a55;  /* sidebar background color */
         padding: 16px 12px;
@@ -35,20 +34,29 @@ st.markdown("""
 
     /* --- SIDEBAR TEXT --- */
     section[data-testid="stSidebar"] * {
-        color: #a9cac6 !important;   /* dark slate gray text */
-        font-size: 22px !important;  /* smaller but readable font */
+        color: #a9cac6 !important;   /* keep your text color */
+        font-size: 16px !important;  /* match Hair Baldness Story page */
         font-family: 'Helvetica Neue', sans-serif;
     }
 
     /* General text styling */
     html, body, [class*="css"] {
-        font-size: 22px !important;
+        font-size: 18px !important; /* match Hair Baldness Story page */
         color: #FFFFFF !important;
+        font-family: 'Helvetica Neue', sans-serif;
     }
 
     div[data-testid="stMetricLabel"] {
-        font-size: 22px !important;
+        font-size: 18px !important;
         color: #333 !important;
+    }
+
+    /* DataFrame table styling remains the same */
+    div[data-testid="stDataFrame"] {
+        background-color: white !important;
+        border: 3px solid #2a5a55 !important;
+        border-radius: 12px !important;
+        box-shadow: none !important;
     }
 
     </style>
@@ -82,25 +90,13 @@ plt.rcParams.update({
     'text.color': TEXT,
 })
 
-# ======== SIDEBAR ==========
-st.sidebar.markdown(
-    f"""
-    <div style='padding:14px; border-radius:8px; background-color: #FFFFFF;'>
-        <h3 style='margin:0; font-size:22px; color:{ACCENT};'>Hairfall Dashboard</h3>
-        <p style='margin:6px 0 0 0; font-size:22px; color:{TEXT};'>
-            Choose dataset and explore features.
-        </p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
 
 # ======== HEADER (page) ==========
 st.markdown(
     f"""
     <div style='background-color:{BASE_BG}; padding:12px; border-radius: 40px;'>
-        <h1 style='text-align:center; font-size:40px; color:#5e928a; margin:6px 0;'>Datasets Overview</h1>
-        <p style='text-align:center; font-size:22px; color: #2a5a55; margin:0px 0 15px 0;'>
+        <h1 style='text-align:center; font-size:30px; color:#5e928a; margin:6px 0;'>Datasets Overview</h1>
+        <p style='text-align:center; font-size:20px; color: #2a5a55; margin:0px 0 15px 0;'>
             Using two datasets related to hair loss and baldness, we explore their features and structure.
         </p>
     </div>
@@ -170,20 +166,20 @@ def show_dataset_about(df_head, df_analysis, title, description="", source_text=
 
     st.markdown(
         f"<div style='background-color:{SECTION_BG}; padding:10px; text-align:center; border-radius:10px;'>"
-        f"<h2 style='color:{ACCENT}; font-size:35px; margin:6px 0 6px 0;'>{title}</h2></div>", unsafe_allow_html=True
+        f"<h2 style='color:{ACCENT}; font-size:30px; margin:6px 0 6px 0;'>{title}</h2></div>", unsafe_allow_html=True
     )
     st.markdown("<br>", unsafe_allow_html=True)
 
     if description:
-        st.markdown(f"<p style='font-size:22px; color:{TEXT}; margin:4px 0 8px 0;'>{description}</p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='font-size:18px; color:{TEXT}; margin:4px 0 8px 0;'>{description}</p>", unsafe_allow_html=True)
 
     n_rows, n_cols = df_head.shape
     if source_text:
-        st.markdown(f"<p style='font-size:22px; color:{TEXT};'><b>Source:</b> {source_text}</p>", unsafe_allow_html=True)
-    st.markdown(f"<p style='font-size:22px; color:{TEXT};'><b>Rows:</b> {n_rows:,} &nbsp;&nbsp; <b>Features:</b> {n_cols}</p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='font-size:18px; color:{TEXT};'><b>Source:</b> {source_text}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='font-size:18px; color:{TEXT};'><b>Rows:</b> {n_rows:,} &nbsp;&nbsp; <b>Features:</b> {n_cols}</p>", unsafe_allow_html=True)
 
     if show_head:
-        st.markdown("<p style='font-size:30px; color:{TEXT};'><b>Sample rows (raw, before cleaning)</b></p>".format(TEXT=TEXT), unsafe_allow_html=True)
+        st.markdown("<p style='font-size:22px; color:{TEXT};'><b>Sample rows (raw, before cleaning)</b></p>".format(TEXT=TEXT), unsafe_allow_html=True)
         st.dataframe(df_head.head(8))
 
     age_col = detect_target(["Age", "age"], df_analysis)
@@ -236,7 +232,7 @@ def show_dataset_about(df_head, df_analysis, title, description="", source_text=
     # ===== CATEGORICAL FEATURES =====
     if title=="Hair Health Prediction Dataset":
         st.markdown(
-            f"<h3 style='color:{TEXT}; text-align:center; font-size:26px;'>Top Categorical Features</h3>", 
+            f"<h3 style='color:{TEXT}; text-align:center; font-size:22px;'>Top Categorical Features</h3>", 
             unsafe_allow_html=True
         )
 
@@ -290,8 +286,8 @@ def show_dataset_about(df_head, df_analysis, title, description="", source_text=
         card_html = lambda title, value: f"""
             <div style='background:{BOXCOLOR}; border-radius:12px; padding:16px; 
                         box-shadow:0 2px 6px rgba(0,0,0,0.06); text-align:center;'>
-                <div style='font-size:22px; color:#FFFFFF; margin-bottom:8px;'>{title}</div>
-                <div style='font-size:36px; color:#FFFFFF; font-weight:700;'>{value}</div>
+                <div style='font-size:20px; color:#FFFFFF; margin-bottom:8px;'>{title}</div>
+                <div style='font-size:30px; color:#FFFFFF; font-weight:700;'>{value}</div>
             </div>
         """
 
@@ -301,12 +297,12 @@ def show_dataset_about(df_head, df_analysis, title, description="", source_text=
         if "Coffee_Consumed" in df_analysis.columns:
             avg_coffee = df_analysis["Coffee_Consumed"].mean()
             with c2:
-                st.markdown(card_html("Average Coffee Consumed per Day", f"{avg_coffee:.1f}"), unsafe_allow_html=True)
+                st.markdown(card_html("Average Coffee Consumed", f"{avg_coffee:.1f}"), unsafe_allow_html=True)
        
         if "Brain_Working_Duration" in df_analysis.columns:
             avg_coffee = df_analysis["Brain_Working_Duration"].mean()
-            with c2:
-                st.markdown(card_html("Average Coffee Consumed per Day", f"{avg_coffee:.1f}"), unsafe_allow_html=True)
+            with c3:
+                st.markdown(card_html("Average Brain Working Duration", f"{avg_coffee:.1f}"), unsafe_allow_html=True)
 
         st.markdown("</div>", unsafe_allow_html=True)
         
@@ -324,7 +320,7 @@ def show_dataset_about(df_head, df_analysis, title, description="", source_text=
     st.markdown("</div>", unsafe_allow_html=True)
 
     if "Hair_Loss" in df_analysis.columns:
-        st.markdown("<h3 style='color:{0}; text-align:center; font-size:24px;'>Hair Loss Distribution</h3>".format(TEXT), unsafe_allow_html=True)
+        st.markdown("<h3 style='color:{0}; text-align:center; font-size:22px;'>Hair Loss Distribution</h3>".format(TEXT), unsafe_allow_html=True)
         fig, ax = plt.subplots(figsize=(8,4))
         # sns.countplot(x='Hair_Loss', data=df_analysis, palette=["#c1dab8", "#94b89e", "#2E8B57", "#2E8B57"], ax=ax)
         sns.countplot(

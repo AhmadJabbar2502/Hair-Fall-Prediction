@@ -1097,17 +1097,18 @@ elif dataset_option == "Luke Hair Loss Dataset":
             )
 
             fig_a.update_layout(
-                height=700,
-                scene=dict(
-                    xaxis_title=second_var_a,
-                    yaxis_title='Hair_Loss_Encoding',
-                    zaxis_title=third_var_a,
-                    xaxis=dict(showgrid=True, gridcolor='rgba(0,0,0,0.08)'),
-                    yaxis=dict(showgrid=True, gridcolor='rgba(0,0,0,0.08)'),
-                    zaxis=dict(showgrid=True, gridcolor='rgba(0,0,0,0.08)')
-                ),
-                margin=dict(l=20, r=20, t=70, b=20)
-            )
+            height=700,
+            scene=dict(
+                xaxis_title=second_var_a,
+                yaxis_title='Hair_Loss_Encoding',
+                zaxis_title=third_var_a,
+                xaxis=dict(showgrid=True, gridcolor='rgba(200,200,200,1)', gridwidth=3.5),
+                yaxis=dict(showgrid=True, gridcolor='rgba(200,200,200,1)', gridwidth=3.5),
+                zaxis=dict(showgrid=True, gridcolor='rgba(200,200,200,1)', gridwidth=3.5)
+            ),
+            margin=dict(l=20, r=20, t=70, b=20)
+        )
+
 
             st.plotly_chart(fig_a, use_container_width=True)
 
