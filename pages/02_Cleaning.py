@@ -19,22 +19,54 @@ SIDBAR_TEXT ="#a9cac6"
 
 st.markdown("""
     <style>
-    .stApp { background-color:#EFEFEF; }
-    section[data-testid="stSidebar"] { background-color: #2a5a55; padding: 16px 12px; }
-    section[data-testid="stSidebar"] * { color: #a9cac6 !important; font-size: 22px !important; font-family: 'Helvetica Neue', sans-serif; }
-    html, body, [class*="css"] { font-size: 22px !important; color: #2C3E50 !important; }
-    div[data-testid="stMetricLabel"] { font-size: 22px !important; color: #333 !important; }
-    div[data-testid="stDataFrame"] { background-color: white !important; border: 3px solid #2a5a55 !important; border-radius: 12px !important; box-shadow: none !important; }
+    /* Main app background */
+    .stApp { 
+        background-color:#EFEFEF; 
+    }
+
+    /* --- SIDEBAR STYLING --- */
+    section[data-testid="stSidebar"] { 
+        background-color: #2a5a55; 
+        padding: 16px 12px; 
+    }
+
+    /* --- SIDEBAR TEXT --- */
+    section[data-testid="stSidebar"] * { 
+        color: #a9cac6 !important;   
+        font-size: 16px !important;  /* match Hair Baldness Story page */
+        font-family: 'Helvetica Neue', sans-serif; 
+    }
+
+    /* General text styling */
+    html, body, [class*="css"] { 
+        font-size:16px !important;  /* match Hair Baldness Story page */
+        color: #2C3E50 !important; 
+        font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    div[data-testid="stMetricLabel"] { 
+        font-size: 18px !important; 
+        color: #333 !important; 
+    }
+
+    /* DataFrame styling */
+    div[data-testid="stDataFrame"] { 
+        background-color: white !important; 
+        border: 3px solid #2a5a55 !important; 
+        border-radius: 12px !important; 
+        box-shadow: none !important; 
+    }
     </style>
 """, unsafe_allow_html=True)
+
 
 
 # ======== HEADER ==========
 st.markdown(
     f"""
     <div style='background-color:{BASE_BG}; padding:12px; border-radius:40px;'>
-        <h1 style='text-align:center; font-size:40px; color:#5e928a; margin:6px 0;'>Cleaning the Data Sets</h1>
-        <p style='text-align:center; font-size:22px; color: #2a5a55; margin:0px 0 15px 0;'>
+        <h1 style='text-align:center; font-size:25px; color:#5e928a; margin:6px 0;'>Cleaning the Data Sets</h1>
+        <p style='text-align:center; font-size:20px; color: #2a5a55; margin:0px 0 15px 0;'>
             Handling missing values, encoding categorical features, and creating derived variables before analysis.
         </p>
     </div>
@@ -70,7 +102,7 @@ else:
     # ===== Dataset Section Banner =====
     st.markdown(
         f"<div style='background-color:{SECTION_BG}; padding:10px; text-align:center; border-radius:10px;'>"
-        f"<h2 style='color:{ACCENT}; font-size:35px; margin:6px 0 6px 0;'>{dataset_choice}</h2></div>",
+        f"<h2 style='color:{ACCENT}; font-size:25px; margin:6px 0 6px 0;'>{dataset_choice}</h2></div>",
         unsafe_allow_html=True
     )
 
@@ -81,12 +113,12 @@ else:
 
         # ===== Data Cleaning Summary =====
         st.markdown("<br>", unsafe_allow_html=True)
-        st.markdown(f"<p style='font-size:26px; color:{TEXT};'><b>Data Cleaning Summary — Hair Health Prediction Dataset</b></p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='font-size:20px; color:{TEXT};'><b>Data Cleaning Summary — Hair Health Prediction Dataset</b></p>", unsafe_allow_html=True)
 
         # 1️⃣ ID Column Handling
         st.markdown(f"""
         <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #5d9189; border-radius:10px;'>
-            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+            <p style='font-size:16px; color:{TEXT}; margin:0;'>
                 <b>ID Column Standardization</b><br>
                 The original <code>ID</code> column was removed and replaced with a new identifier, 
                 as the original only contained sequential assignment without analytical value.
@@ -99,7 +131,7 @@ else:
         # 2️⃣ Standardized Column Names
         st.markdown(f"""
         <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #E67E22; border-radius:10px;'>
-            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+            <p style='font-size:16px; color:{TEXT}; margin:0;'>
                 <b>Standardized Column Names</b><br>
                 All variable names were standardized by capitalizing words and replacing spaces with underscores.<br>
                 For example, <code>hormonal_changes</code> → <code>Hormonal_Changes</code>, 
@@ -113,7 +145,7 @@ else:
         # 3️⃣ Binary Variable Encoding
         st.markdown(f"""
         <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #5e928a; border-radius:10px;'>
-            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+            <p style='font-size:16px; color:{TEXT}; margin:0;'>
                 <b>Binary Variable Encoding</b><br>
                 Converted categorical (Yes/No) variables into numerical format for analysis:<br>
                 <code>Genetics, Hormonal_Changes, Poor_Hair_Care_Habits, Environmental_Factors, Smoking, Weight_Loss</code>
@@ -127,7 +159,7 @@ else:
         # 4️⃣ Ordinal Variable Encoding
         st.markdown(f"""
         <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #2a5a55; border-radius:10px;'>
-            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+            <p style='font-size:16px; color:{TEXT}; margin:0;'>
                 <b>Ordinal Variable Encoding</b><br>
                 Assigned numerical values to represent increasing intensity levels in ordinal features:<br>
                 - <code>Stress</code>: Low=0, Moderate=1, High=2
@@ -140,7 +172,7 @@ else:
         # 5️⃣ Age Range Creation
         st.markdown(f"""
         <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #5d9189; border-radius:10px;'>
-            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+            <p style='font-size:16px; color:{TEXT}; margin:0;'>
                 <b>Derived Age Ranges</b><br>
                 Created binned age ranges for better analysis:<br>
                 - Bins: [18-30, 30-40, 40-51]<br>
@@ -154,7 +186,7 @@ else:
         # 6️⃣ Trailing Spaces Removal
         st.markdown(f"""
         <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #E67E22; border-radius:10px;'>
-            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+            <p style='font-size:16px; color:{TEXT}; margin:0;'>
                 <b>Cleaned Trailing Spaces</b><br>
                 Removed trailing spaces from categorical variables to ensure consistency. Examples:<br>
                 - <code>Medical_Conditions</code>: "Eczema " → "Eczema"<br>
@@ -169,8 +201,8 @@ else:
         # ===== Heading Before Table =====
         st.markdown(f"""
         <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'>
-            <h3 style='color:{ACCENT}; font-size:32px; margin:6px 0;'>Unique Values After Cleaning</h3>
-            <p style='color:{BASE_BG}; font-size:20px; margin:0;'>
+            <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Unique Values After Cleaning</h3>
+            <p style='color:{BASE_BG}; font-size:22px; margin:0;'>
                 The table below summarizes all unique entries in each column after applying the cleaning and encoding steps.
             </p>
         </div>
@@ -200,8 +232,8 @@ else:
 
         st.markdown(f"""
         <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'>
-            <h3 style='color:{ACCENT}; font-size:32px; margin:6px 0;'>Visualizations After Cleaning</h3>
-            <p style='color:{BASE_BG}; font-size:20px; margin:0;'>
+            <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Visualizations After Cleaning</h3>
+            <p style='color:{BASE_BG}; font-size:22px; margin:0;'>
                 The following plots highlight the distribution of key variables — including Age Ranges and Stress Levels — 
                 after performing data cleaning and encoding.
             </p>
@@ -233,12 +265,12 @@ else:
         
         # ===== Data Cleaning Summary =====
         st.markdown("<br>", unsafe_allow_html=True)
-        st.markdown(f"<p style='font-size:26px; color:{TEXT};'><b>Data Cleaning Summary — Luke Hair Loss Dataset</b></p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='font-size:22px; color:{TEXT};'><b>Data Cleaning Summary — Luke Hair Loss Dataset</b></p>", unsafe_allow_html=True)
 
         # 1️⃣ Variable Renaming
         st.markdown(f"""
         <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #5d9189; border-radius:10px;'>
-            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+            <p style='font-size:16px; color:{TEXT}; margin:0;'>
                 <b>Standardized Column Names</b><br>
                 All variable names were standardized by capitalizing words and replacing spaces with underscores. 
                 <br>For instance, <code>hair loss</code> → <code>Hair_Loss</code> and <code>pressure level</code> → <code>Pressure_Level</code>.
@@ -250,7 +282,7 @@ else:
         # 2️⃣ Value Standardization
         st.markdown(f"""
         <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #E67E22; border-radius:10px;'>
-            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+            <p style='font-size:16px; color:{TEXT}; margin:0;'>
                 <b>Standardized Categorical Values</b><br>
                 Modified categorical entries to ensure consistency across the dataset.<br>
                 - <code>Hair_Washing</code>: replaced <b>Y</b> and <b>N</b> with <b>Yes</b> and <b>No</b>.<br>
@@ -264,7 +296,7 @@ else:
         # 3️⃣ Binary Encoding
         st.markdown(f"""
         <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #5e928a; border-radius:10px;'>
-            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+            <p style='font-size:16px; color:{TEXT}; margin:0;'>
                 <b>Binary Variable Encoding</b><br>
                 Converted categorical (Yes/No) variables into numerical format for analysis:<br>
                 - <code>Swimming</code> and <code>Hair_Washing</code> were encoded as <b>No = 0</b> and <b>Yes = 1</b>.
@@ -277,7 +309,7 @@ else:
         # 4️⃣ Ordinal Encoding
         st.markdown(f"""
         <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #2a5a55; border-radius:10px;'>
-            <p style='font-size:22px; color:{TEXT}; margin:0;'>
+            <p style='font-size:16px; color:{TEXT}; margin:0;'>
                 <b>Ordinal Variable Encoding</b><br>
                 Assigned numerical values to represent increasing intensity levels in ordinal features:<br>
                 - <code>Hair_Loss</code>: No=0, Low=1, Moderate=2, High=3<br>
@@ -293,8 +325,8 @@ else:
         # Continue to show the unique values table
         st.markdown(f"""
         <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'>
-            <h3 style='color:{ACCENT}; font-size:32px; margin:6px 0;'>Unique Values After Cleaning</h3>
-            <p style='color:{BASE_BG}; font-size:20px; margin:0;'>
+            <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Unique Values After Cleaning</h3>
+            <p style='color:{BASE_BG}; font-size:22px; margin:0;'>
                 The table below summarizes all unique entries in each column after applying the cleaning and encoding steps.
             </p>
         </div>
@@ -322,8 +354,8 @@ else:
 
         st.markdown(f"""
             <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'>
-                <h3 style='color:{ACCENT}; font-size:32px; margin:6px 0;'>Visualizations After Cleaning</h3>
-                <p style='color:{BASE_BG}; font-size:20px; margin:0;'>
+                <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Visualizations After Cleaning</h3>
+                <p style='color:{BASE_BG}; font-size:22px; margin:0;'>
                     The following plots highlight the distribution of key variables — including Hair Loss, Stress Level, and Pressure Level
                 </p>
             </div>
@@ -351,7 +383,7 @@ else:
 # ===== Next Steps =====
 st.markdown("<hr style='border:2px solid #DDD;'>", unsafe_allow_html=True)
 st.markdown(
-    f"<p style='font-size:20px; color:{TEXT};'>"
+    f"<p style='font-size:18px; color:{TEXT};'>"
     "Next, we will explore missing values and inconsistencies in the datasets "
     "before performing modeling and analysis."
     "</p>",
