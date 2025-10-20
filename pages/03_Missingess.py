@@ -18,16 +18,47 @@ TEXT = "#2C3E50"
 SECTION_BG = "#2a5a55"
 SIDBAR_TEXT = "#a9cac6"
 
-st.markdown(f"""
-<style>
-.stApp {{ background-color:#EFEFEF; }}
-section[data-testid="stSidebar"] {{ background-color: {SECTION_BG}; padding: 16px 12px; }}
-section[data-testid="stSidebar"] * {{ color: {SIDBAR_TEXT} !important; font-size: 16px !important; font-family: 'Helvetica Neue', sans-serif; }}
-html, body, [class*="css"] {{ font-size: 18px !important; color: {TEXT} !important; }}
-div[data-testid="stMetricLabel"] {{ font-size: 18px !important; color: #333 !important; }}
-div[data-testid="stDataFrame"] {{ background-color: white !important; border: 3px solid {SECTION_BG} !important; border-radius: 12px !important; box-shadow: none !important; }}
-.missing-caption {{ font-size:16px; color:{TEXT}; }}
-</style>
+st.markdown("""
+    <style>
+    /* Change the main app background */
+    .stApp {
+        background-color:#EFEFEF; /* keep existing background */
+    }
+
+    /* --- SIDEBAR STYLING --- */
+    section[data-testid="stSidebar"] {
+        background-color: #2a5a55;  /* sidebar background color */
+        padding: 16px 12px;
+    }
+
+    /* --- SIDEBAR TEXT --- */
+    section[data-testid="stSidebar"] * {
+        color: #a9cac6 !important;   /* keep your text color */
+        font-size: 16px !important;  /* match Hair Baldness Story page */
+        font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    /* General text styling */
+    html, body, [class*="css"] {
+        font-size: 18px !important; /* match Hair Baldness Story page */
+        color: #FFFFFF !important;
+        font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    div[data-testid="stMetricLabel"] {
+        font-size: 18px !important;
+        color: #333 !important;
+    }
+
+    /* DataFrame table styling remains the same */
+    div[data-testid="stDataFrame"] {
+        background-color: white !important;
+        border: 3px solid #2a5a55 !important;
+        border-radius: 12px !important;
+        box-shadow: none !important;
+    }
+
+    </style>
 """, unsafe_allow_html=True)
 
 # ======== HEADER ==========
