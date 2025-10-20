@@ -45,16 +45,4 @@ pip install -r requirements.txt
 streamlit run Home.py
 ```
 
-**Folder Structure**
-hair-baldness-story/
-├── Data/
-│   ├── Predict Hair Fall Raw.csv
-│   ├── Predict Hair Fall Cleaned.csv
-│   ├── Luke_hair_loss_documentation Raw.csv
-│   └── Luke_hair_loss_documentation Cleaned.csv
-├── app.py
-├── requirements.txt
-├── README.md
-└── assets/                # Optional: images, plots, or supplementary files
-
 
