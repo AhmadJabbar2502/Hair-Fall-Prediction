@@ -202,7 +202,7 @@ else:
         st.markdown(f"""
         <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'>
             <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Unique Values After Cleaning</h3>
-            <p style='color:{BASE_BG}; font-size:22px; margin:0;'>
+            <p style='color:{BASE_BG}; font-size:18px; margin:0;'>
                 The table below summarizes all unique entries in each column after applying the cleaning and encoding steps.
             </p>
         </div>
@@ -233,7 +233,7 @@ else:
         st.markdown(f"""
         <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'>
             <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Visualizations After Cleaning</h3>
-            <p style='color:{BASE_BG}; font-size:22px; margin:0;'>
+            <p style='color:{BASE_BG}; font-size:20px; margin:0;'>
                 The following plots highlight the distribution of key variables — including Age Ranges and Stress Levels — 
                 after performing data cleaning and encoding.
             </p>
@@ -326,7 +326,7 @@ else:
         st.markdown(f"""
         <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'>
             <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Unique Values After Cleaning</h3>
-            <p style='color:{BASE_BG}; font-size:22px; margin:0;'>
+            <p style='color:{BASE_BG}; font-size:20px; margin:0;'>
                 The table below summarizes all unique entries in each column after applying the cleaning and encoding steps.
             </p>
         </div>
@@ -355,7 +355,7 @@ else:
         st.markdown(f"""
             <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'>
                 <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Visualizations After Cleaning</h3>
-                <p style='color:{BASE_BG}; font-size:22px; margin:0;'>
+                <p style='color:{BASE_BG}; font-size:20px; margin:0;'>
                     The following plots highlight the distribution of key variables — including Hair Loss, Stress Level, and Pressure Level
                 </p>
             </div>
