@@ -65,7 +65,7 @@ st.markdown("""
 st.markdown(f"""
 <div style='background-color:{BASE_BG}; padding:15px; border-radius:40px; text-align:center;'>
     <h1 style='color:#5e928a; font-size:25px; margin-bottom:5px;'>Missingness Analysis</h1>
-    <p style='color:{HEADER_COLOR}; font-size:22px; margin-top:0px;'>
+    <p style='color:{HEADER_COLOR}; font-size:20px; margin-top:0px;'>
         Investigate patterns of missing data and visualize their relationships with key features.
     </p>
 </div>
