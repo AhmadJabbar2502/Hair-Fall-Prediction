@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import scipy.stats as stats
 import numpy as np
+from src.missingness import impute_medical_condition_mode
+from src.heatmaps import plot_missingness_heatmap_nutritional_deficiencies
 
 # ======== PAGE CONFIG ==========
 st.set_page_config(page_title="Missingness Analysis", layout="wide")
@@ -136,7 +138,7 @@ else:
 
             st.markdown(f"""
             <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'>
-                <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Missingess in Medical Conditions</h3>
+                <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Missingness in Medical Conditions</h3>
             </div>
             """, unsafe_allow_html=True)
             
@@ -147,7 +149,7 @@ else:
             st.markdown(f"""
             <div style='background-color:#E6F4EA; padding:14px; border-radius:12px;'>
                 <p style='font-size:18px; color:{TEXT}; margin:0;'>
-                <b>Observation:</b> Missingness in <b>Medical_Conditions</b> is not completely random (not MCAR). Chi-squared tests reveal a strong dependency on <b>Stress Level</b> and <b>Age Range</b>. Higher stress and older age correlate with more missing entries.
+                <b>Observation:</b> Missingness in <b>Medical_Conditions</b> is not completely random (not MCAR). Chi-squared tests reveal a strong dependency on <b>Stress Level</b> and <b>Age Range</b>. Higher stress and older age correlate with more missing entries. Thus, these values are MAR.
                 </p>
             </div>
             """, unsafe_allow_html=True)
@@ -258,16 +260,115 @@ else:
 
             st.markdown("<br>", unsafe_allow_html=True)
             
+            st.markdown("<hr style='border:2px solid #AAA; margin:16px 0;'>", unsafe_allow_html=True)
+            
+            # Logistic Regression section
+            st.markdown(f"<h2 style='color:{HEADER_COLOR}; font-size:22px; text-align:center'; >Logistic Regression for Missingness in Medical Conditions</h2>", unsafe_allow_html=True)
+
+            st.markdown(
+                f"""
+                <p style="font-size:18px; color:{TEXT}; line-height:1.5;">
+                Moreover, we perform a <b>logistic regression</b> to evaluate the relationship between <b>Stress Level</b> and the probability 
+                of missing values in <b>Medical Conditions</b>. This approach allows us to quantify how strongly stress levels can predict missingness.
+                </p>
+                """,
+                unsafe_allow_html=True
+            )
+
+            # Logistic regression table (static representation)
+            st.markdown(
+                f"""
+                <table style="width:70%; border-collapse:collapse; font-size:16px; color:{TEXT}; margin-left:auto; margin-right:auto;">
+                    <tr style="background-color:#f2f2f2;">
+                        <th> </th><th>coef</th><th>std err</th><th>z</th><th>P>|z|</th><th>[0.025</th><th>0.975]</th>
+                    </tr>
+                    <tr><td>const</td><td>-2.7795</td><td>0.247</td><td>-11.264</td><td>0.000</td><td>-3.263</td><td>-2.296</td></tr>
+                    <tr><td>Weight_Loss_Encoding</td><td>0.0817</td><td>0.204</td><td>0.401</td><td>0.688</td><td>-0.317</td><td>0.481</td></tr>
+                    <tr><td>Genetic_Encoding</td><td>0.3407</td><td>0.207</td><td>1.649</td><td>0.099</td><td>-0.064</td><td>0.746</td></tr>
+                    <tr><td>Stress_Level</td><td>0.4212</td><td>0.130</td><td>3.243</td><td>0.001</td><td>0.167</td><td>0.676</td></tr>
+                </table>
+                """,
+                unsafe_allow_html=True
+            )
+
+            st.markdown(
+                f"""
+                <p style="font-size:18px; color:{TEXT}; line-height:1.5;">
+                We can observe that the <b>p-value for Stress_Level</b> is very low (0.001), indicating that it is statistically significant. 
+                This confirms that <b>Stress Level</b> has a meaningful relationship with the missingness of <b>Medical Conditions</b>.
+                </p>
+                """,
+                unsafe_allow_html=True
+            )
+
+            st.markdown("<hr style='border:2px solid #AAA; margin:16px 0;'>", unsafe_allow_html=True)
+            st.markdown("<br>", unsafe_allow_html=True)
+
+
             # ===== Imputation Info =====
+            
+            # ---- Mode-based Imputation Section ----
+            df_raw = pd.read_csv("Data/Predict Hair Fall Raw.csv")
+            df_cleaned = pd.read_csv("Data/Predict Hair Fall Cleaned.csv")
+            
             st.markdown(
                 f"""
                 <div style='background-color:#C7E9C0; padding:12px; border-radius:12px; text-align:center;'>
-                    <h2 style='font-size:25px; color:#2E8B57; margin:0;'>Imputation of Missing Values</h2>
+                    <h2 style='font-size:25px; color:#2E8B57; margin:0;'>Imputation of Missing Values </h2>
                 </div>
                 """, unsafe_allow_html=True
             )
+            st.markdown("<br>", unsafe_allow_html=True)
+            st.markdown(f"<h2 style='color:{TEXT}; font-size:22px; text-align:center'; >First Method: Mode (Conditional)</h2>", unsafe_allow_html=True)
+
+            st.markdown(f"""
+            <p style='font-size:18px; color:{TEXT}; line-height:1.5;'>
+            In addition to Random Forest, missing <b>Medical_Conditions</b> can be imputed using a <b>conditional mode</b> approach. 
+            Here, each missing value is filled with the most frequent condition observed within its subgroup defined by <b>Age Range</b> 
+            and <b>Stress Level</b>. This method preserves the underlying structure and distribution of the data across different groups.
+            </p>
+            """, unsafe_allow_html=True)
+
+            # ---- Apply Mode-based Imputation ----
+            df_mode = df_raw.copy()
+            bins = [18, 30, 40, 51]
+            labels = ['18-30', '30-40', '40-51']
+            df_mode['Age_Range'] = pd.cut(df_mode['Age'], bins=bins, labels=labels, right=False)
+            df_mode['Stress_Level'] = df_mode['Stress'].map({'Low': 0, 'Moderate': 1, 'High': 2})
+            df_mode['Medical_Conditions'] = df_mode.apply(lambda row: impute_medical_condition_mode(row, df_mode), axis=1)
+
+            # ---- Before vs After Mode Imputation Plot ----
+            count_mode = df_mode['Medical_Conditions'].value_counts().sort_index()
+            count_raw = df_raw['Medical_Conditions'].value_counts().sort_index()
+
+            all_conditions = sorted(set(count_raw.index).union(set(count_mode.index)))
+            count_raw = count_raw.reindex(all_conditions, fill_value=0)
+            count_mode = count_mode.reindex(all_conditions, fill_value=0)
+
+            fig, ax = plt.subplots(figsize=(12,6))
+            x = range(len(all_conditions))
+            width = 0.35
+
+            ax.bar([i - width/2 for i in x], count_raw.values, width, label='Before Imputation', color='#86aca9')
+            ax.bar([i + width/2 for i in x], count_mode.values, width, label='After Mode Imputation', color='#5d9189')
+
+            ax.set_xticks(x)
+            ax.set_xticklabels(all_conditions, rotation=45, ha='right')
+            ax.set_ylabel('Count', fontsize=14)
+            ax.set_title('Medical Conditions: Before vs After Mode Imputation', fontsize=16, color='#2E8B57')
+            ax.legend(fontsize=12)
+            ax.tick_params(axis='y', labelsize=12)
+
+            st.pyplot(fig)
+            plt.close(fig)
+            # --- RANDOM FOREST IMPUTATION ----
+            st.markdown("<br>", unsafe_allow_html=True)
+
+            st.markdown("<hr style='border:2px solid #AAA; margin:16px 0;'>", unsafe_allow_html=True)
             
             st.markdown("<br>", unsafe_allow_html=True)
+
+            st.markdown(f"<h2 style='color:{TEXT}; font-size:22px; text-align:center'; >Second Method: Random Forest</h2>", unsafe_allow_html=True)
             
             st.markdown(f"""
             <p style='font-size:18px; color:{TEXT}; line-height:1.5;'>
@@ -277,8 +378,6 @@ else:
             """, unsafe_allow_html=True)
 
             # ---- Before vs After Imputation Plot ----
-            df_raw = pd.read_csv("Data/Predict Hair Fall Raw.csv")
-            df_cleaned = pd.read_csv("Data/Predict Hair Fall Cleaned.csv")
 
             df_raw['Medical_Conditions'] = df_raw['Medical_Conditions'].dropna().astype(str).str.strip().str.title()
             df_cleaned['Medical_Conditions'] = df_cleaned['Medical_Conditions'].dropna().astype(str).str.strip().str.title()
@@ -302,6 +401,139 @@ else:
             ax.tick_params(axis='y', labelsize=12)
             st.pyplot(fig)
             plt.close(fig)
+            
+            st.markdown(f"""
+            <div style='background-color:#FFF4E5; padding:14px; border-radius:12px;'>
+                <p style='font-size:18px; color:{TEXT}; margin:0;'>
+                <b>Observation:</b> In this scenario, <b>Random Forest imputation</b> is more suitable than <b>Mode imputation</b>. 
+                For example, in the group with <b>Stress Level = 2</b> and <b>Age Range = 18-30</b>, there is no single dominant <b>Medical_Condition</b>; counts are very close (e.g., 9 or 8 for each condition). 
+                Mode imputation would arbitrarily assign the most frequent value, potentially introducing bias. 
+                Random Forest can leverage multiple features simultaneously to make more informed predictions, preserving the underlying distribution.
+                </p>
+            </div>
+            """, unsafe_allow_html=True)
+
+            st.markdown("<br>", unsafe_allow_html=True)
+            
+            st.markdown(f"""
+            <div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:10px; margin-top:20px;'>
+                <h3 style='color:{ACCENT}; font-size:25px; margin:6px 0;'>Missingess in Nutritional Deficiencies</h3>
+            </div>
+            """, unsafe_allow_html=True)
+            
+            # ---- Observation Card ----
+            
+            st.markdown("<br>", unsafe_allow_html=True)
+            
+            st.markdown(f"""
+            <div style='background-color:#E6F4EA; padding:14px; border-radius:12px;'>
+                <p style='font-size:18px; color:{TEXT}; margin:0;'>
+                <b>Observation:</b> Missingness in <b>Nutritional Deficiencies</b> is not completely random (not MCAR). Chi-squared tests reveal a strong dependency on <b>Age Range</b>. Less age (18-30) correlate with all the missing entries. Thus, these values are MAR.
+                </p>
+            </div>
+            """, unsafe_allow_html=True)
+            st.markdown("<br>", unsafe_allow_html=True)
+            
+            st.markdown(f"<p style='font-size:22px; color:{TEXT}; text-align:center;'><b>Missingness in Nutritional Deficiencies by  Age Range</b></p>", unsafe_allow_html=True)
+            hair_raw['Nutritional_Deficiencies_missing'] = hair_raw['Nutritional_Deficiencies'].isna().astype(int)
+            age_sorted = hair_raw.sort_values('Age_Range')
+            missing_age_matrix = age_sorted['Nutritional_Deficiencies_missing'].to_numpy().reshape(1, -1)
+            
+            matrix_age = age_sorted["Nutritional_Deficiencies_missing"].to_numpy().reshape(1, -1)
+            fig, ax = plt.subplots(figsize=(10,2))
+            sns.heatmap(matrix_age, cmap="YlGn", cbar=True, ax=ax)
+            uniq_age = list(age_sorted["Age_Range"].dropna().unique())
+            xticks = [np.mean(np.where(age_sorted["Age_Range"] == lvl)) for lvl in uniq_age]
+            ax.set_xticks(xticks)
+            ax.set_xticklabels(uniq_age, fontsize=11, rotation=0)
+            ax.set_yticks([0])
+            ax.set_yticklabels(["Nutritional_Deficiencies_missing"], fontsize=11)
+            ax.set_title("By Age Range", fontsize=14, color=HEADER_COLOR)
+            st.pyplot(fig)
+            plt.close(fig)
+            
+            
+            st.markdown("<hr style='border:2px solid #AAA; margin:16px 0;'>", unsafe_allow_html=True)
+            
+            # ---- Chi-Squared Tests Summary ----
+            st.markdown(f"<h2 style='color:{HEADER_COLOR}; font-size:22px; text-align:center'; >Chi-Squared Tests for Missingness</h2>", unsafe_allow_html=True)
+            st.markdown(
+                """
+                <p style="font-size:18px; color:{TEXT}; line-height:1.5;">
+                The missingness in <b>Nutritional Deficiencies</b> was tested against <b>Age Range</b>. The analysis confirms that missingness is <b>not random</b>.Probability that the difference between the observed and expected value of missingness due to Age Range by chance: <b>4.725e-36</b><br><br>
+                These extremely low probabilities indicate a strong relationship between missingness and these variables.
+                </p>
+                """.replace("{TEXT}", TEXT),
+                unsafe_allow_html=True
+            )
+            
+            contingency_age = pd.crosstab(hair_raw['Nutritional_Deficiencies_missing'], hair_raw['Age_Range'])
+            chi2_stress, p_stress, dof_stress, ex_stress = stats.chi2_contingency(contingency_stress)
+            chi2_age, p_age, dof_age, ex_age = stats.chi2_contingency(contingency_age)
+
+            x = np.arange(len(contingency_stress.columns))
+            width = 0.35
+
+            fig, ax = plt.subplots(figsize=(8,5))
+            obs = contingency_age.loc[1]
+            exp = pd.Series(ex_age[1], index=contingency_age.columns)
+            ax.bar(x - width/2, obs, width, label='Observed', color='#A8D5BA')
+            ax.bar(x + width/2, exp, width, label='Expected', color='#5d9189')
+            ax.set_xticks(x)
+            ax.set_xticklabels(obs.index)
+            ax.set_title("Missingness: Age Range", fontsize=10, color=HEADER_COLOR)
+            ax.set_ylabel("Count")
+            ax.legend()
+            st.pyplot(fig)
+            plt.close(fig)
+
+            st.markdown("<br>", unsafe_allow_html=True)
+            
+            st.markdown("<hr style='border:2px solid #AAA; margin:16px 0;'>", unsafe_allow_html=True)
+            
+            # Logistic Regression section for Nutritional_Deficiencies
+            st.markdown(f"<h2 style='color:{HEADER_COLOR}; font-size:22px; text-align:center'; >Logistic Regression for Missingness in Nutritional Deficiencies</h2>", unsafe_allow_html=True)
+
+            st.markdown(
+            f"""
+            <p style="font-size:18px; color:{TEXT}; line-height:1.5;">
+            We perform a <b>logistic regression</b> to assess how <b>Age</b> relates to the probability of missing values 
+            in <b>Nutritional_Deficiencies</b>. This analysis helps identify which factors significantly influence missingness.
+            </p>
+            """,
+            unsafe_allow_html=True
+            )
+
+            # Logistic regression table (static representation)
+            st.markdown(
+            f"""
+            <table style="width:70%; border-collapse:collapse; font-size:16px; color:{TEXT}; margin-left:auto; margin-right:auto;">
+            <tr style="background-color:#f2f2f2;">
+                <th> </th><th>coef</th><th>std err</th><th>z</th><th>P>|z|</th><th>[0.025</th><th>0.975]</th>
+            </tr>
+            <tr><td>const</td><td>4.7461</td><td>0.711</td><td>6.679</td><td>0.000</td><td>3.353</td><td>6.139</td></tr>
+            <tr><td>Weight_Loss_Encoding</td><td>-0.1755</td><td>0.269</td><td>-0.653</td><td>0.514</td><td>-0.703</td><td>0.351</td></tr>
+            <tr><td>Genetic_Encoding</td><td>0.1333</td><td>0.269</td><td>0.496</td><td>0.620</td><td>-0.394</td><td>0.660</td></tr>
+            <tr><td>Age</td><td>-0.2659</td><td>0.029</td><td>-9.099</td><td>0.002</td><td>-0.323</td><td>-0.209</td></tr>
+            </table>
+            """,
+            unsafe_allow_html=True
+            )
+
+            st.markdown(
+            f"""
+            <p style="font-size:18px; color:{TEXT}; line-height:1.5;">
+            We can observe that the <b>p-value for Age</b> is very low (0.002), indicating that it is statistically significant. 
+            This confirms that <b>Age</b> has a meaningful relationship with the missingness of <b>Nutritional_Deficiencies</b>.
+            </p>
+            """,
+            unsafe_allow_html=True
+            )
+
+            st.markdown("<hr style='border:2px solid #AAA; margin:16px 0;'>", unsafe_allow_html=True)
+            st.markdown("<br>", unsafe_allow_html=True)
+
+
     else:
         # ===== Missing Values Analysis =====
         st.markdown("<br>", unsafe_allow_html=True)

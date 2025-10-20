@@ -28,3 +28,18 @@ def logistic_missingness(df: pd.DataFrame, y_col='Medical_Conditions_missing', x
     y = df[y_col]
     model = sm.Logit(y, sm.add_constant(X)).fit(disp=False)  # disp=False silences output
     return model
+
+def impute_medical_condition_mode(row, df):
+    
+    if pd.isna(row['Medical_Conditions']):
+        # Get the group based on Age_Range and Stress_Level
+        group = df[(df['Age_Range'] == row['Age_Range']) & 
+                   (df['Stress_Level'] == row['Stress_Level'])]
+        # Get the mode (most frequent value)
+        mode_value = group['Medical_Conditions'].mode()
+        if not mode_value.empty:
+            return mode_value[0]
+        else:
+            return 'Unknown'  # fallback if no mode exists
+    else:
+        return row['Medical_Conditions']
