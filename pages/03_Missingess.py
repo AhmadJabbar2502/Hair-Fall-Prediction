@@ -23,8 +23,8 @@ st.markdown(f"""
 .stApp {{ background-color:#EFEFEF; }}
 section[data-testid="stSidebar"] {{ background-color: {SECTION_BG}; padding: 16px 12px; }}
 section[data-testid="stSidebar"] * {{ color: {SIDBAR_TEXT} !important; font-size: 16px !important; font-family: 'Helvetica Neue', sans-serif; }}
-html, body, [class*="css"] {{ font-size: 22px !important; color: {TEXT} !important; }}
-div[data-testid="stMetricLabel"] {{ font-size: 22px !important; color: #333 !important; }}
+html, body, [class*="css"] {{ font-size: 18px !important; color: {TEXT} !important; }}
+div[data-testid="stMetricLabel"] {{ font-size: 20px !important; color: #333 !important; }}
 div[data-testid="stDataFrame"] {{ background-color: white !important; border: 3px solid {SECTION_BG} !important; border-radius: 12px !important; box-shadow: none !important; }}
 .missing-caption {{ font-size:16px; color:{TEXT}; }}
 </style>
@@ -33,8 +33,8 @@ div[data-testid="stDataFrame"] {{ background-color: white !important; border: 3p
 # ======== HEADER ==========
 st.markdown(f"""
 <div style='background-color:{BASE_BG}; padding:15px; border-radius:40px; text-align:center;'>
-    <h1 style='color:#5e928a; font-size:32px; margin-bottom:5px;'>Missingness Analysis</h1>
-    <p style='color:{HEADER_COLOR}; font-size:20px; margin-top:0px;'>
+    <h1 style='color:#5e928a; font-size:25px; margin-bottom:5px;'>Missingness Analysis</h1>
+    <p style='color:{HEADER_COLOR}; font-size:22px; margin-top:0px;'>
         Investigate patterns of missing data and visualize their relationships with key features.
     </p>
 </div>
@@ -67,7 +67,7 @@ else:
     # ===== Dataset Banner =====
     st.markdown(
         f"<div style='background-color:{SECTION_BG}; padding:12px; text-align:center; border-radius:12px;'>"
-        f"<h2 style='color:{ACCENT}; font-size:26px; margin:5px 0 5px 0;'>{dataset_option}</h2></div>",
+        f"<h2 style='color:{ACCENT}; font-size:25px; margin:5px 0 5px 0;'>{dataset_option}</h2></div>",
         unsafe_allow_html=True
     )
     st.markdown("<br>", unsafe_allow_html=True)
@@ -98,7 +98,7 @@ else:
                 plt.close(fig)
 
                 # ---- Missing counts table ----
-                st.markdown(f"<p style='font-size:23px; color:{TEXT}; text-align:center; '><b>Missing Value Counts</b></p>", unsafe_allow_html=True)
+                st.markdown(f"<p style='font-size:10px; color:{TEXT}; text-align:center; '><b>Missing Value Counts</b></p>", unsafe_allow_html=True)
                 missing_counts = hair_raw.isna().sum().reset_index().rename(columns={"index":"Feature", 0:"Missing Count"})
                 st.dataframe(missing_counts, use_container_width=True)
                 st.markdown("<br>", unsafe_allow_html=True)
@@ -115,7 +115,7 @@ else:
             
             st.markdown(f"""
             <div style='background-color:#E6F4EA; padding:14px; border-radius:12px;'>
-                <p style='font-size:20px; color:{TEXT}; margin:0;'>
+                <p style='font-size:18px; color:{TEXT}; margin:0;'>
                 <b>Observation:</b> Missingness in <b>Medical_Conditions</b> is not completely random (not MCAR). Chi-squared tests reveal a strong dependency on <b>Stress Level</b> and <b>Age Range</b>. Higher stress and older age correlate with more missing entries.
                 </p>
             </div>
@@ -169,10 +169,10 @@ else:
             st.markdown("<hr style='border:2px solid #AAA; margin:16px 0;'>", unsafe_allow_html=True)
             
             # ---- Chi-Squared Tests Summary ----
-            st.markdown(f"<h2 style='color:{HEADER_COLOR}; font-size:23px; text-align:center'; >Chi-Squared Tests for Missingness</h2>", unsafe_allow_html=True)
+            st.markdown(f"<h2 style='color:{HEADER_COLOR}; font-size:22px; text-align:center'; >Chi-Squared Tests for Missingness</h2>", unsafe_allow_html=True)
             st.markdown(
                 """
-                <p style="font-size:20px; color:{TEXT}; line-height:1.5;">
+                <p style="font-size:18px; color:{TEXT}; line-height:1.5;">
                 The missingness in <b>Medical Conditions</b> was tested against both <b>Stress Level</b> and <b>Age Range</b>.<br>
                 The analysis confirms that missingness is <b>not random</b>.<br><br>
                 - Probability that the difference between the observed and expected value of missingness due to Stress Level by chance: <b>7.756e-17</b><br>
@@ -239,7 +239,7 @@ else:
             st.markdown("<br>", unsafe_allow_html=True)
             
             st.markdown(f"""
-            <p style='font-size:20px; color:{TEXT}; line-height:1.5;'>
+            <p style='font-size:18px; color:{TEXT}; line-height:1.5;'>
             Missing <b>Medical_Conditions</b> were imputed using <b>Random Forest (n_estimators=1000)</b> 
             trained on features: Stress Level, Age Range, Genetic Encoding, Hormonal Changes, Smoking, Weight Loss, Environmental Factors.
             </p>
@@ -311,11 +311,11 @@ else:
         st.markdown("<br>", unsafe_allow_html=True)
         
         st.markdown(f"""
-            <p style='font-size:20px; color:{TEXT};'>
+            <p style='font-size:18px; color:{TEXT};'>
             Although the missingness table highlights several null entries, these do not represent true missing data. 
             Based on domain understanding and logical inference, the following replacements and actions were taken:
             </p>
-            <ul style='font-size:20px; color:{TEXT};'>
+            <ul style='font-size:18px; color:{TEXT};'>
             <li><b>School_Assessment:</b> Missing entries indicate that no assignments were given, and were therefore replaced with <i>'No Assessment'</i>.</li>
             <li><b>Dandruff:</b> Missing values suggest the absence of dandruff, and were replaced with <i>'None'</i>.</li>
             </ul>
@@ -331,11 +331,11 @@ else:
         st.markdown("<br>", unsafe_allow_html=True)
         
         st.markdown(f"""
-            <p style='font-size:20px; color:{TEXT};'>
+            <p style='font-size:18px; color:{TEXT};'>
             In the <b>Hair_Grease</b> column, only four missing values were detected. 
             To handle these, two approaches were explored to assess their effect on the dataset:
             </p>
-            <ul style='font-size:20px; color:{TEXT};'>
+            <ul style='font-size:18px; color:{TEXT};'>
             <li><b>Approach 1 — Dropping Nulls:</b> The four missing entries were removed to maintain data integrity without introducing artificial estimates.</li>
             <li><b>Approach 2 — Mean Imputation:</b> The missing values were replaced with the column mean to observe whether this altered the correlation between <b>Hair_Grease</b> and other variables.</li>
             </ul>
