@@ -110,8 +110,8 @@ def show_predict_hair_fall(raw_path, cleaned_path):
 
     card_html = lambda title, value: f"""
         <div style='background:{BOXCOLOR}; border-radius:12px; padding:12px; box-shadow:0 2px 6px rgba(0,0,0,0.06);'>
-            <div style='font-size:22px; color:#FFFFFF; margin-bottom:6px;'>{title}</div>
-            <div style='font-size:35px; color:#FFFFFF; font-weight:700;'>{value}</div>
+            <div style='font-size:17px; color:#FFFFFF; margin-bottom:6px;'>{title}</div>
+            <div style='font-size:25px; color:#FFFFFF; font-weight:700;'>{value}</div>
         </div>
     """
 
@@ -191,8 +191,8 @@ def show_predict_hair_fall(raw_path, cleaned_path):
         st.markdown("<h3 style='color:#2C3E50; text-align:center; font-size:22px;'>Hair Loss Distribution</h3>", unsafe_allow_html=True)
         fig, ax = plt.subplots(figsize=(8,4))
         sns.countplot(x='Hair_Loss', hue='Hair_Loss', data=df_cleaned, palette=["#c1dab8", "#94b89e", "#2E8B57", "#2E8B57"], legend=False, ax=ax)
-        ax.set_xlabel("Hair Loss", fontsize=12, color=TEXT)
-        ax.set_ylabel("Count", fontsize=12, color=TEXT)
+        ax.set_xlabel("Hair Loss", fontsize=9, color=TEXT)
+        ax.set_ylabel("Count", fontsize=9, color=TEXT)
         ax.tick_params(axis='x', labelsize=11)
         ax.tick_params(axis='y', labelsize=11)
         st.pyplot(fig)
