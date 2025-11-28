@@ -9,6 +9,7 @@ ACCENT = "#FFFFFF"
 BOXCOLOR = "#5d9189"
 TEXT = "#2C3E50"
 SECTION_BG = "#2a5a55"
+SUB_HEADING_BG = "#749683"
 SECONDARY = "#E67E22"
 
 @st.cache_data
@@ -25,12 +26,23 @@ def detect_target(col_candidates, df):
             return c
     return None
 
-def show_luke_hair_loss(raw_path, cleaned_path):
-    df_raw = load_csv(raw_path)
-    df_cleaned = load_csv(cleaned_path)
+def show_luke_hair_loss(raw_path=None, cleaned_path=None, raw_df=None, cleaned_df=None, show_age_dist=True):
+    if raw_df is not None:
+        df_raw = raw_df
+    elif raw_path:
+        df_raw = load_csv(raw_path)
+    else:
+        df_raw = None
+
+    if cleaned_df is not None:
+        df_cleaned = cleaned_df
+    elif cleaned_path:
+        df_cleaned = load_csv(cleaned_path)
+    else:
+        df_cleaned = None
 
     if df_raw is None or df_cleaned is None:
-        st.error("Dataset file not found.")
+        st.error("Dataset file not found or not loaded.")
         return
 
     st.markdown(
@@ -96,4 +108,55 @@ def show_luke_hair_loss(raw_path, cleaned_path):
         st.pyplot(fig)
         plt.close(fig)
 
-    st.write("Next, we'll explore how missing data and inconsistencies were handled before analysis.")
+    
+    st.markdown("<br>", unsafe_allow_html=True)
+
+# Heading
+
+    st.markdown(
+        f"""
+        <div style='background-color:{SUB_HEADING_BG}; padding:10px; text-align:center; border-radius:10px;'>
+            <h2 style='color:{ACCENT}; font-size:30px; margin:6px 0 6px 0;'>Download the Datasets</h2>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+    
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # Description
+    st.markdown(
+        f"<p style='text-align:center; font-size:22px; color:{TEXT};'>"
+        "Download the raw dataset collected from Luke’s daily logs, along with the cleaned version used for analysis."
+        "</p>",
+        unsafe_allow_html=True
+    )
+
+    # Vertical stacked buttons
+    with st.spinner("Preparing datasets for download..."):
+        
+        # import time
+        # time.sleep(2)
+        # st.write("Done!")
+        
+        col = st.container()
+
+        with col:
+            st.download_button(
+                label="📥 Download Cleaned Dataset",
+                data=df_cleaned.to_csv(index=False).encode('utf-8'),
+                file_name="Luke_Hair_Loss_Cleaned.csv",
+                mime="text/csv",
+                use_container_width=True
+            )
+
+            st.download_button(
+                label="📄 Download Raw Dataset",
+                data=df_raw.to_csv(index=False).encode('utf-8'),
+                file_name="Luke_Hair_Loss_Raw.csv",
+                mime="text/csv",
+                use_container_width=True
+            )
+
+        
+        

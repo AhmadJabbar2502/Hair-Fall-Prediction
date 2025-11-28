@@ -1,0 +1,1 @@
+For advanced features, I have implemented caching, progress bars and spinners, and download buttons. I also used age preview slider

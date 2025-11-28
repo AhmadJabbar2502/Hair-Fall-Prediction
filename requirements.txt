@@ -8,4 +8,4 @@ altair
 Pillow
 plotly
 scikit-learn
-statsmodels
+statsmodelsD
