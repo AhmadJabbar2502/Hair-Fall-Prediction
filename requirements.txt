@@ -9,3 +9,5 @@ Pillow
 plotly
 scikit-learn
 statsmodelsD
+io
+PIL
