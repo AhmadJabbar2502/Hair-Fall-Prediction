@@ -1,1 +1,5 @@
-For advanced features, I have implemented caching, progress bars and spinners, and download buttons. I also used age preview slider
+For advanced features, I have implemented caching, progress bars and spinners, and download buttons. I also used age preview slider.
+
+Advanced Modeling Techniques (Up to 5%):    
+    - Ensemble methods: Random Forest Classifier
+    - Optimization: SMOTE
