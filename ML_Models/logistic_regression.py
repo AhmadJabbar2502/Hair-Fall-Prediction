@@ -35,12 +35,17 @@ def render_logistic_page():
     
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # Base Features - Simple list format
+    # Base Features - Bullet points
     st.markdown(f"<h3 style='color:{SECTION_BG}; font-size:20px;'>Base Features (6)</h3>", unsafe_allow_html=True)
     st.markdown(f"""
-    <p style='font-size:16px; color:{TEXT};'>
-        Stay_Up_Late, Coffee_Consumed, Libido, Pressure_Level_Encoding, Stress_Level_Encoding, Dandruff_Encoding
-    </p>
+    <ul style='font-size:16px; color:{TEXT}; line-height:1.8;'>
+        <li>Stay_Up_Late</li>
+        <li>Coffee_Consumed</li>
+        <li>Libido</li>
+        <li>Pressure_Level_Encoding</li>
+        <li>Stress_Level_Encoding</li>
+        <li>Dandruff_Encoding</li>
+    </ul>
     """, unsafe_allow_html=True)
     
     st.markdown("<br>", unsafe_allow_html=True)
@@ -135,7 +140,7 @@ def render_logistic_page():
     st.markdown("<br>", unsafe_allow_html=True)
 
     # Per-Class Performance - Increased font size
-    st.markdown(f"<h4 style='color:{SECTION_BG}; font-size:19px;'>Per-Class Performance</h4>", unsafe_allow_html=True)
+    st.markdown(f"<h4 style='color:{SECTION_BG}; font-size:21px;'>Per-Class Performance</h4>", unsafe_allow_html=True)
     class_perf_log = pd.DataFrame({
         'Class': ['Low (1)', 'Medium (2)', 'High (3)', 'Severe (4)'],
         'Precision': [0.72, 0.68, 0.67, 0.70],
@@ -195,48 +200,14 @@ def render_logistic_page():
     
     st.markdown("<br>", unsafe_allow_html=True)
     
-    # Key Takeaway 1
+    # Key Takeaways in single box
     st.markdown(f"""
-    <div style='background-color:{BASE_BG}; padding:12px 20px; border-left:6px solid {SECTION_BG}; border-radius:10px;'>
-        <p style='font-size:16px; color:{TEXT}; margin:0; line-height:1.8;'>
-            <b>Baseline Performance:</b> The 70% accuracy serves as a starting point for comparison with more advanced models. 
-            This establishes the minimum performance threshold and demonstrates that even simple linear models can capture basic patterns in the data.
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
-    st.markdown("<br>", unsafe_allow_html=True)
-    
-    # Key Takeaway 2
-    st.markdown(f"""
-    <div style='background-color:{BASE_BG}; padding:12px 20px; border-left:6px solid {SECTION_BG}; border-radius:10px;'>
-        <p style='font-size:16px; color:{TEXT}; margin:0; line-height:1.8;'>
-            <b>Interpretability Advantage:</b> Logistic regression provides clear coefficient values for each feature, 
-            making it easy to understand which factors contribute most to hair loss predictions. This transparency is valuable 
-            for explaining model decisions to stakeholders and identifying actionable insights.
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
-    st.markdown("<br>", unsafe_allow_html=True)
-    
-    # Key Takeaway 3
-    st.markdown(f"""
-    <div style='background-color:{BASE_BG}; padding:12px 20px; border-left:6px solid {SECTION_BG}; border-radius:10px;'>
-        <p style='font-size:16px; color:{TEXT}; margin:0; line-height:1.8;'>
-            <b>Training Efficiency:</b> With a training time of approximately 2 seconds, this model is ideal for rapid 
-            prototyping and iterative development. The fast training allows for quick experimentation with different feature 
-            combinations and hyperparameter settings.
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
-    st.markdown("<br>", unsafe_allow_html=True)
-    
-    # Key Takeaway 4
-    st.markdown(f"""
-    <div style='background-color:{BASE_BG}; padding:12px 20px; border-left:6px solid {SECTION_BG}; border-radius:10px;'>
-        <p style='font-size:16px; color:{TEXT}; margin:0; line-height:1.8;'>
-            <b>Linear Limitations:</b> The model's linear nature fundamentally limits its ability to capture complex 
-            non-linear relationships and interactions between features. This constraint explains the 21% performance gap 
-            compared to ensemble methods, highlighting the need for more sophisticated algorithms.
-        </p>
+    <div style='background-color:{CARD_COLOR}; padding:20px; border-radius:12px; border-left:5px solid {SECTION_BG};'>
+        <ul style='font-size:16px; color:{TEXT}; line-height:1.8;'>
+            <li><b>Baseline Performance:</b> 70% accuracy establishes minimum threshold for model comparison</li>
+            <li><b>Interpretability Advantage:</b> Clear coefficient values enable easy feature contribution understanding</li>
+            <li><b>Training Efficiency:</b> 2-second training time ideal for rapid prototyping and experimentation</li>
+            <li><b>Linear Limitations:</b> Cannot capture complex non-linear relationships, explaining 21% gap vs ensemble methods</li>
+        </ul>
     </div>
     """, unsafe_allow_html=True)
