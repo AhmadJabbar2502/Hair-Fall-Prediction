@@ -21,38 +21,34 @@ def render_logistic_page():
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # Model Overview
+    # Model Overview - Simple list format
+    st.markdown(f"<h3 style='color:{SECTION_BG}; font-size:20px;'>Model Overview</h3>", unsafe_allow_html=True)
     st.markdown(f"""
-    <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid {SECTION_BG}; border-radius:10px;'>
-        <p style='font-size:18px; color:{TEXT}; margin:0;'><b>Model Overview</b></p>
-        <p style='font-size:16px; color:{TEXT}; margin:10px 0 5px 0;'>
-            <b>Algorithm:</b> Multinomial Logistic Regression<br>
-            <b>Target Classes:</b> 4 (Low, Medium, High, Severe)<br>
-            <b>Solver:</b> LBFGS (Limited-memory BFGS)<br>
-            <b>Max Iterations:</b> 2000<br>
-            <b>Class Weighting:</b> Balanced
-        </p>
-    </div>
+    <ul style='font-size:16px; color:{TEXT}; line-height:1.8;'>
+        <li><b>Algorithm:</b> Multinomial Logistic Regression</li>
+        <li><b>Target Classes:</b> 4 (Low, Medium, High, Severe)</li>
+        <li><b>Solver:</b> LBFGS (Limited-memory BFGS)</li>
+        <li><b>Max Iterations:</b> 2000</li>
+        <li><b>Class Weighting:</b> Balanced</li>
+    </ul>
     """, unsafe_allow_html=True)
     
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # Base Features
+    # Base Features - Simple list format
+    st.markdown(f"<h3 style='color:{SECTION_BG}; font-size:20px;'>Base Features (6)</h3>", unsafe_allow_html=True)
     st.markdown(f"""
-    <div style='background-color:{BASE_BG}; padding:10px 20px; border-left:6px solid #5d9189; border-radius:10px;'>
-        <p style='font-size:18px; color:{TEXT}; margin:0;'><b>Base Features (6)</b></p>
-        <p style='font-size:16px; color:{TEXT}; margin:10px 0 5px 0;'>
-            Stay_Up_Late, Coffee_Consumed, Libido, Pressure_Level_Encoding, Stress_Level_Encoding, Dandruff_Encoding
-        </p>
-    </div>
+    <p style='font-size:16px; color:{TEXT};'>
+        Stay_Up_Late, Coffee_Consumed, Libido, Pressure_Level_Encoding, Stress_Level_Encoding, Dandruff_Encoding
+    </p>
     """, unsafe_allow_html=True)
     
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # Engineered Features Section
+    # Engineered Features Section - with SECTION_BG_PLOTS background
     st.markdown(f"""
-    <div style='background-color:{SECTION_BG}; padding:10px; text-align:center; border-radius:10px;'>
-        <h3 style='color:{ACCENT}; font-size:20px; margin:6px 0 6px 0;'>Engineered Features (5)</h3>
+    <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px;'>
+        <h3 style='color:{ACCENT}; font-size:21px; margin:6px 0 6px 0;'>Engineered Features (5)</h3>
     </div>
     """, unsafe_allow_html=True)
     
@@ -121,8 +117,8 @@ def render_logistic_page():
 
     # Model Evaluation Heading
     st.markdown(f"""
-    <div style='background-color:{SECTION_BG}; padding:10px; text-align:center; border-radius:10px;'>
-        <h3 style='color:{ACCENT}; font-size:20px; margin:6px 0 6px 0;'>Model Evaluation</h3>
+    <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px;'>
+        <h3 style='color:{ACCENT}; font-size:21px; margin:6px 0 6px 0;'>Model Evaluation</h3>
     </div>
     """, unsafe_allow_html=True)
     
@@ -138,8 +134,8 @@ def render_logistic_page():
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-    # Per-Class Performance
-    st.markdown(f"<h4 style='color:{SECTION_BG}; font-size:18px;'>Per-Class Performance</h4>", unsafe_allow_html=True)
+    # Per-Class Performance - Increased font size
+    st.markdown(f"<h4 style='color:{SECTION_BG}; font-size:19px;'>Per-Class Performance</h4>", unsafe_allow_html=True)
     class_perf_log = pd.DataFrame({
         'Class': ['Low (1)', 'Medium (2)', 'High (3)', 'Severe (4)'],
         'Precision': [0.72, 0.68, 0.67, 0.70],
@@ -152,8 +148,8 @@ def render_logistic_page():
 
     # Problems and Solutions Heading
     st.markdown(f"""
-    <div style='background-color:{SECTION_BG}; padding:10px; text-align:center; border-radius:10px;'>
-        <h3 style='color:{ACCENT}; font-size:20px; margin:6px 0 6px 0;'>Challenges and Solutions</h3>
+    <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px;'>
+        <h3 style='color:{ACCENT}; font-size:21px; margin:6px 0 6px 0;'>Challenges and Solutions</h3>
     </div>
     """, unsafe_allow_html=True)
     
@@ -190,33 +186,57 @@ def render_logistic_page():
     
     st.markdown("<br><br>", unsafe_allow_html=True)
     
-    # Key Takeaways
+    # Key Takeaways Heading
     st.markdown(f"""
-    <div style='background-color:{SECTION_BG}; padding:10px; text-align:center; border-radius:10px;'>
-        <h3 style='color:{ACCENT}; font-size:20px; margin:6px 0 6px 0;'>Key Takeaways</h3>
+    <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px;'>
+        <h3 style='color:{ACCENT}; font-size:21px; margin:6px 0 6px 0;'>Key Takeaways</h3>
     </div>
     """, unsafe_allow_html=True)
     
     st.markdown("<br>", unsafe_allow_html=True)
     
+    # Key Takeaway 1
     st.markdown(f"""
-    <p style='font-size:18px; color:{TEXT}; line-height:1.8;'>
-        <b>Baseline Performance:</b> The 70% accuracy serves as a starting point for comparison with more advanced models. 
-        This establishes the minimum performance threshold and demonstrates that even simple linear models can capture basic patterns in the data.
-    </p>
-    <p style='font-size:18px; color:{TEXT}; line-height:1.8;'>
-        <b>Interpretability Advantage:</b> Logistic regression provides clear coefficient values for each feature, 
-        making it easy to understand which factors contribute most to hair loss predictions. This transparency is valuable 
-        for explaining model decisions to stakeholders and identifying actionable insights.
-    </p>
-    <p style='font-size:18px; color:{TEXT}; line-height:1.8;'>
-        <b>Training Efficiency:</b> With a training time of approximately 2 seconds, this model is ideal for rapid 
-        prototyping and iterative development. The fast training allows for quick experimentation with different feature 
-        combinations and hyperparameter settings.
-    </p>
-    <p style='font-size:18px; color:{TEXT}; line-height:1.8;'>
-        <b>Linear Limitations:</b> The model's linear nature fundamentally limits its ability to capture complex 
-        non-linear relationships and interactions between features. This constraint explains the 21% performance gap 
-        compared to ensemble methods, highlighting the need for more sophisticated algorithms.
-    </p>
+    <div style='background-color:{BASE_BG}; padding:12px 20px; border-left:6px solid {SECTION_BG}; border-radius:10px;'>
+        <p style='font-size:16px; color:{TEXT}; margin:0; line-height:1.8;'>
+            <b>Baseline Performance:</b> The 70% accuracy serves as a starting point for comparison with more advanced models. 
+            This establishes the minimum performance threshold and demonstrates that even simple linear models can capture basic patterns in the data.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+    st.markdown("<br>", unsafe_allow_html=True)
+    
+    # Key Takeaway 2
+    st.markdown(f"""
+    <div style='background-color:{BASE_BG}; padding:12px 20px; border-left:6px solid {SECTION_BG}; border-radius:10px;'>
+        <p style='font-size:16px; color:{TEXT}; margin:0; line-height:1.8;'>
+            <b>Interpretability Advantage:</b> Logistic regression provides clear coefficient values for each feature, 
+            making it easy to understand which factors contribute most to hair loss predictions. This transparency is valuable 
+            for explaining model decisions to stakeholders and identifying actionable insights.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+    st.markdown("<br>", unsafe_allow_html=True)
+    
+    # Key Takeaway 3
+    st.markdown(f"""
+    <div style='background-color:{BASE_BG}; padding:12px 20px; border-left:6px solid {SECTION_BG}; border-radius:10px;'>
+        <p style='font-size:16px; color:{TEXT}; margin:0; line-height:1.8;'>
+            <b>Training Efficiency:</b> With a training time of approximately 2 seconds, this model is ideal for rapid 
+            prototyping and iterative development. The fast training allows for quick experimentation with different feature 
+            combinations and hyperparameter settings.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+    st.markdown("<br>", unsafe_allow_html=True)
+    
+    # Key Takeaway 4
+    st.markdown(f"""
+    <div style='background-color:{BASE_BG}; padding:12px 20px; border-left:6px solid {SECTION_BG}; border-radius:10px;'>
+        <p style='font-size:16px; color:{TEXT}; margin:0; line-height:1.8;'>
+            <b>Linear Limitations:</b> The model's linear nature fundamentally limits its ability to capture complex 
+            non-linear relationships and interactions between features. This constraint explains the 21% performance gap 
+            compared to ensemble methods, highlighting the need for more sophisticated algorithms.
+        </p>
+    </div>
     """, unsafe_allow_html=True)
