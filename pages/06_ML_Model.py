@@ -1,5 +1,3 @@
-
-
 import streamlit as st
 import pandas as pd
 from ML_Models.logistic_regression import render_logistic_page
@@ -28,6 +26,7 @@ st.markdown(f"""
 .stApp {{ background-color:#EFEFEF; }}
 section[data-testid="stSidebar"] {{ background-color: {SECTION_BG}; padding: 16px 12px; }}
 section[data-testid="stSidebar"] * {{ color: {SIDBAR_TEXT} !important; font-size: 16px !important; font-family: 'Helvetica Neue', sans-serif; }}
+html, body, [class*="css"] {{ font-size: 22px !important; color: {TEXT} !important; }}
 div[data-testid="stMetricLabel"] {{ font-size: 22px !important; color: #333 !important; }}
 div[data-testid="stDataFrame"] {{ background-color: white !important; border: 3px solid {SECTION_BG} !important; border-radius: 12px !important; box-shadow: none !important; }}
 .model-card {{
@@ -62,9 +61,9 @@ div[data-testid="stDataFrame"] {{ background-color: white !important; border: 3p
 
 # ======== HEADER ==========
 st.markdown(f"""
-<div style='background-color:{SECTION_BG}; padding:20px; border-radius:15px; text-align:center;'>
-    <h1 style='color:{ACCENT}; font-size:36px; margin-bottom:10px;'>Model Development and Evaluation</h1>
-    <p style='color:{ACCENT}; font-size:20px; margin-top:0px; line-height:1.6;'>
+<div style='background-color:{ACCENT}; padding:20px; border-radius:15px; text-align:center;'>
+    <h1 style='color:{SECTION_BG}; font-size:36px; margin-bottom:10px;'>Model Development and Evaluation</h1>
+    <p style='color:{SECTION_BG}; font-size:20px; margin-top:0px; line-height:1.6;'>
         This section presents a comprehensive analysis of four distinct machine learning models developed to predict hair loss severity. 
         Each model is evaluated using multiple metrics, cross-validation techniques, and visualization tools to ensure robust performance 
         and demonstrate understanding of advanced model selection and validation strategies.
@@ -104,8 +103,8 @@ elif model_option == "Model Comparison":
     st.markdown("<br>", unsafe_allow_html=True)
     
     st.markdown(f"""
-    <div style='background-color:{SECTION_BG}; padding:20px; text-align:center; border-radius:15px;'>
-        <h2 style='color:{ACCENT}; font-size:30px; margin:5px 0;'>📊 Comprehensive Model Comparison</h2>
+    <div style='background-color:{SECTION_BG}; padding:10px; text-align:center; border-radius:10px;'>
+        <h2 style='color:{ACCENT}; font-size:24px; margin:6px 0 6px 0;'>Comprehensive Model Comparison</h2>
     </div>
     """, unsafe_allow_html=True)
 
@@ -124,45 +123,61 @@ elif model_option == "Model Comparison":
 
     st.dataframe(comparison_df, use_container_width=True, hide_index=True)
 
-    # Key Findings
-    st.markdown(f"<h3 style='color:{SECTION_BG}; margin-top:30px;'>🔍 Key Findings</h3>", unsafe_allow_html=True)
+    st.markdown("<br><br>", unsafe_allow_html=True)
+
+    # Key Findings Section
+    st.markdown(f"""
+    <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px;'>
+        <h3 style='color:{ACCENT}; font-size:21px; margin:6px 0 6px 0;'>Key Findings</h3>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("<br>", unsafe_allow_html=True)
 
     col1, col2, col3 = st.columns(3)
 
     with col1:
         st.markdown(f"""
-        <div style='background-color:{CARD_COLOR}; padding:20px; border-radius:10px; text-align:center;'>
-            <h2 style='color:{SECTION_BG}; font-size:48px; margin:10px 0;'>92%</h2>
-            <p style='color:{TEXT}; font-size:18px; margin:5px 0;'><strong>Best Accuracy</strong></p>
-            <p style='color:{TEXT}; font-size:16px;'>XGBoost Model</p>
+        <div style='background-color:{CARD_COLOR}; padding:20px; border-radius:10px;'>
+            <h2 style='color:{SECTION_BG}; font-size:48px; margin:10px 0; text-align:center;'>92%</h2>
+            <p style='color:{TEXT}; font-size:18px; margin:5px 0; text-align:center;'><strong>Best Accuracy</strong></p>
+            <p style='color:{TEXT}; font-size:16px; text-align:center;'>XGBoost Model</p>
         </div>
         """, unsafe_allow_html=True)
 
     with col2:
         st.markdown(f"""
-        <div style='background-color:{CARD_COLOR}; padding:20px; border-radius:10px; text-align:center;'>
-            <h2 style='color:{SECTION_BG}; font-size:48px; margin:10px 0;'>21%</h2>
-            <p style='color:{TEXT}; font-size:18px; margin:5px 0;'><strong>Improvement</strong></p>
-            <p style='color:{TEXT}; font-size:16px;'>From Baseline to Best Model</p>
+        <div style='background-color:{CARD_COLOR}; padding:20px; border-radius:10px;'>
+            <h2 style='color:{SECTION_BG}; font-size:48px; margin:10px 0; text-align:center;'>21%</h2>
+            <p style='color:{TEXT}; font-size:18px; margin:5px 0; text-align:center;'><strong>Improvement</strong></p>
+            <p style='color:{TEXT}; font-size:16px; text-align:center;'>From Baseline to Best Model</p>
         </div>
         """, unsafe_allow_html=True)
 
     with col3:
         st.markdown(f"""
-        <div style='background-color:{CARD_COLOR}; padding:20px; border-radius:10px; text-align:center;'>
-            <h2 style='color:{SECTION_BG}; font-size:48px; margin:10px 0;'>4</h2>
-            <p style='color:{TEXT}; font-size:18px; margin:5px 0;'><strong>Models Tested</strong></p>
-            <p style='color:{TEXT}; font-size:16px;'>Comprehensive Evaluation</p>
+        <div style='background-color:{CARD_COLOR}; padding:20px; border-radius:10px;'>
+            <h2 style='color:{SECTION_BG}; font-size:48px; margin:10px 0; text-align:center;'>4</h2>
+            <p style='color:{TEXT}; font-size:18px; margin:5px 0; text-align:center;'><strong>Models Tested</strong></p>
+            <p style='color:{TEXT}; font-size:16px; text-align:center;'>Comprehensive Evaluation</p>
         </div>
         """, unsafe_allow_html=True)
 
-    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown("<br><br>", unsafe_allow_html=True)
 
+    # Summary and Recommendations Section
+    st.markdown(f"""
+    <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px;'>
+        <h3 style='color:{ACCENT}; font-size:21px; margin:6px 0 6px 0;'>Summary and Recommendations</h3>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    st.markdown("<br>", unsafe_allow_html=True)
+    
     # Final Recommendations
     st.markdown(f"""
-    <div style='background-color:{CARD_COLOR2}; padding:20px; border-radius:12px; border-left:5px solid {SECTION_BG};'>
-        <h3 style='color:{SECTION_BG}; margin-top:0;'>🎯 Final Recommendations</h3>
-        <ul style='font-size:18px; line-height:1.8;'>
+    <div style='background-color:{CARD_COLOR}; padding:20px; border-radius:12px; border-left:5px solid {SECTION_BG};'>
+        <ul style='font-size:16px; color:{TEXT}; line-height:1.8;'>
             <li><strong>Best Overall Model:</strong> XGBoost with SMOTE (92% accuracy, excellent per-class performance)</li>
             <li><strong>Most Balanced:</strong> Random Forest with SMOTE (91% accuracy, good interpretability)</li>
             <li><strong>Fastest Training:</strong> Logistic Regression (2 seconds, good for quick iterations)</li>
@@ -173,17 +188,23 @@ elif model_option == "Model Comparison":
     </div>
     """, unsafe_allow_html=True)
     
-    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown("<br><br>", unsafe_allow_html=True)
     
-    # Validation Techniques Used
-    st.markdown(f"<h3 style='color:{SECTION_BG}; margin-top:30px;'>✅ Validation Techniques Demonstrated</h3>", unsafe_allow_html=True)
+    # Validation Techniques Section
+    st.markdown(f"""
+    <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px;'>
+        <h3 style='color:{ACCENT}; font-size:21px; margin:6px 0 6px 0;'>Evaluation Methodology</h3>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    st.markdown("<br>", unsafe_allow_html=True)
     
     col1, col2 = st.columns(2)
     
     with col1:
         st.markdown(f"""
         <div style='background-color:{CARD_COLOR}; padding:20px; border-radius:10px;'>
-            <h4 style='color:{SECTION_BG}; margin-top:0;'>Cross-Validation</h4>
+            <h4 style='color:{SECTION_BG}; margin-top:0; font-size:18px;'>Cross-Validation</h4>
             <ul style='font-size:16px;'>
                 <li>5-fold Stratified K-Fold</li>
                 <li>SMOTE applied within each fold</li>
@@ -196,7 +217,7 @@ elif model_option == "Model Comparison":
     with col2:
         st.markdown(f"""
         <div style='background-color:{CARD_COLOR}; padding:20px; border-radius:10px;'>
-            <h4 style='color:{SECTION_BG}; margin-top:0;'>Imbalance Handling</h4>
+            <h4 style='color:{SECTION_BG}; margin-top:0; font-size:18px;'>Imbalance Handling</h4>
             <ul style='font-size:16px;'>
                 <li>SMOTE (Synthetic Oversampling)</li>
                 <li>Class weighting (balanced)</li>
@@ -213,7 +234,7 @@ elif model_option == "Model Comparison":
     with col1:
         st.markdown(f"""
         <div style='background-color:{CARD_COLOR}; padding:20px; border-radius:10px;'>
-            <h4 style='color:{SECTION_BG}; margin-top:0;'>Evaluation Metrics</h4>
+            <h4 style='color:{SECTION_BG}; margin-top:0; font-size:18px;'>Evaluation Metrics</h4>
             <ul style='font-size:16px;'>
                 <li>Accuracy, Precision, Recall, F1-Score</li>
                 <li>Per-class performance analysis</li>
@@ -226,7 +247,7 @@ elif model_option == "Model Comparison":
     with col2:
         st.markdown(f"""
         <div style='background-color:{CARD_COLOR}; padding:20px; border-radius:10px;'>
-            <h4 style='color:{SECTION_BG}; margin-top:0;'>Advanced Techniques</h4>
+            <h4 style='color:{SECTION_BG}; margin-top:0; font-size:18px;'>Advanced Techniques</h4>
             <ul style='font-size:16px;'>
                 <li>Feature engineering (5 new features)</li>
                 <li>Ensemble methods (RF, XGB, GB)</li>

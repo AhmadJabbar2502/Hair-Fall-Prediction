@@ -123,6 +123,68 @@ def render_random_forest_page():
     
     st.markdown("<br><br>", unsafe_allow_html=True)
 
+    # Key Innovations Section
+    st.markdown(f"""
+    <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px;'>
+        <h3 style='color:{ACCENT}; font-size:21px; margin:6px 0 6px 0;'>Key Innovations</h3>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # Innovation cards in columns
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown(f"""
+        <div style='background-color:#85ada6; padding:20px; border-radius:12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); min-height:180px;'>
+            <h4 style='color:#2C3E50; margin-top:0; font-size:18px;'>SMOTE Integration</h4>
+            <p style='color:#2C3E50; font-size:15px; line-height:1.6; margin:0;'>
+                Applied Synthetic Minority Oversampling within the pipeline using ImbPipeline, ensuring SMOTE 
+                runs independently in each cross-validation fold to prevent data leakage and provide honest performance estimates.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with col2:
+        st.markdown(f"""
+        <div style='background-color:#A8D5BA; padding:20px; border-radius:12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); min-height:180px;'>
+            <h4 style='color:#2C3E50; margin-top:0; font-size:18px;'>Class Merging Strategy</h4>
+            <p style='color:#2C3E50; font-size:15px; line-height:1.6; margin:0;'>
+                Combined High (3) and Severe (4) classes into a single "Severe" category, reducing confusion between 
+                similar severity levels and improving model accuracy by 21 percentage points over the 4-class baseline.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    st.markdown("<br>", unsafe_allow_html=True)
+    
+    col3, col4 = st.columns(2)
+    
+    with col3:
+        st.markdown(f"""
+        <div style='background-color:#FFB347; padding:20px; border-radius:12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); min-height:180px;'>
+            <h4 style='color:#2C3E50; margin-top:0; font-size:18px;'>Ensemble Learning</h4>
+            <p style='color:#2C3E50; font-size:15px; line-height:1.6; margin:0;'>
+                Utilized 300 decision trees with bootstrap aggregating (bagging) to reduce variance and prevent overfitting, 
+                where each tree votes on the final prediction creating robust and stable classifications.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with col4:
+        st.markdown(f"""
+        <div style='background-color:#D9D9D9; padding:20px; border-radius:12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); min-height:180px;'>
+            <h4 style='color:#2C3E50; margin-top:0; font-size:18px;'>Regularization Techniques</h4>
+            <p style='color:#2C3E50; font-size:15px; line-height:1.6; margin:0;'>
+                Implemented max_depth=12, min_samples_split=5, and min_samples_leaf=2 constraints to control tree 
+                complexity and create smoother decision boundaries that generalize better to unseen data.
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    st.markdown("<br><br>", unsafe_allow_html=True)
+
     # Model Evaluation Heading
     st.markdown(f"""
     <div style='background-color:{SECTION_BG_PLOTS}; padding:12px; text-align:center; border-radius:10px;'>
