@@ -26,7 +26,6 @@ st.markdown(f"""
 .stApp {{ background-color:#EFEFEF; }}
 section[data-testid="stSidebar"] {{ background-color: {SECTION_BG}; padding: 16px 12px; }}
 section[data-testid="stSidebar"] * {{ color: {SIDBAR_TEXT} !important; font-size: 16px !important; font-family: 'Helvetica Neue', sans-serif; }}
-html, body, [class*="css"] {{ font-size: 22px !important; color: {TEXT} !important; }}
 div[data-testid="stMetricLabel"] {{ font-size: 22px !important; color: #333 !important; }}
 div[data-testid="stDataFrame"] {{ background-color: white !important; border: 3px solid {SECTION_BG} !important; border-radius: 12px !important; box-shadow: none !important; }}
 .model-card {{
